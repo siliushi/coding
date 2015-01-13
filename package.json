@@ -1,0 +1,27 @@
+{
+  "name": "coding",
+  "version": "0.0.1",
+  "private": true,
+  "description": "coding",
+  "main": "code.js",
+  "scripts": {
+    "start": "node code.js"
+  },
+  "dependencies": {
+    "iconv-lite": "~0.2.11"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/baixuexiyang/coding.git"
+  },
+  "keywords": [
+    "coding"
+  ],
+  "author": "baixuexiyang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baixuexiyang/coding/issues"
+  },
+  "homepage": "https://github.com/baixuexiyang/coding"
+}

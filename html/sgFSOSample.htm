@@ -1,0 +1,594 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=gb2312">
+<TITLE>FileSystemObject 缁�桨绶ユ禒锝囩垳</TITLE>
+<!--CSS_START-->
+<style>@import url(../html-vss/msdnie4a.css);</style>
+<link disabled rel="stylesheet" href="../html-vss/msdn_ie3.css">
+<!--CSS_END-->
+</HEAD>
+<BODY>
+
+
+<!--Start Head-->
+<TABLE class="banner" width="100%" CELLSPACING=0>
+<TR>
+<TD class="bannerleft" nowrap>JScript&nbsp;</TD>
+<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">鐠囶叀鈻堥崣鍌濓拷</a></TD>
+</TR>
+</TABLE>
+<HR>
+<!--End Head-->
+
+<H1><A NAME="sgfsosample"></A>FileSystemObject 缁�桨绶ユ禒锝囩垳</H1>
+
+<P>閸︺劍婀伴懞鍌涘伎鏉╂壆娈戠粈杞扮伐娴狅絿鐖滈敍灞惧絹娓氭稓婀＄�鐐垫畱娓氬鐡欓弶銉с仛閼煎啫婀�<B>FileSystemObject</B> 鐎电钖勫Ο鈥崇础娑擃厼褰查悽銊ф畱鐠佺ǹ顦块崝鐔诲厴閵嗗倽顕氭禒锝囩垳閺勫墽銇氭禍鍡楊洤娴ｆ洑绔寸挧铚傚▏閻€劌顕挒鈩兡佸蹇曟畱閹碉拷婀侀崝鐔诲厴閿涘奔浜掗崣濠傤洤娴ｆ洖婀幃銊ㄥ殰瀹歌京娈戞禒锝囩垳娑擃厽婀侀弫鍫濇勾娴ｈ法鏁ゆ潻娆庣昂閸旂喕鍏橀妴锟�P>
+
+<P>鐠囬攱鏁為幇蹇ョ礉閻㈠彉绨拠銉ゅ敩閻焦妲搁弸浣风閼割剛娈戦敍灞惧娴犮儴顩︽担鑳嚉娴狅絿鐖滈懗钘夘檮閻喐顒滈崷銊﹀亶閻ㄥ嫭婧�崳銊ょ瑐鏉╂劘顢戦敍灞藉讲閼充粙娓剁憰浣风娴滄稑鍙炬禒鏍﹀敩閻礁鎷扮亸蹇撶毈閻ㄥ嫬褰夐弴娣拷鏉╂瑤绨洪弨鐟板綁娑斿澧嶆禒銉ョ箑鐟曚緤绱濋弰顖氭礈娑撳搫婀�Active Server Pages 閸滐拷Windows Scripting Host 娑斿妫块敍灞艰礋鏉堟挸鍙嗛崪宀冪翻閸戣櫣绮伴悽銊﹀煕闁插洨鏁ゆ禍鍡曠瑝閸氬瞼娈戦弬瑙勭《閵嗭拷/P>
+
+<P>鐟曚礁婀�Active Server Pages 娑撳﹨绻嶇悰宀冾嚉娴狅絿鐖滈敍灞藉灟闁插洤褰囨禒銉ょ瑓濮濄儵顎冮敍锟�P>
+
+<P>閸掓稑缂撴稉锟介嚋閺嶅洤鍣惃锟絎eb 妞ょ绱濋崥搴ｇ磻閸氬秳璐�.asp閵嗭拷</P>
+
+<P>閹跺﹣绗呴棃銏㈡畱缁�桨绶ユ禒锝囩垳婢跺秴鍩楅崚锟�amp;ltBODY&gt;...&lt;/BODY&gt; 閺嶅洩顔囨稊瀣？閻ㄥ嫭鏋冩禒鏈佃厬閵嗭拷</P>
+
+<P>閹跺﹥澧嶉張澶夊敩閻礁瀵樼憗鍛珤閸掞拷&lt;%...%&gt; 閺嶅洩顔囬崘鍛拷 </P>
+
+<P>閹讹拷<B>Option Explicit</B> 鐠囶厼褰炴禒搴＄秼閸撳秳缍呯純顔拘╅崝銊ュ煂 HTML 妞ょ數娈戦張锟姐�闁煉绱濋悽姘冲殾閸︼拷&lt;HTML&gt; 瀵拷顫愰弽鍥唶閸撳秲锟�</P>
+
+<P>閹讹拷&lt;%...%&gt; 閺嶅洩顔囬弨鍓х枂閸︼拷<B>Option Explicit</B> 鐠囶厼褰為崨銊ユ纯閿涘奔浜掓穱婵婄槈鐎瑰啫婀張宥呭閸ｃ劎顏潻鎰攽閵嗭拷</P>
+
+<P>閹跺﹣绗呴棃銏㈡畱娴狅絿鐖滃ǎ璇插閸掓壆銇氭笟瀣╁敩閻焦婀亸鎾呯窗 </P>
+
+<PRE><CODE>Sub Print(x)
+</CODE>&nbsp;&nbsp;&nbsp;<CODE>Response.Write "&lt;PRE&gt;&amp;ltFONT FACE=""</CODE>鐎瑰缍�CODE>"" SIZE=""1""&gt;"</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;Response.Write x</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;Response.Write "&lt;/FONT&gt;&lt;/PRE&gt;"</CODE>
+<CODE>End Sub</CODE>
+<CODE>Main</CODE></PRE>
+
+<P>閸撳秹娼伴惃鍕敩閻礁顤冮崝鐘辩娑擃亜鐨㈤崷銊︽箛閸斺�娅掔粩顖濈箥鐞涘矉绱濇担鍡楁躬鐎广垺鍩涚粩顖涙▔缁�櫣绮ㄩ弸婊呮畱閹垫挸宓冩潻鍥┾柤閵嗗倽顩﹂崷锟絎indows Scripting Host 娑撳﹨绻嶇悰宀冾嚉娴狅絿鐖滈敍灞藉灟閹跺﹣绗呴棃銏㈡畱娴狅絿鐖滃ǎ璇插閸掓壆銇氭笟瀣╁敩閻胶娈戦張顐㈢啲閿涳拷</P>
+
+<PRE><CODE>Sub Print(x)
+</CODE>&nbsp;&nbsp;&nbsp;<CODE>WScript.Echo x</CODE>
+<CODE>End Sub</CODE>
+<CODE>Main</CODE></PRE>
+
+<P>娑撳娼扮亸杈ㄦЦ缁�桨绶ユ禒锝囩垳閿涳拷/P>
+
+<PRE><CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' FileSystemObject </CODE>缁�桨绶ユ禒锝囩垳
+<CODE>'Copyright 1998  Microsoft Corporation</CODE>閵嗭拷nbsp;&nbsp;&nbsp;娣囨繄鏆�幍锟芥箒閺夊啫鍩勯妴锟紺ODE> </CODE>
+<CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
+
+<CODE>Option Explicit</CODE>
+
+<CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
+<CODE>' </CODE>鐎甸�绨禒锝囩垳鐠愩劑鍣洪敍锟�<CODE>' 1) </CODE>娑撳娼伴惃鍕敩閻焦婀佺拋绋款樋鐎涙顑佹稉鍙夋惙娴ｆ粣绱濋悽锟紺ODE>"&amp;"</CODE>鏉╂劗鐣荤粭锔芥降閹跺﹦鐓�妤冾儊娑撹尪绻涢幒銉ユ躬娑擄拷鎹ｉ妴鍌滄暠娴滐拷
+<CODE>'    </CODE>鐎涙顑佹稉鑼剁箾閹恒儲妲哥拹瑙勬閻ㄥ嫸绱濋幍锟戒簰鏉╂瑦妲告稉锟筋潚娴ｅ孩鏅ラ悳鍥╂畱閸愭瑤鍞惍浣规煙濞夋洏锟介弮鐘侯啈婵″倷缍嶉敍灞界暊閺勶拷
+<CODE>'    </CODE>娑擄拷顫掗棃鐐茬埗婵傜晫娣幎銈囨畱閸愭瑤鍞惍浣规煙濞夋洩绱濋獮鏈电瑬閸︺劏绻栭崕澶稿▏閻€劋绨℃潻娆戭潚閺傝纭堕敍灞芥礈娑撻缚顕氱粙瀣碍閹笛嗩攽
+<CODE>'    </CODE>婢堆囧櫤閻ㄥ嫮顥嗛惄妯绘惙娴ｆ粣绱濋懓宀�梿閻╂ɑ鎼锋担婊勭槷鏉╃偞甯寸�妤冾儊娑撳弶澧嶉棁锟芥畱閸愬懎鐡ㄩ幙宥勭稊鐟曚焦鍙冨妤�樋閵嗭拷
+<CODE>'    </CODE>鐠侀缍囨潻娆愭Ц缁�缚瀵栨禒锝囩垳閿涘矁锟芥稉宥嗘Ц娴溠冩惂娴狅絿鐖滈妴锟�<CODE>'</CODE>
+<CODE>' 2) </CODE>娴ｈ法鏁ゆ禍锟紺ODE> "Option Explicit"</CODE>閿涘苯娲滄稉楦款問闂傤喖锛愰弰搴ょ箖閻ㄥ嫬褰夐柌蹇ョ礉濮ｆ棁顔栭梻顔芥弓婢圭増妲戦惃鍕綁闁插繗顩�
+<CODE>'    </CODE>缁嬪秴浜曡箛顐＄娴滄稏锟界�鍐箷閼充粙妯嗗銏犳躬娴狅絿鐖滄稉顓炲絺閻㈢喖鏁婄拠顖ょ礉娓氬顩ч敍灞惧Ω<CODE> DriveTypeCDROM </CODE>鐠囶垱瀚�
+<CODE>'    </CODE>閹存劒绨�CODE> DriveTypeCDORM </CODE>閵嗭拷
+<CODE>'</CODE>
+<CODE>' 3) </CODE>娑撹桨绨℃担澶稿敩閻焦娲块崣顖濐嚢閿涘矁顕氭禒锝囩垳娑擃厽鐥呴張澶愭晩鐠囶垰顦╅悶鍡愶拷閾忕晫鍔ч柌鍥у絿娴滃棝妲婚懠鍐╁妇閺傛枻绱濋弶銉ょ箽鐠囦椒鍞惍锟�<CODE>'    </CODE>閸︺劍娅橀柅姘剰閸愬吀绗呭▽鈩冩箒闁挎瑨顕ら敍灞肩稻閺傚洣娆㈢化鑽ょ埠閺勵垯绗夐崣顖烆暕閻儳娈戦妴鍌氭躬娴溠冩惂娴狅絿鐖滄稉顓ㄧ礉娴ｈ法鏁�
+<CODE>'    On Error Resume Next </CODE>閸滐拷CODE> Err </CODE>鐎电钖勯弶銉﹀礋閼惧嘲褰查懗钘夊絺閻㈢喓娈戦柨娆掝嚖閵嗭拷
+<CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
+
+<CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
+<CODE>' </CODE>娑擄拷绨虹�瑙勬閸欐牕绶遍惃鍕弿鐏烇拷褰夐柌锟�<CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
+<CODE>Dim TabStop</CODE>
+<CODE>Dim NewLine</CODE>
+
+<CODE>Const TestDrive = "C"</CODE>
+<CODE>Const TestFilePath = "C:\Test"</CODE>
+
+<CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
+<CODE>' </CODE>閻拷CODE> Drive.DriveType </CODE>鏉╂柨娲栭惃鍕埗閺侊拷
+<CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
+<CODE>Const DriveTypeRemovable = 1</CODE>
+<CODE>Const DriveTypeFixed = 2</CODE>
+<CODE>Const DriveTypeNetwork = 3</CODE>
+<CODE>Const DriveTypeCDROM = 4</CODE>
+<CODE>Const DriveTypeRAMDisk = 5</CODE>
+
+<CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
+<CODE>' </CODE>閻拷CODE> File.Attributes </CODE>鏉╂柨娲栭惃鍕埗閺侊拷
+<CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
+<CODE>Const FileAttrNormal  = 0</CODE>
+<CODE>Const FileAttrReadOnly = 1</CODE>
+<CODE>Const FileAttrHidden = 2</CODE>
+<CODE>Const FileAttrSystem = 4</CODE>
+<CODE>Const FileAttrVolume = 8</CODE>
+<CODE>Const FileAttrDirectory = 16</CODE>
+<CODE>Const FileAttrArchive = 32 </CODE>
+<CODE>Const FileAttrAlias = 64</CODE>
+<CODE>Const FileAttrCompressed = 128</CODE>
+
+<CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
+<CODE>' </CODE>閻€劍娼甸幍鎾崇磻閺傚洣娆㈤惃鍕埗閺侊拷
+<CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
+<CODE>Const OpenFileForReading = 1 </CODE>
+<CODE>Const OpenFileForWriting = 2 </CODE>
+<CODE>Const OpenFileForAppending = 8 </CODE>
+
+<CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
+<CODE>' <span class=cfe><B>ShowDriveType</B></span></CODE>
+<CODE>' </CODE>閻╊喚娈戦敍锟紺ODE> </CODE>
+<CODE>' </CODE>閻㈢喐鍨氭稉锟介嚋鐎涙顑佹稉璇х礉閺夈儲寮挎潻鎵舶鐎癸拷CODE> Drive </CODE>鐎电钖勯惃鍕攳閸斻劌娅掔猾璇茬�閵嗭拷
+<CODE>' </CODE>缁�缚瀵栨稉瀣桨閻ㄥ嫬鍞寸�锟�<CODE>' - Drive.DriveType</CODE>
+<CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
+<CODE>Function ShowDriveType(Drive)</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>Dim S</CODE>
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<CODE>Select Case Drive.DriveType</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Case DriveTypeRemovable</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>S = "Removable"</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Case DriveTypeFixed</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>S = "Fixed"</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Case DriveTypeNetwork</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>S = "Network"</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Case DriveTypeCDROM</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>S = "CD-ROM"</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Case DriveTypeRAMDisk</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>S = "RAM Disk"</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Case Else</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>S = "Unknown"</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>End Select</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>ShowDriveType = S</CODE>
+
+<CODE>End Function</CODE>
+
+<CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
+<CODE>' <span class=cfe><B>ShowFileAttr</B></span></CODE>
+<CODE>' </CODE>閻╊喚娈戦敍锟紺ODE> </CODE>
+<CODE>' </CODE>閻㈢喐鍨氭稉锟介嚋鐎涙顑佹稉璇х礉閺夈儲寮挎潻鐗堟瀮娴犺埖鍨ㄩ弬鍥︽婢跺湱娈戠仦鐐达拷閵嗭拷
+<CODE>' </CODE>缁�缚瀵栨稉瀣桨閻ㄥ嫬鍞寸�锟�<CODE>' - File.Attributes</CODE>
+<CODE>' - Folder.Attributes</CODE>
+<CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
+
+<CODE>Function ShowFileAttr(File) ' File </CODE>閸欘垯浜掗弰顖涙瀮娴犺埖鍨ㄩ弬鍥︽婢讹拷
+
+&nbsp;&nbsp;&nbsp;<CODE>Dim S</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Dim Attr</CODE>
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<CODE>Attr = File.Attributes</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>If Attr = 0 Then</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>ShowFileAttr = "Normal"</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>Exit Function</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>End If</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>If Attr And FileAttrDirectory  Then S = S &amp; "Directory "</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>If Attr And FileAttrReadOnly   Then S = S &amp; "Read-Only "</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>If Attr And FileAttrHidden     Then S = S &amp; "Hidden "</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>If Attr And FileAttrSystem     Then S = S &amp; "System "</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>If Attr And FileAttrVolume     Then S = S &amp; "Volume "</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>If Attr And FileAttrArchive    Then S = S &amp; "Archive "</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>If Attr And FileAttrAlias      Then S = S &amp; "Alias "</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>If Attr And FileAttrCompressed Then S = S &amp; "Compressed "</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>ShowFileAttr = S</CODE>
+
+<CODE>End Function</CODE>
+
+<CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
+<CODE>' <span class=cfe><B>GenerateDriveInformation</B></span></CODE>
+<CODE>' </CODE>閻╊喚娈戦敍锟紺ODE> </CODE>
+<CODE>' </CODE>閻㈢喐鍨氭稉锟介嚋鐎涙顑佹稉璇х礉閺夈儲寮挎潻鏉垮讲閻€劑鈹嶉崝銊ユ珤閻ㄥ嫬缍嬮崜宥囧Ц閹降锟�
+<CODE>' </CODE>缁�缚瀵栨稉瀣桨閻ㄥ嫬鍞寸�锟�<CODE>'  - FileSystemObject.Drives </CODE>
+<CODE>'  - Iterating the Drives collection</CODE>
+<CODE>'  - Drives.Count</CODE>
+<CODE>'  - Drive.AvailableSpace</CODE>
+<CODE>'  - Drive.DriveLetter</CODE>
+<CODE>'  - Drive.DriveType</CODE>
+<CODE>'  - Drive.FileSystem</CODE>
+<CODE>'  - Drive.FreeSpace</CODE>
+<CODE>'  - Drive.IsReady</CODE>
+<CODE>'  - Drive.Path</CODE>
+<CODE>'  - Drive.SerialNumber</CODE>
+<CODE>'  - Drive.ShareName</CODE>
+<CODE>'  - Drive.TotalSize</CODE>
+<CODE>'  - Drive.VolumeName</CODE>
+<CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
+
+<CODE>Function GenerateDriveInformation(FSO)</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>Dim Drives</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Dim Drive</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Dim S</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>Set Drives = FSO.Drives</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>S = "Number of drives:" &amp; TabStop &amp; Drives.Count &amp; NewLine &amp; NewLine</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>閺嬪嫰锟介幎銉ユ啞閻ㄥ嫮顑囨稉锟筋攽閵嗭拷
+&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; String(2, TabStop) &amp; "Drive" </CODE>
+&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; String(3, TabStop) &amp; "File" </CODE>
+&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; TabStop &amp; "Total"</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; TabStop &amp; "Free"</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; TabStop &amp; "Available" </CODE>
+&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; TabStop &amp; "Serial" &amp; NewLine</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>閺嬪嫰锟介幎銉ユ啞閻ㄥ嫮顑囨禍宀冾攽閵嗭拷
+&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; "Letter"</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; TabStop &amp; "Path"</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; TabStop &amp; "Type"</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; TabStop &amp; "Ready?"</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; TabStop &amp; "Name"</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; TabStop &amp; "System"</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; TabStop &amp; "Space"</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; TabStop &amp; "Space"</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; TabStop &amp; "Space"</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; TabStop &amp; "Number" &amp; NewLine</CODE>&nbsp;&nbsp;&nbsp;
+
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>閸掑棝娈х悰灞伙拷
+&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; String(105, "-") &amp; NewLine</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>For Each Drive In Drives</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; Drive.DriveLetter</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; TabStop &amp; Drive.Path</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; TabStop &amp; ShowDriveType(Drive)</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; TabStop &amp; Drive.IsReady</CODE>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>If Drive.IsReady Then</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>If DriveTypeNetwork = Drive.DriveType Then</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; TabStop &amp; Drive.ShareName </CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>Else</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; TabStop &amp; Drive.VolumeName </CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>End If    </CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; TabStop &amp; Drive.FileSystem</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; TabStop &amp; Drive.TotalSize</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; TabStop &amp; Drive.FreeSpace</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; TabStop &amp; Drive.AvailableSpace</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; TabStop &amp; Hex(Drive.SerialNumber)</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>End If</CODE>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; NewLine</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>Next  </CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>GenerateDriveInformation = S</CODE>
+
+<CODE>End Function</CODE>
+
+<CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
+<CODE>' <span class=cfe><B>GenerateFileInformation</B></span></CODE>
+<CODE>' </CODE>閻╊喚娈戦敍锟紺ODE> </CODE>
+<CODE>' </CODE>閻㈢喐鍨氭稉锟介嚋鐎涙顑佹稉璇х礉閺夈儲寮挎潻鐗堟瀮娴犲墎娈戣ぐ鎾冲閻樿埖锟介妴锟�<CODE>' </CODE>缁�缚瀵栨稉瀣桨閻ㄥ嫬鍞寸�锟�<CODE>'  - File.Path</CODE>
+<CODE>'  - File.Name</CODE>
+<CODE>'  - File.Type</CODE>
+<CODE>'  - File.DateCreated</CODE>
+<CODE>'  - File.DateLastAccessed</CODE>
+<CODE>'  - File.DateLastModified</CODE>
+<CODE>'  - File.Size</CODE>
+<CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
+
+<CODE>Function GenerateFileInformation(File)</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>Dim S</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>S = NewLine &amp; "Path:" &amp; TabStop &amp; File.Path</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; NewLine &amp; "Name:" &amp; TabStop &amp; File.Name</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; NewLine &amp; "Type:" &amp; TabStop &amp; File.Type</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; NewLine &amp; "Attribs:" &amp; TabStop &amp; ShowFileAttr(File)</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; NewLine &amp; "Created:" &amp; TabStop &amp; File.DateCreated</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; NewLine &amp; "Accessed:" &amp; TabStop &amp; File.DateLastAccessed</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; NewLine &amp; "Modified:" &amp; TabStop &amp; File.DateLastModified</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; NewLine &amp; "Size" &amp; TabStop &amp; File.Size &amp; NewLine</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>GenerateFileInformation = S</CODE>
+
+<CODE>End Function</CODE>
+
+<CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
+<CODE>' <span class=cfe><B>GenerateFolderInformation</B></span></CODE>
+<CODE>' </CODE>閻╊喚娈戦敍锟紺ODE> </CODE>
+<CODE>' </CODE>閻㈢喐鍨氭稉锟介嚋鐎涙顑佹稉璇х礉閺夈儲寮挎潻鐗堟瀮娴犺泛銇欓惃鍕秼閸撳秶濮搁幀浣碉拷
+<CODE>' </CODE>缁�缚瀵栨稉瀣桨閻ㄥ嫬鍞寸�锟�<CODE>'  - Folder.Path</CODE>
+<CODE>'  - Folder.Name</CODE>
+<CODE>'  - Folder.DateCreated</CODE>
+<CODE>'  - Folder.DateLastAccessed</CODE>
+<CODE>'  - Folder.DateLastModified</CODE>
+<CODE>'  - Folder.Size</CODE>
+<CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
+
+<CODE>Function GenerateFolderInformation(Folder)</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>Dim S</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>S = "Path:" &amp; TabStop &amp; Folder.Path</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; NewLine &amp; "Name:" &amp; TabStop &amp; Folder.Name</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; NewLine &amp; "Attribs:" &amp; TabStop &amp; ShowFileAttr(Folder)</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; NewLine &amp; "Created:" &amp; TabStop &amp; Folder.DateCreated</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; NewLine &amp; "Accessed:" &amp; TabStop &amp; Folder.DateLastAccessed</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; NewLine &amp; "Modified:" &amp; TabStop &amp; Folder.DateLastModified</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; NewLine &amp; "Size:" &amp; TabStop &amp; Folder.Size &amp; NewLine</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>GenerateFolderInformation = S</CODE>
+
+<CODE>End Function</CODE>
+
+<CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
+<CODE>' <span class=cfe><B>GenerateAllFolderInformation</B></span></CODE>
+<CODE>' </CODE>閻╊喚娈戦敍锟紺ODE> </CODE>
+<CODE>' </CODE>閻㈢喐鍨氭稉锟介嚋鐎涙顑佹稉璇х礉閺夈儲寮挎潻棰佺娑擃亝鏋冩禒璺恒仚閸滃本澧嶉張澶嬫瀮娴犺泛寮风�鎰瀮娴犺泛銇欓惃鍕秼閸撳秶濮搁幀浣碉拷
+<CODE>' </CODE>缁�缚瀵栨稉瀣桨閻ㄥ嫬鍞寸�锟�<CODE>'  - Folder.Path</CODE>
+<CODE>'  - Folder.SubFolders</CODE>
+<CODE>'  - Folders.Count</CODE>
+<CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
+
+<CODE>Function GenerateAllFolderInformation(Folder)</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>Dim S</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Dim SubFolders</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Dim SubFolder</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Dim Files</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Dim File</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>S = "Folder:" &amp; TabStop &amp; Folder.Path &amp; NewLine &amp; NewLine</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Set Files = Folder.Files</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>If 1 = Files.Count Then</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; "There is 1 file" &amp; NewLine</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Else</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; "There are " &amp; Files.Count &amp; " files" &amp; NewLine</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>End If</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>If Files.Count &lt;&gt; 0 Then</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>For Each File In Files</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; GenerateFileInformation(File)</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>Next</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>End If</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>Set SubFolders = Folder.SubFolders</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>If 1 = SubFolders.Count Then</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; NewLine &amp; "There is 1 sub folder" &amp; NewLine &amp; NewLine</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Else</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; NewLine &amp; "There are " &amp; SubFolders.Count &amp; " sub folders" &amp; NewLine &amp; NewLine</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>End If</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>If SubFolders.Count &lt;&gt; 0 Then</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>For Each SubFolder In SubFolders</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; GenerateFolderInformation(SubFolder)</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>Next</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; NewLine</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>For Each SubFolder In SubFolders</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; GenerateAllFolderInformation(SubFolder)</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>Next</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>End If</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>GenerateAllFolderInformation = S</CODE>
+
+<CODE>End Function</CODE>
+
+<CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
+<CODE>' <span class=cfe><B>GenerateTestInformation</B></span></CODE>
+<CODE>' </CODE>閻╊喚娈戦敍锟紺ODE> </CODE>
+<CODE>' </CODE>閻㈢喐鍨氭稉锟介嚋鐎涙顑佹稉璇х礉閺夈儲寮挎潻锟紺ODE> C:\Test </CODE>閺傚洣娆㈡径鐟版嫲閹碉拷婀侀弬鍥︽閸欏﹤鐡欓弬鍥︽婢跺湱娈戣ぐ鎾冲閻樿埖锟介妴锟�<CODE>' </CODE>缁�缚瀵栨稉瀣桨閻ㄥ嫬鍞寸�锟�<CODE>'  - FileSystemObject.DriveExists</CODE>
+<CODE>'  - FileSystemObject.FolderExists</CODE>
+<CODE>'  - FileSystemObject.GetFolder</CODE>
+<CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
+
+<CODE>Function GenerateTestInformation(FSO)</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>Dim TestFolder</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Dim S</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>If Not FSO.DriveExists(TestDrive) Then Exit Function</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>If Not FSO.FolderExists(TestFilePath) Then Exit Function</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>Set TestFolder = FSO.GetFolder(TestFilePath)</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>GenerateTestInformation = GenerateAllFolderInformation(TestFolder) </CODE>
+
+<CODE>End Function</CODE>
+
+<CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
+<CODE>' <span class=cfe><B>DeleteTestDirectory</B></span></CODE>
+<CODE>' </CODE>閻╊喚娈戦敍锟紺ODE> </CODE>
+<CODE>' </CODE>濞撳懐鎮�CODE> test </CODE>閻╊喖缍嶉妴锟�<CODE>' </CODE>缁�缚瀵栨稉瀣桨閻ㄥ嫬鍞寸�锟�<CODE>'  - FileSystemObject.GetFolder</CODE>
+<CODE>'  - FileSystemObject.DeleteFile</CODE>
+<CODE>'  - FileSystemObject.DeleteFolder</CODE>
+<CODE>'  - Folder.Delete</CODE>
+<CODE>'  - File.Delete</CODE>
+<CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
+
+<CODE>Sub DeleteTestDirectory(FSO)</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>Dim TestFolder</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Dim SubFolder</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Dim File</CODE></PRE>
+
+
+
+<PRE>&nbsp;&nbsp;&nbsp;<A NAME="driveinfo"></A>
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>閺堝琚辩粔宥嗘煙濞夋洖褰查悽銊︽降閸掔娀娅庨弬鍥︽閿涳拷
+
+&nbsp;&nbsp;&nbsp;<CODE>FSO.DeleteFile(TestFilePath &amp; "\Beatles\OctopusGarden.txt")</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>Set File = FSO.GetFile(TestFilePath &amp; "\Beatles\BathroomWindow.txt")</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>File.Delete</CODE>&nbsp;&nbsp;&nbsp;
+
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>閺堝琚辩粔宥嗘煙濞夋洖褰查悽銊︽降閸掔娀娅庨弬鍥︽婢剁櫢绱�
+&nbsp;&nbsp;&nbsp;<CODE>FSO.DeleteFolder(TestFilePath &amp; "\Beatles")</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>FSO.DeleteFile(TestFilePath &amp; "\ReadMe.txt")</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Set TestFolder = FSO.GetFolder(TestFilePath)</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>TestFolder.Delete</CODE>
+
+<CODE>End Sub</CODE>
+
+<CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
+<CODE>' <span class=cfe><B>CreateLyrics</B></span></CODE>
+<CODE>' </CODE>閻╊喚娈戦敍锟紺ODE> </CODE>
+<CODE>' </CODE>閸︺劍鏋冩禒璺恒仚娑擃厼鍨卞杞拌⒈娑擃亝鏋冮張顒佹瀮娴犺翰锟�
+<CODE>' </CODE>缁�缚瀵栨稉瀣桨閻ㄥ嫬鍞寸�锟�<CODE>'  - FileSystemObject.CreateTextFile</CODE>
+<CODE>'  - TextStream.WriteLine</CODE>
+<CODE>'  - TextStream.Write</CODE>
+<CODE>'  - TextStream.WriteBlankLines</CODE>
+<CODE>'  - TextStream.Close</CODE>
+<CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
+
+<CODE>Sub CreateLyrics(Folder)</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>Dim TextStream</CODE></PRE>
+
+
+
+<PRE>&nbsp;&nbsp;&nbsp;<A NAME="deletefile"></A>
+&nbsp;&nbsp;&nbsp;<CODE>Set TextStream = Folder.CreateTextFile("OctopusGarden.txt")</CODE></PRE>
+
+
+
+<PRE>&nbsp;&nbsp;&nbsp;<A NAME="createtextfilewritetofile"></A>
+&nbsp;&nbsp;&nbsp;<CODE>TextStream.Write("Octopus' Garden ") ' </CODE>鐠囬攱鏁為幇蹇ョ礉鐠囥儴顕㈤崣銉ょ瑝濞ｈ濮為幑銏ｎ攽閸掔増鏋冩禒鏈佃厬閵嗭拷
+&nbsp;&nbsp;&nbsp;<CODE>TextStream.WriteLine("(by Ringo Starr)")</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>TextStream.WriteBlankLines(1)</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>TextStream.WriteLine("I'd like to be under the sea in an octopus' garden in the shade,")</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>TextStream.WriteLine("He'd let us in, knows where we've been -- in his octopus' garden in the shade.")</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>TextStream.WriteBlankLines(2)</CODE>
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<CODE>TextStream.Close</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>Set TextStream = Folder.CreateTextFile("BathroomWindow.txt")</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>TextStream.WriteLine("She Came In Through The Bathroom Window (by Lennon/McCartney)")</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>TextStream.WriteLine("")</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>TextStream.WriteLine("She came in through the bathroom window protected by a silver spoon")</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>TextStream.WriteLine("But now she sucks her thumb and wanders by the banks of her own lagoon")</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>TextStream.WriteBlankLines(2)</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>TextStream.Close</CODE>
+
+<CODE>End Sub</CODE>
+
+<CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
+<CODE>' <span class=cfe><B>GetLyrics</B></span></CODE>
+<CODE>' </CODE>閻╊喚娈戦敍锟紺ODE> </CODE>
+<CODE>' </CODE>閺勫墽銇�CODE> lyrics </CODE>閺傚洣娆㈤惃鍕敶鐎瑰箍锟�
+<CODE>' </CODE>缁�缚瀵栨稉瀣桨閻ㄥ嫬鍞寸�锟�<CODE>'  - FileSystemObject.OpenTextFile</CODE>
+<CODE>'  - FileSystemObject.GetFile</CODE>
+<CODE>'  - TextStream.ReadAll</CODE>
+<CODE>'  - TextStream.Close</CODE>
+<CODE>'  - File.OpenAsTextStream</CODE>
+<CODE>'  - TextStream.AtEndOfStream</CODE>
+<CODE>'  - TextStream.ReadLine</CODE>
+<CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
+
+<CODE>Function GetLyrics(FSO)</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>Dim TextStream</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Dim S</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Dim File</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>閺堝顦跨粔宥嗘煙濞夋洖褰查悽銊︽降閹垫挸绱戞稉锟介嚋閺傚洦婀伴弬鍥︽閿涘苯鎷版径姘鳖潚閺傝纭堕弶銉ょ矤閺傚洣娆㈢拠璇插絿閺佺増宓侀妴锟�&nbsp;&nbsp;&nbsp;<CODE>' </CODE>鏉╂瑥鍔归悽銊ょ啊娑撱倗顫掗弬瑙勭《閺夈儲澧﹀锟芥瀮娴犺泛鎷扮拠璇插絿閺傚洣娆㈤敍锟�
+&nbsp;&nbsp;&nbsp;<CODE>Set TextStream = FSO.OpenTextFile(TestFilePath &amp; "\Beatles\OctopusGarden.txt", OpenFileForReading)</CODE></PRE>
+
+
+
+<PRE>&nbsp;&nbsp;&nbsp;<A NAME="closereadfromfile"></A>
+&nbsp;&nbsp;&nbsp;<CODE>S = TextStream.ReadAll &amp; NewLine &amp; NewLine</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>TextStream.Close</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>Set File = FSO.GetFile(TestFilePath &amp; "\Beatles\BathroomWindow.txt")</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Set TextStream = File.OpenAsTextStream(OpenFileForReading)</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Do </CODE>&nbsp;&nbsp;&nbsp;<CODE>While Not TextStream.AtEndOfStream</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>S = S &amp; TextStream.ReadLine &amp; NewLine</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Loop</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>TextStream.Close</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>GetLyrics = S</CODE>
+&nbsp;&nbsp;&nbsp;
+<CODE>End Function</CODE>
+
+<CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
+<CODE>' <span class=cfe><B>BuildTestDirectory</B></span></CODE>
+<CODE>' </CODE>閻╊喚娈戦敍锟紺ODE> </CODE>
+<CODE>' </CODE>閸掓稑缂撴稉锟介嚋閻╊喖缍嶉崚鍡楃湴缂佹挻鐎弶銉с仛閼硷拷CODE> FileSystemObject</CODE>閵嗭拷
+<CODE>' </CODE>娴犮儴绻栭弽椋庢畱濞嗏�绨弶銉ュ灡瀵ゅ搫鍨庣仦鍌滅波閺嬪嫸绱�
+<CODE>' C:\Test</CODE>
+<CODE>' C:\Test\ReadMe.txt</CODE>
+<CODE>' C:\Test\Beatles</CODE>
+<CODE>' C:\Test\Beatles\OctopusGarden.txt</CODE>
+<CODE>' C:\Test\Beatles\BathroomWindow.txt</CODE>
+<CODE>' </CODE>缁�缚瀵栨稉瀣桨閻ㄥ嫬鍞寸�锟�<CODE>'  - FileSystemObject.DriveExists</CODE>
+<CODE>'  - FileSystemObject.FolderExists</CODE>
+<CODE>'  - FileSystemObject.CreateFolder</CODE>
+<CODE>'  - FileSystemObject.CreateTextFile</CODE>
+<CODE>'  - Folders.Add</CODE>
+<CODE>'  - Folder.CreateTextFile</CODE>
+<CODE>'  - TextStream.WriteLine</CODE>
+<CODE>'  - TextStream.Close</CODE>
+<CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
+
+<CODE>Function BuildTestDirectory(FSO)</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>Dim TestFolder</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Dim SubFolders</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Dim SubFolder</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Dim TextStream</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>閹烘帡娅�CODE>(a)</CODE>妞瑰崬濮╅崳銊ょ瑝鐎涙ê婀敍灞惧灗<CODE>(b)</CODE>鐟曚礁鍨卞铏规畱閻╊喖缍嶅鑼病鐎涙ê婀惃鍕剰閸愮偣锟�
+
+&nbsp;&nbsp;&nbsp;<CODE>If Not FSO.DriveExists(TestDrive) Then</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>BuildTestDirectory = False</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>Exit Function</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>End If</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>If FSO.FolderExists(TestFilePath) Then</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>BuildTestDirectory = False</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>Exit Function</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>End If</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>Set TestFolder = FSO.CreateFolder(TestFilePath)</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>Set TextStream = FSO.CreateTextFile(TestFilePath &amp; "\ReadMe.txt")</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>TextStream.WriteLine("My song lyrics collection")</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>TextStream.Close</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>Set SubFolders = TestFolder.SubFolders</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Set SubFolder = SubFolders.Add("Beatles")</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>CreateLyrics SubFolder</CODE>&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<CODE>BuildTestDirectory = True</CODE>
+
+<CODE>End Function</CODE>
+
+<CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
+<CODE>' </CODE><span class=cfe><B>娑撹崵鈻兼惔锟�B></span>
+<CODE>' </CODE>妫ｆ牕鍘涢敍灞界暊閸掓稑缂撴稉锟介嚋<CODE> test </CODE>閻╊喖缍嶉敍灞间簰閸欏﹣绔存禍娑樼摍閺傚洣娆㈡径鐟版嫲閺傚洣娆㈤妴锟紺ODE> </CODE>
+<CODE>' </CODE>閻掕泛鎮楅敍灞界暊鏉烆剙鍋嶉張澶婂彠閸欘垳鏁ょ壕浣烘磸妞瑰崬濮╅崳銊ユ嫲<CODE> test </CODE>閻╊喖缍嶉惃鍕厙娴滄稐淇婇幁顖ょ礉
+<CODE>' </CODE>閺堬拷鎮楅敍灞剧闂勶拷CODE> test </CODE>閻╊喖缍嶉崣濠傚従閹碉拷婀侀崘鍛啇閵嗭拷
+<CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
+
+<CODE>Sub Main</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>Dim FSO</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>鐠佸墽鐝涢崗銊ョ湰閸欐﹢鍣洪妴锟�&nbsp;&nbsp;&nbsp;<CODE>TabStop = Chr(9)</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>NewLine = Chr(10)</CODE></PRE>
+
+
+
+<PRE>&nbsp;&nbsp;&nbsp;<A NAME="folderinfo"></A>
+&nbsp;&nbsp;&nbsp;<CODE>Set FSO = CreateObject("Scripting.FileSystemObject")</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>If Not BuildTestDirectory(FSO) Then </CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>Print "Test directory already exists or cannot be created.  Cannot continue."</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>Exit Sub</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>End If</CODE>
+
+&nbsp;&nbsp;&nbsp;<CODE>Print GenerateDriveInformation(FSO) &amp; NewLine &amp; NewLine</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Print GenerateTestInformation(FSO) &amp; NewLine &amp; NewLine</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Print GetLyrics(FSO) &amp; NewLine &amp; NewLine</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>DeleteTestDirectory(FSO)</CODE>
+
+<CODE>End Sub</CODE></PRE>
+<!--Copyright_START-->
+<DIV CLASS="footer">
+<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation 閻楀牊娼堥幍锟芥箒閵嗗倷绻氶悾娆愬閺堝娼堥崚鈹匡拷娴ｈ法鏁ょ憴鍕暰閵嗭拷/a><br>
+</DIV> <!--Copyright_END-->
+
+</BODY>
+</HTML>

@@ -1,0 +1,313 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=gb2312">
+<TITLE>婢跺嫮鎮婇弬鍥︽</TITLE>
+<!--CSS_START-->
+<style>@import url(../html-vss/msdnie4a.css);</style>
+<link disabled rel="stylesheet" href="../html-vss/msdn_ie3.css">
+<!--CSS_END-->
+</HEAD>
+<BODY>
+
+
+<!--Start Head-->
+<TABLE class="banner" width="100%" CELLSPACING=0>
+<TR>
+<TD class="bannerleft" nowrap>JScript&nbsp;</TD>
+<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">鐠囶叀鈻堥崣鍌濓拷</a></TD>
+</TR>
+</TABLE>
+<HR>
+<!--End Head-->
+
+<H1><A NAME="sgworkingwithfiles"></A>婢跺嫮鎮婇弬鍥︽</H1>
+
+<P>閺堝琚辩粔宥勫瘜鐟曚胶娈戦弬鍥︽婢跺嫮鎮婄猾璇茬�閿涳拷
+
+<UL type=disc>
+	<LI>閸掓稑缂撻妴浣瑰潑閸旂姵鍨ㄩ崚鐘绘珟閺佺増宓侀敍灞间簰閸欏﹨顕伴崣鏍ㄦ瀮娴狅拷</li>
+
+	<LI>缁夎濮╅妴浣割槻閸掕泛鎷伴崚鐘绘珟閺傚洣娆�</li>
+</UL>
+
+<H2>閸掓稑缂撻弬鍥︽</H2>
+
+<P>閸掓稑缂撶粚鐑樻瀮閺堫剚鏋冩禒璁圭礄閺堝妞傜悮顐㈠建閸嬫埃锟介弬鍥ㄦ拱濞翠讲锟介敍澶嬫箒娑撳顫掗弬瑙勭《閵嗭拷/P>
+
+<P>缁楊兛绔寸粔宥嗘煙濞夋洘妲搁悽锟�B>CreateTextFile</B> 閺傝纭堕妴锟芥稉瀣桨閻ㄥ嫮銇氭笟瀣仛閼煎啩绨￠崷锟絍BScript 娑擃厼顩ф担鏇犳暏鏉╂瑧顫掗弬瑙勭《閺夈儱鍨卞鐑樻瀮閺堫剚鏋冩禒璁圭窗</P>
+
+<PRE><CODE>Dim fso, f1
+Set fso = CreateObject("Scripting.FileSystemObject")
+Set f1 = fso.CreateTextFile("c:\testfile.txt", True)</CODE></PRE>
+
+<P>鐟曚礁婀�JScript 娑擃厾鏁ゆ潻娆戭潚閺傝纭堕敍灞藉灟娴ｈ法鏁ゆ稉瀣桨閻ㄥ嫪鍞惍渚婄窗</P>
+
+<PRE><CODE>var fso, f1;
+fso = new ActiveXObject("Scripting.FileSystemObject");
+f1 = fso.CreateTextFile("c:\\testfile.txt", true);</CODE></PRE>
+
+<P>閸掓稑缂撻弬鍥ㄦ拱閺傚洣娆㈤惃鍕儑娴滃瞼顫掗弬瑙勭《閺勵垽绱濇担璺ㄦ暏 <B>FileSystemObject</B> 鐎电钖勯惃锟�B>OpenTextFile</B> 閺傝纭堕敍灞借嫙鐠佸墽鐤�<B>ForWriting</B> 閺嶅洤绻旈妴鍌氭躬 VBScript 娑擃叏绱濇禒锝囩垳鐏忓崬鍎氭稉瀣桨閻ㄥ嫮銇氭笟瀣╃閺嶅嚖绱�</P>
+
+<PRE><CODE>Dim fso, ts
+Const ForWriting = 2
+Set fso = CreateObject("Scripting. FileSystemObject")
+Set ts = fso.OpenTextFile("c:\test.txt", ForWriting, True)</CODE></PRE>
+
+<P>鐟曚礁婀�JScript 娑擃厺濞囬悽銊ㄧ箹缁夊秵鏌熷▔鏇熸降閸掓稑缂撻弬鍥ㄦ拱閺傚洣娆㈤敍灞藉灟娴ｈ法鏁ゆ稉瀣桨閻ㄥ嫪鍞惍渚婄窗</P>
+
+<PRE><CODE>var fso, ts;
+var ForWriting= 2;
+fso = new ActiveXObject("Scripting.FileSystemObject");
+ts = fso.OpenTextFile("c:\\test.txt", ForWriting, true);</CODE></PRE>
+
+<P>閸掓稑缂撻弬鍥ㄦ拱閺傚洣娆㈤惃鍕儑娑撳顫掗弬瑙勭《閺勵垽绱濇担璺ㄦ暏 <B>OpenAsTextStream</B> 閺傝纭堕敍灞借嫙鐠佸墽鐤�<B>ForWriting</B> 閺嶅洤绻旈妴鍌濐洣娴ｈ法鏁ゆ潻娆戭潚閺傝纭堕敍灞芥躬 VBScript 娑擃厺濞囬悽銊ょ瑓闂堛垻娈戞禒锝囩垳閿涳拷/P>
+
+<PRE><CODE>Dim fso, f1, ts
+Const ForWriting = 2
+Set fso = CreateObject("Scripting.FileSystemObject")
+fso.CreateTextFile ("c:\test1.txt")
+Set f1 = fso.GetFile("c:\test1.txt")
+Set ts = f1.OpenAsTextStream(ForWriting, True)</CODE></PRE>
+
+<P>閸︼拷JScript 娑擃叏绱濋崚娆庡▏閻€劋绗呴棃銏€仛娓氬鑵戦惃鍕敩閻緤绱�/P>
+
+<PRE><CODE>var fso, f1, ts;
+var ForWriting = 2;
+fso = new ActiveXObject("Scripting.FileSystemObject");
+fso.CreateTextFile ("c:\\test1.txt");
+f1 = fso.GetFile("c:\\test1.txt");
+ts = f1.OpenAsTextStream(ForWriting, true);</CODE></PRE>
+
+<H2>濞ｈ濮為弫鐗堝祦閸掔増鏋冩禒鏈佃厬</H2>
+
+<P>娑擄拷妫崚娑樼紦娴滃棙鏋冮張顒佹瀮娴犺绱濇担璺ㄦ暏娑撳娼伴惃鍕瑏娑擃亝顒炴銈呮倻閺傚洣娆㈠ǎ璇插閺佺増宓侀敍锟�P>
+
+<P>閹垫挸绱戦弬鍥ㄦ拱閺傚洣娆㈤妴锟�/P>
+
+<P>閸愭瑥鍙嗛弫鐗堝祦閵嗭拷</P>
+
+<P>閸忔娊妫撮弬鍥︽閵嗭拷</P>
+
+<P>鐟曚焦澧﹀锟藉箛閺堝娈戦弬鍥︽閿涘苯鍨担璺ㄦ暏 FileSystemObject 鐎电钖勯惃锟絆penTextFile 閺傝纭堕幋锟紽ile 鐎电钖勯惃锟絆penAsTextStream 閺傝纭堕妴锟�P>
+
+<P>鐟曚礁鍟撻弫鐗堝祦閸掔増澧﹀锟芥畱閺傚洦婀伴弬鍥︽閿涘苯鍨弽瑙勫祦娑撳銆冮幍锟藉牚娴犺濮熸担璺ㄦ暏 TextStream 鐎电钖勯惃锟絎rite閵嗕箘riteLine 閹达拷WriteBlankLines 閺傝纭堕妴锟�P>
+
+<TABLE border=1 cellspacing=0 cols=2 frame=box rules=all>
+
+<TR VALIGN="top">
+<TH width=72%>娴犺濮�/TH>
+<TH width=28%>閺傝纭�/TH>
+</TR>
+
+<TR VALIGN="top">
+<TD width=72%>閸氭垶澧﹀锟芥畱閺傚洦婀伴弬鍥︽閸愭瑦鏆熼幑顕嗙礉娑撳秶鏁ら崥搴ｇ敾娑擄拷閲滈弬鎷岊攽鐎涙顑侀妴锟�TD>
+<TD width=28%>Write</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=72%>閸氭垶澧﹀锟芥畱閺傚洦婀伴弬鍥︽閸愭瑦鏆熼幑顕嗙礉閸氬海鐢绘稉锟介嚋閺傛媽顢戠�妤冾儊閵嗭拷/TD>
+<TD width=28%>WriteLine</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=72%>閸氭垶澧﹀锟芥畱閺傚洦婀伴弬鍥︽閸愭瑤绔存稉顏呭灗婢舵矮閲滅粚铏规鐞涘被锟�/TD>
+<TD width=28%>WriteBlankLines</TD>
+</TR>
+</TABLE><BR>
+
+<P>鐟曚礁鍙ч梻顓濈娑擃亝澧﹀锟芥畱閺傚洣娆㈤敍灞藉灟娴ｈ法鏁�<B>TextStream</B> 鐎电钖勯惃锟�B>Close</B> 閺傝纭堕妴锟�P>
+
+<P><B>濞夈劍鍓�nbsp;&nbsp;</B>閺傛媽顢戠�妤冾儊閸栧懎鎯堟稉锟介嚋閹存牕鍤戞稉顏勭摟缁楋讣绱欓崣鏍у枀娴滃孩鎼锋担婊呴兇缂佺噦绱氶敍灞间簰閹跺﹤鍘滈弽鍥┬╅崝銊ュ煂娑撳绔寸悰宀�畱瀵拷顫愭担宥囩枂閿涘牆娲栨潪锟介幑銏ｎ攽閿涘锟藉▔銊﹀壈閺屾劒绨虹�妤冾儊娑撳弶婀亸鎯у讲閼宠棄鍑＄紒蹇旀箒鏉╂瑤閲滈棃鐐村ⅵ閸楁澘鐡х粭锔跨啊閵嗭拷/P>
+
+<P>娑撳娼伴惃锟絍BScript 娓氬鐡欑粈楦垮瘱娴滃棗顩ф担鏇熷ⅵ瀵拷鏋冩禒璁圭礉閸滃苯鎮撻弮鏈靛▏閻€劋绗佺粔宥呭晸閺傝纭堕弶銉ユ倻閺傚洣娆㈠ǎ璇插閺佺増宓侀敍宀�姧閸氬骸鍙ч梻顓熸瀮娴犺绱�/P>
+
+<PRE><CODE>Sub CreateFile()
+</CODE>&nbsp;&nbsp;&nbsp;<CODE>Dim fso, tf</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;Set fso = CreateObject("Scripting.FileSystemObject")</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;Set tf = fso.CreateTextFile("c:\testfile.txt", True)</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>閸愭瑤绔寸悰宀嬬礉楠炴湹绗栫敮锔芥箒閺傛媽顢戠�妤冾儊閵嗭拷
+&nbsp;&nbsp;&nbsp;<CODE>tf.WriteLine("Testing 1, 2, 3.") </CODE>
+&nbsp;&nbsp;&nbsp;<CODE>'</CODE>閸氭垶鏋冩禒璺哄晸娑撳閲滈弬鎷岊攽鐎涙顑侀妴锟絥bsp;&nbsp;&nbsp;<CODE> &nbsp;&nbsp;&nbsp; </CODE>
+<CODE>&nbsp;&nbsp;&nbsp;tf.WriteBlankLines(3) </CODE>
+<CODE>&nbsp;&nbsp;&nbsp;'</CODE>閸愭瑤绔寸悰灞伙拷
+&nbsp;&nbsp;&nbsp;<CODE>tf.Write ("This is a test.") </CODE>
+<CODE>&nbsp;&nbsp;&nbsp;tf.Close</CODE>
+<CODE>End Sub</CODE></PRE>
+
+<P>鏉╂瑤閲滅粈杞扮伐缁�缚瀵栨禍鍡楁躬 JScript 娑擃厼顩ф担鏇氬▏閻€劏绻栨稉澶夐嚋閺傝纭堕敍锟�P>
+
+<PRE><CODE>function CreateFile()
+{
+</CODE>&nbsp;&nbsp;&nbsp;<CODE>var fso, tf;</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>fso = new ActiveXObject("Scripting.FileSystemObject");</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>tf = fso.CreateTextFile("c:\\testfile.txt", true);</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>// </CODE>閸愭瑤绔寸悰宀嬬礉楠炴湹绗栫敮锔芥箒閺傛媽顢戠�妤冾儊閵嗭拷
+&nbsp;&nbsp;&nbsp;<CODE>tf.WriteLine("Testing 1, 2, 3.") ;</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>// </CODE>閸氭垶鏋冩禒璺哄晸娑撳閲滈弬鎷岊攽鐎涙顑侀妴锟紺ODE>  </CODE>
+&nbsp;&nbsp;&nbsp;<CODE>tf.WriteBlankLines(3) ;</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>// </CODE>閸愭瑤绔寸悰灞伙拷
+&nbsp;&nbsp;&nbsp;<CODE>tf.Write ("This is a test.");</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>tf.Close();</CODE>
+<CODE>}</CODE></PRE>
+
+<H2>鐠囪褰囬弬鍥︽</H2>
+
+<P>鐟曚椒绮犻弬鍥ㄦ拱閺傚洣娆㈢拠璇插絿閺佺増宓侀敍灞藉灟娴ｈ法鏁�<B>TextStream</B> 鐎电钖勯惃锟�B>Read</B>閵嗭拷B>ReadLine</B> 閹达拷<B>ReadAll</B> 閺傝纭堕妴鍌欑瑓鐞涖劍寮挎潻棰佺啊娑撳秴鎮撻惃鍕崲閸斺�绨叉担璺ㄦ暏閸濐亞顫掗弬瑙勭《閵嗭拷/P>
+
+<TABLE border=1 cellspacing=0 cols=2 frame=box rules=all>
+
+<TR VALIGN="top">
+<TH width=78%>娴犺濮�/TH>
+<TH width=22%>閺傝纭�/TH>
+</TR>
+
+<TR VALIGN="top">
+<TD width=78%>娴犲孩鏋冩禒鎯邦嚢閸欐牗瀵氱�姘殶闁插繒娈戠�妤冾儊閵嗭拷/TD>
+<TD width=22%>Read</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=78%>鐠囪褰囨稉锟芥殻鐞涘矉绱欐稉锟芥纯閸掗绲炬稉宥呭瘶閹奉剚鏌婄悰灞界摟缁楋讣绱氶妴锟�TD>
+<TD width=22%>ReadLine</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=78%>鐠囪褰囬弬鍥ㄦ拱閺傚洣娆㈤惃鍕殻娑擃亜鍞寸�骞匡拷</TD>
+<TD width=22%>ReadAll</TD>
+</TR>
+</TABLE><BR>
+
+<P>婵″倹鐏夋担璺ㄦ暏 <B>Read</B> 閹达拷<B>ReadLine</B> 閺傝纭堕敍灞借嫙娑撴梹鍏傜捄瀹犵箖閺佺増宓侀惃鍕濞堝﹪鍎撮崚鍡礉閸掓瑤濞囬悽锟�B>Skip</B> 閹达拷<B>SkipLine</B> 閺傝纭堕妴淇絜ad 閺傝纭堕惃鍕波閺嬫粍鏋冮張顒�摠閸︺劋绔存稉顏勭摟缁楋缚瑕嗘稉顓ㄧ礉鐠囥儱鐡х粭锔胯閸欘垯浜掗弰鍓с仛閸︺劋绔存稉顏呭付娴犳湹鑵戦敍灞肩瘍閸欘垯浜掗悽銊ョ摟缁楋缚瑕嗛崙鑺ユ殶閿涘牆顩�<B>Left</B>閵嗭拷B>Right</B> 閸滐拷<B>Mid</B>閿涘娼甸崚鍡樼�閿涘矁绻涢幒銉х搼缁涘锟�/P>
+
+<P>娑撳娼伴惃锟絍BScript 缁�桨绶ョ粈楦垮瘱娴滃棗顩ф担鏇熷ⅵ瀵拷鏋冩禒璁圭礉閸滃苯顩ф担鏇炲晸閺佺増宓侀崚鐗堟瀮娴犳湹鑵戦獮鏈电矤閺傚洣娆㈢拠璇插絿閺佺増宓侀敍锟�P>
+
+<PRE><CODE>Sub ReadFiles
+</CODE>&nbsp;&nbsp;&nbsp;<CODE>Dim fso, f1, ts, s</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Const ForReading = 1</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Set fso = CreateObject("Scripting.FileSystemObject")</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Set f1 = fso.CreateTextFile("c:\testfile.txt", True)</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>閸愭瑤绔寸悰灞伙拷
+&nbsp;&nbsp;&nbsp;<CODE>Response.Write "Writing file &lt;br&gt;"</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>f1.WriteLine "Hello World"</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>f1.WriteBlankLines(1)</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>f1.Close</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>鐠囪褰囬弬鍥︽閻ㄥ嫬鍞寸�骞匡拷
+&nbsp;&nbsp;&nbsp;<CODE>Response.Write "Reading file &lt;br&gt;"</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Set ts = fso.OpenTextFile("c:\testfile.txt", ForReading)</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>s = ts.ReadLine</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Response.Write "File contents = '" &amp; s &amp; "'"</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>ts.Close</CODE>
+<CODE>End Sub</CODE></PRE>
+
+<P>娑撳娼伴惃鍕敩閻胶銇氶懠鍐х啊閸︼拷JScript 娑擃厼浠涢崥灞剧壉閻ㄥ嫪绨ㄩ敍锟�P>
+
+<PRE><CODE>function ReadFiles()
+{
+</CODE>&nbsp;&nbsp;&nbsp;<CODE>var fso, f1, ts, s;</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>var ForReading = 1;</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>fso = new ActiveXObject("Scripting.FileSystemObject");</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>f1 = fso.CreateTextFile("c:\\testfile.txt", true);</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>// </CODE>閸愭瑤绔寸悰灞伙拷
+&nbsp;&nbsp;&nbsp;<CODE>Response.Write("Writing file &lt;br&gt;");</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>f1.WriteLine("Hello World");</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>f1.WriteBlankLines(1);</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>f1.Close();</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>// </CODE>鐠囪褰囬弬鍥︽閻ㄥ嫬鍞寸�骞匡拷
+&nbsp;&nbsp;&nbsp;<CODE>Response.Write("Reading file &lt;br&gt;");</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>ts = fso.OpenTextFile("c:\\testfile.txt", ForReading);</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>s = ts.ReadLine();</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Response.Write("File contents = '" + s + "'");</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>ts.Close();</CODE>
+<CODE>}</CODE></PRE>
+
+<H2>缁夎濮╅妴浣割槻閸掕泛鎷伴崚鐘绘珟閺傚洣娆�/H2>
+
+<P>FSO 鐎电钖勫Ο鈥崇础閸氬嫭婀佹稉銈囶潚閺傝纭剁粔璇插З閵嗕礁顦查崚璺烘嫲閸掔娀娅庨弬鍥︽閿涘苯顩ф稉瀣�閹碉拷鍫妴锟�P>
+
+<TABLE border=1 cellspacing=0 cols=2 frame=box rules=all>
+
+<TR VALIGN="top">
+<TH width=18%>娴犺濮�/TH>
+<TH width=82%>閺傝纭�/TH>
+</TR>
+
+<TR VALIGN="top">
+<TD width=18%>缁夎濮╅弬鍥︽</TD>
+<TD width=82%>File.Move 閹达拷FileSystemObject.MoveFile</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=18%>婢跺秴鍩楅弬鍥︽</TD>
+<TD width=82%>File.Copy 閹达拷FileSystemObject.CopyFile</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=18%>閸掔娀娅庨弬鍥︽</TD>
+<TD width=82%>File.Delete 閹达拷FileSystemObject.DeleteFile</TD>
+</TR>
+</TABLE><BR>
+
+<P>娑撳娼伴惃锟絍BScript 缁�桨绶ラ敍灞芥躬妞瑰崬濮╅崳锟紺 閻ㄥ嫭鐗撮惄顔肩秿娑擃厼鍨卞杞扮娑擃亝鏋冮張顒佹瀮娴犺绱濋崥鎴濆従娑擃厼鍟撴稉锟界昂娣団剝浼呴敍宀�姧閸氬孩濡哥�鍐╅崝銊ュ煂 \tmp 閻╊喖缍嶆稉顓ㄧ礉楠炶泛婀�\temp 娑擃厼浠涙稉锟介嚋婢跺洣鍞ら敍灞炬付閸氬孩濡哥�鍐ф粦娴犲簼琚辨稉顏嗘窗瑜版洑鑵戦崚鐘冲竴閵嗭拷/P>
+
+<P>鐟曚浇绻嶇悰灞肩瑓闂堛垻娈戠粈杞扮伐閿涘矂娓剁憰浣稿帥閸︺劑鈹嶉崝銊ユ珤 C 閻ㄥ嫭鐗撮惄顔肩秿娑擃厼鍨卞锟絓tmp 閸滐拷\temp 閻╊喖缍嶉敍锟�P>
+
+<PRE><CODE>Sub ManipFiles
+</CODE>&nbsp;&nbsp;&nbsp;<CODE>Dim fso, f1, f2, s</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;Set fso = CreateObject("Scripting.FileSystemObject")</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;Set f1 = fso.CreateTextFile("c:\testfile.txt", True)</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;Response.Write "Writing file &lt;br&gt;"</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;'</CODE>閸愭瑤绔寸悰灞伙拷
+&nbsp;&nbsp;&nbsp;<CODE>f1.Write ("This is a test.")</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>'</CODE>閸忔娊妫撮弬鍥︽閵嗭拷
+&nbsp;&nbsp;&nbsp;<CODE>f1.Close</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;Response.Write "Moving file to c:\tmp &lt;br&gt;"</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>'</CODE>閼惧嘲褰�CODE> C </CODE>閻ㄥ嫭鐗撮惄顔肩秿<CODE>(C:\)</CODE>娑擃厾娈戦弬鍥︽閻ㄥ嫬褰為弻鍕╋拷
+&nbsp;&nbsp;&nbsp;<CODE>Set f2 = fso.GetFile("c:\testfile.txt")</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>'</CODE>閹跺﹥鏋冩禒鍓佇╅崝銊ュ煂<CODE> \tmp </CODE>閻╊喖缍嶉妴锟�&nbsp;&nbsp;&nbsp;<CODE>f2.Move ("c:\tmp\testfile.txt")</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;Response.Write "Copying file to c:\temp &lt;br&gt;"</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;'</CODE>閹跺﹥鏋冩禒璺侯槻閸掕泛鍩�CODE> \temp </CODE>閻╊喖缍嶉妴锟�&nbsp;&nbsp;&nbsp;<CODE>f2.Copy ("c:\temp\testfile.txt")</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;Response.Write "Deleting files &lt;br&gt;"</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>'</CODE>閼惧嘲绶遍弬鍥︽瑜版挸澧犳担宥囩枂閻ㄥ嫬褰為弻鍕╋拷
+&nbsp;&nbsp;&nbsp;<CODE>Set f2 = fso.GetFile("c:\tmp\testfile.txt")</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;Set f3 = fso.GetFile("c:\temp\testfile.txt")</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>'</CODE>閸掔娀娅庨弬鍥︽閵嗭拷
+&nbsp;&nbsp;&nbsp;<CODE>f2.Delete</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;f3.Delete</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;Response.Write "All done!"</CODE>
+<CODE>End Sub</CODE></PRE>
+
+<P>娑撳娼伴惃鍕敩閻胶銇氶懠鍐х啊閸︼拷JScript 娑擃厼浠涢崥灞剧壉閻ㄥ嫪绨ㄩ敍锟�P>
+
+<PRE><CODE>function ManipFiles()
+{
+</CODE>&nbsp;&nbsp;&nbsp;<CODE>var fso, f1, f2, s;</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;fso = new ActiveXObject("Scripting.FileSystemObject");</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;f1 = fso.CreateTextFile("c:\\testfile.txt", true);</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;Response.Write("Writing file &lt;br&gt;");</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;// </CODE>閸愭瑤绔寸悰灞伙拷
+&nbsp;&nbsp;&nbsp;<CODE>f1.Write("This is a test.");</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>// </CODE>閸忔娊妫撮弬鍥︽閵嗭拷
+&nbsp;&nbsp;&nbsp;<CODE>f1.Close();</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;Response.Write("Moving file to c:\\tmp &lt;br&gt;");</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>// </CODE>閼惧嘲褰�CODE> C </CODE>閻ㄥ嫭鐗撮惄顔肩秿<CODE>(C:\)</CODE>娑擃厾娈戦弬鍥︽閻ㄥ嫬褰為弻鍕╋拷
+&nbsp;&nbsp;&nbsp;<CODE>f2 = fso.GetFile("c:\\testfile.txt");</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>// </CODE>閹跺﹥鏋冩禒鍓佇╅崝銊ュ煂<CODE> \tmp </CODE>閻╊喖缍嶉妴锟�&nbsp;&nbsp;&nbsp;<CODE>f2.Move ("c:\\tmp\\testfile.txt");</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;Response.Write("Copying file to c:\\temp &lt;br&gt;");</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;// </CODE>閹跺﹥鏋冩禒璺侯槻閸掕泛鍩�CODE> \temp </CODE>閻╊喖缍嶉妴锟�&nbsp;&nbsp;&nbsp;<CODE>f2.Copy ("c:\\temp\\testfile.txt");</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;Response.Write("Deleting files &lt;br&gt;");</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>// </CODE>閼惧嘲绶遍弬鍥︽瑜版挸澧犳担宥囩枂閻ㄥ嫬褰為弻鍕╋拷
+&nbsp;&nbsp;&nbsp;<CODE>f2 = fso.GetFile("c:\\tmp\\testfile.txt");</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;f3 = fso.GetFile("c:\\temp\\testfile.txt");</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>// </CODE>閸掔娀娅庨弬鍥︽閵嗭拷
+&nbsp;&nbsp;&nbsp;<CODE>f2.Delete();</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;f3.Delete();</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;Response.Write("All done!");</CODE>
+}</PRE>
+<!--Copyright_START-->
+<DIV CLASS="footer">
+<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation 閻楀牊娼堥幍锟芥箒閵嗗倷绻氶悾娆愬閺堝娼堥崚鈹匡拷娴ｈ法鏁ょ憴鍕暰閵嗭拷/a><br>
+</DIV> <!--Copyright_END-->
+
+</BODY>
+</HTML>
