@@ -1,5 +1,6 @@
 /**
  * 修改文件编码格式，例如：GBK转UTF8
+ * 支持多级目录
  * @param {String} [root_path] [需要进行转码的文件路径]
  * @param {Array}  [file_type] [需要进行转码的文件格式，比如html文件]
  * @param {String} [from_code] [文件的编码]

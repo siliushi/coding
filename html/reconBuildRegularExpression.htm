@@ -2,7 +2,7 @@
 <HTML>
 <HEAD>
 <META HTTP-EQUIV="Content-Type" Content="text/html; charset=gb2312">
-<TITLE>瀵よ櫣鐝涘锝呭灟鐞涖劏鎻锟�TITLE>
+<TITLE>建立正则表达式</TITLE>
 <!--CSS_START-->
 <style>@import url(../html-vss/msdnie4a.css);</style>
 <link disabled rel="stylesheet" href="../html-vss/msdn_ie3.css">
@@ -15,30 +15,30 @@
 <TABLE class="banner" width="100%" CELLSPACING=0>
 <TR>
 <TD class="bannerleft" nowrap>JScript&nbsp;</TD>
-<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">鐠囶叀鈻堥崣鍌濓拷</a></TD>
+<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">语言参考</a></TD>
 </TR>
 </TABLE>
 <HR>
 <!--End Head-->
 
-<H2><A NAME="reconbuildregularexpression"></A>瀵よ櫣鐝涘锝呭灟鐞涖劏鎻锟�H2>
+<H2><A NAME="reconbuildregularexpression"></A>建立正则表达式</H2>
 
-<P>閺嬪嫰锟藉锝呭灟鐞涖劏鎻蹇曟畱閺傝纭堕崪灞藉灡瀵ょ儤鏆熺�锕併�鏉堟儳绱￠惃鍕煙濞夋洑绔撮弽鏋拷娑旂喎姘ㄩ弰顖滄暏婢舵氨顫掗崗鍐ㄧ摟缁楋缚绗岄幙宥勭稊缁楋箑鐨㈢亸蹇曟畱鐞涖劏鎻蹇曠波閸氬牆婀稉锟芥崳閺夈儱鍨卞鐑樻纯婢堆呮畱鐞涖劏鎻蹇嬶拷 </P>
+<P>构造正则表达式的方法和创建数学表达式的方法一样。也就是用多种元字符与操作符将小的表达式结合在一起来创建更大的表达式。 </P>
 
-<P>閸欘垯浜掗柅姘崇箖閸︺劋绔寸�鐟板瀻闂呮梻顑佹稊瀣？閺�儳鍙嗙悰銊ㄦ彧瀵繑膩瀵繒娈戦崥鍕潚缂佸嫪娆㈤弶銉︾�闁姳绔存稉顏咁劀閸掓瑨銆冩潏鎯х础閵嗗倸顕�JScript 閼板矁鈻堥敍灞藉瀻闂呮梻顑佹稉杞扮鐎佃顒滈弬婊勬浆 (/) 鐎涙顑侀妴鍌欑伐婵″偊绱�/P>
+<P>可以通过在一对分隔符之间放入表达式模式的各种组件来构造一个正则表达式。对 JScript 而言，分隔符为一对正斜杠 (/) 字符。例如：</P>
 
 <PRE><CODE>/<I>expression</I>/</CODE></PRE>
 
-<P>鐎碉拷VBScript 閼板矁鈻堥敍灞藉灟闁插洨鏁ゆ稉锟筋嚠瀵洖褰�("") 閺夈儳鈥樼�姘劀閸掓瑨銆冩潏鎯х础閻ㄥ嫯绔熼悾灞伙拷娓氬顩ч敍锟�P>
+<P>对 VBScript 而言，则采用一对引号 ("") 来确定正则表达式的边界。例如：</P>
 
 <PRE><CODE>"<I>expression</I>"</CODE></PRE>
 
-<P>閸︺劋绗傞棃銏″缁�櫣娈戞稉銈勯嚋缁�桨绶ユ稉顓ㄧ礉濮濓絽鍨悰銊ㄦ彧瀵繑膩瀵拷(<I>expression</I>) 閸у洤鐡ㄩ崒銊ユ躬<B>RegExp</B> 鐎电钖勯惃锟紹>Pattern</B> 鐏炵偞锟芥稉顓滐拷</P>
+<P>在上面所示的两个示例中，正则表达式模式 (<I>expression</I>) 均存储在<B>RegExp</B> 对象的<B>Pattern</B> 属性中。</P>
 
-<P>濮濓絽鍨悰銊ㄦ彧瀵繒娈戠紒鍕閸欘垯浜掗弰顖氬礋娑擃亞娈戠�妤冾儊閵嗕礁鐡х粭锕傛肠閸氬牄锟界�妤冾儊閼煎啫娲块妴浣哥摟缁楋箓妫块惃鍕拷閹封晜鍨ㄩ懓鍛閺堝绻栨禍娑氱矋娴犲墎娈戞禒缁樺壈缂佸嫬鎮庨妴锟�P>
+<P>正则表达式的组件可以是单个的字符、字符集合、字符范围、字符间的选择或者所有这些组件的任意组合。</P>
 <!--Copyright_START-->
 <DIV CLASS="footer">
-<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation 閻楀牊娼堥幍锟芥箒閵嗗倷绻氶悾娆愬閺堝娼堥崚鈹匡拷娴ｈ法鏁ょ憴鍕暰閵嗭拷/a><br>
+<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation 版权所有。保留所有权利。使用规定。</a><br>
 </DIV> <!--Copyright_END-->
 
 </BODY>

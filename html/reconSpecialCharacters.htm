@@ -2,7 +2,7 @@
 <HTML>
 <HEAD>
 <META HTTP-EQUIV="Content-Type" Content="text/html; charset=gb2312">
-<TITLE>閻楄鐣╃�妤冾儊</TITLE>
+<TITLE>特殊字符</TITLE>
 <!--CSS_START-->
 <style>@import url(../html-vss/msdnie4a.css);</style>
 <link disabled rel="stylesheet" href="../html-vss/msdn_ie3.css">
@@ -15,81 +15,81 @@
 <TABLE class="banner" width="100%" CELLSPACING=0>
 <TR>
 <TD class="bannerleft" nowrap>JScript&nbsp;</TD>
-<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">鐠囶叀鈻堥崣鍌濓拷</a></TD>
+<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">语言参考</a></TD>
 </TR>
 </TABLE>
 <HR>
 <!--End Head-->
 
-<H2><A NAME="reconspecialcharacters"></A>閻楄鐣╃�妤冾儊</H2>
+<H2><A NAME="reconspecialcharacters"></A>特殊字符</H2>
 
-<P>閺堝绗夌亸鎴濆帗鐎涙顑侀崷銊ㄧ槸閸ユ儳顕崗鎯扮箻鐞涘苯灏柊宥嗘闂囷拷顩︽潻娑滎攽閻楄鐣╅惃鍕槱閻炲棎锟界憰浣稿爱闁板秷绻栨禍娑氬濞堝﹤鐡х粭锔肩礉韫囧懘銆忔＃鏍у帥鐏忓棜绻栨禍娑樼摟缁楋箒娴嗘稊澶涚礉娑旂喎姘ㄩ弰顖氭躬閸撳秹娼版担璺ㄦ暏娑擄拷閲滈崣宥嗘灘閺夛拷(\)閵嗗倷绗呯悰銊х舶閸戣桨绨℃潻娆庣昂閻楄鐣╃�妤冾儊閸欏﹤鍙鹃崥顐＄疅閿涳拷/P>
+<P>有不少元字符在试图对其进行匹配时需要进行特殊的处理。要匹配这些特殊字符，必须首先将这些字符转义，也就是在前面使用一个反斜杠 (\)。下表给出了这些特殊字符及其含义：</P>
 
 <TABLE border=1 cellspacing=0 cols=2 frame=box rules=all>
 
 <TR VALIGN="top">
-<TH width=16%>閻楄鐣╃�妤冾儊</TH>
-<TH width=84%>鐠囧瓨妲�/TH>
+<TH width=16%>特殊字符</TH>
+<TH width=84%>说明</TH>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>$</TD>
-<TD width=84%>閸栧綊鍘ゆ潏鎾冲弳鐎涙顑佹稉鑼畱缂佹挸鐔担宥囩枂閵嗗倸顩ч弸婊嗩啎缂冾喕绨�<B>RegExp</B> 鐎电钖勯惃锟�B>Multiline</B> 鐏炵偞锟介敍灞藉灟 $ 娑旂喎灏柊锟�\n' 閹达拷'\r'閵嗗倽顩﹂崠褰掑帳 $ 鐎涙顑侀張顒冮煩閿涘矁顕担璺ㄦ暏 \$閵嗭拷/TD>
+<TD width=84%>匹配输入字符串的结尾位置。如果设置了 <B>RegExp</B> 对象的 <B>Multiline</B> 属性，则 $ 也匹配 '\n' 或 '\r'。要匹配 $ 字符本身，请使用 \$。</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>( )</TD>
-<TD width=84%>閺嶅洩顔囨稉锟介嚋鐎涙劘銆冩潏鎯х础閻ㄥ嫬绱戞慨瀣嫲缂佹挻娼担宥囩枂閵嗗倸鐡欑悰銊ㄦ彧瀵繐褰叉禒銉ㄥ箯閸欐牔绶垫禒銉ユ倵娴ｈ法鏁ら妴鍌濐洣閸栧綊鍘ゆ潻娆庣昂鐎涙顑侀敍宀冾嚞娴ｈ法鏁�\( 閸滐拷\)閵嗭拷/TD>
+<TD width=84%>标记一个子表达式的开始和结束位置。子表达式可以获取供以后使用。要匹配这些字符，请使用 \( 和 \)。</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%><B>*</B></TD>
-<TD width=84%>閸栧綊鍘ら崜宥夋桨閻ㄥ嫬鐡欑悰銊ㄦ彧瀵繘娴傚▎鈩冨灗婢舵碍顐奸妴鍌濐洣閸栧綊鍘�* 鐎涙顑侀敍宀冾嚞娴ｈ法鏁�\*閵嗭拷/TD>
+<TD width=84%>匹配前面的子表达式零次或多次。要匹配 * 字符，请使用 \*。</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%><B>+</B></TD>
-<TD width=84%>閸栧綊鍘ら崜宥夋桨閻ㄥ嫬鐡欑悰銊ㄦ彧瀵繋绔村▎鈩冨灗婢舵碍顐奸妴鍌濐洣閸栧綊鍘�+ 鐎涙顑侀敍宀冾嚞娴ｈ法鏁�\+閵嗭拷/TD>
+<TD width=84%>匹配前面的子表达式一次或多次。要匹配 + 字符，请使用 \+。</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%><B>.</B></TD>
-<TD width=84%>閸栧綊鍘ら梽銈嗗床鐞涘瞼顑�\n娑斿顦婚惃鍕崲娴ｆ洖宕熺�妤冾儊閵嗗倽顩﹂崠褰掑帳 .閿涘矁顕担璺ㄦ暏 \閵嗭拷/TD>
+<TD width=84%>匹配除换行符 \n之外的任何单字符。要匹配 .，请使用 \。</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>[ </TD>
-<TD width=84%>閺嶅洩顔囨稉锟介嚋娑擃厽瀚崣鐤�鏉堟儳绱￠惃鍕磻婵锟界憰浣稿爱闁帮拷[閿涘矁顕担璺ㄦ暏 \[閵嗭拷</TD>
+<TD width=84%>标记一个中括号表达式的开始。要匹配 [，请使用 \[。 </TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>?</TD>
-<TD width=84%>閸栧綊鍘ら崜宥夋桨閻ㄥ嫬鐡欑悰銊ㄦ彧瀵繘娴傚▎鈩冨灗娑擄拷顐奸敍灞惧灗閹稿洦妲戞稉锟介嚋闂堢偠妞芥繝顏堟鐎规氨顑侀妴鍌濐洣閸栧綊鍘�? 鐎涙顑侀敍宀冾嚞娴ｈ法鏁�\?閵嗭拷/TD>
+<TD width=84%>匹配前面的子表达式零次或一次，或指明一个非贪婪限定符。要匹配 ? 字符，请使用 \?。</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>\</TD>
-<TD width=84%>鐏忓棔绗呮稉锟介嚋鐎涙顑侀弽鍥唶娑撶儤鍨ㄩ悧瑙勭暕鐎涙顑侀妴浣瑰灗閸樼喍绠熺�妤冾儊閵嗕焦鍨ㄩ崥搴℃倻瀵洜鏁ら妴浣瑰灗閸忣偉绻橀崚鎯版祮娑斿顑侀妴鍌欑伐婵″偊绱�'n' 閸栧綊鍘ょ�妤冾儊 'n'閵嗭拷\n' 閸栧綊鍘ら幑銏ｎ攽缁楋负锟芥惔蹇撳灙 '\\' 閸栧綊鍘�"\"閿涘矁锟�'\(' 閸掓瑥灏柊锟�("閵嗭拷/TD>
+<TD width=84%>将下一个字符标记为或特殊字符、或原义字符、或后向引用、或八进制转义符。例如， 'n' 匹配字符 'n'。'\n' 匹配换行符。序列 '\\' 匹配 "\"，而 '\(' 则匹配 "("。</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>^</TD>
-<TD width=84%>閸栧綊鍘ゆ潏鎾冲弳鐎涙顑佹稉鑼畱瀵拷顫愭担宥囩枂閿涘矂娅庨棃鐐叉躬閺傝瀚崣鐤�鏉堟儳绱℃稉顓濆▏閻㈩煉绱濆銈嗘鐎瑰啳銆冪粈杞扮瑝閹恒儱褰堢拠銉ョ摟缁楋箓娉﹂崥鍫涳拷鐟曚礁灏柊锟絕 鐎涙顑侀張顒冮煩閿涘矁顕担璺ㄦ暏 \^閵嗭拷/TD>
+<TD width=84%>匹配输入字符串的开始位置，除非在方括号表达式中使用，此时它表示不接受该字符集合。要匹配 ^ 字符本身，请使用 \^。</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>{</TD>
-<TD width=84%>閺嶅洩顔囬梽鎰暰缁楋箒銆冩潏鎯х础閻ㄥ嫬绱戞慨瀣拷鐟曚礁灏柊锟絳閿涘矁顕担璺ㄦ暏 \{閵嗭拷/TD>
+<TD width=84%>标记限定符表达式的开始。要匹配 {，请使用 \{。</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>|</TD>
-<TD width=84%>閹稿洦妲戞稉銈夈�娑斿妫块惃鍕娑擃亪锟介幏鈹匡拷鐟曚礁灏柊锟絴閿涘矁顕担璺ㄦ暏 \|閵嗭拷/TD>
+<TD width=84%>指明两项之间的一个选择。要匹配 |，请使用 \|。</TD>
 </TR>
 </TABLE><BR>
 <!--Copyright_START-->
 <DIV CLASS="footer">
-<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation 閻楀牊娼堥幍锟芥箒閵嗗倷绻氶悾娆愬閺堝娼堥崚鈹匡拷娴ｈ法鏁ょ憴鍕暰閵嗭拷/a><br>
+<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation 版权所有。保留所有权利。使用规定。</a><br>
 </DIV> <!--Copyright_END-->
 
 </BODY>

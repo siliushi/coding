@@ -2,7 +2,7 @@
 <HTML>
 <HEAD>
 <META HTTP-EQUIV="Content-Type" Content="text/html; charset=gb2312">
-<TITLE>閺咁噣锟界�妤冾儊</TITLE>
+<TITLE>普通字符</TITLE>
 <!--CSS_START-->
 <style>@import url(../html-vss/msdnie4a.css);</style>
 <link disabled rel="stylesheet" href="../html-vss/msdn_ie3.css">
@@ -15,40 +15,40 @@
 <TABLE class="banner" width="100%" CELLSPACING=0>
 <TR>
 <TD class="bannerleft" nowrap>JScript&nbsp;</TD>
-<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">鐠囶叀鈻堥崣鍌濓拷</a></TD>
+<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">语言参考</a></TD>
 </TR>
 </TABLE>
 <HR>
 <!--End Head-->
 
-<H2><A NAME="reconordinarycharacters"></A>閺咁噣锟界�妤冾儊</H2>
+<H2><A NAME="reconordinarycharacters"></A>普通字符</H2>
 
-<P>閺咁噣锟界�妤冾儊閻㈣鲸澧嶉張澶愬亝娴滄稒婀弰鎯х础閹稿洤鐣炬稉鍝勫帗鐎涙顑侀惃鍕ⅵ閸楁澘鎷伴棃鐐村ⅵ閸楁澘鐡х粭锔剧矋閹存劑锟芥潻娆忓瘶閹奉剚澧嶉張澶屾畱婢堆冨晸閸滃苯鐨崘娆忕摟濮ｅ秴鐡х粭锔肩礉閹碉拷婀侀弫鏉跨摟閿涘本澧嶉張澶嬬垼閻愬湱顑侀崣铚備簰閸欏﹣绔存禍娑氼儊閸欐灚锟�</P>
+<P>普通字符由所有那些未显式指定为元字符的打印和非打印字符组成。这包括所有的大写和小写字母字符，所有数字，所有标点符号以及一些符号。 </P>
 
-<P>閺堬拷鐣濋崡鏇犳畱濮濓絽鍨悰銊ㄦ彧瀵繑妲告稉锟介嚋閸楁洜瀚惃鍕珮闁艾鐡х粭锔肩礉閸欘垯浜掗崠褰掑帳閹碉拷鎮崇槐銏犵摟缁楋缚瑕嗘稉顓犳畱鐠囥儱鐡х粭锔芥拱闊偁锟芥笟瀣洤閿涘苯宕熺�妤冾儊濡�绱�'A' 閸欘垯浜掗崠褰掑帳閹碉拷鎮崇槐銏犵摟缁楋缚瑕嗘稉顓濇崲娴ｆ洑缍呯純顔煎毉閻滄壆娈戠�妤佺槤 'A'閵嗗倽绻栭柌灞炬箒娑擄拷绨洪崡鏇炵摟缁楋附顒滈崚娆掋�鏉堟儳绱″Ο鈥崇础閻ㄥ嫮銇氭笟瀣剁窗</P>
+<P>最简单的正则表达式是一个单独的普通字符，可以匹配所搜索字符串中的该字符本身。例如，单字符模式 'A' 可以匹配所搜索字符串中任何位置出现的字母 'A'。这里有一些单字符正则表达式模式的示例：</P>
 
 <PRE><CODE>/a/
 /7/
 /M/</CODE></PRE>
 
-<P>缁涘鐜惃锟絍BScript 閸楁洖鐡х粭锔筋劀閸掓瑨銆冩潏鎯х础娑撶尨绱�/P>
+<P>等价的 VBScript 单字符正则表达式为：</P>
 
 <PRE><CODE>"a"
 "7"
 "M"</CODE></PRE>
 
-<P>閸欘垯浜掔亸鍡楊樋娑擃亜宕熺�妤冾儊缂佸嫬鎮庨崷銊ょ鐠у嘲绶遍崚棰佺娑擃亣绶濇径褏娈戠悰銊ㄦ彧瀵繈锟芥笟瀣洤閿涘奔绗呴棃銏㈡畱 JScript 濮濓絽鍨悰銊ㄦ彧瀵繋绗夐弰顖氬焼閻ㄥ嫸绱濈亸杈ㄦЦ闁俺绻冪紒鍕値閸楁洖鐡х粭锕併�鏉堟儳绱�'a'閵嗭拷7'娴犮儱寮�'M' 閹碉拷鍨卞鍝勫毉閺夈儳娈戞稉锟介嚋鐞涖劏鎻蹇嬶拷 </P>
+<P>可以将多个单字符组合在一起得到一个较大的表达式。例如，下面的 JScript 正则表达式不是别的，就是通过组合单字符表达式 'a'、'7'以及 'M' 所创建出来的一个表达式。 </P>
 
 <PRE><CODE>/a7M/</CODE></PRE>
 
-<P>缁涘鐜惃锟絍BScript 鐞涖劏鎻蹇庤礋閿涳拷/P>
+<P>等价的 VBScript 表达式为：</P>
 
 <PRE><CODE>"a7M"</CODE></PRE>
 
-<P>鐠囬攱鏁為幇蹇氱箹闁插本鐥呴張澶庣箾閹恒儲鎼锋担婊咁儊閵嗗倹澧嶉棁锟筋洣閸嬫氨娈戠亸杈ㄦЦ鐏忓棔绔存稉顏勭摟缁楋附鏂侀崷銊ょ啊閸欙缚绔存稉顏勭摟缁楋箑鎮楅棃鈧拷</P>
+<P>请注意这里没有连接操作符。所需要做的就是将一个字符放在了另一个字符后面。</P>
 <!--Copyright_START-->
 <DIV CLASS="footer">
-<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation 閻楀牊娼堥幍锟芥箒閵嗗倷绻氶悾娆愬閺堝娼堥崚鈹匡拷娴ｈ法鏁ょ憴鍕暰閵嗭拷/a><br>
+<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation 版权所有。保留所有权利。使用规定。</a><br>
 </DIV> <!--Copyright_END-->
 
 </BODY>

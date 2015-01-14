@@ -2,7 +2,7 @@
 <HTML>
 <HEAD>
 <META HTTP-EQUIV="Content-Type" Content="text/html; charset=gb2312">
-<TITLE>FileSystemObject 鐎电钖�/TITLE>
+<TITLE>FileSystemObject 对象</TITLE>
 <!--CSS_START-->
 <style>@import url(../html-vss/msdnie4a.css);</style>
 <link disabled rel="stylesheet" href="../html-vss/msdn_ie3.css">
@@ -15,66 +15,66 @@
 <TABLE class="banner" width="100%" CELLSPACING=0>
 <TR>
 <TD class="bannerleft" nowrap>JScript&nbsp;</TD>
-<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">鐠囶叀鈻堥崣鍌濓拷</a></TD>
+<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">语言参考</a></TD>
 </TR>
 </TABLE>
 <HR>
 <!--End Head-->
 
-<H1><A NAME="sgfilesystemobjects"></A>FileSystemObject 鐎电钖�/H1>
+<H1><A NAME="sgfilesystemobjects"></A>FileSystemObject 对象</H1>
 
-<P><B>FileSystemObject</B>(FSO) 鐎电钖勫Ο鈥崇础閸栧懎鎯堟稉瀣桨閻ㄥ嫬顕挒鈥虫嫲闂嗗棗鎮庨妴锟�P>
+<P><B>FileSystemObject</B>(FSO) 对象模式包含下面的对象和集合。</P>
 
 <TABLE border=1 cellspacing=0 cols=2 frame=box rules=all>
 
 <TR VALIGN="top">
-<TH width=24%>鐎电钖�闂嗗棗鎮�/TH>
-<TH width=76%>閹诲繗鍫�/TH>
+<TH width=24%>对象/集合</TH>
+<TH width=76%>描述</TH>
 </TR>
 
 <TR VALIGN="top">
 <TD width=24%>FileSystemObject</TD>
-<TD width=76%>娑撹顕挒掳锟介崠鍛儓閻€劍娼甸崚娑樼紦閵嗕礁鍨归梽銈呮嫲閼惧嘲绶遍張澶婂彠娣団剝浼呴敍灞间簰閸欏﹪锟界敮鍝ユ暏閺夈儲鎼锋担婊堚攳閸斻劌娅掗妴浣规瀮娴犺泛銇欓崪灞炬瀮娴犲墎娈戦弬瑙勭《閸滃苯鐫橀幀褋锟介崪宀冾嚉鐎电钖勯惄绋垮彠閼辨梻娈戠拋绋款樋閺傝纭堕敍灞肩瑢閸忔湹绮�FSO 鐎电钖勬稉顓犳畱閺傝纭剁�灞藉弿閻╅晲鎶�敍娑樼暊娴狀剚妲告稉杞扮啊閺傞�绌堕幍宥堫潶閹绘劒绶甸惃鍕╋拷</TD>
+<TD width=76%>主对象。包含用来创建、删除和获得有关信息，以及通常用来操作驱动器、文件夹和文件的方法和属性。和该对象相关联的许多方法，与其他 FSO 对象中的方法完全相似；它们是为了方便才被提供的。</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=24%>Drive</TD>
-<TD width=76%>鐎电钖勯妴鍌氬瘶閸氼偆鏁ら弶銉︽暪闂嗗棔淇婇幁顖滄畱閺傝纭堕崪灞界潣閹嶇礉鏉╂瑤绨烘穱鈩冧紖閺勵垰鍙ф禍搴ょ箾閹恒儱婀化鑽ょ埠娑撳﹦娈戞す鍗炲З閸ｃ劎娈戦敍灞筋洤妞瑰崬濮╅崳銊ф畱閸忓彉闊╅崥宥呮嫲鐎瑰啯婀佹径姘毌閸欘垳鏁ょ粚娲？閵嗗倽顕▔銊﹀壈閿涳拷drive" 楠炲爼娼箛鍛淬�閺勵垳鈥栭惄姗堢礉娑旂喎褰叉禒銉︽Ц CD-ROM 妞瑰崬濮╅崳顭掔礉RAM 绾句胶娲忕粵澶岀搼閵嗗倸鑻熼棃鐐茬箑妞ょ粯濡告す鍗炲З閸ｃ劌鐤勯悧鈺佹勾鏉╃偞甯撮崚鎵兇缂佺喍绗傞敍娑樼暊娑旂喎褰叉禒銉╋拷鏉╁洨缍夌紒婊冩躬闁槒绶稉濠咁潶鏉╃偞甯寸挧閿嬫降閵嗭拷/TD>
+<TD width=76%>对象。包含用来收集信息的方法和属性，这些信息是关于连接在系统上的驱动器的，如驱动器的共享名和它有多少可用空间。请注意，"drive" 并非必须是硬盘，也可以是 CD-ROM 驱动器，RAM 磁盘等等。并非必须把驱动器实物地连接到系统上；它也可以通过网络在逻辑上被连接起来。</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=24%>Drives</TD>
-<TD width=76%>闂嗗棗鎮庨妴鍌涘絹娓氭盯鈹嶉崝銊ユ珤閻ㄥ嫬鍨悰顭掔礉鏉╂瑤绨烘す鍗炲З閸ｃ劌鐤勯悧鈺佹勾閹存牕婀柅鏄忕帆娑撳﹣绗岀化鑽ょ埠閻╂瓕绻涢幒銉ｏ拷<B>Drives</B> 闂嗗棗鎮庨崠鍛閹碉拷婀佹す鍗炲З閸ｎ煉绱濇稉搴ｈ閸ㄥ妫ら崗鐐斤拷鐟曚礁褰茬粔璇插З閻ㄥ嫬鐛熸担鎾烩攳閸斻劌娅掗崷銊嚉闂嗗棗鎮庢稉顓熸▔閻滃府绱濇稉宥呯箑閹跺﹤鐛熸担鎾村絻閸忋儱鍩屾す鍗炲З閸ｃ劋鑵戦妴锟�TD>
+<TD width=76%>集合。提供驱动器的列表，这些驱动器实物地或在逻辑上与系统相连接。<B>Drives</B> 集合包括所有驱动器，与类型无关。要可移动的媒体驱动器在该集合中显现，不必把媒体插入到驱动器中。</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=24%>File</TD>
-<TD width=76%>鐎电钖勯妴鍌氬瘶閸氼偆鏁ら弶銉ュ灡瀵ゆ亽锟介崚鐘绘珟閹存牜些閸斻劍鏋冩禒鍓佹畱閺傝纭堕崪灞界潣閹侊拷娑旂喓鏁ら弶銉ユ倻缁崵绮虹拠銏ゆ６閺傚洣娆㈤崥宥冿拷鐠侯垰绶為崪灞筋樋缁夊秴鍙炬禒鏍х潣閹侊拷</TD>
+<TD width=76%>对象。包含用来创建、删除或移动文件的方法和属性。也用来向系统询问文件名、路径和多种其他属性。</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=24%>Files</TD>
-<TD width=76%>闂嗗棗鎮庨妴鍌涘絹娓氭稑瀵橀崥顐㈡躬閺傚洣娆㈡径鐟板敶閻ㄥ嫭澧嶉張澶嬫瀮娴犲墎娈戦崚妤勩�閵嗭拷/TD>
+<TD width=76%>集合。提供包含在文件夹内的所有文件的列表。</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=24%>Folder</TD>
-<TD width=76%>鐎电钖勯妴鍌氬瘶閸氼偆鏁ら弶銉ュ灡瀵ゆ亽锟介崚鐘绘珟閹存牜些閸斻劍鏋冩禒璺恒仚閻ㄥ嫭鏌熷▔鏇炴嫲鐏炵偞锟介妴鍌欑瘍閻€劍娼甸崥鎴犻兇缂佺喕顕楅梻顔芥瀮娴犺泛銇欓崥宥冿拷鐠侯垰绶為崪灞筋樋缁夊秴鍙炬禒鏍х潣閹侊拷</TD>
+<TD width=76%>对象。包含用来创建、删除或移动文件夹的方法和属性。也用来向系统询问文件夹名、路径和多种其他属性。</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=24%>Folders</TD>
-<TD width=76%>闂嗗棗鎮庨妴鍌涘絹娓氭稑婀�<B>Folder</B> 閸愬懐娈戦幍锟芥箒閺傚洣娆㈡径鍦畱閸掓銆冮妴锟�TD>
+<TD width=76%>集合。提供在 <B>Folder</B> 内的所有文件夹的列表。</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=24%>TextStream</TD>
-<TD width=76%>鐎电钖勯妴鍌滄暏閺夈儴顕伴崘娆愭瀮閺堫剚鏋冩禒韬诧拷</TD>
+<TD width=76%>对象。用来读写文本文件。</TD>
 </TR>
 </TABLE><BR>
 <!--Copyright_START-->
 <DIV CLASS="footer">
-<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation 閻楀牊娼堥幍锟芥箒閵嗗倷绻氶悾娆愬閺堝娼堥崚鈹匡拷娴ｈ法鏁ょ憴鍕暰閵嗭拷/a><br>
+<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation 版权所有。保留所有权利。使用规定。</a><br>
 </DIV> <!--Copyright_END-->
 
 </BODY>

@@ -2,7 +2,7 @@
 <HTML>
 <HEAD>
 <META HTTP-EQUIV="Content-Type" Content="text/html; charset=gb2312">
-<TITLE>FileSystemObject 缁�桨绶ユ禒锝囩垳</TITLE>
+<TITLE>FileSystemObject 示例代码</TITLE>
 <!--CSS_START-->
 <style>@import url(../html-vss/msdnie4a.css);</style>
 <link disabled rel="stylesheet" href="../html-vss/msdn_ie3.css">
@@ -15,71 +15,75 @@
 <TABLE class="banner" width="100%" CELLSPACING=0>
 <TR>
 <TD class="bannerleft" nowrap>JScript&nbsp;</TD>
-<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">鐠囶叀鈻堥崣鍌濓拷</a></TD>
+<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">语言参考</a></TD>
 </TR>
 </TABLE>
 <HR>
 <!--End Head-->
 
-<H1><A NAME="sgfsosample"></A>FileSystemObject 缁�桨绶ユ禒锝囩垳</H1>
+<H1><A NAME="sgfsosample"></A>FileSystemObject 示例代码</H1>
 
-<P>閸︺劍婀伴懞鍌涘伎鏉╂壆娈戠粈杞扮伐娴狅絿鐖滈敍灞惧絹娓氭稓婀＄�鐐垫畱娓氬鐡欓弶銉с仛閼煎啫婀�<B>FileSystemObject</B> 鐎电钖勫Ο鈥崇础娑擃厼褰查悽銊ф畱鐠佺ǹ顦块崝鐔诲厴閵嗗倽顕氭禒锝囩垳閺勫墽銇氭禍鍡楊洤娴ｆ洑绔寸挧铚傚▏閻€劌顕挒鈩兡佸蹇曟畱閹碉拷婀侀崝鐔诲厴閿涘奔浜掗崣濠傤洤娴ｆ洖婀幃銊ㄥ殰瀹歌京娈戞禒锝囩垳娑擃厽婀侀弫鍫濇勾娴ｈ法鏁ゆ潻娆庣昂閸旂喕鍏橀妴锟�P>
+<P>在本节描述的示例代码，提供真实的例子来示范在 <B>FileSystemObject</B> 对象模式中可用的许多功能。该代码显示了如何一起使用对象模式的所有功能，以及如何在您自己的代码中有效地使用这些功能。</P>
 
-<P>鐠囬攱鏁為幇蹇ョ礉閻㈠彉绨拠銉ゅ敩閻焦妲搁弸浣风閼割剛娈戦敍灞惧娴犮儴顩︽担鑳嚉娴狅絿鐖滈懗钘夘檮閻喐顒滈崷銊﹀亶閻ㄥ嫭婧�崳銊ょ瑐鏉╂劘顢戦敍灞藉讲閼充粙娓剁憰浣风娴滄稑鍙炬禒鏍﹀敩閻礁鎷扮亸蹇撶毈閻ㄥ嫬褰夐弴娣拷鏉╂瑤绨洪弨鐟板綁娑斿澧嶆禒銉ョ箑鐟曚緤绱濋弰顖氭礈娑撳搫婀�Active Server Pages 閸滐拷Windows Scripting Host 娑斿妫块敍灞艰礋鏉堟挸鍙嗛崪宀冪翻閸戣櫣绮伴悽銊﹀煕闁插洨鏁ゆ禍鍡曠瑝閸氬瞼娈戦弬瑙勭《閵嗭拷/P>
+<P>请注意，由于该代码是极一般的，所以要使该代码能够真正在您的机器上运行，可能需要一些其他代码和小小的变更。这些改变之所以必要，是因为在 Active Server Pages 和 Windows Scripting Host 之间，为输入和输出给用户采用了不同的方法。</P>
 
-<P>鐟曚礁婀�Active Server Pages 娑撳﹨绻嶇悰宀冾嚉娴狅絿鐖滈敍灞藉灟闁插洤褰囨禒銉ょ瑓濮濄儵顎冮敍锟�P>
+<P>要在 Active Server Pages 上运行该代码，则采取以下步骤：</P>
 
-<P>閸掓稑缂撴稉锟介嚋閺嶅洤鍣惃锟絎eb 妞ょ绱濋崥搴ｇ磻閸氬秳璐�.asp閵嗭拷</P>
+<P>创建一个标准的 Web 页，后缀名为 .asp。 </P>
 
-<P>閹跺﹣绗呴棃銏㈡畱缁�桨绶ユ禒锝囩垳婢跺秴鍩楅崚锟�amp;ltBODY&gt;...&lt;/BODY&gt; 閺嶅洩顔囨稊瀣？閻ㄥ嫭鏋冩禒鏈佃厬閵嗭拷</P>
+<P>把下面的示例代码复制到 &amp;ltBODY&gt;...&lt;/BODY&gt; 标记之间的文件中。 </P>
 
-<P>閹跺﹥澧嶉張澶夊敩閻礁瀵樼憗鍛珤閸掞拷&lt;%...%&gt; 閺嶅洩顔囬崘鍛拷 </P>
+<P>把所有代码包装器到 &lt;%...%&gt; 标记内。 </P>
 
-<P>閹讹拷<B>Option Explicit</B> 鐠囶厼褰炴禒搴＄秼閸撳秳缍呯純顔拘╅崝銊ュ煂 HTML 妞ょ數娈戦張锟姐�闁煉绱濋悽姘冲殾閸︼拷&lt;HTML&gt; 瀵拷顫愰弽鍥唶閸撳秲锟�</P>
+<P>把 <B>Option Explicit</B> 语句从当前位置移动到 HTML 页的最顶部，甚至在 &lt;HTML&gt; 开始标记前。 </P>
 
-<P>閹讹拷&lt;%...%&gt; 閺嶅洩顔囬弨鍓х枂閸︼拷<B>Option Explicit</B> 鐠囶厼褰為崨銊ユ纯閿涘奔浜掓穱婵婄槈鐎瑰啫婀張宥呭閸ｃ劎顏潻鎰攽閵嗭拷</P>
+<P>把 &lt;%...%&gt; 标记放置在 <B>Option Explicit</B> 语句周围，以保证它在服务器端运行。 </P>
 
-<P>閹跺﹣绗呴棃銏㈡畱娴狅絿鐖滃ǎ璇插閸掓壆銇氭笟瀣╁敩閻焦婀亸鎾呯窗 </P>
+<P>把下面的代码添加到示例代码末尾： </P>
 
 <PRE><CODE>Sub Print(x)
-</CODE>&nbsp;&nbsp;&nbsp;<CODE>Response.Write "&lt;PRE&gt;&amp;ltFONT FACE=""</CODE>鐎瑰缍�CODE>"" SIZE=""1""&gt;"</CODE>
+</CODE>&nbsp;&nbsp;&nbsp;<CODE>Response.Write "&lt;PRE&gt;&amp;ltFONT FACE=""</CODE>宋体<CODE>"" SIZE=""1""&gt;"</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;Response.Write x</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;Response.Write "&lt;/FONT&gt;&lt;/PRE&gt;"</CODE>
 <CODE>End Sub</CODE>
 <CODE>Main</CODE></PRE>
 
-<P>閸撳秹娼伴惃鍕敩閻礁顤冮崝鐘辩娑擃亜鐨㈤崷銊︽箛閸斺�娅掔粩顖濈箥鐞涘矉绱濇担鍡楁躬鐎广垺鍩涚粩顖涙▔缁�櫣绮ㄩ弸婊呮畱閹垫挸宓冩潻鍥┾柤閵嗗倽顩﹂崷锟絎indows Scripting Host 娑撳﹨绻嶇悰宀冾嚉娴狅絿鐖滈敍灞藉灟閹跺﹣绗呴棃銏㈡畱娴狅絿鐖滃ǎ璇插閸掓壆銇氭笟瀣╁敩閻胶娈戦張顐㈢啲閿涳拷</P>
+<P>前面的代码增加一个将在服务器端运行，但在客户端显示结果的打印过程。要在 Windows Scripting Host 上运行该代码，则把下面的代码添加到示例代码的末尾： </P>
 
 <PRE><CODE>Sub Print(x)
 </CODE>&nbsp;&nbsp;&nbsp;<CODE>WScript.Echo x</CODE>
 <CODE>End Sub</CODE>
 <CODE>Main</CODE></PRE>
 
-<P>娑撳娼扮亸杈ㄦЦ缁�桨绶ユ禒锝囩垳閿涳拷/P>
+<P>下面就是示例代码：</P>
 
 <PRE><CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-' FileSystemObject </CODE>缁�桨绶ユ禒锝囩垳
-<CODE>'Copyright 1998  Microsoft Corporation</CODE>閵嗭拷nbsp;&nbsp;&nbsp;娣囨繄鏆�幍锟芥箒閺夊啫鍩勯妴锟紺ODE> </CODE>
+' FileSystemObject </CODE>示例代码
+<CODE>'Copyright 1998  Microsoft Corporation</CODE>。&nbsp;&nbsp;&nbsp;保留所有权利。<CODE> </CODE>
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
 
 <CODE>Option Explicit</CODE>
 
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
-<CODE>' </CODE>鐎甸�绨禒锝囩垳鐠愩劑鍣洪敍锟�<CODE>' 1) </CODE>娑撳娼伴惃鍕敩閻焦婀佺拋绋款樋鐎涙顑佹稉鍙夋惙娴ｆ粣绱濋悽锟紺ODE>"&amp;"</CODE>鏉╂劗鐣荤粭锔芥降閹跺﹦鐓�妤冾儊娑撹尪绻涢幒銉ユ躬娑擄拷鎹ｉ妴鍌滄暠娴滐拷
-<CODE>'    </CODE>鐎涙顑佹稉鑼剁箾閹恒儲妲哥拹瑙勬閻ㄥ嫸绱濋幍锟戒簰鏉╂瑦妲告稉锟筋潚娴ｅ孩鏅ラ悳鍥╂畱閸愭瑤鍞惍浣规煙濞夋洏锟介弮鐘侯啈婵″倷缍嶉敍灞界暊閺勶拷
-<CODE>'    </CODE>娑擄拷顫掗棃鐐茬埗婵傜晫娣幎銈囨畱閸愭瑤鍞惍浣规煙濞夋洩绱濋獮鏈电瑬閸︺劏绻栭崕澶稿▏閻€劋绨℃潻娆戭潚閺傝纭堕敍灞芥礈娑撻缚顕氱粙瀣碍閹笛嗩攽
-<CODE>'    </CODE>婢堆囧櫤閻ㄥ嫮顥嗛惄妯绘惙娴ｆ粣绱濋懓宀�梿閻╂ɑ鎼锋担婊勭槷鏉╃偞甯寸�妤冾儊娑撳弶澧嶉棁锟芥畱閸愬懎鐡ㄩ幙宥勭稊鐟曚焦鍙冨妤�樋閵嗭拷
-<CODE>'    </CODE>鐠侀缍囨潻娆愭Ц缁�缚瀵栨禒锝囩垳閿涘矁锟芥稉宥嗘Ц娴溠冩惂娴狅絿鐖滈妴锟�<CODE>'</CODE>
-<CODE>' 2) </CODE>娴ｈ法鏁ゆ禍锟紺ODE> "Option Explicit"</CODE>閿涘苯娲滄稉楦款問闂傤喖锛愰弰搴ょ箖閻ㄥ嫬褰夐柌蹇ョ礉濮ｆ棁顔栭梻顔芥弓婢圭増妲戦惃鍕綁闁插繗顩�
-<CODE>'    </CODE>缁嬪秴浜曡箛顐＄娴滄稏锟界�鍐箷閼充粙妯嗗銏犳躬娴狅絿鐖滄稉顓炲絺閻㈢喖鏁婄拠顖ょ礉娓氬顩ч敍灞惧Ω<CODE> DriveTypeCDROM </CODE>鐠囶垱瀚�
-<CODE>'    </CODE>閹存劒绨�CODE> DriveTypeCDORM </CODE>閵嗭拷
+<CODE>' </CODE>对于代码质量：
+<CODE>' 1) </CODE>下面的代码有许多字符串操作，用<CODE>"&amp;"</CODE>运算符来把短字符串连接在一起。由于
+<CODE>'    </CODE>字符串连接是费时的，所以这是一种低效率的写代码方法。无论如何，它是
+<CODE>'    </CODE>一种非常好维护的写代码方法，并且在这儿使用了这种方法，因为该程序执行
+<CODE>'    </CODE>大量的磁盘操作，而磁盘操作比连接字符串所需的内存操作要慢得多。
+<CODE>'    </CODE>记住这是示范代码，而不是产品代码。
 <CODE>'</CODE>
-<CODE>' 3) </CODE>娑撹桨绨℃担澶稿敩閻焦娲块崣顖濐嚢閿涘矁顕氭禒锝囩垳娑擃厽鐥呴張澶愭晩鐠囶垰顦╅悶鍡愶拷閾忕晫鍔ч柌鍥у絿娴滃棝妲婚懠鍐╁妇閺傛枻绱濋弶銉ょ箽鐠囦椒鍞惍锟�<CODE>'    </CODE>閸︺劍娅橀柅姘剰閸愬吀绗呭▽鈩冩箒闁挎瑨顕ら敍灞肩稻閺傚洣娆㈢化鑽ょ埠閺勵垯绗夐崣顖烆暕閻儳娈戦妴鍌氭躬娴溠冩惂娴狅絿鐖滄稉顓ㄧ礉娴ｈ法鏁�
-<CODE>'    On Error Resume Next </CODE>閸滐拷CODE> Err </CODE>鐎电钖勯弶銉﹀礋閼惧嘲褰查懗钘夊絺閻㈢喓娈戦柨娆掝嚖閵嗭拷
+<CODE>' 2) </CODE>使用了<CODE> "Option Explicit"</CODE>，因为访问声明过的变量，比访问未声明的变量要
+<CODE>'    </CODE>稍微快一些。它还能阻止在代码中发生错误，例如，把<CODE> DriveTypeCDROM </CODE>误拼
+<CODE>'    </CODE>成了<CODE> DriveTypeCDORM </CODE>。
+<CODE>'</CODE>
+<CODE>' 3) </CODE>为了使代码更可读，该代码中没有错误处理。虽然采取了防范措施，来保证代码
+<CODE>'    </CODE>在普通情况下没有错误，但文件系统是不可预知的。在产品代码中，使用
+<CODE>'    On Error Resume Next </CODE>和<CODE> Err </CODE>对象来捕获可能发生的错误。
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
 
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
-<CODE>' </CODE>娑擄拷绨虹�瑙勬閸欐牕绶遍惃鍕弿鐏烇拷褰夐柌锟�<CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
+<CODE>' </CODE>一些容易取得的全局变量
+<CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
 <CODE>Dim TabStop</CODE>
 <CODE>Dim NewLine</CODE>
 
@@ -87,7 +91,7 @@
 <CODE>Const TestFilePath = "C:\Test"</CODE>
 
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
-<CODE>' </CODE>閻拷CODE> Drive.DriveType </CODE>鏉╂柨娲栭惃鍕埗閺侊拷
+<CODE>' </CODE>由<CODE> Drive.DriveType </CODE>返回的常数
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
 <CODE>Const DriveTypeRemovable = 1</CODE>
 <CODE>Const DriveTypeFixed = 2</CODE>
@@ -96,7 +100,7 @@
 <CODE>Const DriveTypeRAMDisk = 5</CODE>
 
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
-<CODE>' </CODE>閻拷CODE> File.Attributes </CODE>鏉╂柨娲栭惃鍕埗閺侊拷
+<CODE>' </CODE>由<CODE> File.Attributes </CODE>返回的常数
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
 <CODE>Const FileAttrNormal  = 0</CODE>
 <CODE>Const FileAttrReadOnly = 1</CODE>
@@ -109,7 +113,7 @@
 <CODE>Const FileAttrCompressed = 128</CODE>
 
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
-<CODE>' </CODE>閻€劍娼甸幍鎾崇磻閺傚洣娆㈤惃鍕埗閺侊拷
+<CODE>' </CODE>用来打开文件的常数
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
 <CODE>Const OpenFileForReading = 1 </CODE>
 <CODE>Const OpenFileForWriting = 2 </CODE>
@@ -117,9 +121,10 @@
 
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
 <CODE>' <span class=cfe><B>ShowDriveType</B></span></CODE>
-<CODE>' </CODE>閻╊喚娈戦敍锟紺ODE> </CODE>
-<CODE>' </CODE>閻㈢喐鍨氭稉锟介嚋鐎涙顑佹稉璇х礉閺夈儲寮挎潻鎵舶鐎癸拷CODE> Drive </CODE>鐎电钖勯惃鍕攳閸斻劌娅掔猾璇茬�閵嗭拷
-<CODE>' </CODE>缁�缚瀵栨稉瀣桨閻ㄥ嫬鍞寸�锟�<CODE>' - Drive.DriveType</CODE>
+<CODE>' </CODE>目的：<CODE> </CODE>
+<CODE>' </CODE>生成一个字符串，来描述给定<CODE> Drive </CODE>对象的驱动器类型。
+<CODE>' </CODE>示范下面的内容
+<CODE>' - Drive.DriveType</CODE>
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
 <CODE>Function ShowDriveType(Drive)</CODE>
 
@@ -146,13 +151,14 @@
 
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
 <CODE>' <span class=cfe><B>ShowFileAttr</B></span></CODE>
-<CODE>' </CODE>閻╊喚娈戦敍锟紺ODE> </CODE>
-<CODE>' </CODE>閻㈢喐鍨氭稉锟介嚋鐎涙顑佹稉璇х礉閺夈儲寮挎潻鐗堟瀮娴犺埖鍨ㄩ弬鍥︽婢跺湱娈戠仦鐐达拷閵嗭拷
-<CODE>' </CODE>缁�缚瀵栨稉瀣桨閻ㄥ嫬鍞寸�锟�<CODE>' - File.Attributes</CODE>
+<CODE>' </CODE>目的：<CODE> </CODE>
+<CODE>' </CODE>生成一个字符串，来描述文件或文件夹的属性。
+<CODE>' </CODE>示范下面的内容
+<CODE>' - File.Attributes</CODE>
 <CODE>' - Folder.Attributes</CODE>
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
 
-<CODE>Function ShowFileAttr(File) ' File </CODE>閸欘垯浜掗弰顖涙瀮娴犺埖鍨ㄩ弬鍥︽婢讹拷
+<CODE>Function ShowFileAttr(File) ' File </CODE>可以是文件或文件夹
 
 &nbsp;&nbsp;&nbsp;<CODE>Dim S</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>Dim Attr</CODE>
@@ -179,9 +185,10 @@
 
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
 <CODE>' <span class=cfe><B>GenerateDriveInformation</B></span></CODE>
-<CODE>' </CODE>閻╊喚娈戦敍锟紺ODE> </CODE>
-<CODE>' </CODE>閻㈢喐鍨氭稉锟介嚋鐎涙顑佹稉璇х礉閺夈儲寮挎潻鏉垮讲閻€劑鈹嶉崝銊ユ珤閻ㄥ嫬缍嬮崜宥囧Ц閹降锟�
-<CODE>' </CODE>缁�缚瀵栨稉瀣桨閻ㄥ嫬鍞寸�锟�<CODE>'  - FileSystemObject.Drives </CODE>
+<CODE>' </CODE>目的：<CODE> </CODE>
+<CODE>' </CODE>生成一个字符串，来描述可用驱动器的当前状态。
+<CODE>' </CODE>示范下面的内容
+<CODE>'  - FileSystemObject.Drives </CODE>
 <CODE>'  - Iterating the Drives collection</CODE>
 <CODE>'  - Drives.Count</CODE>
 <CODE>'  - Drive.AvailableSpace</CODE>
@@ -206,7 +213,7 @@
 &nbsp;&nbsp;&nbsp;<CODE>Set Drives = FSO.Drives</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>S = "Number of drives:" &amp; TabStop &amp; Drives.Count &amp; NewLine &amp; NewLine</CODE>
 
-&nbsp;&nbsp;&nbsp;<CODE>' </CODE>閺嬪嫰锟介幎銉ユ啞閻ㄥ嫮顑囨稉锟筋攽閵嗭拷
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>构造报告的第一行。
 &nbsp;&nbsp;&nbsp;<CODE>S = S &amp; String(2, TabStop) &amp; "Drive" </CODE>
 &nbsp;&nbsp;&nbsp;<CODE>S = S &amp; String(3, TabStop) &amp; "File" </CODE>
 &nbsp;&nbsp;&nbsp;<CODE>S = S &amp; TabStop &amp; "Total"</CODE>
@@ -214,7 +221,7 @@
 &nbsp;&nbsp;&nbsp;<CODE>S = S &amp; TabStop &amp; "Available" </CODE>
 &nbsp;&nbsp;&nbsp;<CODE>S = S &amp; TabStop &amp; "Serial" &amp; NewLine</CODE>
 
-&nbsp;&nbsp;&nbsp;<CODE>' </CODE>閺嬪嫰锟介幎銉ユ啞閻ㄥ嫮顑囨禍宀冾攽閵嗭拷
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>构造报告的第二行。
 &nbsp;&nbsp;&nbsp;<CODE>S = S &amp; "Letter"</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>S = S &amp; TabStop &amp; "Path"</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>S = S &amp; TabStop &amp; "Type"</CODE>
@@ -226,7 +233,7 @@
 &nbsp;&nbsp;&nbsp;<CODE>S = S &amp; TabStop &amp; "Space"</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>S = S &amp; TabStop &amp; "Number" &amp; NewLine</CODE>&nbsp;&nbsp;&nbsp;
 
-&nbsp;&nbsp;&nbsp;<CODE>' </CODE>閸掑棝娈х悰灞伙拷
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>分隔行。
 &nbsp;&nbsp;&nbsp;<CODE>S = S &amp; String(105, "-") &amp; NewLine</CODE>
 
 &nbsp;&nbsp;&nbsp;<CODE>For Each Drive In Drives</CODE>
@@ -258,8 +265,10 @@
 
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
 <CODE>' <span class=cfe><B>GenerateFileInformation</B></span></CODE>
-<CODE>' </CODE>閻╊喚娈戦敍锟紺ODE> </CODE>
-<CODE>' </CODE>閻㈢喐鍨氭稉锟介嚋鐎涙顑佹稉璇х礉閺夈儲寮挎潻鐗堟瀮娴犲墎娈戣ぐ鎾冲閻樿埖锟介妴锟�<CODE>' </CODE>缁�缚瀵栨稉瀣桨閻ㄥ嫬鍞寸�锟�<CODE>'  - File.Path</CODE>
+<CODE>' </CODE>目的：<CODE> </CODE>
+<CODE>' </CODE>生成一个字符串，来描述文件的当前状态。
+<CODE>' </CODE>示范下面的内容
+<CODE>'  - File.Path</CODE>
 <CODE>'  - File.Name</CODE>
 <CODE>'  - File.Type</CODE>
 <CODE>'  - File.DateCreated</CODE>
@@ -287,9 +296,10 @@
 
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
 <CODE>' <span class=cfe><B>GenerateFolderInformation</B></span></CODE>
-<CODE>' </CODE>閻╊喚娈戦敍锟紺ODE> </CODE>
-<CODE>' </CODE>閻㈢喐鍨氭稉锟介嚋鐎涙顑佹稉璇х礉閺夈儲寮挎潻鐗堟瀮娴犺泛銇欓惃鍕秼閸撳秶濮搁幀浣碉拷
-<CODE>' </CODE>缁�缚瀵栨稉瀣桨閻ㄥ嫬鍞寸�锟�<CODE>'  - Folder.Path</CODE>
+<CODE>' </CODE>目的：<CODE> </CODE>
+<CODE>' </CODE>生成一个字符串，来描述文件夹的当前状态。
+<CODE>' </CODE>示范下面的内容
+<CODE>'  - Folder.Path</CODE>
 <CODE>'  - Folder.Name</CODE>
 <CODE>'  - Folder.DateCreated</CODE>
 <CODE>'  - Folder.DateLastAccessed</CODE>
@@ -315,9 +325,10 @@
 
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
 <CODE>' <span class=cfe><B>GenerateAllFolderInformation</B></span></CODE>
-<CODE>' </CODE>閻╊喚娈戦敍锟紺ODE> </CODE>
-<CODE>' </CODE>閻㈢喐鍨氭稉锟介嚋鐎涙顑佹稉璇х礉閺夈儲寮挎潻棰佺娑擃亝鏋冩禒璺恒仚閸滃本澧嶉張澶嬫瀮娴犺泛寮风�鎰瀮娴犺泛銇欓惃鍕秼閸撳秶濮搁幀浣碉拷
-<CODE>' </CODE>缁�缚瀵栨稉瀣桨閻ㄥ嫬鍞寸�锟�<CODE>'  - Folder.Path</CODE>
+<CODE>' </CODE>目的：<CODE> </CODE>
+<CODE>' </CODE>生成一个字符串，来描述一个文件夹和所有文件及子文件夹的当前状态。
+<CODE>' </CODE>示范下面的内容
+<CODE>'  - Folder.Path</CODE>
 <CODE>'  - Folder.SubFolders</CODE>
 <CODE>'  - Folders.Count</CODE>
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
@@ -369,8 +380,10 @@
 
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
 <CODE>' <span class=cfe><B>GenerateTestInformation</B></span></CODE>
-<CODE>' </CODE>閻╊喚娈戦敍锟紺ODE> </CODE>
-<CODE>' </CODE>閻㈢喐鍨氭稉锟介嚋鐎涙顑佹稉璇х礉閺夈儲寮挎潻锟紺ODE> C:\Test </CODE>閺傚洣娆㈡径鐟版嫲閹碉拷婀侀弬鍥︽閸欏﹤鐡欓弬鍥︽婢跺湱娈戣ぐ鎾冲閻樿埖锟介妴锟�<CODE>' </CODE>缁�缚瀵栨稉瀣桨閻ㄥ嫬鍞寸�锟�<CODE>'  - FileSystemObject.DriveExists</CODE>
+<CODE>' </CODE>目的：<CODE> </CODE>
+<CODE>' </CODE>生成一个字符串，来描述<CODE> C:\Test </CODE>文件夹和所有文件及子文件夹的当前状态。
+<CODE>' </CODE>示范下面的内容
+<CODE>'  - FileSystemObject.DriveExists</CODE>
 <CODE>'  - FileSystemObject.FolderExists</CODE>
 <CODE>'  - FileSystemObject.GetFolder</CODE>
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
@@ -391,8 +404,10 @@
 
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
 <CODE>' <span class=cfe><B>DeleteTestDirectory</B></span></CODE>
-<CODE>' </CODE>閻╊喚娈戦敍锟紺ODE> </CODE>
-<CODE>' </CODE>濞撳懐鎮�CODE> test </CODE>閻╊喖缍嶉妴锟�<CODE>' </CODE>缁�缚瀵栨稉瀣桨閻ㄥ嫬鍞寸�锟�<CODE>'  - FileSystemObject.GetFolder</CODE>
+<CODE>' </CODE>目的：<CODE> </CODE>
+<CODE>' </CODE>清理<CODE> test </CODE>目录。
+<CODE>' </CODE>示范下面的内容
+<CODE>'  - FileSystemObject.GetFolder</CODE>
 <CODE>'  - FileSystemObject.DeleteFile</CODE>
 <CODE>'  - FileSystemObject.DeleteFolder</CODE>
 <CODE>'  - Folder.Delete</CODE>
@@ -408,14 +423,14 @@
 
 
 <PRE>&nbsp;&nbsp;&nbsp;<A NAME="driveinfo"></A>
-&nbsp;&nbsp;&nbsp;<CODE>' </CODE>閺堝琚辩粔宥嗘煙濞夋洖褰查悽銊︽降閸掔娀娅庨弬鍥︽閿涳拷
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>有两种方法可用来删除文件：
 
 &nbsp;&nbsp;&nbsp;<CODE>FSO.DeleteFile(TestFilePath &amp; "\Beatles\OctopusGarden.txt")</CODE>
 
 &nbsp;&nbsp;&nbsp;<CODE>Set File = FSO.GetFile(TestFilePath &amp; "\Beatles\BathroomWindow.txt")</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>File.Delete</CODE>&nbsp;&nbsp;&nbsp;
 
-&nbsp;&nbsp;&nbsp;<CODE>' </CODE>閺堝琚辩粔宥嗘煙濞夋洖褰查悽銊︽降閸掔娀娅庨弬鍥︽婢剁櫢绱�
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>有两种方法可用来删除文件夹：
 &nbsp;&nbsp;&nbsp;<CODE>FSO.DeleteFolder(TestFilePath &amp; "\Beatles")</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>FSO.DeleteFile(TestFilePath &amp; "\ReadMe.txt")</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>Set TestFolder = FSO.GetFolder(TestFilePath)</CODE>
@@ -425,9 +440,10 @@
 
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
 <CODE>' <span class=cfe><B>CreateLyrics</B></span></CODE>
-<CODE>' </CODE>閻╊喚娈戦敍锟紺ODE> </CODE>
-<CODE>' </CODE>閸︺劍鏋冩禒璺恒仚娑擃厼鍨卞杞拌⒈娑擃亝鏋冮張顒佹瀮娴犺翰锟�
-<CODE>' </CODE>缁�缚瀵栨稉瀣桨閻ㄥ嫬鍞寸�锟�<CODE>'  - FileSystemObject.CreateTextFile</CODE>
+<CODE>' </CODE>目的：<CODE> </CODE>
+<CODE>' </CODE>在文件夹中创建两个文本文件。
+<CODE>' </CODE>示范下面的内容
+<CODE>'  - FileSystemObject.CreateTextFile</CODE>
 <CODE>'  - TextStream.WriteLine</CODE>
 <CODE>'  - TextStream.Write</CODE>
 <CODE>'  - TextStream.WriteBlankLines</CODE>
@@ -446,7 +462,7 @@
 
 
 <PRE>&nbsp;&nbsp;&nbsp;<A NAME="createtextfilewritetofile"></A>
-&nbsp;&nbsp;&nbsp;<CODE>TextStream.Write("Octopus' Garden ") ' </CODE>鐠囬攱鏁為幇蹇ョ礉鐠囥儴顕㈤崣銉ょ瑝濞ｈ濮為幑銏ｎ攽閸掔増鏋冩禒鏈佃厬閵嗭拷
+&nbsp;&nbsp;&nbsp;<CODE>TextStream.Write("Octopus' Garden ") ' </CODE>请注意，该语句不添加换行到文件中。
 &nbsp;&nbsp;&nbsp;<CODE>TextStream.WriteLine("(by Ringo Starr)")</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>TextStream.WriteBlankLines(1)</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>TextStream.WriteLine("I'd like to be under the sea in an octopus' garden in the shade,")</CODE>
@@ -467,9 +483,10 @@
 
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
 <CODE>' <span class=cfe><B>GetLyrics</B></span></CODE>
-<CODE>' </CODE>閻╊喚娈戦敍锟紺ODE> </CODE>
-<CODE>' </CODE>閺勫墽銇�CODE> lyrics </CODE>閺傚洣娆㈤惃鍕敶鐎瑰箍锟�
-<CODE>' </CODE>缁�缚瀵栨稉瀣桨閻ㄥ嫬鍞寸�锟�<CODE>'  - FileSystemObject.OpenTextFile</CODE>
+<CODE>' </CODE>目的：<CODE> </CODE>
+<CODE>' </CODE>显示<CODE> lyrics </CODE>文件的内容。
+<CODE>' </CODE>示范下面的内容
+<CODE>'  - FileSystemObject.OpenTextFile</CODE>
 <CODE>'  - FileSystemObject.GetFile</CODE>
 <CODE>'  - TextStream.ReadAll</CODE>
 <CODE>'  - TextStream.Close</CODE>
@@ -484,7 +501,9 @@
 &nbsp;&nbsp;&nbsp;<CODE>Dim S</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>Dim File</CODE>
 
-&nbsp;&nbsp;&nbsp;<CODE>' </CODE>閺堝顦跨粔宥嗘煙濞夋洖褰查悽銊︽降閹垫挸绱戞稉锟介嚋閺傚洦婀伴弬鍥︽閿涘苯鎷版径姘鳖潚閺傝纭堕弶銉ょ矤閺傚洣娆㈢拠璇插絿閺佺増宓侀妴锟�&nbsp;&nbsp;&nbsp;<CODE>' </CODE>鏉╂瑥鍔归悽銊ょ啊娑撱倗顫掗弬瑙勭《閺夈儲澧﹀锟芥瀮娴犺泛鎷扮拠璇插絿閺傚洣娆㈤敍锟�
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>有多种方法可用来打开一个文本文件，和多种方法来从文件读取数据。
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>这儿用了两种方法来打开文件和读取文件：
+
 &nbsp;&nbsp;&nbsp;<CODE>Set TextStream = FSO.OpenTextFile(TestFilePath &amp; "\Beatles\OctopusGarden.txt", OpenFileForReading)</CODE></PRE>
 
 
@@ -506,15 +525,16 @@
 
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
 <CODE>' <span class=cfe><B>BuildTestDirectory</B></span></CODE>
-<CODE>' </CODE>閻╊喚娈戦敍锟紺ODE> </CODE>
-<CODE>' </CODE>閸掓稑缂撴稉锟介嚋閻╊喖缍嶉崚鍡楃湴缂佹挻鐎弶銉с仛閼硷拷CODE> FileSystemObject</CODE>閵嗭拷
-<CODE>' </CODE>娴犮儴绻栭弽椋庢畱濞嗏�绨弶銉ュ灡瀵ゅ搫鍨庣仦鍌滅波閺嬪嫸绱�
+<CODE>' </CODE>目的：<CODE> </CODE>
+<CODE>' </CODE>创建一个目录分层结构来示范<CODE> FileSystemObject</CODE>。
+<CODE>' </CODE>以这样的次序来创建分层结构：
 <CODE>' C:\Test</CODE>
 <CODE>' C:\Test\ReadMe.txt</CODE>
 <CODE>' C:\Test\Beatles</CODE>
 <CODE>' C:\Test\Beatles\OctopusGarden.txt</CODE>
 <CODE>' C:\Test\Beatles\BathroomWindow.txt</CODE>
-<CODE>' </CODE>缁�缚瀵栨稉瀣桨閻ㄥ嫬鍞寸�锟�<CODE>'  - FileSystemObject.DriveExists</CODE>
+<CODE>' </CODE>示范下面的内容
+<CODE>'  - FileSystemObject.DriveExists</CODE>
 <CODE>'  - FileSystemObject.FolderExists</CODE>
 <CODE>'  - FileSystemObject.CreateFolder</CODE>
 <CODE>'  - FileSystemObject.CreateTextFile</CODE>
@@ -530,7 +550,7 @@
 &nbsp;&nbsp;&nbsp;<CODE>Dim SubFolders</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>Dim SubFolder</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>Dim TextStream</CODE>
-&nbsp;&nbsp;&nbsp;<CODE>' </CODE>閹烘帡娅�CODE>(a)</CODE>妞瑰崬濮╅崳銊ょ瑝鐎涙ê婀敍灞惧灗<CODE>(b)</CODE>鐟曚礁鍨卞铏规畱閻╊喖缍嶅鑼病鐎涙ê婀惃鍕剰閸愮偣锟�
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>排除<CODE>(a)</CODE>驱动器不存在，或<CODE>(b)</CODE>要创建的目录已经存在的情况。
 
 &nbsp;&nbsp;&nbsp;<CODE>If Not FSO.DriveExists(TestDrive) Then</CODE>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>BuildTestDirectory = False</CODE>
@@ -556,17 +576,18 @@
 <CODE>End Function</CODE>
 
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
-<CODE>' </CODE><span class=cfe><B>娑撹崵鈻兼惔锟�B></span>
-<CODE>' </CODE>妫ｆ牕鍘涢敍灞界暊閸掓稑缂撴稉锟介嚋<CODE> test </CODE>閻╊喖缍嶉敍灞间簰閸欏﹣绔存禍娑樼摍閺傚洣娆㈡径鐟版嫲閺傚洣娆㈤妴锟紺ODE> </CODE>
-<CODE>' </CODE>閻掕泛鎮楅敍灞界暊鏉烆剙鍋嶉張澶婂彠閸欘垳鏁ょ壕浣烘磸妞瑰崬濮╅崳銊ユ嫲<CODE> test </CODE>閻╊喖缍嶉惃鍕厙娴滄稐淇婇幁顖ょ礉
-<CODE>' </CODE>閺堬拷鎮楅敍灞剧闂勶拷CODE> test </CODE>閻╊喖缍嶉崣濠傚従閹碉拷婀侀崘鍛啇閵嗭拷
+<CODE>' </CODE><span class=cfe><B>主程序</B></span>
+<CODE>' </CODE>首先，它创建一个<CODE> test </CODE>目录，以及一些子文件夹和文件。<CODE> </CODE>
+<CODE>' </CODE>然后，它转储有关可用磁盘驱动器和<CODE> test </CODE>目录的某些信息，
+<CODE>' </CODE>最后，清除<CODE> test </CODE>目录及其所有内容。
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
 
 <CODE>Sub Main</CODE>
 
 &nbsp;&nbsp;&nbsp;<CODE>Dim FSO</CODE>
 
-&nbsp;&nbsp;&nbsp;<CODE>' </CODE>鐠佸墽鐝涢崗銊ョ湰閸欐﹢鍣洪妴锟�&nbsp;&nbsp;&nbsp;<CODE>TabStop = Chr(9)</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>设立全局变量。
+&nbsp;&nbsp;&nbsp;<CODE>TabStop = Chr(9)</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>NewLine = Chr(10)</CODE></PRE>
 
 
@@ -587,7 +608,7 @@
 <CODE>End Sub</CODE></PRE>
 <!--Copyright_START-->
 <DIV CLASS="footer">
-<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation 閻楀牊娼堥幍锟芥箒閵嗗倷绻氶悾娆愬閺堝娼堥崚鈹匡拷娴ｈ法鏁ょ憴鍕暰閵嗭拷/a><br>
+<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation 版权所有。保留所有权利。使用规定。</a><br>
 </DIV> <!--Copyright_END-->
 
 </BODY>
