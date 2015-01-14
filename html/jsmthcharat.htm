@@ -2,7 +2,7 @@
 <HTML>
 <HEAD>
 <META HTTP-EQUIV="Content-Type" Content="text/html; charset=gb2312">
-<TITLE>charAt æ–¹æ³•</TITLE>
+<TITLE>charAt ·½·¨</TITLE>
 <!--CSS_START-->
 <style>@import url(../html-vss/msdnie4a.css);</style>
 <link disabled rel="stylesheet" href="../html-vss/msdn_ie3.css">
@@ -15,56 +15,56 @@
 <TABLE class="banner" width="100%" CELLSPACING=0>
 <TR>
 <TD class="bannerleft" nowrap>JScript&nbsp;</TD>
-<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">è¯­è¨€å‚è€ƒ</a></TD>
+<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">ÓïÑÔ²Î¿¼</a></TD>
 </TR>
 </TABLE>
 <HR>
 <!--End Head-->
 
-<H1><A NAME="jsmthcharat"></A>charAt æ–¹æ³•</H1>
+<H1><A NAME="jsmthcharat"></A>charAt ·½·¨</H1>
 
-<P>è¿”å›žæŒ‡å®šç´¢å¼•ä½ç½®å¤„çš„å­—ç¬¦ã€‚</P>
+<P>·µ»ØÖ¸¶¨Ë÷ÒýÎ»ÖÃ´¦µÄ×Ö·û¡£</P>
 
 <P><CODE><I>strObj</I>.<B>charAt(</B><I>index</I><B>)</B></CODE></P>
 
-<H4>å‚æ•°</H4>
+<H4>²ÎÊý</H4>
 
 <P class=dt><I>strObj</I></P>
 
-<P class=indent>å¿…é€‰é¡¹ã€‚ä»»æ„ <B>String</B> å¯¹è±¡æˆ–æ–‡å­—ã€‚</P>
+<P class=indent>±ØÑ¡Ïî¡£ÈÎÒâ <B>String</B> ¶ÔÏó»òÎÄ×Ö¡£</P>
 
 <P class=dt><I>index</I></P>
 
-<P class=indent>å¿…é€‰é¡¹ã€‚æƒ³å¾—åˆ°çš„å­—ç¬¦çš„åŸºäºŽé›¶çš„ç´¢å¼•ã€‚æœ‰æ•ˆå€¼æ˜¯ 0 ä¸Žå­—ç¬¦ä¸²é•¿åº¦å‡ 1 ä¹‹é—´çš„å€¼ã€‚</P>
+<P class=indent>±ØÑ¡Ïî¡£ÏëµÃµ½µÄ×Ö·ûµÄ»ùÓÚÁãµÄË÷Òý¡£ÓÐÐ§ÖµÊÇ 0 Óë×Ö·û´®³¤¶È¼õ 1 Ö®¼äµÄÖµ¡£</P>
 
-<H4>è¯´æ˜Ž</H4>
+<H4>ËµÃ÷</H4>
 
-<P><B>charAt</B> æ–¹æ³•è¿”å›žä¸€ä¸ªå­—ç¬¦å€¼ï¼Œè¯¥å­—ç¬¦ä½äºŽæŒ‡å®šç´¢å¼•ä½ç½®ã€‚å­—ç¬¦ä¸²ä¸­çš„ç¬¬ä¸€ä¸ªå­—ç¬¦çš„ç´¢å¼•ä¸º 0ï¼Œç¬¬äºŒä¸ªçš„ç´¢å¼•ä¸º 1ï¼Œç­‰ç­‰ã€‚è¶…å‡ºæœ‰æ•ˆèŒƒå›´çš„ç´¢å¼•å€¼è¿”å›žç©ºå­—ç¬¦ä¸²ã€‚</P>
+<P><B>charAt</B> ·½·¨·µ»ØÒ»¸ö×Ö·ûÖµ£¬¸Ã×Ö·ûÎ»ÓÚÖ¸¶¨Ë÷ÒýÎ»ÖÃ¡£×Ö·û´®ÖÐµÄµÚÒ»¸ö×Ö·ûµÄË÷ÒýÎª 0£¬µÚ¶þ¸öµÄË÷ÒýÎª 1£¬µÈµÈ¡£³¬³öÓÐÐ§·¶Î§µÄË÷ÒýÖµ·µ»Ø¿Õ×Ö·û´®¡£</P>
 
-<H4>ç¤ºä¾‹</H4>
+<H4>Ê¾Àý</H4>
 
-<P>ä¸‹é¢çš„ç¤ºä¾‹è¯´æ˜Žäº† <B>charAt</B> æ–¹æ³•çš„ç”¨æ³•ï¼š</P>
+<P>ÏÂÃæµÄÊ¾ÀýËµÃ÷ÁË <B>charAt</B> ·½·¨µÄÓÃ·¨£º</P>
 
 <PRE><CODE>function charAtTest(n){
-&nbsp;&nbsp;&nbsp;var str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; // </CODE>åˆå§‹åŒ–å˜é‡ã€‚
-&nbsp;&nbsp;&nbsp;<CODE>var s;                                  // </CODE>å£°åå˜é‡ã€‚
-&nbsp;&nbsp;&nbsp;<CODE>s = <span class=cfe><B>str.charAt(</B></span>n - 1<span class=cfe><B>)</B></span>;                  // </CODE>ä»Žç´¢å¼•ä¸º<CODE><I>n</I> â€“ 1</CODE>çš„ä½ç½®å¤„
-<CODE>                                           // </CODE>èŽ·å–æ­£ç¡®çš„å­—ç¬¦ã€‚
-&nbsp;&nbsp;&nbsp;<CODE>return(s);                              //</CODE>è¿”å›žå­—ç¬¦ã€‚
+&nbsp;&nbsp;&nbsp;var str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; // </CODE>³õÊ¼»¯±äÁ¿¡£
+&nbsp;&nbsp;&nbsp;<CODE>var s;                                  // </CODE>ÉùÃû±äÁ¿¡£
+&nbsp;&nbsp;&nbsp;<CODE>s = <span class=cfe><B>str.charAt(</B></span>n - 1<span class=cfe><B>)</B></span>;                  // </CODE>´ÓË÷ÒýÎª<CODE><I>n</I> ¨C 1</CODE>µÄÎ»ÖÃ´¦
+<CODE>                                           // </CODE>»ñÈ¡ÕýÈ·µÄ×Ö·û¡£
+&nbsp;&nbsp;&nbsp;<CODE>return(s);                              //</CODE>·µ»Ø×Ö·û¡£
 }</PRE>
 
-<H4>è¦æ±‚</H4>
+<H4>ÒªÇó</H4>
 
-<P><A HREF="jsoriversioninformation.htm">ç‰ˆæœ¬ 1</A></P>
+<P><A HREF="jsoriversioninformation.htm">°æ±¾ 1</A></P>
 
-<H4>è¯·å‚é˜…</H4>
+<H4>Çë²ÎÔÄ</H4>
 
-<P><A HREF="jsobjstring.htm#jsobjstringmeth">String å¯¹è±¡çš„æ–¹æ³•</A> | <A HREF="jsobjstring.htm#jsobjstringprop">String å¯¹è±¡çš„å±žæ€§</A></P>
+<P><A HREF="jsobjstring.htm#jsobjstringmeth">String ¶ÔÏóµÄ·½·¨</A> | <A HREF="jsobjstring.htm#jsobjstringprop">String ¶ÔÏóµÄÊôÐÔ</A></P>
 
-<P>åº”ç”¨äºŽï¼š <A HREF="jsobjstring.htm">String å¯¹è±¡</A></P>
+<P>Ó¦ÓÃÓÚ£º <A HREF="jsobjstring.htm">String ¶ÔÏó</A></P>
 <!--Copyright_START-->
 <DIV CLASS="footer">
-<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation ç‰ˆæƒæ‰€æœ‰ã€‚ä¿ç•™æ‰€æœ‰æƒåˆ©ã€‚ä½¿ç”¨è§„å®šã€‚</a><br>
+<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation °æÈ¨ËùÓÐ¡£±£ÁôËùÓÐÈ¨Àû¡£Ê¹ÓÃ¹æ¶¨¡£</a><br>
 </DIV> <!--Copyright_END-->
 
 </BODY>

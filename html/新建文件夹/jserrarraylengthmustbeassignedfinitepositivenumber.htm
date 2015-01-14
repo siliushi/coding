@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=gb2312">
+<TITLE>必须给数组长度指定一个有穷正整数</TITLE>
+<!--CSS_START-->
+<style>@import url(../html-vss/msdnie4a.css);</style>
+<link disabled rel="stylesheet" href="../html-vss/msdn_ie3.css">
+<!--CSS_END-->
+</HEAD>
+<BODY>
+
+
+<!--Start Head-->
+<TABLE class="banner" width="100%" CELLSPACING=0>
+<TR>
+<TD class="bannerleft" nowrap>JScript&nbsp;</TD>
+<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">语言参考</a></TD>
+</TR>
+</TABLE>
+<HR>
+<!--End Head-->
+
+<H1><A NAME="jserrarraylengthmustbeassignedfinitepositivenumber"></A>必须赋给数组长度一个有限正整数</H1>
+
+<P>在对现有 <B>Array </B>对象设置其 <B>length </B>属性时，所指定的数组长度不是正整数，也不是零。如果给某个 <B>Array</B> 对象的 <B>length</B> 属性所赋的值时为负数或不是数值 (<B>NaN</B>) 时，就会产生这个错误。请注意 JScript 会自动将小数数值转换为整数。</P>
+
+<P class=label><B>要改正此错误</B></P>
+
+<P>将一个正整数赋给 length 属性。数组大小没有上界限制，但不能超过整数的最大值（大约为40亿）。下面的示例演示了给 <B>Array </B>对象的 <B>length</B> 属性赋值的正确方法。</P>
+
+<PRE><CODE>var my_array = new Array();
+my_array.length = 99;</CODE></PRE>
+
+<H4>请参阅</H4>
+
+<P><A HREF="usingarr.htm">使用数组</A> | <A HREF="jslrfjscriptlanguagereference.htm">JScript 语言参考</A></P>
+<!--Copyright_START-->
+<DIV CLASS="footer">
+<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation 版权所有。保留所有权利。使用规定。</a><br>
+</DIV> <!--Copyright_END-->
+
+</BODY>
+</HTML>

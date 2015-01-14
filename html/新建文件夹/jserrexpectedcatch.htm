@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=gb2312">
+<TITLE>缺少 'catch'</TITLE>
+<!--CSS_START-->
+<style>@import url(../html-vss/msdnie4a.css);</style>
+<link disabled rel="stylesheet" href="../html-vss/msdn_ie3.css">
+<!--CSS_END-->
+</HEAD>
+<BODY>
+
+
+<!--Start Head-->
+<TABLE class="banner" width="100%" CELLSPACING=0>
+<TR>
+<TD class="bannerleft" nowrap>JScript&nbsp;</TD>
+<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">语言参考</a></TD>
+</TR>
+</TABLE>
+<HR>
+<!--End Head-->
+
+<H1><A NAME="jserrexpectedcatch"></A>需要 'catch'</H1>
+
+<P>使用了处理异常的<B>try </B>语句块，但没有些相应的 <B>catch</B> 语句。异常处理机制需要将那些可能失败的代码，连同当异常发生后不会执行的代码一起，包在一个 <B>try </B>语句块中。发生异常时通过使用 <B>throw </B>语句将异常从 <B>try </B>语句块中抛出，并被 <B>try </B>语句块外的一个或多个<B>catch </B>语句抓获。</P>
+
+<P class=label><B>要改正此错误</B>
+
+<UL type=disc>
+	<LI>添加相应的 <B>catch </B>语句块。</li>
+
+	<LI>试试使用 <B>finally </B>语句块而不使用 <B>catch</B>语句块。</li>
+</UL>
+
+<H4>请参阅</H4>
+
+<P><A HREF="jsstmtrycatch.htm">try...catch 语句</A> | <A HREF="jsobjerror.htm">Error 对象</A></P>
+<!--Copyright_START-->
+<DIV CLASS="footer">
+<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation 版权所有。保留所有权利。使用规定。</a><br>
+</DIV> <!--Copyright_END-->
+
+</BODY>
+</HTML>

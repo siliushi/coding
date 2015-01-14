@@ -2,7 +2,7 @@
 <HTML>
 <HEAD>
 <META HTTP-EQUIV="Content-Type" Content="text/html; charset=gb2312">
-<TITLE>正则表达式语法</TITLE>
+<TITLE>�������ʽ�﷨</TITLE>
 <!--CSS_START-->
 <style>@import url(../html-vss/msdnie4a.css);</style>
 <link disabled rel="stylesheet" href="../html-vss/msdn_ie3.css">
@@ -15,257 +15,257 @@
 <TABLE class="banner" width="100%" CELLSPACING=0>
 <TR>
 <TD class="bannerleft" nowrap>JScript&nbsp;</TD>
-<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">语言参考</a></TD>
+<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">���Բο�</a></TD>
 </TR>
 </TABLE>
 <HR>
 <!--End Head-->
 
-<H2><A NAME="jsgrpregexpsyntax"></A>正则表达式语法</H2>
+<H2><A NAME="jsgrpregexpsyntax"></A>�������ʽ�﷨</H2>
 
-<P>一个正则表达式就是由普通字符（例如字符 a 到 z）以及特殊字符（称为<I>元字符</I>）组成的文字模式。该模式描述在查找文字主体时待匹配的一个或多个字符串。正则表达式作为一个模板，将某个字符模式与所搜索的字符串进行匹配。</P>
+<P>һ���������ʽ��������ͨ�ַ��������ַ� a �� z���Լ������ַ�����Ϊ<I>Ԫ�ַ�</I>����ɵ�����ģʽ����ģʽ�����ڲ�����������ʱ��ƥ���һ�������ַ������������ʽ��Ϊһ��ģ�壬��ĳ���ַ�ģʽ�����������ַ�������ƥ�䡣</P>
 
-<P>这里有一些可能会遇到的正则表达式示例：</P>
+<P>������һЩ���ܻ��������������ʽʾ����</P>
 
 <TABLE border=1 cellspacing=0 cols=3 frame=box rules=all>
 
 <TR VALIGN="top">
 <TH width=30%>JScript</TH>
 <TH width=30%>VBScript</TH>
-<TH width=40%>匹配</TH>
+<TH width=40%>ƥ��</TH>
 </TR>
 
 <TR VALIGN="top">
 <TD width=30%>/^\[ \t]*$/</TD>
 <TD width=30%>"^\[ \t]*$"</TD>
-<TD width=40%>匹配一个空白行。</TD>
+<TD width=40%>ƥ��һ���հ��С�</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=30%>/\d{2}-\d{5}/</TD>
 <TD width=30%>"\d{2}-\d{5}"</TD>
-<TD width=40%>验证一个ID 号码是否由一个2位数字，一个连字符以及一个5位数字组成。</TD>
+<TD width=40%>��֤һ��ID �����Ƿ���һ��2λ���֣�һ�����ַ��Լ�һ��5λ������ɡ�</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=30%>/&lt;(.*)&gt;.*&lt;\/\1&gt;/</TD>
 <TD width=30%>"&lt;(.*)&gt;.*&lt;\/\1&gt;"</TD>
-<TD width=40%>匹配一个 HTML 标记。</TD>
+<TD width=40%>ƥ��һ�� HTML ��ǡ�</TD>
 </TR>
 </TABLE><BR>
 
-<P>下表是元字符及其在正则表达式上下文中的行为的一个完整列表：</P>
+<P>�±���Ԫ�ַ��������������ʽ�������е���Ϊ��һ�������б���</P>
 
 <TABLE border=1 cellspacing=0 cols=2 frame=box rules=all>
 
 <TR VALIGN="top">
-<TH width=16%>字符</TH>
-<TH width=84%>描述</TH>
+<TH width=16%>�ַ�</TH>
+<TH width=84%>����</TH>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>\</TD>
-<TD width=84%>将下一个字符标记为一个特殊字符、或一个原义字符、或一个 后向引用、或一个八进制转义符。例如，'n' 匹配字符 "n"。'\n' 匹配一个换行符。序列 '\\' 匹配 "\" 而 "\(" 则匹配 "("。</TD>
+<TD width=84%>����һ���ַ����Ϊһ�������ַ�����һ��ԭ���ַ�����һ�� �������á���һ���˽���ת��������磬'n' ƥ���ַ� "n"��'\n' ƥ��һ�����з������� '\\' ƥ�� "\" �� "\(" ��ƥ�� "("��</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>^</TD>
-<TD width=84%>匹配输入字符串的开始位置。如果设置了 <B>RegExp</B> 对象的 <B>Multiline</B> 属性，^ 也匹配 '\n' 或 '\r' 之后的位置。</TD>
+<TD width=84%>ƥ�������ַ����Ŀ�ʼλ�á���������� <B>RegExp</B> ����� <B>Multiline</B> ���ԣ�^ Ҳƥ�� '\n' �� '\r' ֮���λ�á�</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>$</TD>
-<TD width=84%>匹配输入字符串的结束位置。如果设置了<B>RegExp</B> 对象的 <B>Multiline</B> 属性，$ 也匹配 '\n' 或 '\r' 之前的位置。</TD>
+<TD width=84%>ƥ�������ַ����Ľ���λ�á����������<B>RegExp</B> ����� <B>Multiline</B> ���ԣ�$ Ҳƥ�� '\n' �� '\r' ֮ǰ��λ�á�</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>*</TD>
-<TD width=84%>匹配前面的子表达式零次或多次。例如，zo* 能匹配 "z" 以及 "zoo"。 * 等价于{0,}。</TD>
+<TD width=84%>ƥ��ǰ����ӱ���ʽ��λ��Ρ����磬zo* ��ƥ�� "z" �Լ� "zoo"�� * �ȼ���{0,}��</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>+</TD>
-<TD width=84%>匹配前面的子表达式一次或多次。例如，'zo+' 能匹配 "zo" 以及 "zoo"，但不能匹配 "z"。+ 等价于 {1,}。</TD>
+<TD width=84%>ƥ��ǰ����ӱ���ʽһ�λ��Ρ����磬'zo+' ��ƥ�� "zo" �Լ� "zoo"��������ƥ�� "z"��+ �ȼ��� {1,}��</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>?</TD>
-<TD width=84%>匹配前面的子表达式零次或一次。例如，"do(es)?" 可以匹配 "do" 或 "does" 中的"do" 。? 等价于 {0,1}。</TD>
+<TD width=84%>ƥ��ǰ����ӱ���ʽ��λ�һ�Ρ����磬"do(es)?" ����ƥ�� "do" �� "does" �е�"do" ��? �ȼ��� {0,1}��</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>{<I>n</I>}</TD>
-<TD width=84%><I>n</I> 是一个非负整数。匹配确定的 <I>n</I> 次。例如，'o{2}' 不能匹配 "Bob" 中的 'o'，但是能匹配 "food" 中的两个 o。</TD>
+<TD width=84%><I>n</I> ��һ���Ǹ�������ƥ��ȷ���� <I>n</I> �Ρ����磬'o{2}' ����ƥ�� "Bob" �е� 'o'��������ƥ�� "food" �е����� o��</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>{<I>n</I>,}</TD>
-<TD width=84%><I>n</I> 是一个非负整数。至少匹配<I>n</I> 次。例如，'o{2,}' 不能匹配 "Bob" 中的 'o'，但能匹配 "foooood" 中的所有 o。'o{1,}' 等价于 'o+'。'o{0,}' 则等价于 'o*'。</TD>
+<TD width=84%><I>n</I> ��һ���Ǹ�����������ƥ��<I>n</I> �Ρ����磬'o{2,}' ����ƥ�� "Bob" �е� 'o'������ƥ�� "foooood" �е����� o��'o{1,}' �ȼ��� 'o+'��'o{0,}' ��ȼ��� 'o*'��</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>{<I>n</I>,<I>m</I>}</TD>
-<TD width=84%><I>m</I> 和 <I>n</I> 均为非负整数，其中<I>n</I> &lt;= <I>m</I>。最少匹配 <I>n</I> 次且最多匹配 <I>m</I> 次。刘， "o{1,3}" 将匹配 "fooooood" 中的前三个 o。'o{0,1}' 等价于 'o?'。请注意在逗号和两个数之间不能有空格。</TD>
+<TD width=84%><I>m</I> �� <I>n</I> ��Ϊ�Ǹ�����������<I>n</I> &lt;= <I>m</I>������ƥ�� <I>n</I> �������ƥ�� <I>m</I> �Ρ����� "o{1,3}" ��ƥ�� "fooooood" �е�ǰ���� o��'o{0,1}' �ȼ��� 'o?'����ע���ڶ��ź�������֮�䲻���пո�</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>?</TD>
-<TD width=84%>当该字符紧跟在任何一个其他限制符 (*, +, ?, {<I>n</I>}, {<I>n</I>,}, {<I>n</I>,<I>m</I>}) 后面时，匹配模式是非贪婪的。非贪婪模式尽可能少的匹配所搜索的字符串，而默认的贪婪模式则尽可能多的匹配所搜索的字符串。例如，对于字符串 "oooo"，'o+?' 将匹配单个 "o"，而 'o+' 将匹配所有 'o'。</TD>
+<TD width=84%>�����ַ��������κ�һ���������Ʒ� (*, +, ?, {<I>n</I>}, {<I>n</I>,}, {<I>n</I>,<I>m</I>}) ����ʱ��ƥ��ģʽ�Ƿ�̰���ġ���̰��ģʽ�������ٵ�ƥ�����������ַ�������Ĭ�ϵ�̰��ģʽ�򾡿��ܶ��ƥ�����������ַ��������磬�����ַ��� "oooo"��'o+?' ��ƥ�䵥�� "o"���� 'o+' ��ƥ������ 'o'��</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>.</TD>
-<TD width=84%>匹配除 "\n" 之外的任何单个字符。要匹配包括 '\n' 在内的任何字符，请使用象 '[.\n]' 的模式。</TD>
+<TD width=84%>ƥ��� "\n" ֮����κε����ַ���Ҫƥ����� '\n' ���ڵ��κ��ַ�����ʹ���� '[.\n]' ��ģʽ��</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>(<I>pattern</I>)</TD>
-<TD width=84%>匹配<I>pattern</I> 并获取这一匹配。所获取的匹配可以从产生的 Matches 集合得到，在VBScript 中使用 <B>SubMatches</B> 集合，在JScript 中则使用 <B>$0</B>…<B>$9</B> 属性。要匹配圆括号字符，请使用 '\(' 或 '\)'。</TD>
+<TD width=84%>ƥ��<I>pattern</I> ����ȡ��һƥ�䡣����ȡ��ƥ����ԴӲ����� Matches ���ϵõ�����VBScript ��ʹ�� <B>SubMatches</B> ���ϣ���JScript ����ʹ�� <B>$0</B>��<B>$9</B> ���ԡ�Ҫƥ��Բ�����ַ�����ʹ�� '\(' �� '\)'��</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>(?:<I>pattern</I>)</TD>
-<TD width=84%>匹配 <I>pattern</I> 但不获取匹配结果，也就是说这是一个非获取匹配，不进行存储供以后使用。这在使用 "或" 字符 (|) 来组合一个模式的各个部分是很有用。例如， 'industr(?:y|ies) 就是一个比 'industry|industries' 更简略的表达式。</TD>
+<TD width=84%>ƥ�� <I>pattern</I> ������ȡƥ������Ҳ����˵����һ���ǻ�ȡƥ�䣬�����д洢���Ժ�ʹ�á�����ʹ�� "��" �ַ� (|) �����һ��ģʽ�ĸ��������Ǻ����á����磬 'industr(?:y|ies) ����һ���� 'industry|industries' �����Եı���ʽ��</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>(?=<I>pattern</I>)</TD>
-<TD width=84%>正向预查，在任何匹配 <I>pattern</I> 的字符串开始处匹配查找字符串。这是一个非获取匹配，也就是说，该匹配不需要获取供以后使用。例如， 'Windows (?=95|98|NT|2000)' 能匹配 "Windows 2000" 中的 "Windows" ，但不能匹配 "Windows 3.1" 中的 "Windows"。预查不消耗字符，也就是说，在一个匹配发生后，在最后一次匹配之后立即开始下一次匹配的搜索，而不是从包含预查的字符之后开始。</TD>
+<TD width=84%>����Ԥ�飬���κ�ƥ�� <I>pattern</I> ���ַ�����ʼ��ƥ������ַ���������һ���ǻ�ȡƥ�䣬Ҳ����˵����ƥ�䲻��Ҫ��ȡ���Ժ�ʹ�á����磬 'Windows (?=95|98|NT|2000)' ��ƥ�� "Windows 2000" �е� "Windows" ��������ƥ�� "Windows 3.1" �е� "Windows"��Ԥ�鲻�����ַ���Ҳ����˵����һ��ƥ�䷢���������һ��ƥ��֮��������ʼ��һ��ƥ��������������ǴӰ���Ԥ����ַ�֮��ʼ��</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>(?!<I>pattern</I>)</TD>
-<TD width=84%>负向预查，在任何不匹配Negative lookahead matches the search string at any point where a string not matching <I>pattern</I> 的字符串开始处匹配查找字符串。这是一个非获取匹配，也就是说，该匹配不需要获取供以后使用。例如'Windows (?!95|98|NT|2000)' 能匹配 "Windows 3.1" 中的 "Windows"，但不能匹配 "Windows 2000" 中的 "Windows"。预查不消耗字符，也就是说，在一个匹配发生后，在最后一次匹配之后立即开始下一次匹配的搜索，而不是从包含预查的字符之后开始 </TD>
+<TD width=84%>����Ԥ�飬���κβ�ƥ��Negative lookahead matches the search string at any point where a string not matching <I>pattern</I> ���ַ�����ʼ��ƥ������ַ���������һ���ǻ�ȡƥ�䣬Ҳ����˵����ƥ�䲻��Ҫ��ȡ���Ժ�ʹ�á�����'Windows (?!95|98|NT|2000)' ��ƥ�� "Windows 3.1" �е� "Windows"��������ƥ�� "Windows 2000" �е� "Windows"��Ԥ�鲻�����ַ���Ҳ����˵����һ��ƥ�䷢���������һ��ƥ��֮��������ʼ��һ��ƥ��������������ǴӰ���Ԥ����ַ�֮��ʼ </TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%><I>x</I>|<I>y</I></TD>
-<TD width=84%>匹配 <I>x</I> 或 <I>y</I>。例如，'z|food' 能匹配 "z" 或 "food"。'(z|f)ood' 则匹配 "zood" 或 "food"。 </TD>
+<TD width=84%>ƥ�� <I>x</I> �� <I>y</I>�����磬'z|food' ��ƥ�� "z" �� "food"��'(z|f)ood' ��ƥ�� "zood" �� "food"�� </TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>[<I>xyz</I>]</TD>
-<TD width=84%>字符集合。匹配所包含的任意一个字符。例如， '[abc]' 可以匹配 "plain" 中的 'a'。 </TD>
+<TD width=84%>�ַ����ϡ�ƥ��������������һ���ַ������磬 '[abc]' ����ƥ�� "plain" �е� 'a'�� </TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>[^<I>xyz</I>]</TD>
-<TD width=84%>负值字符集合。匹配未包含的任意字符。例如， '[^abc]' 可以匹配 "plain" 中的'p'。 </TD>
+<TD width=84%>��ֵ�ַ����ϡ�ƥ��δ�����������ַ������磬 '[^abc]' ����ƥ�� "plain" �е�'p'�� </TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>[<I>a-z</I>]</TD>
-<TD width=84%>字符范围。匹配指定范围内的任意字符。例如，'[a-z]' 可以匹配 'a' 到 'z' 范围内的任意小写字母字符。 </TD>
+<TD width=84%>�ַ���Χ��ƥ��ָ����Χ�ڵ������ַ������磬'[a-z]' ����ƥ�� 'a' �� 'z' ��Χ�ڵ�����Сд��ĸ�ַ��� </TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>[^<I>a-z</I>]</TD>
-<TD width=84%>负值字符范围。匹配任何不在指定范围内的任意字符。例如，'[^a-z]' 可以匹配任何不在 'a' 到 'z' 范围内的任意字符。 </TD>
+<TD width=84%>��ֵ�ַ���Χ��ƥ���κβ���ָ����Χ�ڵ������ַ������磬'[^a-z]' ����ƥ���κβ��� 'a' �� 'z' ��Χ�ڵ������ַ��� </TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>\b</TD>
-<TD width=84%>匹配一个单词边界，也就是指单词和空格间的位置。例如， 'er\b' 可以匹配"never" 中的 'er'，但不能匹配 "verb" 中的 'er'。 </TD>
+<TD width=84%>ƥ��һ�����ʱ߽磬Ҳ����ָ���ʺͿո���λ�á����磬 'er\b' ����ƥ��"never" �е� 'er'��������ƥ�� "verb" �е� 'er'�� </TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>\B</TD>
-<TD width=84%>匹配非单词边界。'er\B' 能匹配 "verb" 中的 'er'，但不能匹配 "never" 中的 'er'。</TD>
+<TD width=84%>ƥ��ǵ��ʱ߽硣'er\B' ��ƥ�� "verb" �е� 'er'��������ƥ�� "never" �е� 'er'��</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>\c<I>x</I></TD>
-<TD width=84%>匹配由<I>x</I>指明的控制字符。例如， \cM 匹配一个 Control-M 或回车符。 <I>x</I> 的值必须为 A-Z 或 a-z 之一。否则，将 c 视为一个原义的 'c' 字符。 </TD>
+<TD width=84%>ƥ����<I>x</I>ָ���Ŀ����ַ������磬 \cM ƥ��һ�� Control-M ��س����� <I>x</I> ��ֵ����Ϊ A-Z �� a-z ֮һ�����򣬽� c ��Ϊһ��ԭ��� 'c' �ַ��� </TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>\d</TD>
-<TD width=84%>匹配一个数字字符。等价于 [0-9]。 </TD>
+<TD width=84%>ƥ��һ�������ַ����ȼ��� [0-9]�� </TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>\D</TD>
-<TD width=84%>匹配一个非数字字符。等价于 [^0-9]。 </TD>
+<TD width=84%>ƥ��һ���������ַ����ȼ��� [^0-9]�� </TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>\f</TD>
-<TD width=84%>匹配一个换页符。等价于 \x0c 和 \cL。</TD>
+<TD width=84%>ƥ��һ����ҳ�����ȼ��� \x0c �� \cL��</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>\n</TD>
-<TD width=84%>匹配一个换行符。等价于 \x0a 和 \cJ。</TD>
+<TD width=84%>ƥ��һ�����з����ȼ��� \x0a �� \cJ��</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>\r</TD>
-<TD width=84%>匹配一个回车符。等价于 \x0d 和 \cM。</TD>
+<TD width=84%>ƥ��һ���س������ȼ��� \x0d �� \cM��</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>\s</TD>
-<TD width=84%>匹配任何空白字符，包括空格、制表符、换页符等等。等价于 [&nbsp;\f\n\r\t\v]。</TD>
+<TD width=84%>ƥ���κοհ��ַ��������ո��Ʊ�������ҳ���ȵȡ��ȼ��� [&nbsp;\f\n\r\t\v]��</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>\S</TD>
-<TD width=84%>匹配任何非空白字符。等价于 [^&nbsp;\f\n\r\t\v]。</TD>
+<TD width=84%>ƥ���κηǿհ��ַ����ȼ��� [^&nbsp;\f\n\r\t\v]��</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>\t</TD>
-<TD width=84%>匹配一个制表符。等价于 \x09 和 \cI。</TD>
+<TD width=84%>ƥ��һ���Ʊ������ȼ��� \x09 �� \cI��</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>\v</TD>
-<TD width=84%>匹配一个垂直制表符。等价于 \x0b 和 \cK。</TD>
+<TD width=84%>ƥ��һ����ֱ�Ʊ������ȼ��� \x0b �� \cK��</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>\w</TD>
-<TD width=84%>匹配包括下划线的任何单词字符。等价于'[A-Za-z0-9_]'。 </TD>
+<TD width=84%>ƥ������»��ߵ��κε����ַ����ȼ���'[A-Za-z0-9_]'�� </TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>\W</TD>
-<TD width=84%>匹配任何非单词字符。等价于 '[^A-Za-z0-9_]'。 </TD>
+<TD width=84%>ƥ���κηǵ����ַ����ȼ��� '[^A-Za-z0-9_]'�� </TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>\x<I>n</I></TD>
-<TD width=84%>匹配 <I>n</I>，其中 <I>n</I> 为十六进制转义值。十六进制转义值必须为确定的两个数字长。例如， '\x41' 匹配 "A"。'\x041' 则等价于 '\x04' &amp; "1"。正则表达式中可以使用 ASCII 编码。.</TD>
+<TD width=84%>ƥ�� <I>n</I>������ <I>n</I> Ϊʮ������ת��ֵ��ʮ������ת��ֵ����Ϊȷ�����������ֳ������磬 '\x41' ƥ�� "A"��'\x041' ��ȼ��� '\x04' &amp; "1"���������ʽ�п���ʹ�� ASCII ���롣.</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>\<I>num</I></TD>
-<TD width=84%>匹配 <I>num</I>，其中 <I>num</I> 是一个正整数。对所获取的匹配的引用。例如，'(.)\1' 匹配两个连续的相同字符。 </TD>
+<TD width=84%>ƥ�� <I>num</I>������ <I>num</I> ��һ����������������ȡ��ƥ������á����磬'(.)\1' ƥ��������������ͬ�ַ��� </TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>\<I>n</I></TD>
-<TD width=84%>标识一个八进制转义值或一个后向引用。如果 \<I>n</I> 之前至少 <I>n</I> 个获取的子表达式，则 <I>n</I> 为后向引用。否则，如果 <I>n</I> 为八进制数字 (0-7)，则 <I>n</I> 为一个八进制转义值。</TD>
+<TD width=84%>��ʶһ���˽���ת��ֵ��һ���������á���� \<I>n</I> ֮ǰ���� <I>n</I> ����ȡ���ӱ���ʽ���� <I>n</I> Ϊ�������á�������� <I>n</I> Ϊ�˽������� (0-7)���� <I>n</I> Ϊһ���˽���ת��ֵ��</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>\<I>nm</I></TD>
-<TD width=84%>标识一个八进制转义值或一个后向引用。如果 \<I>nm</I> 之前至少有is preceded by at least <I>nm</I> 个获取得子表达式，则 <I>nm</I> 为后向引用。如果 \<I>nm</I> 之前至少有 <I>n</I> 个获取，则 <I>n</I> 为一个后跟文字 <I>m </I>的后向引用。如果前面的条件都不满足，若&nbsp; <I>n</I> 和 <I>m</I> 均为八进制数字 (0-7)，则 \<I>nm</I> 将匹配八进制转义值 <I>nm</I>。</TD>
+<TD width=84%>��ʶһ���˽���ת��ֵ��һ���������á���� \<I>nm</I> ֮ǰ������is preceded by at least <I>nm</I> ����ȡ���ӱ���ʽ���� <I>nm</I> Ϊ�������á���� \<I>nm</I> ֮ǰ������ <I>n</I> ����ȡ���� <I>n</I> Ϊһ��������� <I>m </I>�ĺ������á����ǰ��������������㣬��&nbsp; <I>n</I> �� <I>m</I> ��Ϊ�˽������� (0-7)���� \<I>nm</I> ��ƥ��˽���ת��ֵ <I>nm</I>��</TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>\<I>nml</I></TD>
-<TD width=84%>如果 <I>n</I> 为八进制数字 (0-3)，且 <I>m</I> 和 <I>l</I> 均为八进制数字 (0-7)，则匹配八进制转义值 <I>nml。</I></TD>
+<TD width=84%>��� <I>n</I> Ϊ�˽������� (0-3)���� <I>m</I> �� <I>l</I> ��Ϊ�˽������� (0-7)����ƥ��˽���ת��ֵ <I>nml��</I></TD>
 </TR>
 
 <TR VALIGN="top">
 <TD width=16%>\u<I>n</I></TD>
-<TD width=84%>匹配 <I>n</I>，其中 <I>n</I> 是一个用四个十六进制数字表示的 Unicode 字符。例如， \u00A9 匹配版权符号 (?)。</TD>
+<TD width=84%>ƥ�� <I>n</I>������ <I>n</I> ��һ�����ĸ�ʮ���������ֱ�ʾ�� Unicode �ַ������磬 \u00A9 ƥ���Ȩ���� (?)��</TD>
 </TR>
 </TABLE><BR>
 <!--Copyright_START-->
 <DIV CLASS="footer">
-<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation 版权所有。保留所有权利。使用规定。</a><br>
+<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation ��Ȩ���С���������Ȩ����ʹ�ù涨��</a><br>
 </DIV> <!--Copyright_END-->
 
 </BODY>

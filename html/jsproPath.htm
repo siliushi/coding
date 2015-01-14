@@ -2,7 +2,7 @@
 <HTML>
 <HEAD>
 <META HTTP-EQUIV="Content-Type" Content="text/html; charset=gb2312">
-<TITLE>Path å±æ€§</TITLE>
+<TITLE>Path ÊôĞÔ</TITLE>
 <!--CSS_START-->
 <style>@import url(../html-vss/msdnie4a.css);</style>
 <link disabled rel="stylesheet" href="../html-vss/msdn_ie3.css">
@@ -15,25 +15,25 @@
 <TABLE class="banner" width="100%" CELLSPACING=0>
 <TR>
 <TD class="bannerleft" nowrap>JScript&nbsp;</TD>
-<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">è¯­è¨€å‚è€ƒ</a></TD>
+<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">ÓïÑÔ²Î¿¼</a></TD>
 </TR>
 </TABLE>
 <HR>
 <!--End Head-->
 
-<H1><A NAME="jspropath"></A>Path å±æ€§</H1>
+<H1><A NAME="jspropath"></A>Path ÊôĞÔ</H1>
 
-<P>è¿”å›æŒ‡å®šæ–‡ä»¶ã€æ–‡ä»¶å¤¹æˆ–é©±åŠ¨å™¨çš„è·¯å¾„ã€‚</P>
+<P>·µ»ØÖ¸¶¨ÎÄ¼ş¡¢ÎÄ¼ş¼Ğ»òÇı¶¯Æ÷µÄÂ·¾¶¡£</P>
 
 <P><CODE><I>object</I>.<B>Path</B> </CODE></P>
 
-<P><I>object</I> æ€»æ˜¯ä¸º <B>File</B>ã€<B>Folder</B> æˆ– <B>Drive</B> å¯¹è±¡ã€‚ </P>
+<P><I>object</I> ×ÜÊÇÎª <B>File</B>¡¢<B>Folder</B> »ò <B>Drive</B> ¶ÔÏó¡£ </P>
 
-<H4>è¯´æ˜</H4>
+<H4>ËµÃ÷</H4>
 
-<P>é©±åŠ¨å™¨å­—æ¯åä¸åŒ…æ‹¬æ ¹é©±åŠ¨å™¨ã€‚ ä¾‹å¦‚ï¼Œ C é©±åŠ¨å™¨çš„è·¯å¾„æ˜¯ C:ï¼Œè€Œä¸æ˜¯ C:\ã€‚</P>
+<P>Çı¶¯Æ÷×ÖÄ¸ºó²»°üÀ¨¸ùÇı¶¯Æ÷¡£ ÀıÈç£¬ C Çı¶¯Æ÷µÄÂ·¾¶ÊÇ C:£¬¶ø²»ÊÇ C:\¡£</P>
 
-<P>ä¸‹é¢çš„ä»£ç é€šè¿‡ <B>File</B> å¯¹è±¡è¯´æ˜äº† <B>Path</B> å±æ€§çš„ç”¨æ³•ï¼š </P>
+<P>ÏÂÃæµÄ´úÂëÍ¨¹ı <B>File</B> ¶ÔÏóËµÃ÷ÁË <B>Path</B> ÊôĞÔµÄÓÃ·¨£º </P>
 
 <PRE><CODE>function ShowFileAccessInfo(filespec)
 {
@@ -41,19 +41,19 @@
 <CODE>&nbsp;&nbsp;&nbsp;fso = new ActiveXObject("Scripting.FileSystemObject");</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;f = fso.GetFile(filespec);</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;s = <span class=cfe><B>f.Path</B></span>.toUpperCase() + "&lt;br&gt;";</CODE>
-<CODE>&nbsp;&nbsp;&nbsp;s += "</CODE>åˆ›å»ºæ—¶é—´ï¼š<CODE> " + f.DateCreated + "&lt;br&gt;";</CODE>
-<CODE>&nbsp;&nbsp;&nbsp;s += "</CODE>æœ€è¿‘ä¸€æ¬¡è®¿é—®æ—¶é—´ï¼š<CODE> " + f.DateLastAccessed + "&lt;br&gt;";</CODE>
-<CODE>&nbsp;&nbsp;&nbsp;s += "</CODE>æœ€è¿‘ä¸€æ¬¡ä¿®æ”¹æ—¶é—´ï¼š<CODE> " + f.DateLastModified&nbsp;&nbsp;&nbsp;</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;s += "</CODE>´´½¨Ê±¼ä£º<CODE> " + f.DateCreated + "&lt;br&gt;";</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;s += "</CODE>×î½üÒ»´Î·ÃÎÊÊ±¼ä£º<CODE> " + f.DateLastAccessed + "&lt;br&gt;";</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;s += "</CODE>×î½üÒ»´ÎĞŞ¸ÄÊ±¼ä£º<CODE> " + f.DateLastModified&nbsp;&nbsp;&nbsp;</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;return(s);</CODE>
 }</PRE>
 
-<H4>è¯·å‚é˜…</H4>
+<H4>Çë²ÎÔÄ</H4>
 
-<P><A HREF="jsproattributes.htm">Attributes å±æ€§</A> | <A HREF="jsproavailablespace.htm">AvailableSpace å±æ€§</A> | <A HREF="jsprodatecreated.htm">DateCreated å±æ€§</A> | <A HREF="jsprodatelastaccessed.htm">DateLastAccessed å±æ€§</A> | <A HREF="jsprodatelastmodified.htm">DateLastModified å±æ€§</A> | <A HREF="jsprodrive.htm">Drive å±æ€§</A> | <A HREF="jsprodriveletter.htm">DriveLetter å±æ€§</A> | <A HREF="jsprodrivetype.htm">DriveType å±æ€§</A> | <A HREF="jsprofiles.htm">Files å±æ€§</A> | <A HREF="jsprofilesystem.htm">FileSystem å±æ€§</A> | <A HREF="jsprofreespace.htm">FreeSpace å±æ€§</A> | <A HREF="jsproisready.htm">IsReady å±æ€§</A> | <A HREF="jsproisrootfolder.htm">IsRootFolder å±æ€§</A> | <A HREF="jsproname.htm">Name å±æ€§</A> | <A HREF="jsproparentfolder.htm">ParentFolder å±æ€§</A> | <A HREF="jsprorootfolder.htm">RootFolder å±æ€§</A> | <A HREF="jsproserialnumber.htm">SerialNumber å±æ€§</A> | <A HREF="jsprosharename.htm">ShareName å±æ€§</A> | <A HREF="jsproshortname.htm">ShortName å±æ€§</A> | <A HREF="jsproshortpath.htm">ShortPath å±æ€§</A> | <A HREF="jsprosize.htm">Size å±æ€§</A> | <A HREF="jsprosubfolders.htm">SubFolders å±æ€§</A> | <A HREF="jsprototalsize.htm">TotalSize å±æ€§</A> | <A HREF="jsprotype.htm">Type å±æ€§</A> | <A HREF="jsprovolumename.htm">VolumeName å±æ€§</A><BR>
-åº”ç”¨äºï¼š <A HREF="jsobjdrive.htm">Drive å¯¹è±¡</A> | <A HREF="jsobjfile.htm">File å¯¹è±¡</A> | <A HREF="jsobjfolder.htm">Folder å¯¹è±¡</A></P>
+<P><A HREF="jsproattributes.htm">Attributes ÊôĞÔ</A> | <A HREF="jsproavailablespace.htm">AvailableSpace ÊôĞÔ</A> | <A HREF="jsprodatecreated.htm">DateCreated ÊôĞÔ</A> | <A HREF="jsprodatelastaccessed.htm">DateLastAccessed ÊôĞÔ</A> | <A HREF="jsprodatelastmodified.htm">DateLastModified ÊôĞÔ</A> | <A HREF="jsprodrive.htm">Drive ÊôĞÔ</A> | <A HREF="jsprodriveletter.htm">DriveLetter ÊôĞÔ</A> | <A HREF="jsprodrivetype.htm">DriveType ÊôĞÔ</A> | <A HREF="jsprofiles.htm">Files ÊôĞÔ</A> | <A HREF="jsprofilesystem.htm">FileSystem ÊôĞÔ</A> | <A HREF="jsprofreespace.htm">FreeSpace ÊôĞÔ</A> | <A HREF="jsproisready.htm">IsReady ÊôĞÔ</A> | <A HREF="jsproisrootfolder.htm">IsRootFolder ÊôĞÔ</A> | <A HREF="jsproname.htm">Name ÊôĞÔ</A> | <A HREF="jsproparentfolder.htm">ParentFolder ÊôĞÔ</A> | <A HREF="jsprorootfolder.htm">RootFolder ÊôĞÔ</A> | <A HREF="jsproserialnumber.htm">SerialNumber ÊôĞÔ</A> | <A HREF="jsprosharename.htm">ShareName ÊôĞÔ</A> | <A HREF="jsproshortname.htm">ShortName ÊôĞÔ</A> | <A HREF="jsproshortpath.htm">ShortPath ÊôĞÔ</A> | <A HREF="jsprosize.htm">Size ÊôĞÔ</A> | <A HREF="jsprosubfolders.htm">SubFolders ÊôĞÔ</A> | <A HREF="jsprototalsize.htm">TotalSize ÊôĞÔ</A> | <A HREF="jsprotype.htm">Type ÊôĞÔ</A> | <A HREF="jsprovolumename.htm">VolumeName ÊôĞÔ</A><BR>
+Ó¦ÓÃÓÚ£º <A HREF="jsobjdrive.htm">Drive ¶ÔÏó</A> | <A HREF="jsobjfile.htm">File ¶ÔÏó</A> | <A HREF="jsobjfolder.htm">Folder ¶ÔÏó</A></P>
 <!--Copyright_START-->
 <DIV CLASS="footer">
-<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation ç‰ˆæƒæ‰€æœ‰ã€‚ä¿ç•™æ‰€æœ‰æƒåˆ©ã€‚ä½¿ç”¨è§„å®šã€‚</a><br>
+<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation °æÈ¨ËùÓĞ¡£±£ÁôËùÓĞÈ¨Àû¡£Ê¹ÓÃ¹æ¶¨¡£</a><br>
 </DIV> <!--Copyright_END-->
 
 </BODY>

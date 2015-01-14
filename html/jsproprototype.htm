@@ -2,7 +2,7 @@
 <HTML>
 <HEAD>
 <META HTTP-EQUIV="Content-Type" Content="text/html; charset=gb2312">
-<TITLE>prototype å±žæ€§</TITLE>
+<TITLE>prototype ÊôÐÔ</TITLE>
 <!--CSS_START-->
 <style>@import url(../html-vss/msdnie4a.css);</style>
 <link disabled rel="stylesheet" href="../html-vss/msdn_ie3.css">
@@ -15,25 +15,25 @@
 <TABLE class="banner" width="100%" CELLSPACING=0>
 <TR>
 <TD class="bannerleft" nowrap>JScript&nbsp;</TD>
-<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">è¯­è¨€å‚è€ƒ</a></TD>
+<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">ÓïÑÔ²Î¿¼</a></TD>
 </TR>
 </TABLE>
 <HR>
 <!--End Head-->
 
-<H1><A NAME="jsproprototype"></A>prototype å±žæ€§</H1>
+<H1><A NAME="jsproprototype"></A>prototype ÊôÐÔ</H1>
 
-<P>è¿”å›žå¯¹è±¡ç±»åž‹åŽŸåž‹çš„å¼•ç”¨ã€‚</P>
+<P>·µ»Ø¶ÔÏóÀàÐÍÔ­ÐÍµÄÒýÓÃ¡£</P>
 
 <P><CODE><I>objectName</I>.<B>prototype</B></CODE></P>
 
-<P><I>objectName </I>å‚æ•°æ˜¯å¯¹è±¡çš„åç§°ã€‚ </P>
+<P><I>objectName </I>²ÎÊýÊÇ¶ÔÏóµÄÃû³Æ¡£ </P>
 
-<H4>è¯´æ˜Ž</H4>
+<H4>ËµÃ÷</H4>
 
-<P>ç”¨ <B>prototype</B> å±žæ€§æä¾›å¯¹è±¡çš„ç±»çš„ä¸€ç»„åŸºæœ¬åŠŸèƒ½ã€‚ å¯¹è±¡çš„æ–°å®žä¾‹â€œç»§æ‰¿â€èµ‹äºˆè¯¥å¯¹è±¡åŽŸåž‹çš„æ“ä½œã€‚ </P>
+<P>ÓÃ <B>prototype</B> ÊôÐÔÌá¹©¶ÔÏóµÄÀàµÄÒ»×é»ù±¾¹¦ÄÜ¡£ ¶ÔÏóµÄÐÂÊµÀý¡°¼Ì³Ð¡±¸³Óè¸Ã¶ÔÏóÔ­ÐÍµÄ²Ù×÷¡£ </P>
 
-<P>ä¾‹å¦‚ï¼Œè¦ä¸º <B>Array</B> å¯¹è±¡æ·»åŠ è¿”å›žæ•°ç»„ä¸­æœ€å¤§å…ƒç´ å€¼çš„æ–¹æ³•ã€‚ è¦å®Œæˆè¿™ä¸€ç‚¹ï¼Œå£°æ˜Žè¯¥å‡½æ•°ï¼Œå°†å®ƒåŠ å…¥ <B>Array.prototype</B>ï¼Œ å¹¶ä½¿ç”¨å®ƒã€‚ </P>
+<P>ÀýÈç£¬ÒªÎª <B>Array</B> ¶ÔÏóÌí¼Ó·µ»ØÊý×éÖÐ×î´óÔªËØÖµµÄ·½·¨¡£ ÒªÍê³ÉÕâÒ»µã£¬ÉùÃ÷¸Ãº¯Êý£¬½«Ëü¼ÓÈë <B>Array.prototype</B>£¬ ²¢Ê¹ÓÃËü¡£ </P>
 
 <PRE><CODE>function array_max( ){
 &nbsp;&nbsp;&nbsp;var i, max = this[0];
@@ -48,24 +48,24 @@ Array.<span class=cfe><B>prototype</B></span>.max = array_max;
 var x = new Array(1, 2, 3, 4, 5, 6);
 var y = x.max( );</CODE></PRE>
 
-<P>è¯¥ä»£ç æ‰§è¡ŒåŽï¼Œ<I>y</I> ä¿å­˜æ•°ç»„ <I>x</I> ä¸­çš„æœ€å¤§å€¼ï¼Œæˆ–è¯´ 6ã€‚</P>
+<P>¸Ã´úÂëÖ´ÐÐºó£¬<I>y</I> ±£´æÊý×é <I>x</I> ÖÐµÄ×î´óÖµ£¬»òËµ 6¡£</P>
 
-<P>æ‰€æœ‰ <A HREF="glossary.htm#defintrinsicobjectjs">JScript å›ºæœ‰å¯¹è±¡</A>éƒ½æœ‰åªè¯»çš„ <B>prototype</B> å±žæ€§ã€‚å¯ä»¥è±¡è¯¥ä¾‹ä¸­é‚£æ ·ä¸ºåŽŸåž‹æ·»åŠ åŠŸèƒ½ï¼Œä½†è¯¥å¯¹è±¡ä¸èƒ½è¢«èµ‹äºˆä¸åŒçš„åŽŸåž‹ã€‚ç„¶è€Œï¼Œ<A HREF="glossary.htm#defuserobject">ç”¨æˆ·å®šä¹‰çš„å¯¹è±¡</A>å¯ä»¥è¢«èµ‹ç»™æ–°çš„åŽŸåž‹ã€‚</P>
+<P>ËùÓÐ <A HREF="glossary.htm#defintrinsicobjectjs">JScript ¹ÌÓÐ¶ÔÏó</A>¶¼ÓÐÖ»¶ÁµÄ <B>prototype</B> ÊôÐÔ¡£¿ÉÒÔÏó¸ÃÀýÖÐÄÇÑùÎªÔ­ÐÍÌí¼Ó¹¦ÄÜ£¬µ«¸Ã¶ÔÏó²»ÄÜ±»¸³Óè²»Í¬µÄÔ­ÐÍ¡£È»¶ø£¬<A HREF="glossary.htm#defuserobject">ÓÃ»§¶¨ÒåµÄ¶ÔÏó</A>¿ÉÒÔ±»¸³¸øÐÂµÄÔ­ÐÍ¡£</P>
 
-<P>æœ¬è¯­è¨€å‚è€ƒä¸­æ¯ä¸ªå†…éƒ¨å¯¹è±¡çš„æ–¹æ³•å’Œå±žæ€§åˆ—è¡¨æŒ‡å‡ºå“ªäº›æ˜¯å¯¹è±¡åŽŸåž‹çš„éƒ¨åˆ†ï¼Œå“ªäº›ä¸æ˜¯ã€‚ </P>
+<P>±¾ÓïÑÔ²Î¿¼ÖÐÃ¿¸öÄÚ²¿¶ÔÏóµÄ·½·¨ºÍÊôÐÔÁÐ±íÖ¸³öÄÄÐ©ÊÇ¶ÔÏóÔ­ÐÍµÄ²¿·Ö£¬ÄÄÐ©²»ÊÇ¡£ </P>
 
-<H4>è¦æ±‚</H4>
+<H4>ÒªÇó</H4>
 
-<P><A HREF="jsoriversioninformation.htm">ç‰ˆæœ¬ 2</A> </P>
+<P><A HREF="jsoriversioninformation.htm">°æ±¾ 2</A> </P>
 
-<H4>è¯·å‚é˜…</H4>
+<H4>Çë²ÎÔÄ</H4>
 
-<P><A HREF="jsproconstructor.htm">constructor å±žæ€§</A></P>
+<P><A HREF="jsproconstructor.htm">constructor ÊôÐÔ</A></P>
 
-<P>åº”ç”¨äºŽï¼š <A HREF="jsobjarray.htm">Array å¯¹è±¡</A> | <A HREF="jsobjboolean.htm">Boolean å¯¹è±¡</A> | <A HREF="jsobjdate.htm">Date å¯¹è±¡</A> | <A HREF="jsobjfunction.htm">Function å¯¹è±¡</A> | <A HREF="jsobjnumber.htm">Number å¯¹è±¡</A> | <A HREF="jsobjobject.htm">Object å¯¹è±¡</A> | <A HREF="jsobjstring.htm">String å¯¹è±¡</A></P>
+<P>Ó¦ÓÃÓÚ£º <A HREF="jsobjarray.htm">Array ¶ÔÏó</A> | <A HREF="jsobjboolean.htm">Boolean ¶ÔÏó</A> | <A HREF="jsobjdate.htm">Date ¶ÔÏó</A> | <A HREF="jsobjfunction.htm">Function ¶ÔÏó</A> | <A HREF="jsobjnumber.htm">Number ¶ÔÏó</A> | <A HREF="jsobjobject.htm">Object ¶ÔÏó</A> | <A HREF="jsobjstring.htm">String ¶ÔÏó</A></P>
 <!--Copyright_START-->
 <DIV CLASS="footer">
-<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation ç‰ˆæƒæ‰€æœ‰ã€‚ä¿ç•™æ‰€æœ‰æƒåˆ©ã€‚ä½¿ç”¨è§„å®šã€‚</a><br>
+<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation °æÈ¨ËùÓÐ¡£±£ÁôËùÓÐÈ¨Àû¡£Ê¹ÓÃ¹æ¶¨¡£</a><br>
 </DIV> <!--Copyright_END-->
 
 </BODY>

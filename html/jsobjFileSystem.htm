@@ -2,7 +2,7 @@
 <HTML>
 <HEAD>
 <META HTTP-EQUIV="Content-Type" Content="text/html; charset=gb2312">
-<TITLE>FileSystemObject å¯¹è±¡</TITLE>
+<TITLE>FileSystemObject ¶ÔÏó</TITLE>
 <!--CSS_START-->
 <style>@import url(../html-vss/msdnie4a.css);</style>
 <link disabled rel="stylesheet" href="../html-vss/msdn_ie3.css">
@@ -15,43 +15,43 @@
 <TABLE class="banner" width="100%" CELLSPACING=0>
 <TR>
 <TD class="bannerleft" nowrap>JScript&nbsp;</TD>
-<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">è¯­è¨€å‚è€ƒ</a></TD>
+<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">ÓïÑÔ²Î¿¼</a></TD>
 </TR>
 </TABLE>
 <HR>
 <!--End Head-->
 
-<H1><A NAME="jsobjfilesystem"></A>FileSystemObject å¯¹è±¡</H1>
+<H1><A NAME="jsobjfilesystem"></A>FileSystemObject ¶ÔÏó</H1>
 
-<P>æä¾›å¯¹è®¡ç®—æœºæ–‡ä»¶ç³»ç»Ÿçš„è®¿é—®ã€‚</P>
+<P>Ìá¹©¶Ô¼ÆËã»úÎÄ¼şÏµÍ³µÄ·ÃÎÊ¡£</P>
 
 <P><CODE>y = new ActiveXObject("Scripting.FileSystemObject") </CODE></P>
 
-<H4>è¯´æ˜</H4>
+<H4>ËµÃ÷</H4>
 
-<P>ä¸‹é¢çš„ä»£ç æ¼”ç¤ºäº†å¦‚ä½•ç”¨ <B>FileSystemObjext</B> è¿”å›å¯ç”¨äºè¯»æˆ–å†™çš„ <B>TextStream </B>å¯¹è±¡ï¼š </P>
+<P>ÏÂÃæµÄ´úÂëÑİÊ¾ÁËÈçºÎÓÃ <B>FileSystemObjext</B> ·µ»Ø¿ÉÓÃÓÚ¶Á»òĞ´µÄ <B>TextStream </B>¶ÔÏó£º </P>
 
 <PRE><CODE>var fso = new ActiveXObject("<span class=cfe><B>Scripting.FileSystemObject</B></span>");
 var a = fso.CreateTextFile("c:\\testfile.txt", true);
 a.WriteLine("This is a test.");
 a.Close();</CODE></PRE>
 
-<P>åœ¨è¯¥ä¾‹å­ä»£ç ä¸­ï¼Œ<B>ActiveXObject </B>å¯¹è±¡è¢«èµ‹ç»™ <B>FileSystemObject</B> (fso)ã€‚éšå <B>CreateTextFile</B> æ–¹æ³•åˆ›å»ºæ–‡ä»¶ <B>TextStream</B> å¯¹è±¡ (a)ï¼Œå¹¶ç”¨ <B>WriteLine</B> æ–¹æ³•å°†ä¸€è¡Œæ–‡æœ¬å†™å…¥åˆ›å»ºçš„æ–‡æœ¬æ–‡ä»¶ã€‚<B>Close</B> æ–¹æ³•åˆ·æ–°ç¼“å†²åŒºå¹¶å…³é—­è¯¥æ–‡ä»¶ã€‚ </P>
+<P>ÔÚ¸ÃÀı×Ó´úÂëÖĞ£¬<B>ActiveXObject </B>¶ÔÏó±»¸³¸ø <B>FileSystemObject</B> (fso)¡£Ëæºó <B>CreateTextFile</B> ·½·¨´´½¨ÎÄ¼ş <B>TextStream</B> ¶ÔÏó (a)£¬²¢ÓÃ <B>WriteLine</B> ·½·¨½«Ò»ĞĞÎÄ±¾Ğ´Èë´´½¨µÄÎÄ±¾ÎÄ¼ş¡£<B>Close</B> ·½·¨Ë¢ĞÂ»º³åÇø²¢¹Ø±Õ¸ÃÎÄ¼ş¡£ </P>
 
-<H4>æ–¹æ³•</H4>
+<H4>·½·¨</H4>
 
-<P><A HREF="jsmthbuildpath.htm">BuildPath æ–¹æ³•</A> | <A HREF="jsmthcopyfile.htm">CopyFile æ–¹æ³•</A> | <A HREF="jsmthcopyfolder.htm">CopyFolder æ–¹æ³•</A> | <A HREF="jsmthcreatefolder.htm">CreateFolder æ–¹æ³•</A> | <A HREF="jsmthcreatetextfile.htm">CreateTextFile æ–¹æ³•</A> | <A HREF="jsmthdeletefile.htm">DeleteFile æ–¹æ³•</A> | <A HREF="jsmthdeletefolder.htm">DeleteFolder æ–¹æ³•</A> | <A HREF="jsmthdriveexists.htm">DriveExists æ–¹æ³•</A> | <A HREF="jsmthfileexists.htm">FileExists æ–¹æ³•</A> | <A HREF="jsmthfolderexists.htm">FolderExists æ–¹æ³•</A> | <A HREF="jsmthgetabsolutepathname.htm">GetAbsolutePathName æ–¹æ³•</A> | <A HREF="jsmthgetbasename.htm">GetBaseName æ–¹æ³•</A> | <A HREF="jsmthgetdrive.htm">GetDrive æ–¹æ³•</A> | <A HREF="jsmthgetdrivename.htm">GetDriveName æ–¹æ³•</A> | <A HREF="jsmthgetextensionname.htm">GetExtensionName æ–¹æ³•</A> | <A HREF="jsmthgetfile.htm">GetFile æ–¹æ³•</A> | <A HREF="jsmthgetfilename.htm">GetFileName æ–¹æ³•</A> | <A HREF="jsmthgetfolder.htm">GetFolder æ–¹æ³•</A> | <A HREF="jsmthgetparentfoldername.htm">GetParentFolderName æ–¹æ³•</A> | <A HREF="jsmthgetspecialfolder.htm">GetSpecialFolder æ–¹æ³•</A> | <A HREF="jsmthgettempname.htm">GetTempName æ–¹æ³•</A> | <A HREF="jsmthmovefile.htm">MoveFile æ–¹æ³•</A> | <A HREF="jsmthmovefolder.htm">MoveFolder æ–¹æ³•</A> | <A HREF="jsmthopentextfile.htm">OpenTextFile æ–¹æ³•</A></P>
+<P><A HREF="jsmthbuildpath.htm">BuildPath ·½·¨</A> | <A HREF="jsmthcopyfile.htm">CopyFile ·½·¨</A> | <A HREF="jsmthcopyfolder.htm">CopyFolder ·½·¨</A> | <A HREF="jsmthcreatefolder.htm">CreateFolder ·½·¨</A> | <A HREF="jsmthcreatetextfile.htm">CreateTextFile ·½·¨</A> | <A HREF="jsmthdeletefile.htm">DeleteFile ·½·¨</A> | <A HREF="jsmthdeletefolder.htm">DeleteFolder ·½·¨</A> | <A HREF="jsmthdriveexists.htm">DriveExists ·½·¨</A> | <A HREF="jsmthfileexists.htm">FileExists ·½·¨</A> | <A HREF="jsmthfolderexists.htm">FolderExists ·½·¨</A> | <A HREF="jsmthgetabsolutepathname.htm">GetAbsolutePathName ·½·¨</A> | <A HREF="jsmthgetbasename.htm">GetBaseName ·½·¨</A> | <A HREF="jsmthgetdrive.htm">GetDrive ·½·¨</A> | <A HREF="jsmthgetdrivename.htm">GetDriveName ·½·¨</A> | <A HREF="jsmthgetextensionname.htm">GetExtensionName ·½·¨</A> | <A HREF="jsmthgetfile.htm">GetFile ·½·¨</A> | <A HREF="jsmthgetfilename.htm">GetFileName ·½·¨</A> | <A HREF="jsmthgetfolder.htm">GetFolder ·½·¨</A> | <A HREF="jsmthgetparentfoldername.htm">GetParentFolderName ·½·¨</A> | <A HREF="jsmthgetspecialfolder.htm">GetSpecialFolder ·½·¨</A> | <A HREF="jsmthgettempname.htm">GetTempName ·½·¨</A> | <A HREF="jsmthmovefile.htm">MoveFile ·½·¨</A> | <A HREF="jsmthmovefolder.htm">MoveFolder ·½·¨</A> | <A HREF="jsmthopentextfile.htm">OpenTextFile ·½·¨</A></P>
 
-<H4>å±æ€§</H4>
+<H4>ÊôĞÔ</H4>
 
-<P><A HREF="jsprodrives.htm">Drives å±æ€§</A></P>
+<P><A HREF="jsprodrives.htm">Drives ÊôĞÔ</A></P>
 
-<H4>è¯·å‚é˜…</H4>
+<H4>Çë²ÎÔÄ</H4>
 
-<P><A HREF="jsobjdictionary.htm">Dictionary å¯¹è±¡</A> | <A HREF="jsobjdrive.htm">Drive å¯¹è±¡</A> | <A HREF="jscoldrives.htm">Drives é›†åˆ</A> | <A HREF="jsobjfile.htm">File å¯¹è±¡</A> | <A HREF="jscolfiles.htm">Files é›†åˆ</A> | <A HREF="jsobjfolder.htm">Folder å¯¹è±¡</A> | <A HREF="jscolfolders.htm">Folders é›†åˆ</A> | <A HREF="jsobjtextstream.htm">TextStream å¯¹è±¡</A></P>
+<P><A HREF="jsobjdictionary.htm">Dictionary ¶ÔÏó</A> | <A HREF="jsobjdrive.htm">Drive ¶ÔÏó</A> | <A HREF="jscoldrives.htm">Drives ¼¯ºÏ</A> | <A HREF="jsobjfile.htm">File ¶ÔÏó</A> | <A HREF="jscolfiles.htm">Files ¼¯ºÏ</A> | <A HREF="jsobjfolder.htm">Folder ¶ÔÏó</A> | <A HREF="jscolfolders.htm">Folders ¼¯ºÏ</A> | <A HREF="jsobjtextstream.htm">TextStream ¶ÔÏó</A></P>
 <!--Copyright_START-->
 <DIV CLASS="footer">
-<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation ç‰ˆæƒæ‰€æœ‰ã€‚ä¿ç•™æ‰€æœ‰æƒåˆ©ã€‚ä½¿ç”¨è§„å®šã€‚</a><br>
+<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation °æÈ¨ËùÓĞ¡£±£ÁôËùÓĞÈ¨Àû¡£Ê¹ÓÃ¹æ¶¨¡£</a><br>
 </DIV> <!--Copyright_END-->
 
 </BODY>

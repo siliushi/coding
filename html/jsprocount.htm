@@ -2,7 +2,7 @@
 <HTML>
 <HEAD>
 <META HTTP-EQUIV="Content-Type" Content="text/html; charset=gb2312">
-<TITLE>Count å±æ€§</TITLE>
+<TITLE>Count ÊôĞÔ</TITLE>
 <!--CSS_START-->
 <style>@import url(../html-vss/msdnie4a.css);</style>
 <link disabled rel="stylesheet" href="../html-vss/msdn_ie3.css">
@@ -15,47 +15,47 @@
 <TABLE class="banner" width="100%" CELLSPACING=0>
 <TR>
 <TD class="bannerleft" nowrap>JScript&nbsp;</TD>
-<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">è¯­è¨€å‚è€ƒ</a></TD>
+<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">ÓïÑÔ²Î¿¼</a></TD>
 </TR>
 </TABLE>
 <HR>
 <!--End Head-->
 
-<H1><A NAME="jsprocount"></A>Count å±æ€§</H1>
+<H1><A NAME="jsprocount"></A>Count ÊôĞÔ</H1>
 
-<P>è¿”å›ä¸€ä¸ªé›†åˆæˆ– <B>Dictionary</B> å¯¹è±¡ä¸­çš„æ¡ç›®æ•°ã€‚åªè¯»å±æ€§ã€‚ </P>
+<P>·µ»ØÒ»¸ö¼¯ºÏ»ò <B>Dictionary</B> ¶ÔÏóÖĞµÄÌõÄ¿Êı¡£Ö»¶ÁÊôĞÔ¡£ </P>
 
 <P><CODE><I>object</I><B>.Count</B> </CODE></P>
 
-<P>å…¶ä¸­ <I>object</I> æ€»æ˜¯â€œåº”ç”¨äºâ€åˆ—è¡¨ä¸­ä¸€ä¸ªæ¡ç›®çš„åç§°ã€‚ </P>
+<P>ÆäÖĞ <I>object</I> ×ÜÊÇ¡°Ó¦ÓÃÓÚ¡±ÁĞ±íÖĞÒ»¸öÌõÄ¿µÄÃû³Æ¡£ </P>
 
-<H4>è¯´æ˜</H4>
+<H4>ËµÃ÷</H4>
 
-<P>ä¸‹é¢è¿™æ®µä»£ç è¯´æ˜äº† <B>Count</B> å±æ€§çš„ç”¨æ³•: </P>
+<P>ÏÂÃæÕâ¶Î´úÂëËµÃ÷ÁË <B>Count</B> ÊôĞÔµÄÓÃ·¨: </P>
 
 <PRE><CODE>function CountDemo()
 {
-</CODE>&nbsp;&nbsp;&nbsp;<CODE>var a, d, i, s;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// </CODE>åˆ›å»ºä¸€äº›å˜é‡ã€‚
+</CODE>&nbsp;&nbsp;&nbsp;<CODE>var a, d, i, s;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// </CODE>´´½¨Ò»Ğ©±äÁ¿¡£
 &nbsp;&nbsp;&nbsp;<CODE>d = new ActiveXObject("Scripting.Dictionary");&nbsp;&nbsp;&nbsp;</CODE>
-<CODE>&nbsp;&nbsp;&nbsp;d.Add ("a", "Athens");&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// </CODE>æ·»åŠ ä¸€äº›ä¸»é”®å’Œæ¡ç›®ã€‚
+<CODE>&nbsp;&nbsp;&nbsp;d.Add ("a", "Athens");&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// </CODE>Ìí¼ÓÒ»Ğ©Ö÷¼üºÍÌõÄ¿¡£
 &nbsp;&nbsp;&nbsp;<CODE>d.Add ("b", "Belgrade");</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;d.Add ("c", "Cairo");</CODE>
-<CODE>&nbsp;&nbsp;&nbsp;a = (new VBArray(d.Keys()));&nbsp;&nbsp;&nbsp;&nbsp;// </CODE>è·å–ä¸»é”®ã€‚
+<CODE>&nbsp;&nbsp;&nbsp;a = (new VBArray(d.Keys()));&nbsp;&nbsp;&nbsp;&nbsp;// </CODE>»ñÈ¡Ö÷¼ü¡£
 &nbsp;&nbsp;&nbsp;<CODE>s = "";</CODE>
-<CODE>&nbsp;&nbsp;&nbsp;for (i = 0; i &lt; d.<span class=cfe><B>Count</B></span>; i++)&nbsp;&nbsp;&nbsp;//</CODE>éå†<CODE> dictionary</CODE>ã€‚
+<CODE>&nbsp;&nbsp;&nbsp;for (i = 0; i &lt; d.<span class=cfe><B>Count</B></span>; i++)&nbsp;&nbsp;&nbsp;//</CODE>±éÀú<CODE> dictionary</CODE>¡£
 &nbsp;&nbsp;&nbsp;{
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>s += a.getItem(i) + " - " + d(a.getItem(i)) + "&lt;br&gt;";</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;}</CODE>
-<CODE>&nbsp;&nbsp;&nbsp;return(s);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// </CODE>è¿”å›ç»“æœã€‚
+<CODE>&nbsp;&nbsp;&nbsp;return(s);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// </CODE>·µ»Ø½á¹û¡£
 }</PRE>
 
-<H4>è¯·å‚é˜…</H4>
+<H4>Çë²ÎÔÄ</H4>
 
-<P><A HREF="jsprocomparemode.htm">CompareMode å±æ€§</A> | <A HREF="jsproitem.htm">Item å±æ€§</A> | <A HREF="jsprokey.htm">Key å±æ€§</A><BR>
-åº”ç”¨äºï¼š <A HREF="jsobjdictionary.htm">Dictionary å¯¹è±¡</A> | <A HREF="jscoldrives.htm">Drives é›†åˆ</A> | <A HREF="jscolfiles.htm">Files é›†åˆ</A> | <A HREF="jscolfolders.htm">Folders é›†åˆ</A></P>
+<P><A HREF="jsprocomparemode.htm">CompareMode ÊôĞÔ</A> | <A HREF="jsproitem.htm">Item ÊôĞÔ</A> | <A HREF="jsprokey.htm">Key ÊôĞÔ</A><BR>
+Ó¦ÓÃÓÚ£º <A HREF="jsobjdictionary.htm">Dictionary ¶ÔÏó</A> | <A HREF="jscoldrives.htm">Drives ¼¯ºÏ</A> | <A HREF="jscolfiles.htm">Files ¼¯ºÏ</A> | <A HREF="jscolfolders.htm">Folders ¼¯ºÏ</A></P>
 <!--Copyright_START-->
 <DIV CLASS="footer">
-<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation ç‰ˆæƒæ‰€æœ‰ã€‚ä¿ç•™æ‰€æœ‰æƒåˆ©ã€‚ä½¿ç”¨è§„å®šã€‚</a><br>
+<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation °æÈ¨ËùÓĞ¡£±£ÁôËùÓĞÈ¨Àû¡£Ê¹ÓÃ¹æ¶¨¡£</a><br>
 </DIV> <!--Copyright_END-->
 
 </BODY>

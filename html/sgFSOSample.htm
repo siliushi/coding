@@ -2,7 +2,7 @@
 <HTML>
 <HEAD>
 <META HTTP-EQUIV="Content-Type" Content="text/html; charset=gb2312">
-<TITLE>FileSystemObject ç¤ºä¾‹ä»£ç </TITLE>
+<TITLE>FileSystemObject Ê¾Àı´úÂë</TITLE>
 <!--CSS_START-->
 <style>@import url(../html-vss/msdnie4a.css);</style>
 <link disabled rel="stylesheet" href="../html-vss/msdn_ie3.css">
@@ -15,74 +15,74 @@
 <TABLE class="banner" width="100%" CELLSPACING=0>
 <TR>
 <TD class="bannerleft" nowrap>JScript&nbsp;</TD>
-<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">è¯­è¨€å‚è€ƒ</a></TD>
+<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">ÓïÑÔ²Î¿¼</a></TD>
 </TR>
 </TABLE>
 <HR>
 <!--End Head-->
 
-<H1><A NAME="sgfsosample"></A>FileSystemObject ç¤ºä¾‹ä»£ç </H1>
+<H1><A NAME="sgfsosample"></A>FileSystemObject Ê¾Àı´úÂë</H1>
 
-<P>åœ¨æœ¬èŠ‚æè¿°çš„ç¤ºä¾‹ä»£ç ï¼Œæä¾›çœŸå®çš„ä¾‹å­æ¥ç¤ºèŒƒåœ¨ <B>FileSystemObject</B> å¯¹è±¡æ¨¡å¼ä¸­å¯ç”¨çš„è®¸å¤šåŠŸèƒ½ã€‚è¯¥ä»£ç æ˜¾ç¤ºäº†å¦‚ä½•ä¸€èµ·ä½¿ç”¨å¯¹è±¡æ¨¡å¼çš„æ‰€æœ‰åŠŸèƒ½ï¼Œä»¥åŠå¦‚ä½•åœ¨æ‚¨è‡ªå·±çš„ä»£ç ä¸­æœ‰æ•ˆåœ°ä½¿ç”¨è¿™äº›åŠŸèƒ½ã€‚</P>
+<P>ÔÚ±¾½ÚÃèÊöµÄÊ¾Àı´úÂë£¬Ìá¹©ÕæÊµµÄÀı×ÓÀ´Ê¾·¶ÔÚ <B>FileSystemObject</B> ¶ÔÏóÄ£Ê½ÖĞ¿ÉÓÃµÄĞí¶à¹¦ÄÜ¡£¸Ã´úÂëÏÔÊ¾ÁËÈçºÎÒ»ÆğÊ¹ÓÃ¶ÔÏóÄ£Ê½µÄËùÓĞ¹¦ÄÜ£¬ÒÔ¼°ÈçºÎÔÚÄú×Ô¼ºµÄ´úÂëÖĞÓĞĞ§µØÊ¹ÓÃÕâĞ©¹¦ÄÜ¡£</P>
 
-<P>è¯·æ³¨æ„ï¼Œç”±äºè¯¥ä»£ç æ˜¯æä¸€èˆ¬çš„ï¼Œæ‰€ä»¥è¦ä½¿è¯¥ä»£ç èƒ½å¤ŸçœŸæ­£åœ¨æ‚¨çš„æœºå™¨ä¸Šè¿è¡Œï¼Œå¯èƒ½éœ€è¦ä¸€äº›å…¶ä»–ä»£ç å’Œå°å°çš„å˜æ›´ã€‚è¿™äº›æ”¹å˜ä¹‹æ‰€ä»¥å¿…è¦ï¼Œæ˜¯å› ä¸ºåœ¨ Active Server Pages å’Œ Windows Scripting Host ä¹‹é—´ï¼Œä¸ºè¾“å…¥å’Œè¾“å‡ºç»™ç”¨æˆ·é‡‡ç”¨äº†ä¸åŒçš„æ–¹æ³•ã€‚</P>
+<P>Çë×¢Òâ£¬ÓÉÓÚ¸Ã´úÂëÊÇ¼«Ò»°ãµÄ£¬ËùÒÔÒªÊ¹¸Ã´úÂëÄÜ¹»ÕæÕıÔÚÄúµÄ»úÆ÷ÉÏÔËĞĞ£¬¿ÉÄÜĞèÒªÒ»Ğ©ÆäËû´úÂëºÍĞ¡Ğ¡µÄ±ä¸ü¡£ÕâĞ©¸Ä±äÖ®ËùÒÔ±ØÒª£¬ÊÇÒòÎªÔÚ Active Server Pages ºÍ Windows Scripting Host Ö®¼ä£¬ÎªÊäÈëºÍÊä³ö¸øÓÃ»§²ÉÓÃÁË²»Í¬µÄ·½·¨¡£</P>
 
-<P>è¦åœ¨ Active Server Pages ä¸Šè¿è¡Œè¯¥ä»£ç ï¼Œåˆ™é‡‡å–ä»¥ä¸‹æ­¥éª¤ï¼š</P>
+<P>ÒªÔÚ Active Server Pages ÉÏÔËĞĞ¸Ã´úÂë£¬Ôò²ÉÈ¡ÒÔÏÂ²½Öè£º</P>
 
-<P>åˆ›å»ºä¸€ä¸ªæ ‡å‡†çš„ Web é¡µï¼Œåç¼€åä¸º .aspã€‚ </P>
+<P>´´½¨Ò»¸ö±ê×¼µÄ Web Ò³£¬ºó×ºÃûÎª .asp¡£ </P>
 
-<P>æŠŠä¸‹é¢çš„ç¤ºä¾‹ä»£ç å¤åˆ¶åˆ° &amp;ltBODY&gt;...&lt;/BODY&gt; æ ‡è®°ä¹‹é—´çš„æ–‡ä»¶ä¸­ã€‚ </P>
+<P>°ÑÏÂÃæµÄÊ¾Àı´úÂë¸´ÖÆµ½ &amp;ltBODY&gt;...&lt;/BODY&gt; ±ê¼ÇÖ®¼äµÄÎÄ¼şÖĞ¡£ </P>
 
-<P>æŠŠæ‰€æœ‰ä»£ç åŒ…è£…å™¨åˆ° &lt;%...%&gt; æ ‡è®°å†…ã€‚ </P>
+<P>°ÑËùÓĞ´úÂë°ü×°Æ÷µ½ &lt;%...%&gt; ±ê¼ÇÄÚ¡£ </P>
 
-<P>æŠŠ <B>Option Explicit</B> è¯­å¥ä»å½“å‰ä½ç½®ç§»åŠ¨åˆ° HTML é¡µçš„æœ€é¡¶éƒ¨ï¼Œç”šè‡³åœ¨ &lt;HTML&gt; å¼€å§‹æ ‡è®°å‰ã€‚ </P>
+<P>°Ñ <B>Option Explicit</B> Óï¾ä´Óµ±Ç°Î»ÖÃÒÆ¶¯µ½ HTML Ò³µÄ×î¶¥²¿£¬ÉõÖÁÔÚ &lt;HTML&gt; ¿ªÊ¼±ê¼ÇÇ°¡£ </P>
 
-<P>æŠŠ &lt;%...%&gt; æ ‡è®°æ”¾ç½®åœ¨ <B>Option Explicit</B> è¯­å¥å‘¨å›´ï¼Œä»¥ä¿è¯å®ƒåœ¨æœåŠ¡å™¨ç«¯è¿è¡Œã€‚ </P>
+<P>°Ñ &lt;%...%&gt; ±ê¼Ç·ÅÖÃÔÚ <B>Option Explicit</B> Óï¾äÖÜÎ§£¬ÒÔ±£Ö¤ËüÔÚ·şÎñÆ÷¶ËÔËĞĞ¡£ </P>
 
-<P>æŠŠä¸‹é¢çš„ä»£ç æ·»åŠ åˆ°ç¤ºä¾‹ä»£ç æœ«å°¾ï¼š </P>
+<P>°ÑÏÂÃæµÄ´úÂëÌí¼Óµ½Ê¾Àı´úÂëÄ©Î²£º </P>
 
 <PRE><CODE>Sub Print(x)
-</CODE>&nbsp;&nbsp;&nbsp;<CODE>Response.Write "&lt;PRE&gt;&amp;ltFONT FACE=""</CODE>å®‹ä½“<CODE>"" SIZE=""1""&gt;"</CODE>
+</CODE>&nbsp;&nbsp;&nbsp;<CODE>Response.Write "&lt;PRE&gt;&amp;ltFONT FACE=""</CODE>ËÎÌå<CODE>"" SIZE=""1""&gt;"</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;Response.Write x</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;Response.Write "&lt;/FONT&gt;&lt;/PRE&gt;"</CODE>
 <CODE>End Sub</CODE>
 <CODE>Main</CODE></PRE>
 
-<P>å‰é¢çš„ä»£ç å¢åŠ ä¸€ä¸ªå°†åœ¨æœåŠ¡å™¨ç«¯è¿è¡Œï¼Œä½†åœ¨å®¢æˆ·ç«¯æ˜¾ç¤ºç»“æœçš„æ‰“å°è¿‡ç¨‹ã€‚è¦åœ¨ Windows Scripting Host ä¸Šè¿è¡Œè¯¥ä»£ç ï¼Œåˆ™æŠŠä¸‹é¢çš„ä»£ç æ·»åŠ åˆ°ç¤ºä¾‹ä»£ç çš„æœ«å°¾ï¼š </P>
+<P>Ç°ÃæµÄ´úÂëÔö¼ÓÒ»¸ö½«ÔÚ·şÎñÆ÷¶ËÔËĞĞ£¬µ«ÔÚ¿Í»§¶ËÏÔÊ¾½á¹ûµÄ´òÓ¡¹ı³Ì¡£ÒªÔÚ Windows Scripting Host ÉÏÔËĞĞ¸Ã´úÂë£¬Ôò°ÑÏÂÃæµÄ´úÂëÌí¼Óµ½Ê¾Àı´úÂëµÄÄ©Î²£º </P>
 
 <PRE><CODE>Sub Print(x)
 </CODE>&nbsp;&nbsp;&nbsp;<CODE>WScript.Echo x</CODE>
 <CODE>End Sub</CODE>
 <CODE>Main</CODE></PRE>
 
-<P>ä¸‹é¢å°±æ˜¯ç¤ºä¾‹ä»£ç ï¼š</P>
+<P>ÏÂÃæ¾ÍÊÇÊ¾Àı´úÂë£º</P>
 
 <PRE><CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-' FileSystemObject </CODE>ç¤ºä¾‹ä»£ç 
-<CODE>'Copyright 1998  Microsoft Corporation</CODE>ã€‚&nbsp;&nbsp;&nbsp;ä¿ç•™æ‰€æœ‰æƒåˆ©ã€‚<CODE> </CODE>
+' FileSystemObject </CODE>Ê¾Àı´úÂë
+<CODE>'Copyright 1998  Microsoft Corporation</CODE>¡£&nbsp;&nbsp;&nbsp;±£ÁôËùÓĞÈ¨Àû¡£<CODE> </CODE>
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
 
 <CODE>Option Explicit</CODE>
 
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
-<CODE>' </CODE>å¯¹äºä»£ç è´¨é‡ï¼š
-<CODE>' 1) </CODE>ä¸‹é¢çš„ä»£ç æœ‰è®¸å¤šå­—ç¬¦ä¸²æ“ä½œï¼Œç”¨<CODE>"&amp;"</CODE>è¿ç®—ç¬¦æ¥æŠŠçŸ­å­—ç¬¦ä¸²è¿æ¥åœ¨ä¸€èµ·ã€‚ç”±äº
-<CODE>'    </CODE>å­—ç¬¦ä¸²è¿æ¥æ˜¯è´¹æ—¶çš„ï¼Œæ‰€ä»¥è¿™æ˜¯ä¸€ç§ä½æ•ˆç‡çš„å†™ä»£ç æ–¹æ³•ã€‚æ— è®ºå¦‚ä½•ï¼Œå®ƒæ˜¯
-<CODE>'    </CODE>ä¸€ç§éå¸¸å¥½ç»´æŠ¤çš„å†™ä»£ç æ–¹æ³•ï¼Œå¹¶ä¸”åœ¨è¿™å„¿ä½¿ç”¨äº†è¿™ç§æ–¹æ³•ï¼Œå› ä¸ºè¯¥ç¨‹åºæ‰§è¡Œ
-<CODE>'    </CODE>å¤§é‡çš„ç£ç›˜æ“ä½œï¼Œè€Œç£ç›˜æ“ä½œæ¯”è¿æ¥å­—ç¬¦ä¸²æ‰€éœ€çš„å†…å­˜æ“ä½œè¦æ…¢å¾—å¤šã€‚
-<CODE>'    </CODE>è®°ä½è¿™æ˜¯ç¤ºèŒƒä»£ç ï¼Œè€Œä¸æ˜¯äº§å“ä»£ç ã€‚
+<CODE>' </CODE>¶ÔÓÚ´úÂëÖÊÁ¿£º
+<CODE>' 1) </CODE>ÏÂÃæµÄ´úÂëÓĞĞí¶à×Ö·û´®²Ù×÷£¬ÓÃ<CODE>"&amp;"</CODE>ÔËËã·ûÀ´°Ñ¶Ì×Ö·û´®Á¬½ÓÔÚÒ»Æğ¡£ÓÉÓÚ
+<CODE>'    </CODE>×Ö·û´®Á¬½ÓÊÇ·ÑÊ±µÄ£¬ËùÒÔÕâÊÇÒ»ÖÖµÍĞ§ÂÊµÄĞ´´úÂë·½·¨¡£ÎŞÂÛÈçºÎ£¬ËüÊÇ
+<CODE>'    </CODE>Ò»ÖÖ·Ç³£ºÃÎ¬»¤µÄĞ´´úÂë·½·¨£¬²¢ÇÒÔÚÕâ¶ùÊ¹ÓÃÁËÕâÖÖ·½·¨£¬ÒòÎª¸Ã³ÌĞòÖ´ĞĞ
+<CODE>'    </CODE>´óÁ¿µÄ´ÅÅÌ²Ù×÷£¬¶ø´ÅÅÌ²Ù×÷±ÈÁ¬½Ó×Ö·û´®ËùĞèµÄÄÚ´æ²Ù×÷ÒªÂıµÃ¶à¡£
+<CODE>'    </CODE>¼Ç×¡ÕâÊÇÊ¾·¶´úÂë£¬¶ø²»ÊÇ²úÆ·´úÂë¡£
 <CODE>'</CODE>
-<CODE>' 2) </CODE>ä½¿ç”¨äº†<CODE> "Option Explicit"</CODE>ï¼Œå› ä¸ºè®¿é—®å£°æ˜è¿‡çš„å˜é‡ï¼Œæ¯”è®¿é—®æœªå£°æ˜çš„å˜é‡è¦
-<CODE>'    </CODE>ç¨å¾®å¿«ä¸€äº›ã€‚å®ƒè¿˜èƒ½é˜»æ­¢åœ¨ä»£ç ä¸­å‘ç”Ÿé”™è¯¯ï¼Œä¾‹å¦‚ï¼ŒæŠŠ<CODE> DriveTypeCDROM </CODE>è¯¯æ‹¼
-<CODE>'    </CODE>æˆäº†<CODE> DriveTypeCDORM </CODE>ã€‚
+<CODE>' 2) </CODE>Ê¹ÓÃÁË<CODE> "Option Explicit"</CODE>£¬ÒòÎª·ÃÎÊÉùÃ÷¹ıµÄ±äÁ¿£¬±È·ÃÎÊÎ´ÉùÃ÷µÄ±äÁ¿Òª
+<CODE>'    </CODE>ÉÔÎ¢¿ìÒ»Ğ©¡£Ëü»¹ÄÜ×èÖ¹ÔÚ´úÂëÖĞ·¢Éú´íÎó£¬ÀıÈç£¬°Ñ<CODE> DriveTypeCDROM </CODE>ÎóÆ´
+<CODE>'    </CODE>³ÉÁË<CODE> DriveTypeCDORM </CODE>¡£
 <CODE>'</CODE>
-<CODE>' 3) </CODE>ä¸ºäº†ä½¿ä»£ç æ›´å¯è¯»ï¼Œè¯¥ä»£ç ä¸­æ²¡æœ‰é”™è¯¯å¤„ç†ã€‚è™½ç„¶é‡‡å–äº†é˜²èŒƒæªæ–½ï¼Œæ¥ä¿è¯ä»£ç 
-<CODE>'    </CODE>åœ¨æ™®é€šæƒ…å†µä¸‹æ²¡æœ‰é”™è¯¯ï¼Œä½†æ–‡ä»¶ç³»ç»Ÿæ˜¯ä¸å¯é¢„çŸ¥çš„ã€‚åœ¨äº§å“ä»£ç ä¸­ï¼Œä½¿ç”¨
-<CODE>'    On Error Resume Next </CODE>å’Œ<CODE> Err </CODE>å¯¹è±¡æ¥æ•è·å¯èƒ½å‘ç”Ÿçš„é”™è¯¯ã€‚
+<CODE>' 3) </CODE>ÎªÁËÊ¹´úÂë¸ü¿É¶Á£¬¸Ã´úÂëÖĞÃ»ÓĞ´íÎó´¦Àí¡£ËäÈ»²ÉÈ¡ÁË·À·¶´ëÊ©£¬À´±£Ö¤´úÂë
+<CODE>'    </CODE>ÔÚÆÕÍ¨Çé¿öÏÂÃ»ÓĞ´íÎó£¬µ«ÎÄ¼şÏµÍ³ÊÇ²»¿ÉÔ¤ÖªµÄ¡£ÔÚ²úÆ·´úÂëÖĞ£¬Ê¹ÓÃ
+<CODE>'    On Error Resume Next </CODE>ºÍ<CODE> Err </CODE>¶ÔÏóÀ´²¶»ñ¿ÉÄÜ·¢ÉúµÄ´íÎó¡£
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
 
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
-<CODE>' </CODE>ä¸€äº›å®¹æ˜“å–å¾—çš„å…¨å±€å˜é‡
+<CODE>' </CODE>Ò»Ğ©ÈİÒ×È¡µÃµÄÈ«¾Ö±äÁ¿
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
 <CODE>Dim TabStop</CODE>
 <CODE>Dim NewLine</CODE>
@@ -91,7 +91,7 @@
 <CODE>Const TestFilePath = "C:\Test"</CODE>
 
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
-<CODE>' </CODE>ç”±<CODE> Drive.DriveType </CODE>è¿”å›çš„å¸¸æ•°
+<CODE>' </CODE>ÓÉ<CODE> Drive.DriveType </CODE>·µ»ØµÄ³£Êı
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
 <CODE>Const DriveTypeRemovable = 1</CODE>
 <CODE>Const DriveTypeFixed = 2</CODE>
@@ -100,7 +100,7 @@
 <CODE>Const DriveTypeRAMDisk = 5</CODE>
 
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
-<CODE>' </CODE>ç”±<CODE> File.Attributes </CODE>è¿”å›çš„å¸¸æ•°
+<CODE>' </CODE>ÓÉ<CODE> File.Attributes </CODE>·µ»ØµÄ³£Êı
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
 <CODE>Const FileAttrNormal  = 0</CODE>
 <CODE>Const FileAttrReadOnly = 1</CODE>
@@ -113,7 +113,7 @@
 <CODE>Const FileAttrCompressed = 128</CODE>
 
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
-<CODE>' </CODE>ç”¨æ¥æ‰“å¼€æ–‡ä»¶çš„å¸¸æ•°
+<CODE>' </CODE>ÓÃÀ´´ò¿ªÎÄ¼şµÄ³£Êı
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
 <CODE>Const OpenFileForReading = 1 </CODE>
 <CODE>Const OpenFileForWriting = 2 </CODE>
@@ -121,9 +121,9 @@
 
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
 <CODE>' <span class=cfe><B>ShowDriveType</B></span></CODE>
-<CODE>' </CODE>ç›®çš„ï¼š<CODE> </CODE>
-<CODE>' </CODE>ç”Ÿæˆä¸€ä¸ªå­—ç¬¦ä¸²ï¼Œæ¥æè¿°ç»™å®š<CODE> Drive </CODE>å¯¹è±¡çš„é©±åŠ¨å™¨ç±»å‹ã€‚
-<CODE>' </CODE>ç¤ºèŒƒä¸‹é¢çš„å†…å®¹
+<CODE>' </CODE>Ä¿µÄ£º<CODE> </CODE>
+<CODE>' </CODE>Éú³ÉÒ»¸ö×Ö·û´®£¬À´ÃèÊö¸ø¶¨<CODE> Drive </CODE>¶ÔÏóµÄÇı¶¯Æ÷ÀàĞÍ¡£
+<CODE>' </CODE>Ê¾·¶ÏÂÃæµÄÄÚÈİ
 <CODE>' - Drive.DriveType</CODE>
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
 <CODE>Function ShowDriveType(Drive)</CODE>
@@ -151,14 +151,14 @@
 
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
 <CODE>' <span class=cfe><B>ShowFileAttr</B></span></CODE>
-<CODE>' </CODE>ç›®çš„ï¼š<CODE> </CODE>
-<CODE>' </CODE>ç”Ÿæˆä¸€ä¸ªå­—ç¬¦ä¸²ï¼Œæ¥æè¿°æ–‡ä»¶æˆ–æ–‡ä»¶å¤¹çš„å±æ€§ã€‚
-<CODE>' </CODE>ç¤ºèŒƒä¸‹é¢çš„å†…å®¹
+<CODE>' </CODE>Ä¿µÄ£º<CODE> </CODE>
+<CODE>' </CODE>Éú³ÉÒ»¸ö×Ö·û´®£¬À´ÃèÊöÎÄ¼ş»òÎÄ¼ş¼ĞµÄÊôĞÔ¡£
+<CODE>' </CODE>Ê¾·¶ÏÂÃæµÄÄÚÈİ
 <CODE>' - File.Attributes</CODE>
 <CODE>' - Folder.Attributes</CODE>
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
 
-<CODE>Function ShowFileAttr(File) ' File </CODE>å¯ä»¥æ˜¯æ–‡ä»¶æˆ–æ–‡ä»¶å¤¹
+<CODE>Function ShowFileAttr(File) ' File </CODE>¿ÉÒÔÊÇÎÄ¼ş»òÎÄ¼ş¼Ğ
 
 &nbsp;&nbsp;&nbsp;<CODE>Dim S</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>Dim Attr</CODE>
@@ -185,9 +185,9 @@
 
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
 <CODE>' <span class=cfe><B>GenerateDriveInformation</B></span></CODE>
-<CODE>' </CODE>ç›®çš„ï¼š<CODE> </CODE>
-<CODE>' </CODE>ç”Ÿæˆä¸€ä¸ªå­—ç¬¦ä¸²ï¼Œæ¥æè¿°å¯ç”¨é©±åŠ¨å™¨çš„å½“å‰çŠ¶æ€ã€‚
-<CODE>' </CODE>ç¤ºèŒƒä¸‹é¢çš„å†…å®¹
+<CODE>' </CODE>Ä¿µÄ£º<CODE> </CODE>
+<CODE>' </CODE>Éú³ÉÒ»¸ö×Ö·û´®£¬À´ÃèÊö¿ÉÓÃÇı¶¯Æ÷µÄµ±Ç°×´Ì¬¡£
+<CODE>' </CODE>Ê¾·¶ÏÂÃæµÄÄÚÈİ
 <CODE>'  - FileSystemObject.Drives </CODE>
 <CODE>'  - Iterating the Drives collection</CODE>
 <CODE>'  - Drives.Count</CODE>
@@ -213,7 +213,7 @@
 &nbsp;&nbsp;&nbsp;<CODE>Set Drives = FSO.Drives</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>S = "Number of drives:" &amp; TabStop &amp; Drives.Count &amp; NewLine &amp; NewLine</CODE>
 
-&nbsp;&nbsp;&nbsp;<CODE>' </CODE>æ„é€ æŠ¥å‘Šçš„ç¬¬ä¸€è¡Œã€‚
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>¹¹Ôì±¨¸æµÄµÚÒ»ĞĞ¡£
 &nbsp;&nbsp;&nbsp;<CODE>S = S &amp; String(2, TabStop) &amp; "Drive" </CODE>
 &nbsp;&nbsp;&nbsp;<CODE>S = S &amp; String(3, TabStop) &amp; "File" </CODE>
 &nbsp;&nbsp;&nbsp;<CODE>S = S &amp; TabStop &amp; "Total"</CODE>
@@ -221,7 +221,7 @@
 &nbsp;&nbsp;&nbsp;<CODE>S = S &amp; TabStop &amp; "Available" </CODE>
 &nbsp;&nbsp;&nbsp;<CODE>S = S &amp; TabStop &amp; "Serial" &amp; NewLine</CODE>
 
-&nbsp;&nbsp;&nbsp;<CODE>' </CODE>æ„é€ æŠ¥å‘Šçš„ç¬¬äºŒè¡Œã€‚
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>¹¹Ôì±¨¸æµÄµÚ¶şĞĞ¡£
 &nbsp;&nbsp;&nbsp;<CODE>S = S &amp; "Letter"</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>S = S &amp; TabStop &amp; "Path"</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>S = S &amp; TabStop &amp; "Type"</CODE>
@@ -233,7 +233,7 @@
 &nbsp;&nbsp;&nbsp;<CODE>S = S &amp; TabStop &amp; "Space"</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>S = S &amp; TabStop &amp; "Number" &amp; NewLine</CODE>&nbsp;&nbsp;&nbsp;
 
-&nbsp;&nbsp;&nbsp;<CODE>' </CODE>åˆ†éš”è¡Œã€‚
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>·Ö¸ôĞĞ¡£
 &nbsp;&nbsp;&nbsp;<CODE>S = S &amp; String(105, "-") &amp; NewLine</CODE>
 
 &nbsp;&nbsp;&nbsp;<CODE>For Each Drive In Drives</CODE>
@@ -265,9 +265,9 @@
 
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
 <CODE>' <span class=cfe><B>GenerateFileInformation</B></span></CODE>
-<CODE>' </CODE>ç›®çš„ï¼š<CODE> </CODE>
-<CODE>' </CODE>ç”Ÿæˆä¸€ä¸ªå­—ç¬¦ä¸²ï¼Œæ¥æè¿°æ–‡ä»¶çš„å½“å‰çŠ¶æ€ã€‚
-<CODE>' </CODE>ç¤ºèŒƒä¸‹é¢çš„å†…å®¹
+<CODE>' </CODE>Ä¿µÄ£º<CODE> </CODE>
+<CODE>' </CODE>Éú³ÉÒ»¸ö×Ö·û´®£¬À´ÃèÊöÎÄ¼şµÄµ±Ç°×´Ì¬¡£
+<CODE>' </CODE>Ê¾·¶ÏÂÃæµÄÄÚÈİ
 <CODE>'  - File.Path</CODE>
 <CODE>'  - File.Name</CODE>
 <CODE>'  - File.Type</CODE>
@@ -296,9 +296,9 @@
 
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
 <CODE>' <span class=cfe><B>GenerateFolderInformation</B></span></CODE>
-<CODE>' </CODE>ç›®çš„ï¼š<CODE> </CODE>
-<CODE>' </CODE>ç”Ÿæˆä¸€ä¸ªå­—ç¬¦ä¸²ï¼Œæ¥æè¿°æ–‡ä»¶å¤¹çš„å½“å‰çŠ¶æ€ã€‚
-<CODE>' </CODE>ç¤ºèŒƒä¸‹é¢çš„å†…å®¹
+<CODE>' </CODE>Ä¿µÄ£º<CODE> </CODE>
+<CODE>' </CODE>Éú³ÉÒ»¸ö×Ö·û´®£¬À´ÃèÊöÎÄ¼ş¼ĞµÄµ±Ç°×´Ì¬¡£
+<CODE>' </CODE>Ê¾·¶ÏÂÃæµÄÄÚÈİ
 <CODE>'  - Folder.Path</CODE>
 <CODE>'  - Folder.Name</CODE>
 <CODE>'  - Folder.DateCreated</CODE>
@@ -325,9 +325,9 @@
 
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
 <CODE>' <span class=cfe><B>GenerateAllFolderInformation</B></span></CODE>
-<CODE>' </CODE>ç›®çš„ï¼š<CODE> </CODE>
-<CODE>' </CODE>ç”Ÿæˆä¸€ä¸ªå­—ç¬¦ä¸²ï¼Œæ¥æè¿°ä¸€ä¸ªæ–‡ä»¶å¤¹å’Œæ‰€æœ‰æ–‡ä»¶åŠå­æ–‡ä»¶å¤¹çš„å½“å‰çŠ¶æ€ã€‚
-<CODE>' </CODE>ç¤ºèŒƒä¸‹é¢çš„å†…å®¹
+<CODE>' </CODE>Ä¿µÄ£º<CODE> </CODE>
+<CODE>' </CODE>Éú³ÉÒ»¸ö×Ö·û´®£¬À´ÃèÊöÒ»¸öÎÄ¼ş¼ĞºÍËùÓĞÎÄ¼ş¼°×ÓÎÄ¼ş¼ĞµÄµ±Ç°×´Ì¬¡£
+<CODE>' </CODE>Ê¾·¶ÏÂÃæµÄÄÚÈİ
 <CODE>'  - Folder.Path</CODE>
 <CODE>'  - Folder.SubFolders</CODE>
 <CODE>'  - Folders.Count</CODE>
@@ -380,9 +380,9 @@
 
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
 <CODE>' <span class=cfe><B>GenerateTestInformation</B></span></CODE>
-<CODE>' </CODE>ç›®çš„ï¼š<CODE> </CODE>
-<CODE>' </CODE>ç”Ÿæˆä¸€ä¸ªå­—ç¬¦ä¸²ï¼Œæ¥æè¿°<CODE> C:\Test </CODE>æ–‡ä»¶å¤¹å’Œæ‰€æœ‰æ–‡ä»¶åŠå­æ–‡ä»¶å¤¹çš„å½“å‰çŠ¶æ€ã€‚
-<CODE>' </CODE>ç¤ºèŒƒä¸‹é¢çš„å†…å®¹
+<CODE>' </CODE>Ä¿µÄ£º<CODE> </CODE>
+<CODE>' </CODE>Éú³ÉÒ»¸ö×Ö·û´®£¬À´ÃèÊö<CODE> C:\Test </CODE>ÎÄ¼ş¼ĞºÍËùÓĞÎÄ¼ş¼°×ÓÎÄ¼ş¼ĞµÄµ±Ç°×´Ì¬¡£
+<CODE>' </CODE>Ê¾·¶ÏÂÃæµÄÄÚÈİ
 <CODE>'  - FileSystemObject.DriveExists</CODE>
 <CODE>'  - FileSystemObject.FolderExists</CODE>
 <CODE>'  - FileSystemObject.GetFolder</CODE>
@@ -404,9 +404,9 @@
 
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
 <CODE>' <span class=cfe><B>DeleteTestDirectory</B></span></CODE>
-<CODE>' </CODE>ç›®çš„ï¼š<CODE> </CODE>
-<CODE>' </CODE>æ¸…ç†<CODE> test </CODE>ç›®å½•ã€‚
-<CODE>' </CODE>ç¤ºèŒƒä¸‹é¢çš„å†…å®¹
+<CODE>' </CODE>Ä¿µÄ£º<CODE> </CODE>
+<CODE>' </CODE>ÇåÀí<CODE> test </CODE>Ä¿Â¼¡£
+<CODE>' </CODE>Ê¾·¶ÏÂÃæµÄÄÚÈİ
 <CODE>'  - FileSystemObject.GetFolder</CODE>
 <CODE>'  - FileSystemObject.DeleteFile</CODE>
 <CODE>'  - FileSystemObject.DeleteFolder</CODE>
@@ -423,14 +423,14 @@
 
 
 <PRE>&nbsp;&nbsp;&nbsp;<A NAME="driveinfo"></A>
-&nbsp;&nbsp;&nbsp;<CODE>' </CODE>æœ‰ä¸¤ç§æ–¹æ³•å¯ç”¨æ¥åˆ é™¤æ–‡ä»¶ï¼š
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>ÓĞÁ½ÖÖ·½·¨¿ÉÓÃÀ´É¾³ıÎÄ¼ş£º
 
 &nbsp;&nbsp;&nbsp;<CODE>FSO.DeleteFile(TestFilePath &amp; "\Beatles\OctopusGarden.txt")</CODE>
 
 &nbsp;&nbsp;&nbsp;<CODE>Set File = FSO.GetFile(TestFilePath &amp; "\Beatles\BathroomWindow.txt")</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>File.Delete</CODE>&nbsp;&nbsp;&nbsp;
 
-&nbsp;&nbsp;&nbsp;<CODE>' </CODE>æœ‰ä¸¤ç§æ–¹æ³•å¯ç”¨æ¥åˆ é™¤æ–‡ä»¶å¤¹ï¼š
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>ÓĞÁ½ÖÖ·½·¨¿ÉÓÃÀ´É¾³ıÎÄ¼ş¼Ğ£º
 &nbsp;&nbsp;&nbsp;<CODE>FSO.DeleteFolder(TestFilePath &amp; "\Beatles")</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>FSO.DeleteFile(TestFilePath &amp; "\ReadMe.txt")</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>Set TestFolder = FSO.GetFolder(TestFilePath)</CODE>
@@ -440,9 +440,9 @@
 
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
 <CODE>' <span class=cfe><B>CreateLyrics</B></span></CODE>
-<CODE>' </CODE>ç›®çš„ï¼š<CODE> </CODE>
-<CODE>' </CODE>åœ¨æ–‡ä»¶å¤¹ä¸­åˆ›å»ºä¸¤ä¸ªæ–‡æœ¬æ–‡ä»¶ã€‚
-<CODE>' </CODE>ç¤ºèŒƒä¸‹é¢çš„å†…å®¹
+<CODE>' </CODE>Ä¿µÄ£º<CODE> </CODE>
+<CODE>' </CODE>ÔÚÎÄ¼ş¼ĞÖĞ´´½¨Á½¸öÎÄ±¾ÎÄ¼ş¡£
+<CODE>' </CODE>Ê¾·¶ÏÂÃæµÄÄÚÈİ
 <CODE>'  - FileSystemObject.CreateTextFile</CODE>
 <CODE>'  - TextStream.WriteLine</CODE>
 <CODE>'  - TextStream.Write</CODE>
@@ -462,7 +462,7 @@
 
 
 <PRE>&nbsp;&nbsp;&nbsp;<A NAME="createtextfilewritetofile"></A>
-&nbsp;&nbsp;&nbsp;<CODE>TextStream.Write("Octopus' Garden ") ' </CODE>è¯·æ³¨æ„ï¼Œè¯¥è¯­å¥ä¸æ·»åŠ æ¢è¡Œåˆ°æ–‡ä»¶ä¸­ã€‚
+&nbsp;&nbsp;&nbsp;<CODE>TextStream.Write("Octopus' Garden ") ' </CODE>Çë×¢Òâ£¬¸ÃÓï¾ä²»Ìí¼Ó»»ĞĞµ½ÎÄ¼şÖĞ¡£
 &nbsp;&nbsp;&nbsp;<CODE>TextStream.WriteLine("(by Ringo Starr)")</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>TextStream.WriteBlankLines(1)</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>TextStream.WriteLine("I'd like to be under the sea in an octopus' garden in the shade,")</CODE>
@@ -483,9 +483,9 @@
 
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
 <CODE>' <span class=cfe><B>GetLyrics</B></span></CODE>
-<CODE>' </CODE>ç›®çš„ï¼š<CODE> </CODE>
-<CODE>' </CODE>æ˜¾ç¤º<CODE> lyrics </CODE>æ–‡ä»¶çš„å†…å®¹ã€‚
-<CODE>' </CODE>ç¤ºèŒƒä¸‹é¢çš„å†…å®¹
+<CODE>' </CODE>Ä¿µÄ£º<CODE> </CODE>
+<CODE>' </CODE>ÏÔÊ¾<CODE> lyrics </CODE>ÎÄ¼şµÄÄÚÈİ¡£
+<CODE>' </CODE>Ê¾·¶ÏÂÃæµÄÄÚÈİ
 <CODE>'  - FileSystemObject.OpenTextFile</CODE>
 <CODE>'  - FileSystemObject.GetFile</CODE>
 <CODE>'  - TextStream.ReadAll</CODE>
@@ -501,8 +501,8 @@
 &nbsp;&nbsp;&nbsp;<CODE>Dim S</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>Dim File</CODE>
 
-&nbsp;&nbsp;&nbsp;<CODE>' </CODE>æœ‰å¤šç§æ–¹æ³•å¯ç”¨æ¥æ‰“å¼€ä¸€ä¸ªæ–‡æœ¬æ–‡ä»¶ï¼Œå’Œå¤šç§æ–¹æ³•æ¥ä»æ–‡ä»¶è¯»å–æ•°æ®ã€‚
-&nbsp;&nbsp;&nbsp;<CODE>' </CODE>è¿™å„¿ç”¨äº†ä¸¤ç§æ–¹æ³•æ¥æ‰“å¼€æ–‡ä»¶å’Œè¯»å–æ–‡ä»¶ï¼š
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>ÓĞ¶àÖÖ·½·¨¿ÉÓÃÀ´´ò¿ªÒ»¸öÎÄ±¾ÎÄ¼ş£¬ºÍ¶àÖÖ·½·¨À´´ÓÎÄ¼ş¶ÁÈ¡Êı¾İ¡£
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>Õâ¶ùÓÃÁËÁ½ÖÖ·½·¨À´´ò¿ªÎÄ¼şºÍ¶ÁÈ¡ÎÄ¼ş£º
 
 &nbsp;&nbsp;&nbsp;<CODE>Set TextStream = FSO.OpenTextFile(TestFilePath &amp; "\Beatles\OctopusGarden.txt", OpenFileForReading)</CODE></PRE>
 
@@ -525,15 +525,15 @@
 
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
 <CODE>' <span class=cfe><B>BuildTestDirectory</B></span></CODE>
-<CODE>' </CODE>ç›®çš„ï¼š<CODE> </CODE>
-<CODE>' </CODE>åˆ›å»ºä¸€ä¸ªç›®å½•åˆ†å±‚ç»“æ„æ¥ç¤ºèŒƒ<CODE> FileSystemObject</CODE>ã€‚
-<CODE>' </CODE>ä»¥è¿™æ ·çš„æ¬¡åºæ¥åˆ›å»ºåˆ†å±‚ç»“æ„ï¼š
+<CODE>' </CODE>Ä¿µÄ£º<CODE> </CODE>
+<CODE>' </CODE>´´½¨Ò»¸öÄ¿Â¼·Ö²ã½á¹¹À´Ê¾·¶<CODE> FileSystemObject</CODE>¡£
+<CODE>' </CODE>ÒÔÕâÑùµÄ´ÎĞòÀ´´´½¨·Ö²ã½á¹¹£º
 <CODE>' C:\Test</CODE>
 <CODE>' C:\Test\ReadMe.txt</CODE>
 <CODE>' C:\Test\Beatles</CODE>
 <CODE>' C:\Test\Beatles\OctopusGarden.txt</CODE>
 <CODE>' C:\Test\Beatles\BathroomWindow.txt</CODE>
-<CODE>' </CODE>ç¤ºèŒƒä¸‹é¢çš„å†…å®¹
+<CODE>' </CODE>Ê¾·¶ÏÂÃæµÄÄÚÈİ
 <CODE>'  - FileSystemObject.DriveExists</CODE>
 <CODE>'  - FileSystemObject.FolderExists</CODE>
 <CODE>'  - FileSystemObject.CreateFolder</CODE>
@@ -550,7 +550,7 @@
 &nbsp;&nbsp;&nbsp;<CODE>Dim SubFolders</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>Dim SubFolder</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>Dim TextStream</CODE>
-&nbsp;&nbsp;&nbsp;<CODE>' </CODE>æ’é™¤<CODE>(a)</CODE>é©±åŠ¨å™¨ä¸å­˜åœ¨ï¼Œæˆ–<CODE>(b)</CODE>è¦åˆ›å»ºçš„ç›®å½•å·²ç»å­˜åœ¨çš„æƒ…å†µã€‚
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>ÅÅ³ı<CODE>(a)</CODE>Çı¶¯Æ÷²»´æÔÚ£¬»ò<CODE>(b)</CODE>Òª´´½¨µÄÄ¿Â¼ÒÑ¾­´æÔÚµÄÇé¿ö¡£
 
 &nbsp;&nbsp;&nbsp;<CODE>If Not FSO.DriveExists(TestDrive) Then</CODE>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>BuildTestDirectory = False</CODE>
@@ -576,17 +576,17 @@
 <CODE>End Function</CODE>
 
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
-<CODE>' </CODE><span class=cfe><B>ä¸»ç¨‹åº</B></span>
-<CODE>' </CODE>é¦–å…ˆï¼Œå®ƒåˆ›å»ºä¸€ä¸ª<CODE> test </CODE>ç›®å½•ï¼Œä»¥åŠä¸€äº›å­æ–‡ä»¶å¤¹å’Œæ–‡ä»¶ã€‚<CODE> </CODE>
-<CODE>' </CODE>ç„¶åï¼Œå®ƒè½¬å‚¨æœ‰å…³å¯ç”¨ç£ç›˜é©±åŠ¨å™¨å’Œ<CODE> test </CODE>ç›®å½•çš„æŸäº›ä¿¡æ¯ï¼Œ
-<CODE>' </CODE>æœ€åï¼Œæ¸…é™¤<CODE> test </CODE>ç›®å½•åŠå…¶æ‰€æœ‰å†…å®¹ã€‚
+<CODE>' </CODE><span class=cfe><B>Ö÷³ÌĞò</B></span>
+<CODE>' </CODE>Ê×ÏÈ£¬Ëü´´½¨Ò»¸ö<CODE> test </CODE>Ä¿Â¼£¬ÒÔ¼°Ò»Ğ©×ÓÎÄ¼ş¼ĞºÍÎÄ¼ş¡£<CODE> </CODE>
+<CODE>' </CODE>È»ºó£¬Ëü×ª´¢ÓĞ¹Ø¿ÉÓÃ´ÅÅÌÇı¶¯Æ÷ºÍ<CODE> test </CODE>Ä¿Â¼µÄÄ³Ğ©ĞÅÏ¢£¬
+<CODE>' </CODE>×îºó£¬Çå³ı<CODE> test </CODE>Ä¿Â¼¼°ÆäËùÓĞÄÚÈİ¡£
 <CODE>''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</CODE>
 
 <CODE>Sub Main</CODE>
 
 &nbsp;&nbsp;&nbsp;<CODE>Dim FSO</CODE>
 
-&nbsp;&nbsp;&nbsp;<CODE>' </CODE>è®¾ç«‹å…¨å±€å˜é‡ã€‚
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>ÉèÁ¢È«¾Ö±äÁ¿¡£
 &nbsp;&nbsp;&nbsp;<CODE>TabStop = Chr(9)</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>NewLine = Chr(10)</CODE></PRE>
 
@@ -608,7 +608,7 @@
 <CODE>End Sub</CODE></PRE>
 <!--Copyright_START-->
 <DIV CLASS="footer">
-<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation ç‰ˆæƒæ‰€æœ‰ã€‚ä¿ç•™æ‰€æœ‰æƒåˆ©ã€‚ä½¿ç”¨è§„å®šã€‚</a><br>
+<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation °æÈ¨ËùÓĞ¡£±£ÁôËùÓĞÈ¨Àû¡£Ê¹ÓÃ¹æ¶¨¡£</a><br>
 </DIV> <!--Copyright_END-->
 
 </BODY>

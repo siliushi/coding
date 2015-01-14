@@ -1,0 +1,119 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=gb2312">
+<TITLE>创建自己的对象</TITLE>
+<!--CSS_START-->
+<style>@import url(../html-vss/msdnie4a.css);</style>
+<link disabled rel="stylesheet" href="../html-vss/msdn_ie3.css">
+<!--CSS_END-->
+</HEAD>
+<BODY>
+
+
+<!--Start Head-->
+<TABLE class="banner" width="100%" CELLSPACING=0>
+<TR>
+<TD class="bannerleft" nowrap>JScript&nbsp;</TD>
+<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">语言参考</a></TD>
+</TR>
+</TABLE>
+<HR>
+<!--End Head-->
+
+<H1><A NAME="jsconcreatingownobjects"></A>创建自己的对象</H1>
+
+<P>要创建自己的对象实例，必须首先为其定义一个构造函数。构造函数创建一个新对象，赋予对象属性，并在合适的时候赋予方法。例如，下面的示例为 pasta 对象定义了构造函数。注意 <B>this</B> 关键字的使用，它指向当前对象。</P>
+
+<PRE><CODE>// pasta </CODE>是有四个参数的构造器。
+<CODE>function pasta(grain, width, shape, hasEgg)</CODE>
+{
+<CODE>    // </CODE>是用什么粮食做的？
+<CODE>    this.grain = grain;</CODE>
+
+<CODE>    // </CODE>多宽？（数值）
+<CODE>    this.width = width;     </CODE>
+
+<CODE>    // </CODE>横截面形状？（字符串）
+<CODE>    this.shape = shape;   </CODE>
+
+<CODE>// </CODE>是否加蛋黄？（<CODE>boolean</CODE>）
+<CODE>    this.hasEgg = hasEgg;  </CODE>
+<CODE>}</CODE></PRE>
+
+<P>定义了对象构造器后，用 <B>new</B> 运算符创建对象实例。</P>
+
+<PRE><CODE>var spaghetti = new pasta("wheat", 0.2, "circle", true);
+var linguine = new pasta("wheat", 0.3, "oval", true);</CODE></PRE>
+
+<P>可以给对象实例添加属性以改变该实例，但是用相同的构造器生成的其他对象定义中并不包括这些属性，而且除非你特意添加这些属性那么在其他实例中并不显示出来。如果要将对象所有实例的附加属性显示出来，必须将它们添加到构造函数或构造器原型对象（原型在高级文档中讨论）中。</P>
+
+<PRE><CODE>// spaghetti </CODE>的附加属性。
+<CODE>spaghetti.color = "pale straw";</CODE>
+<CODE>spaghetti.drycook = 7;</CODE>
+<CODE>spaghetti.freshcook = 0.5;</CODE>
+
+<CODE>var chowFun = new pasta("rice", 3, "flat", false); </CODE>
+<CODE>// chowFun </CODE>对象或其他现有的<CODE> pasta </CODE>对象
+<CODE>// </CODE>都没有添加到<CODE> spaghetti </CODE>对象
+<CODE>// </CODE>的三个新属性。
+
+
+<CODE>// </CODE>将属性‘<CODE>foodgroup</CODE>’加到<CODE> pasta </CODE>原型对象
+<CODE>// </CODE>中，这样<CODE> pasta </CODE>对象的所有实例都可以有该属性，
+<CODE>// </CODE>包括那些已经生成的实例。
+<CODE>pasta.prototype.foodgroup = "carbohydrates"</CODE>
+
+<CODE>// </CODE>现在<CODE> spaghetti.foodgroup</CODE>、<CODE>chowFun.foodgroup</CODE>，等等
+<CODE>// </CODE>均包含值“<CODE>carbohydrates</CODE>”。</PRE>
+
+<H2>在定义中包含方法</H2>
+
+<P>可以在对象的定义中包含方法（函数）。一种方法是在引用别处定义的函数的构造函数中添加一个属性。例如，下面的示例扩充上面定义的 pasta 构造函数以包含 <B>toString</B> 方法，该方法将在显示对象的值时被调用。</P>
+
+<PRE><CODE>// pasta </CODE>是有四个参数的构造器。
+<CODE>// </CODE>第一部分与上面相同。
+<CODE>function pasta(grain, width, shape, hasEgg)</CODE>
+{
+<CODE>    // </CODE>用什么粮食做的？
+<CODE>    this.grain = grain;</CODE>
+
+<CODE>    // </CODE>多宽？（数值）
+<CODE>    this.width = width;     </CODE>
+
+<CODE>    // </CODE>横截面形状？（字符串）
+<CODE>    this.shape = shape;   </CODE>
+
+<CODE>    // </CODE>是否加蛋黄？（<CODE>boolean</CODE>）
+<CODE>    this.hasEgg = hasEgg;  </CODE>
+
+<CODE>    // </CODE>这里添加<CODE> toString </CODE>方法（如下定义）。
+<CODE>    // </CODE>注意在函数的名称后没有加圆括号；
+<CODE>    // </CODE>这不是一个函数调用，而是
+<CODE>    // </CODE>对函数自身的引用。
+<CODE>    this.toString = pastaToString;</CODE>
+}
+
+<CODE>// </CODE>实际的用来显示<CODE> past </CODE>对象内容的函数。<CODE> </CODE>
+<CODE>function pastaToString()</CODE>
+<CODE>{</CODE>
+<CODE>    // </CODE>返回对象的属性。
+
+<CODE>    return "Grain: " + this.grain + "\n" +</CODE>
+<CODE>        "Width: " + this.width + "\n" +
+        "Shape: " + this.shape + "\n" +</CODE>
+<CODE>        "Egg?: " + Boolean(this.hasEgg);</CODE>
+<CODE>}</CODE>
+
+<CODE>var spaghetti = new pasta("wheat", 0.2, "circle", true);</CODE>
+<CODE>// </CODE>将调用<CODE> toString() </CODE>并显示<CODE> spaghetti </CODE>对象
+<CODE>// </CODE>的属性（需要<CODE>Internet </CODE>浏览器）。
+<CODE>window.alert(spaghetti);</CODE>
+</PRE>
+<!--Copyright_START-->
+<DIV CLASS="footer">
+<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation 版权所有。保留所有权利。使用规定。</a><br>
+</DIV> <!--Copyright_END-->
+
+</BODY>
+</HTML>

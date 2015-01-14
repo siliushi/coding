@@ -2,7 +2,7 @@
 <HTML>
 <HEAD>
 <META HTTP-EQUIV="Content-Type" Content="text/html; charset=gb2312">
-<TITLE>TextStream å¯¹è±¡</TITLE>
+<TITLE>TextStream ¶ÔÏó</TITLE>
 <!--CSS_START-->
 <style>@import url(../html-vss/msdnie4a.css);</style>
 <link disabled rel="stylesheet" href="../html-vss/msdn_ie3.css">
@@ -15,45 +15,45 @@
 <TABLE class="banner" width="100%" CELLSPACING=0>
 <TR>
 <TD class="bannerleft" nowrap>JScript&nbsp;</TD>
-<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">è¯­è¨€å‚è€ƒ</a></TD>
+<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">ÓïÑÔ²Î¿¼</a></TD>
 </TR>
 </TABLE>
 <HR>
 <!--End Head-->
 
-<H1><A NAME="jsobjtextstream"></A>TextStream å¯¹è±¡</H1>
+<H1><A NAME="jsobjtextstream"></A>TextStream ¶ÔÏó</H1>
 
-<P>æ–¹ä¾¿å¯¹æ–‡ä»¶çš„é¡ºåºè®¿é—®ã€‚</P>
+<P>·½±ã¶ÔÎÄ¼şµÄË³Ğò·ÃÎÊ¡£</P>
 
 <P><CODE><B>TextStream</B>.{<I>property&nbsp;&nbsp;</I>| <I>method</I>( )}</CODE></P>
 
-<P><I>property</I> å’Œ <I>method</I> å‚æ•°å¯ä»¥æ˜¯ä¸ <B>TextStream</B> å¯¹è±¡ç›¸è¿çš„ä»»ä½•å±æ€§å’Œæ–¹æ³•ã€‚è¯·æ³¨æ„åœ¨å®é™…ä½¿ç”¨æ—¶ï¼Œ<B>TextStream</B> è¢«ä» <B>FileSystemObject</B> è¿”å›çš„ä»£è¡¨ <B>TextStream</B> å¯¹è±¡çš„å˜é‡å ä½ç¬¦ä»£æ›¿ã€‚ </P>
+<P><I>property</I> ºÍ <I>method</I> ²ÎÊı¿ÉÒÔÊÇÓë <B>TextStream</B> ¶ÔÏóÏàÁ¬µÄÈÎºÎÊôĞÔºÍ·½·¨¡£Çë×¢ÒâÔÚÊµ¼ÊÊ¹ÓÃÊ±£¬<B>TextStream</B> ±»´Ó <B>FileSystemObject</B> ·µ»ØµÄ´ú±í <B>TextStream</B> ¶ÔÏóµÄ±äÁ¿Õ¼Î»·û´úÌæ¡£ </P>
 
-<H4>è¯´æ˜</H4>
+<H4>ËµÃ÷</H4>
 
-<P>åœ¨ä¸‹é¢çš„ä»£ç ä¸­ï¼Œa æ˜¯ç”± FileSystemObject çš„ CreateTextFile æ–¹æ³•è¿”å›çš„ TextStream å¯¹è±¡ï¼š </P>
+<P>ÔÚÏÂÃæµÄ´úÂëÖĞ£¬a ÊÇÓÉ FileSystemObject µÄ CreateTextFile ·½·¨·µ»ØµÄ TextStream ¶ÔÏó£º </P>
 
 <PRE><CODE>var fso = new ActiveXObject("Scripting.FileSystemObject");
 var a = fso.CreateTextFile("c:\\testfile.txt", true);
-a.WriteLine("</CODE>è¿™æ˜¯ä¸€ä¸ªæµ‹è¯•ã€‚<CODE>");</CODE>
+a.WriteLine("</CODE>ÕâÊÇÒ»¸ö²âÊÔ¡£<CODE>");</CODE>
 <CODE>a.Close();</CODE></PRE>
 
-<P>WriteLine å’Œ Close æ˜¯ TextStream å¯¹è±¡çš„ä¸¤ä¸ªæ–¹æ³•ã€‚ </P>
+<P>WriteLine ºÍ Close ÊÇ TextStream ¶ÔÏóµÄÁ½¸ö·½·¨¡£ </P>
 
-<H4>æ–¹æ³•</H4>
+<H4>·½·¨</H4>
 
-<P><A HREF="jsmthclose.htm">Close æ–¹æ³•</A> | <A HREF="jsmthread.htm">Read æ–¹æ³•</A> | <A HREF="jsmthreadall.htm">ReadAll æ–¹æ³•</A> | <A HREF="jsmthreadline.htm">ReadLine æ–¹æ³•</A> | <A HREF="jsmthskip.htm">Skip æ–¹æ³•</A> | <A HREF="jsmthskipline.htm">SkipLine æ–¹æ³•</A> | <A HREF="jsmthwrite.htm">Write æ–¹æ³•</A> | <A HREF="jsmthwriteblanklines.htm">WriteBlankLines æ–¹æ³•</A> | <A HREF="jsmthwriteline.htm">WriteLine æ–¹æ³•</A></P>
+<P><A HREF="jsmthclose.htm">Close ·½·¨</A> | <A HREF="jsmthread.htm">Read ·½·¨</A> | <A HREF="jsmthreadall.htm">ReadAll ·½·¨</A> | <A HREF="jsmthreadline.htm">ReadLine ·½·¨</A> | <A HREF="jsmthskip.htm">Skip ·½·¨</A> | <A HREF="jsmthskipline.htm">SkipLine ·½·¨</A> | <A HREF="jsmthwrite.htm">Write ·½·¨</A> | <A HREF="jsmthwriteblanklines.htm">WriteBlankLines ·½·¨</A> | <A HREF="jsmthwriteline.htm">WriteLine ·½·¨</A></P>
 
-<H4>å±æ€§</H4>
+<H4>ÊôĞÔ</H4>
 
-<P><A HREF="jsproatendofline.htm">AtEndOfLine å±æ€§</A> | <A HREF="jsproatendofstream.htm">AtEndOfStream å±æ€§</A> | <A HREF="jsprocolumn.htm">Column å±æ€§</A> | <A HREF="jsproline.htm">Line å±æ€§</A></P>
+<P><A HREF="jsproatendofline.htm">AtEndOfLine ÊôĞÔ</A> | <A HREF="jsproatendofstream.htm">AtEndOfStream ÊôĞÔ</A> | <A HREF="jsprocolumn.htm">Column ÊôĞÔ</A> | <A HREF="jsproline.htm">Line ÊôĞÔ</A></P>
 
-<H4>è¯·å‚é˜…</H4>
+<H4>Çë²ÎÔÄ</H4>
 
-<P><A HREF="jsobjdictionary.htm">Dictionary å¯¹è±¡</A> | <A HREF="jsobjfilesystem.htm">FileSystemObject å¯¹è±¡</A></P>
+<P><A HREF="jsobjdictionary.htm">Dictionary ¶ÔÏó</A> | <A HREF="jsobjfilesystem.htm">FileSystemObject ¶ÔÏó</A></P>
 <!--Copyright_START-->
 <DIV CLASS="footer">
-<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation ç‰ˆæƒæ‰€æœ‰ã€‚ä¿ç•™æ‰€æœ‰æƒåˆ©ã€‚ä½¿ç”¨è§„å®šã€‚</a><br>
+<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation °æÈ¨ËùÓĞ¡£±£ÁôËùÓĞÈ¨Àû¡£Ê¹ÓÃ¹æ¶¨¡£</a><br>
 </DIV> <!--Copyright_END-->
 
 </BODY>

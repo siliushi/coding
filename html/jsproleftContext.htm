@@ -2,7 +2,7 @@
 <HTML>
 <HEAD>
 <META HTTP-EQUIV="Content-Type" Content="text/html; charset=gb2312">
-<TITLE>leftContext å±æ€§ ($`)</TITLE>
+<TITLE>leftContext ÊôĞÔ ($`)</TITLE>
 <!--CSS_START-->
 <style>@import url(../html-vss/msdnie4a.css);</style>
 <link disabled rel="stylesheet" href="../html-vss/msdn_ie3.css">
@@ -15,33 +15,33 @@
 <TABLE class="banner" width="100%" CELLSPACING=0>
 <TR>
 <TD class="bannerleft" nowrap>JScript&nbsp;</TD>
-<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">è¯­è¨€å‚è€ƒ</a></TD>
+<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">ÓïÑÔ²Î¿¼</a></TD>
 </TR>
 </TABLE>
 <HR>
 <!--End Head-->
 
-<H1><A NAME="jsproleftcontext"></A>leftContext å±æ€§ ($`)</H1>
+<H1><A NAME="jsproleftcontext"></A>leftContext ÊôĞÔ ($`)</H1>
 
-<P>è¿”å›è¢«æŸ¥æ‰¾çš„å­—ç¬¦ä¸²ä¸­ä»å­—ç¬¦ä¸²å¼€å§‹ä½ç½®åˆ°æœ€ååŒ¹é…ä¹‹å‰çš„ä½ç½®ä¹‹é—´çš„å­—ç¬¦ã€‚åªè¯»ã€‚</P>
+<P>·µ»Ø±»²éÕÒµÄ×Ö·û´®ÖĞ´Ó×Ö·û´®¿ªÊ¼Î»ÖÃµ½×îºóÆ¥ÅäÖ®Ç°µÄÎ»ÖÃÖ®¼äµÄ×Ö·û¡£Ö»¶Á¡£</P>
 
 <P><CODE><B>RegExp</B>.<B>leftContext</B></CODE></P>
 
-<P>ä¸æ­¤å±æ€§ç›¸å…³è”çš„å¯¹è±¡æ€»æ˜¯å…¨å±€ <B>RegExp</B> å¯¹è±¡ã€‚</P>
+<P>Óë´ËÊôĞÔÏà¹ØÁªµÄ¶ÔÏó×ÜÊÇÈ«¾Ö <B>RegExp</B> ¶ÔÏó¡£</P>
 
-<H4>è¯´æ˜</H4>
+<H4>ËµÃ÷</H4>
 
-<P><B>leftContext </B>å±æ€§çš„åˆå§‹å€¼æ˜¯ç©ºå­—ç¬¦ä¸²ã€‚åªè¦æ‰¾åˆ°äº†åŒ¹é…çš„å­—ç¬¦ï¼Œ<B>leftContext</B> å±æ€§çš„å€¼å°±ä¼šç›¸åº”æ”¹å˜ã€‚</P>
+<P><B>leftContext </B>ÊôĞÔµÄ³õÊ¼ÖµÊÇ¿Õ×Ö·û´®¡£Ö»ÒªÕÒµ½ÁËÆ¥ÅäµÄ×Ö·û£¬<B>leftContext</B> ÊôĞÔµÄÖµ¾Í»áÏàÓ¦¸Ä±ä¡£</P>
 
-<H4>ç¤ºä¾‹</H4>
+<H4>Ê¾Àı</H4>
 
-<P>ä»¥ä¸‹ç¤ºä¾‹é˜è¿°äº† <B>leftContext</B> å±æ€§çš„ç”¨æ³•ï¼š</P>
+<P>ÒÔÏÂÊ¾Àı²ûÊöÁË <B>leftContext</B> ÊôĞÔµÄÓÃ·¨£º</P>
 
 <PRE><CODE>function matchDemo(){
-   var s;                                //</CODE>å£°æ˜å˜é‡ã€‚
-<CODE>   var re = new RegExp("d(b+)(d)","ig"); //</CODE>æ­£åˆ™è¡¨è¾¾å¼æ ·å¼ã€‚
-<CODE>   var str = "cdbBdbsbdbdz";             //</CODE>å°†è¢«æŸ¥æ‰¾çš„å­—ç¬¦ä¸²ã€‚
-<CODE>   var arr = re.exec(str);               //</CODE>è¿›è¡ŒæŸ¥æ‰¾ã€‚
+   var s;                                //</CODE>ÉùÃ÷±äÁ¿¡£
+<CODE>   var re = new RegExp("d(b+)(d)","ig"); //</CODE>ÕıÔò±í´ïÊ½ÑùÊ½¡£
+<CODE>   var str = "cdbBdbsbdbdz";             //</CODE>½«±»²éÕÒµÄ×Ö·û´®¡£
+<CODE>   var arr = re.exec(str);               //</CODE>½øĞĞ²éÕÒ¡£
 <CODE>   s = "$1 returns: " + RegExp.$1 + "\n";</CODE>
 <CODE>   s += "$2 returns: " + RegExp.$2 + "\n";</CODE>
 <CODE>   s += "$3 returns: " + RegExp.$3 + "\n";</CODE>
@@ -50,22 +50,22 @@
 <CODE>   s += "leftContext returns: " + <span class=cfe><B>RegExp.leftContext</B></span> + "\n";</CODE>
 <CODE>   s += "rightContext returns: " + RegExp.rightContext + "\n"; </CODE>
 <CODE>   s += "lastParen returns: " + RegExp.lastParen + "\n";</CODE>
-<CODE>   return(s);                            //</CODE>è¿”å›ç»“æœã€‚
+<CODE>   return(s);                            //</CODE>·µ»Ø½á¹û¡£
 }
 <CODE>document.write(matchDemo());</CODE></PRE>
 
-<H4>è¦æ±‚</H4>
+<H4>ÒªÇó</H4>
 
-<P><A HREF="jsoriversioninformation.htm">ç‰ˆæœ¬ 5.5</A></P>
+<P><A HREF="jsoriversioninformation.htm">°æ±¾ 5.5</A></P>
 
-<H4>è¯·å‚é˜…</H4>
+<H4>Çë²ÎÔÄ</H4>
 
-<P><A HREF="jspromatches.htm">$1...$9 å±æ€§</A> | <A HREF="jsproindex.htm">index å±æ€§</A> | <A HREF="jsproinput.htm">input å±æ€§</A> | <A HREF="jsprolastindex.htm">lastIndex å±æ€§</A> | <A HREF="jsprolastmatch.htm">lastMatch å±æ€§</A> | <A HREF="jsprolastparen.htm">lastParen å±æ€§</A> | <A HREF="jsprorightcontext.htm" CLASS="POPUP">rightContext å±æ€§</A></P>
+<P><A HREF="jspromatches.htm">$1...$9 ÊôĞÔ</A> | <A HREF="jsproindex.htm">index ÊôĞÔ</A> | <A HREF="jsproinput.htm">input ÊôĞÔ</A> | <A HREF="jsprolastindex.htm">lastIndex ÊôĞÔ</A> | <A HREF="jsprolastmatch.htm">lastMatch ÊôĞÔ</A> | <A HREF="jsprolastparen.htm">lastParen ÊôĞÔ</A> | <A HREF="jsprorightcontext.htm" CLASS="POPUP">rightContext ÊôĞÔ</A></P>
 
-<P>åº”ç”¨äºï¼š<A HREF="jsobjregexp.htm">RegExp å¯¹è±¡</A></P>
+<P>Ó¦ÓÃÓÚ£º<A HREF="jsobjregexp.htm">RegExp ¶ÔÏó</A></P>
 <!--Copyright_START-->
 <DIV CLASS="footer">
-<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation ç‰ˆæƒæ‰€æœ‰ã€‚ä¿ç•™æ‰€æœ‰æƒåˆ©ã€‚ä½¿ç”¨è§„å®šã€‚</a><br>
+<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation °æÈ¨ËùÓĞ¡£±£ÁôËùÓĞÈ¨Àû¡£Ê¹ÓÃ¹æ¶¨¡£</a><br>
 </DIV> <!--Copyright_END-->
 
 </BODY>

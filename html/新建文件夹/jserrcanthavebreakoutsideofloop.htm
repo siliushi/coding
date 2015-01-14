@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=gb2312">
+<TITLE>在循环外不能有 'break'</TITLE>
+<!--CSS_START-->
+<style>@import url(../html-vss/msdnie4a.css);</style>
+<link disabled rel="stylesheet" href="../html-vss/msdn_ie3.css">
+<!--CSS_END-->
+</HEAD>
+<BODY>
+
+
+<!--Start Head-->
+<TABLE class="banner" width="100%" CELLSPACING=0>
+<TR>
+<TD class="bannerleft" nowrap>JScript&nbsp;</TD>
+<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">语言参考</a></TD>
+</TR>
+</TABLE>
+<HR>
+<!--End Head-->
+
+<H1><A NAME="jserrcanthavebreakoutsideofloop"></A>在循环外不能有 'break'</H1>
+
+<P>试图在循环外使用 <B>break</B> 关键词。<B>break</B> 关键词用来结束一个循环或 <B>switch</B> 语句。它必须位于循环体内或 <B>switch</B> 语句内。</P>
+
+<P class="label"><B>例外</B></P>
+
+<P><B>break</B> 关键字后面可以带一个标签。</P>
+
+<PRE><CODE>break labelname;</CODE></PRE>
+
+<P>只有在嵌套式循环或 <B>switch</B> 语句中并且需要跳出的循环不是最内层循环时，才需要使用这种带标签形式的<B>break</B> 关键词。</P>
+
+<P class=label><B>要改正此错误</B>
+
+<UL type=disc>
+	<LI>请确保 <B>break</B> 关键词位于封闭的循环或 switch 语句内。</li>
+</UL>
+
+<H4>请参阅</H4>
+
+<P><A HREF="jsstmbreak.htm">Break</A> | <A HREF="conditionals.htm">控制程序流</A> | <A HREF="cautions.htm">脚本查错</A> | <A HREF="jslrfjscriptlanguagereference.htm">JScript 语言参考</A></P>
+<!--Copyright_START-->
+<DIV CLASS="footer">
+<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation 版权所有。保留所有权利。使用规定。</a><br>
+</DIV> <!--Copyright_END-->
+
+</BODY>
+</HTML>

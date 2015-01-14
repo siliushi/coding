@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=gb2312">
+<TITLE>正则表达式中缺少 ']'</TITLE>
+<!--CSS_START-->
+<style>@import url(../html-vss/msdnie4a.css);</style>
+<link disabled rel="stylesheet" href="../html-vss/msdn_ie3.css">
+<!--CSS_END-->
+</HEAD>
+<BODY>
+
+
+<!--Start Head-->
+<TABLE class="banner" width="100%" CELLSPACING=0>
+<TR>
+<TD class="bannerleft" nowrap>JScript&nbsp;</TD>
+<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">语言参考</a></TD>
+</TR>
+</TABLE>
+<HR>
+<!--End Head-->
+
+<H1><A NAME="jserrexpected]inregularexpression"></A>正则表达式中缺少 ']'</H1>
+
+<P>试图创建一个用于正则表达式匹配的字符类，但是没有右中括号。单个的文字字符组合可以用括号括起来表示一个字符类。一个字符类可以匹配其中包含的任一字符。例如，/[abc]/ 可以匹配字母 “a”, “b”, 或 “c” 的任何一个。</P>
+
+<P class=label><B>要改正此错误</B>
+
+<UL type=disc>
+	<LI>给正则表达式加上右中括号。</li>
+</UL>
+
+<P class=indent><B>注意</B> &nbsp; 如果想匹配单中括号，可以使用反斜杠将其转义 - \( - 这样就不会被JScript 解释为特殊字符。)</P>
+
+<H4>请参阅</H4>
+
+<P><A HREF="jsobjregexpression.htm">Regular Expression 对象</A> | <A HREF="jsgrpregexpsyntax.htm">Regular Expression 语法</A></P>
+<!--Copyright_START-->
+<DIV CLASS="footer">
+<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation 版权所有。保留所有权利。使用规定。</a><br>
+</DIV> <!--Copyright_END-->
+
+</BODY>
+</HTML>

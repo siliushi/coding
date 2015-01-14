@@ -2,7 +2,7 @@
 <HTML>
 <HEAD>
 <META HTTP-EQUIV="Content-Type" Content="text/html; charset=gb2312">
-<TITLE>å¤„ç†é©±åŠ¨å™¨å’Œæ–‡ä»¶å¤¹</TITLE>
+<TITLE>´¦ÀíÇı¶¯Æ÷ºÍÎÄ¼ş¼Ğ</TITLE>
 <!--CSS_START-->
 <style>@import url(../html-vss/msdnie4a.css);</style>
 <link disabled rel="stylesheet" href="../html-vss/msdn_ie3.css">
@@ -15,47 +15,47 @@
 <TABLE class="banner" width="100%" CELLSPACING=0>
 <TR>
 <TD class="bannerleft" nowrap>JScript&nbsp;</TD>
-<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">è¯­è¨€å‚è€ƒ</a></TD>
+<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">ÓïÑÔ²Î¿¼</a></TD>
 </TR>
 </TABLE>
 <HR>
 <!--End Head-->
 
-<H1><A NAME="sgworkingwithdrives"></A>å¤„ç†é©±åŠ¨å™¨å’Œæ–‡ä»¶å¤¹</H1>
+<H1><A NAME="sgworkingwithdrives"></A>´¦ÀíÇı¶¯Æ÷ºÍÎÄ¼ş¼Ğ</H1>
 
-<P>ä½¿ç”¨ <B>FileSystemObject</B> (FSO) å¯¹è±¡æ¨¡å¼ï¼Œå¯ä»¥æœ‰è®¡åˆ’åœ°å¤„ç†é©±åŠ¨å™¨å’Œæ–‡ä»¶å¤¹ï¼Œå°±åƒåœ¨ Windows èµ„æºç®¡ç†å™¨ä¸­äº¤äº’å¼åœ°å¤„ç†å®ƒä»¬ä¸€æ ·ã€‚å¯ä»¥å¤åˆ¶å’Œç§»åŠ¨æ–‡ä»¶å¤¹ï¼Œè·å–æœ‰å…³é©±åŠ¨å™¨å’Œæ–‡ä»¶å¤¹çš„ä¿¡æ¯ï¼Œç­‰ç­‰ã€‚</P>
+<P>Ê¹ÓÃ <B>FileSystemObject</B> (FSO) ¶ÔÏóÄ£Ê½£¬¿ÉÒÔÓĞ¼Æ»®µØ´¦ÀíÇı¶¯Æ÷ºÍÎÄ¼ş¼Ğ£¬¾ÍÏñÔÚ Windows ×ÊÔ´¹ÜÀíÆ÷ÖĞ½»»¥Ê½µØ´¦ÀíËüÃÇÒ»Ñù¡£¿ÉÒÔ¸´ÖÆºÍÒÆ¶¯ÎÄ¼ş¼Ğ£¬»ñÈ¡ÓĞ¹ØÇı¶¯Æ÷ºÍÎÄ¼ş¼ĞµÄĞÅÏ¢£¬µÈµÈ¡£</P>
 
-<H2>è·å–æœ‰å…³é©±åŠ¨å™¨çš„ä¿¡æ¯</H2>
+<H2>»ñÈ¡ÓĞ¹ØÇı¶¯Æ÷µÄĞÅÏ¢</H2>
 
-<P>å¯ä»¥ç”¨ <B>Drive</B> å¯¹è±¡æ¥è·å¾—æœ‰å…³å„ç§é©±åŠ¨å™¨çš„ä¿¡æ¯ï¼Œè¿™äº›é©±åŠ¨å™¨æ˜¯å®ç‰©åœ°æˆ–é€šè¿‡ç½‘ç»œè¿æ¥åˆ°ç³»ç»Ÿä¸Šçš„ã€‚å®ƒçš„å±æ€§å¯ä»¥ç”¨æ¥è·å¾—ä¸‹é¢çš„ä¿¡æ¯å†…å®¹ï¼š
+<P>¿ÉÒÔÓÃ <B>Drive</B> ¶ÔÏóÀ´»ñµÃÓĞ¹Ø¸÷ÖÖÇı¶¯Æ÷µÄĞÅÏ¢£¬ÕâĞ©Çı¶¯Æ÷ÊÇÊµÎïµØ»òÍ¨¹ıÍøÂçÁ¬½Óµ½ÏµÍ³ÉÏµÄ¡£ËüµÄÊôĞÔ¿ÉÒÔÓÃÀ´»ñµÃÏÂÃæµÄĞÅÏ¢ÄÚÈİ£º
 
 <UL type=disc>
-	<LI>é©±åŠ¨å™¨çš„æ€»å®¹é‡ï¼Œä»¥å­—èŠ‚ä¸ºå•ä½ï¼ˆ<B>TotalSize</B> å±æ€§ï¼‰ </li>
+	<LI>Çı¶¯Æ÷µÄ×ÜÈİÁ¿£¬ÒÔ×Ö½ÚÎªµ¥Î»£¨<B>TotalSize</B> ÊôĞÔ£© </li>
 
-	<LI>é©±åŠ¨å™¨çš„å¯ç”¨ç©ºé—´æ˜¯å¤šå°‘ï¼Œä»¥å­—èŠ‚ä¸ºå•ä½ï¼ˆ<B>AvailableSpace</B> æˆ– <B>FreeSpace</B> å±æ€§ï¼‰ </li>
+	<LI>Çı¶¯Æ÷µÄ¿ÉÓÃ¿Õ¼äÊÇ¶àÉÙ£¬ÒÔ×Ö½ÚÎªµ¥Î»£¨<B>AvailableSpace</B> »ò <B>FreeSpace</B> ÊôĞÔ£© </li>
 
-	<LI>å“ªä¸ªå·è¢«èµ‹ç»™äº†è¯¥é©±åŠ¨å™¨ï¼ˆ<B>DriveLetter</B> å±æ€§ï¼‰ </li>
+	<LI>ÄÄ¸öºÅ±»¸³¸øÁË¸ÃÇı¶¯Æ÷£¨<B>DriveLetter</B> ÊôĞÔ£© </li>
 
-	<LI>é©±åŠ¨å™¨çš„ç±»å‹æ˜¯ä»€ä¹ˆï¼Œå¦‚å¯ç§»åŠ¨çš„ã€å›ºå®šçš„ã€ç½‘ç»œçš„ã€CD-ROM æˆ– RAM ç£ç›˜ï¼ˆ<B>DriveType</B> å±æ€§ï¼‰ </li>
+	<LI>Çı¶¯Æ÷µÄÀàĞÍÊÇÊ²Ã´£¬Èç¿ÉÒÆ¶¯µÄ¡¢¹Ì¶¨µÄ¡¢ÍøÂçµÄ¡¢CD-ROM »ò RAM ´ÅÅÌ£¨<B>DriveType</B> ÊôĞÔ£© </li>
 
-	<LI>é©±åŠ¨å™¨çš„åºåˆ—å·ï¼ˆSerialNumber å±æ€§ï¼‰ </li>
+	<LI>Çı¶¯Æ÷µÄĞòÁĞºÅ£¨SerialNumber ÊôĞÔ£© </li>
 
-	<LI>é©±åŠ¨å™¨ä½¿ç”¨çš„æ–‡ä»¶ç³»ç»Ÿç±»å‹ï¼Œå¦‚ FATã€FAT32ã€NTFS ç­‰ç­‰ï¼ˆ<B>FileSystem</B> å±æ€§ï¼‰ </li>
+	<LI>Çı¶¯Æ÷Ê¹ÓÃµÄÎÄ¼şÏµÍ³ÀàĞÍ£¬Èç FAT¡¢FAT32¡¢NTFS µÈµÈ£¨<B>FileSystem</B> ÊôĞÔ£© </li>
 
-	<LI>é©±åŠ¨å™¨æ˜¯å¦å¯ä»¥ä½¿ç”¨ï¼ˆ<B>IsReady</B> å±æ€§ï¼‰ </li>
+	<LI>Çı¶¯Æ÷ÊÇ·ñ¿ÉÒÔÊ¹ÓÃ£¨<B>IsReady</B> ÊôĞÔ£© </li>
 
-	<LI>å…±äº«å’Œ/æˆ–å·çš„åå­—ï¼ˆShareName å’Œ VolumeName å±æ€§ï¼‰ </li>
+	<LI>¹²ÏíºÍ/»ò¾íµÄÃû×Ö£¨ShareName ºÍ VolumeName ÊôĞÔ£© </li>
 
-	<LI>é©±åŠ¨å™¨çš„è·¯å¾„æˆ–æ ¹æ–‡ä»¶å¤¹ï¼ˆ<B>Path</B> å’Œ <B>RootFolder</B> å±æ€§ï¼‰ </li>
+	<LI>Çı¶¯Æ÷µÄÂ·¾¶»ò¸ùÎÄ¼ş¼Ğ£¨<B>Path</B> ºÍ <B>RootFolder</B> ÊôĞÔ£© </li>
 </UL>
 
-<P>è¯·è€ƒå¯Ÿ&nbsp;&nbsp;<A HREF="sgfsosample.htm#driveinfo">ç¤ºä¾‹ä»£ç </A>ï¼Œæ¥é¢†ä¼šå¦‚ä½•åœ¨ <B>FileSystemObject</B> ä¸­ä½¿ç”¨è¿™äº›å±æ€§ã€‚</P>
+<P>Çë¿¼²ì&nbsp;&nbsp;<A HREF="sgfsosample.htm#driveinfo">Ê¾Àı´úÂë</A>£¬À´Áì»áÈçºÎÔÚ <B>FileSystemObject</B> ÖĞÊ¹ÓÃÕâĞ©ÊôĞÔ¡£</P>
 
-<H4>Drive å¯¹è±¡çš„ç”¨æ³•ç¤ºä¾‹</H4>
+<H4>Drive ¶ÔÏóµÄÓÃ·¨Ê¾Àı</H4>
 
-<P>ä½¿ç”¨ <B>Drive</B> å¯¹è±¡æ¥æ”¶é›†æœ‰å…³é©±åŠ¨å™¨çš„ä¿¡æ¯ã€‚åœ¨ä¸‹é¢çš„ä»£ç ä¸­ï¼Œæ²¡æœ‰å¯¹å®é™…çš„ <B>Drive</B> å¯¹è±¡çš„å¼•ç”¨ï¼›ç›¸åï¼Œä½¿ç”¨ <B>GetDrive</B> æ–¹æ³•æ¥è·å¾—ç°æœ‰ <B>Drive</B> å¯¹è±¡çš„å¼•ç”¨ï¼ˆåœ¨è¿™ä¸ªä¾‹å­ä¸­å°±æ˜¯ drvï¼‰ã€‚</P>
+<P>Ê¹ÓÃ <B>Drive</B> ¶ÔÏóÀ´ÊÕ¼¯ÓĞ¹ØÇı¶¯Æ÷µÄĞÅÏ¢¡£ÔÚÏÂÃæµÄ´úÂëÖĞ£¬Ã»ÓĞ¶ÔÊµ¼ÊµÄ <B>Drive</B> ¶ÔÏóµÄÒıÓÃ£»Ïà·´£¬Ê¹ÓÃ <B>GetDrive</B> ·½·¨À´»ñµÃÏÖÓĞ <B>Drive</B> ¶ÔÏóµÄÒıÓÃ£¨ÔÚÕâ¸öÀı×ÓÖĞ¾ÍÊÇ drv£©¡£</P>
 
-<P>ä¸‹é¢ç¤ºä¾‹ç¤ºèŒƒäº†å¦‚ä½•åœ¨ VBScript ä¸­ä½¿ç”¨ <B>Drive</B> å¯¹è±¡ï¼š </P>
+<P>ÏÂÃæÊ¾ÀıÊ¾·¶ÁËÈçºÎÔÚ VBScript ÖĞÊ¹ÓÃ <B>Drive</B> ¶ÔÏó£º </P>
 
 <PRE><CODE>Sub ShowDriveInfo(drvPath)
 </CODE>&nbsp;&nbsp;&nbsp;<CODE>Dim fso, drv, s</CODE>
@@ -70,7 +70,7 @@
 <CODE>&nbsp;&nbsp;&nbsp;Response.Write s</CODE>
 <CODE>End Sub</CODE></PRE>
 
-<P>ä¸‹é¢çš„ä»£ç è¯´æ˜åœ¨ JScript ä¸­å®ç°åŒæ ·çš„åŠŸèƒ½ï¼š </P>
+<P>ÏÂÃæµÄ´úÂëËµÃ÷ÔÚ JScript ÖĞÊµÏÖÍ¬ÑùµÄ¹¦ÄÜ£º </P>
 
 <PRE><CODE>function ShowDriveInfo1(drvPath)
 {
@@ -86,124 +86,124 @@
 <CODE>&nbsp;&nbsp;&nbsp;Response.Write(s);</CODE>
 }</PRE>
 
-<H2>å¤„ç†æ–‡ä»¶å¤¹</H2>
+<H2>´¦ÀíÎÄ¼ş¼Ğ</H2>
 
-<P>åœ¨ä¸‹é¢çš„è¡¨ä¸­ï¼Œæè¿°äº†æ™®é€šçš„æ–‡ä»¶å¤¹ä»»åŠ¡å’Œæ‰§è¡Œå®ƒä»¬çš„æ–¹æ³•ã€‚ </P>
+<P>ÔÚÏÂÃæµÄ±íÖĞ£¬ÃèÊöÁËÆÕÍ¨µÄÎÄ¼ş¼ĞÈÎÎñºÍÖ´ĞĞËüÃÇµÄ·½·¨¡£ </P>
 
 <TABLE border=1 cellspacing=0 cols=2 frame=box rules=all>
 
 <TR VALIGN="top">
-<TH width=39%>ä»»åŠ¡</TH>
-<TH width=61%>æ–¹æ³•</TH>
+<TH width=39%>ÈÎÎñ</TH>
+<TH width=61%>·½·¨</TH>
 </TR>
 
 <TR VALIGN="top">
-<TD width=39%>åˆ›å»ºæ–‡ä»¶å¤¹ã€‚</TD>
+<TD width=39%>´´½¨ÎÄ¼ş¼Ğ¡£</TD>
 <TD width=61%>FileSystemObject.CreateFolder</TD>
 </TR>
 
 <TR VALIGN="top">
-<TD width=39%>åˆ é™¤æ–‡ä»¶å¤¹ã€‚</TD>
-<TD width=61%>Folder.Delete æˆ– FileSystemObject.DeleteFolder</TD>
+<TD width=39%>É¾³ıÎÄ¼ş¼Ğ¡£</TD>
+<TD width=61%>Folder.Delete »ò FileSystemObject.DeleteFolder</TD>
 </TR>
 
 <TR VALIGN="top">
-<TD width=39%>ç§»åŠ¨æ–‡ä»¶å¤¹ã€‚</TD>
-<TD width=61%>Folder.Move æˆ– FileSystemObject.MoveFolder</TD>
+<TD width=39%>ÒÆ¶¯ÎÄ¼ş¼Ğ¡£</TD>
+<TD width=61%>Folder.Move »ò FileSystemObject.MoveFolder</TD>
 </TR>
 
 <TR VALIGN="top">
-<TD width=39%>å¤åˆ¶æ–‡ä»¶å¤¹ã€‚</TD>
-<TD width=61%>Folder.Copy æˆ– FileSystemObject.CopyFolder</TD>
+<TD width=39%>¸´ÖÆÎÄ¼ş¼Ğ¡£</TD>
+<TD width=61%>Folder.Copy »ò FileSystemObject.CopyFolder</TD>
 </TR>
 
 <TR VALIGN="top">
-<TD width=39%>æ£€ç´¢æ–‡ä»¶å¤¹çš„åå­—ã€‚</TD>
+<TD width=39%>¼ìË÷ÎÄ¼ş¼ĞµÄÃû×Ö¡£</TD>
 <TD width=61%>Folder.Name</TD>
 </TR>
 
 <TR VALIGN="top">
-<TD width=39%>å¦‚æœæ–‡ä»¶å¤¹åœ¨é©±åŠ¨å™¨ä¸Šå­˜åœ¨ï¼Œåˆ™æ‰¾å‡ºå®ƒã€‚</TD>
+<TD width=39%>Èç¹ûÎÄ¼ş¼ĞÔÚÇı¶¯Æ÷ÉÏ´æÔÚ£¬ÔòÕÒ³öËü¡£</TD>
 <TD width=61%>FileSystemObject.FolderExists</TD>
 </TR>
 
 <TR VALIGN="top">
-<TD width=39%>è·å¾—ç°æœ‰ <B>Folder</B> å¯¹è±¡çš„å®ä¾‹ã€‚</TD>
+<TD width=39%>»ñµÃÏÖÓĞ <B>Folder</B> ¶ÔÏóµÄÊµÀı¡£</TD>
 <TD width=61%>FileSystemObject.GetFolder</TD>
 </TR>
 
 <TR VALIGN="top">
-<TD width=39%>æ‰¾å‡ºæ–‡ä»¶å¤¹çš„çˆ¶æ–‡ä»¶å¤¹åã€‚</TD>
+<TD width=39%>ÕÒ³öÎÄ¼ş¼ĞµÄ¸¸ÎÄ¼ş¼ĞÃû¡£</TD>
 <TD width=61%>FileSystemObject.GetParentFolderName</TD>
 </TR>
 
 <TR VALIGN="top">
-<TD width=39%>æ‰¾å‡ºç³»ç»Ÿæ–‡ä»¶å¤¹çš„è·¯å¾„ã€‚</TD>
+<TD width=39%>ÕÒ³öÏµÍ³ÎÄ¼ş¼ĞµÄÂ·¾¶¡£</TD>
 <TD width=61%>FileSystemObject.GetSpecialFolder</TD>
 </TR>
 </TABLE><BR>
 
-<P>è¯·è€ƒå¯Ÿ<A HREF="sgfsosample.htm#folderinfo">ç¤ºä¾‹ä»£ç </A>ï¼Œæ¥çœ‹çœ‹åœ¨ <B>FileSystemObject</B> ä¸­ä½¿ç”¨äº†å¤šå°‘ç§è¿™äº›çš„æ–¹æ³•å’Œå±æ€§ã€‚</P>
+<P>Çë¿¼²ì<A HREF="sgfsosample.htm#folderinfo">Ê¾Àı´úÂë</A>£¬À´¿´¿´ÔÚ <B>FileSystemObject</B> ÖĞÊ¹ÓÃÁË¶àÉÙÖÖÕâĞ©µÄ·½·¨ºÍÊôĞÔ¡£</P>
 
-<P>ä¸‹é¢çš„ç¤ºä¾‹ç¤ºèŒƒäº†å¦‚ä½•åœ¨ VBScript ä¸­ä½¿ç”¨ <B>Folder</B> å’Œ <B>FileSystemObject</B> å¯¹è±¡ï¼Œæ¥æ“ä½œæ–‡ä»¶å¤¹å’Œè·å¾—æœ‰å…³å®ƒä»¬çš„ä¿¡æ¯ï¼š</P>
+<P>ÏÂÃæµÄÊ¾ÀıÊ¾·¶ÁËÈçºÎÔÚ VBScript ÖĞÊ¹ÓÃ <B>Folder</B> ºÍ <B>FileSystemObject</B> ¶ÔÏó£¬À´²Ù×÷ÎÄ¼ş¼ĞºÍ»ñµÃÓĞ¹ØËüÃÇµÄĞÅÏ¢£º</P>
 
 <PRE><CODE>Sub ShowFolderInfo()
 </CODE>&nbsp;&nbsp;&nbsp;<CODE>Dim fso, fldr, s</CODE>
-&nbsp;&nbsp;&nbsp;<CODE>' </CODE>è·å¾—<CODE> FileSystemObject </CODE>çš„å®ä¾‹ã€‚
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>»ñµÃ<CODE> FileSystemObject </CODE>µÄÊµÀı¡£
 &nbsp;&nbsp;&nbsp;<CODE>Set fso = CreateObject("Scripting.FileSystemObject")</CODE>
-&nbsp;&nbsp;&nbsp;<CODE>' </CODE>è·å¾—<CODE> Drive </CODE>å¯¹è±¡ã€‚
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>»ñµÃ<CODE> Drive </CODE>¶ÔÏó¡£
 &nbsp;&nbsp;&nbsp;<CODE>Set fldr = fso.GetFolder("c:")</CODE>
-&nbsp;&nbsp;&nbsp;<CODE>' </CODE>æ‰“å°çˆ¶æ–‡ä»¶å¤¹åå­—ã€‚
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>´òÓ¡¸¸ÎÄ¼ş¼ĞÃû×Ö¡£
 &nbsp;&nbsp;&nbsp;<CODE>Response.Write "Parent folder name is: " &amp; fldr &amp; "&lt;br&gt;"</CODE>
-&nbsp;&nbsp;&nbsp;<CODE>' </CODE>æ‰“å°é©±åŠ¨å™¨åå­—ã€‚
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>´òÓ¡Çı¶¯Æ÷Ãû×Ö¡£
 &nbsp;&nbsp;&nbsp;<CODE>Response.Write "Contained on drive " &amp; fldr.Drive &amp; "&lt;br&gt;"</CODE>
-&nbsp;&nbsp;&nbsp;<CODE>' </CODE>æ‰“å°æ ¹æ–‡ä»¶åã€‚
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>´òÓ¡¸ùÎÄ¼şÃû¡£
 &nbsp;&nbsp;&nbsp;<CODE>If fldr.IsRootFolder = True Then</CODE>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>Response.Write "This is the root folder." &amp; ""&lt;br&gt;"&lt;br&gt;"</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>Else</CODE>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>Response.Write "This folder isn't a root folder." &amp; "&lt;br&gt;&lt;br&gt;" </CODE>
 &nbsp;&nbsp;&nbsp;<CODE>End If</CODE>
-&nbsp;&nbsp;&nbsp;<CODE>' </CODE>ç”¨<CODE> FileSystemObject </CODE>å¯¹è±¡åˆ›å»ºæ–°çš„æ–‡ä»¶å¤¹ã€‚
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>ÓÃ<CODE> FileSystemObject </CODE>¶ÔÏó´´½¨ĞÂµÄÎÄ¼ş¼Ğ¡£
 &nbsp;&nbsp;&nbsp;<CODE>fso.CreateFolder ("C:\Bogus")</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>Response.Write "Created folder C:\Bogus" &amp; "&lt;br&gt;"</CODE>
-&nbsp;&nbsp;&nbsp;<CODE>' </CODE>æ‰“å°æ–‡ä»¶å¤¹çš„åŸºæœ¬åå­—ã€‚
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>´òÓ¡ÎÄ¼ş¼ĞµÄ»ù±¾Ãû×Ö¡£
 &nbsp;&nbsp;&nbsp;<CODE>Response.Write "Basename = " &amp; fso.GetBaseName("c:\bogus") &amp; "&lt;br&gt;"</CODE>
-&nbsp;&nbsp;&nbsp;<CODE>' </CODE>åˆ é™¤æ–°åˆ›å»ºçš„æ–‡ä»¶å¤¹ã€‚
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>É¾³ıĞÂ´´½¨µÄÎÄ¼ş¼Ğ¡£
 &nbsp;&nbsp;&nbsp;<CODE>fso.DeleteFolder ("C:\Bogus")</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>Response.Write "Deleted folder C:\Bogus" &amp; "&lt;br&gt;"</CODE>
 <CODE>End Sub</CODE></PRE>
 
-<P>ä¸‹é¢çš„ç¤ºä¾‹æ˜¾ç¤ºå¦‚ä½•åœ¨ JScript ä¸­ä½¿ç”¨ <B>Folder</B> å’Œ <B>FileSystemObject</B> å¯¹è±¡ï¼š </P>
+<P>ÏÂÃæµÄÊ¾ÀıÏÔÊ¾ÈçºÎÔÚ JScript ÖĞÊ¹ÓÃ <B>Folder</B> ºÍ <B>FileSystemObject</B> ¶ÔÏó£º </P>
 
 <PRE><CODE>function ShowFolderInfo()
 {
 </CODE>&nbsp;&nbsp;&nbsp;<CODE>var fso, fldr, s = "";</CODE>
-&nbsp;&nbsp;&nbsp;<CODE>// </CODE>è·å¾—<CODE> FileSystemObject </CODE>çš„å®ä¾‹ã€‚
+&nbsp;&nbsp;&nbsp;<CODE>// </CODE>»ñµÃ<CODE> FileSystemObject </CODE>µÄÊµÀı¡£
 &nbsp;&nbsp;&nbsp;<CODE>fso = new ActiveXObject("Scripting.FileSystemObject");</CODE>
-&nbsp;&nbsp;&nbsp;<CODE>// </CODE>è·å¾—<CODE> Drive </CODE>å¯¹è±¡ã€‚
+&nbsp;&nbsp;&nbsp;<CODE>// </CODE>»ñµÃ<CODE> Drive </CODE>¶ÔÏó¡£
 &nbsp;&nbsp;&nbsp;<CODE>fldr = fso.GetFolder("c:");</CODE>
-&nbsp;&nbsp;&nbsp;<CODE>// </CODE>æ‰“å°çˆ¶æ–‡ä»¶å¤¹åã€‚
+&nbsp;&nbsp;&nbsp;<CODE>// </CODE>´òÓ¡¸¸ÎÄ¼ş¼ĞÃû¡£
 &nbsp;&nbsp;&nbsp;<CODE>Response.Write("Parent folder name is: " + fldr + "&lt;br&gt;");</CODE>
-&nbsp;&nbsp;&nbsp;<CODE>// </CODE>æ‰“å°é©±åŠ¨å™¨åå­—ã€‚
+&nbsp;&nbsp;&nbsp;<CODE>// </CODE>´òÓ¡Çı¶¯Æ÷Ãû×Ö¡£
 &nbsp;&nbsp;&nbsp;<CODE>Response.Write("Contained on drive " + fldr.Drive + "&lt;br&gt;");</CODE>
-&nbsp;&nbsp;&nbsp;<CODE>// </CODE>æ‰“å°æ ¹æ–‡ä»¶åã€‚
+&nbsp;&nbsp;&nbsp;<CODE>// </CODE>´òÓ¡¸ùÎÄ¼şÃû¡£
 &nbsp;&nbsp;&nbsp;<CODE>if (fldr.IsRootFolder)</CODE>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>Response.Write("This is the root folder.");</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>else</CODE>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>Response.Write("This folder isn't a root folder.");</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>Response.Write("&lt;br&gt;&lt;br&gt;");</CODE>
-&nbsp;&nbsp;&nbsp;<CODE>// </CODE>ç”¨<CODE> FileSystemObject </CODE>å¯¹è±¡åˆ›å»ºæ–°çš„æ–‡ä»¶å¤¹ã€‚
+&nbsp;&nbsp;&nbsp;<CODE>// </CODE>ÓÃ<CODE> FileSystemObject </CODE>¶ÔÏó´´½¨ĞÂµÄÎÄ¼ş¼Ğ¡£
 &nbsp;&nbsp;&nbsp;<CODE>fso.CreateFolder ("C:\\Bogus");</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>Response.Write("Created folder C:\\Bogus" + "&lt;br&gt;");</CODE>
-&nbsp;&nbsp;&nbsp;<CODE>// </CODE>æ‰“å°æ–‡ä»¶å¤¹çš„åŸºæœ¬åã€‚
+&nbsp;&nbsp;&nbsp;<CODE>// </CODE>´òÓ¡ÎÄ¼ş¼ĞµÄ»ù±¾Ãû¡£
 &nbsp;&nbsp;&nbsp;<CODE>Response.Write("Basename = " + fso.GetBaseName("c:\\bogus") + "&lt;br&gt;");</CODE>
-&nbsp;&nbsp;&nbsp;<CODE>// </CODE>åˆ é™¤æ–°åˆ›å»ºçš„æ–‡ä»¶å¤¹ã€‚
+&nbsp;&nbsp;&nbsp;<CODE>// </CODE>É¾³ıĞÂ´´½¨µÄÎÄ¼ş¼Ğ¡£
 &nbsp;&nbsp;&nbsp;<CODE>fso.DeleteFolder ("C:\\Bogus");</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>Response.Write("Deleted folder C:\\Bogus" + "&lt;br&gt;");</CODE>
 }</PRE>
 <!--Copyright_START-->
 <DIV CLASS="footer">
-<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation ç‰ˆæƒæ‰€æœ‰ã€‚ä¿ç•™æ‰€æœ‰æƒåˆ©ã€‚ä½¿ç”¨è§„å®šã€‚</a><br>
+<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation °æÈ¨ËùÓĞ¡£±£ÁôËùÓĞÈ¨Àû¡£Ê¹ÓÃ¹æ¶¨¡£</a><br>
 </DIV> <!--Copyright_END-->
 
 </BODY>

@@ -2,7 +2,7 @@
 <HTML>
 <HEAD>
 <META HTTP-EQUIV="Content-Type" Content="text/html; charset=gb2312">
-<TITLE>if...else 语句</TITLE>
+<TITLE>if...else ���</TITLE>
 <!--CSS_START-->
 <style>@import url(../html-vss/msdnie4a.css);</style>
 <link disabled rel="stylesheet" href="../html-vss/msdn_ie3.css">
@@ -15,42 +15,42 @@
 <TABLE class="banner" width="100%" CELLSPACING=0>
 <TR>
 <TD class="bannerleft" nowrap>JScript&nbsp;</TD>
-<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">语言参考</a></TD>
+<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">���Բο�</a></TD>
 </TR>
 </TABLE>
 <HR>
 <!--End Head-->
 
-<H1><A NAME="jsstmif"></A>if...else 语句</H1>
+<H1><A NAME="jsstmif"></A>if...else ���</H1>
 
-<P>根据一个表达式的值，有条件地执行一组语句。</P>
+<P>����һ������ʽ��ֵ����������ִ��һ����䡣</P>
 
 <P><CODE><B>if</B> (<I>condition</I>)<BR>
 &nbsp;&nbsp;&nbsp;<I>statement1</I></CODE><BR>
 <CODE>[<B>else</B></CODE><BR>
 &nbsp;&nbsp;&nbsp;<CODE><I>statement2</I>] </CODE></P>
 
-<H4>参数</H4>
+<H4>����</H4>
 
 <P class=dt>condition</P>
 
-<P class=indent>必选项。一个 <A HREF="glossary.htm#defbooleanjs">Boolean 表达式</A>。如果 <I>condition</I> 是 <A HREF="glossary.htm#defnulljs">null </A>或<A HREF="glossary.htm#defundefined">undefined</A>，则 <I>condition</I> 被当作 <B>false</B>。 </P>
+<P class=indent>��ѡ�һ�� <A HREF="glossary.htm#defbooleanjs">Boolean ����ʽ</A>����� <I>condition</I> �� <A HREF="glossary.htm#defnulljs">null </A>��<A HREF="glossary.htm#defundefined">undefined</A>���� <I>condition</I> ������ <B>false</B>�� </P>
 
 <P class=dt>statement1</P>
 
-<P class=indent>可选项。<I>condition</I> 是 <B>true</B> 时要执行的语句。可以是<A HREF="glossary.htm#defcompoundstatement">复合语句</A>。</P>
+<P class=indent>��ѡ�<I>condition</I> �� <B>true</B> ʱҪִ�е���䡣������<A HREF="glossary.htm#defcompoundstatement">�������</A>��</P>
 
 <P class=dt>statement2</P>
 
-<P class=indent>可选项。<I>condition</I> 是 <B>false</B> 时要被执行的语句。可以是复合语句。</P>
+<P class=indent>��ѡ�<I>condition</I> �� <B>false</B> ʱҪ��ִ�е���䡣�����Ǹ�����䡣</P>
 
-<H4>说明</H4>
+<H4>˵��</H4>
 
-<P>把 <I>statement1</I> 和 <I>statement2</I> 括在大括号 ({}) 内通常是一个好习惯，这样就更清楚，并可以避免无意中造成错误。</P>
+<P>�� <I>statement1</I> �� <I>statement2</I> ���ڴ����� ({}) ��ͨ����һ����ϰ�ߣ������͸�����������Ա�����������ɴ���</P>
 
-<H4>示例</H4>
+<H4>ʾ��</H4>
 
-<P>在下面示中，您可能打算把 <B>else</B> 和第一个 <B>if</B> 语句匹配，但它实际上却是和第二个相匹配的。 </P>
+<P>������ʾ�У������ܴ���� <B>else</B> �͵�һ�� <B>if</B> ���ƥ�䣬����ʵ����ȴ�Ǻ͵ڶ�����ƥ��ġ� </P>
 
 <PRE><CODE><span class=cfe><B>if</B></span> (x == 5)
 &nbsp;&nbsp;&nbsp;<span class=cfe><B>if</B></span> (y == 6)
@@ -58,7 +58,7 @@
 else
 &nbsp;&nbsp;&nbsp;z = 20;</CODE></PRE>
 
-<P>按如下方法改写代码可以消除任何含混不清： </P>
+<P>�����·�����д������������κκ��첻�壺 </P>
 
 <PRE><CODE><span class=cfe><B>if</B></span> (x == 5)
 &nbsp;&nbsp;&nbsp;{
@@ -68,7 +68,7 @@ else
 else
 &nbsp;&nbsp;&nbsp;z = 20;</CODE></PRE>
 
-<P>同样，如果希望添加一个语句到 <I>statement1</I>，同时不使用大括号，则可能会产生错误： </P>
+<P>ͬ�������ϣ������һ����䵽 <I>statement1</I>��ͬʱ��ʹ�ô����ţ�����ܻ�������� </P>
 
 <PRE><CODE><span class=cfe><B>if </B></span>(x == 5)
 &nbsp;&nbsp;&nbsp;z = 7;
@@ -76,18 +76,18 @@ else
 else
 &nbsp;&nbsp;&nbsp;z = 19;</CODE></PRE>
 
-<P>在这种情况下，有一个语法错误，因为在 <B>if</B> 和 <B>else</B> 语句之间有多条语句。在 <B>if</B> 和 <B>else</B> 之间的语句需要大括号。 </P>
+<P>����������£���һ���﷨������Ϊ�� <B>if</B> �� <B>else</B> ���֮���ж�����䡣�� <B>if</B> �� <B>else</B> ֮��������Ҫ�����š� </P>
 
-<H4>要求</H4>
+<H4>Ҫ��</H4>
 
-<P><A HREF="jsoriversioninformation.htm">版本 1</A></P>
+<P><A HREF="jsoriversioninformation.htm">�汾 1</A></P>
 
-<H4>请参阅</H4>
+<H4>�����</H4>
 
-<P><A HREF="jsoprconditional.htm">条件运算符 (?:)</A></P>
+<P><A HREF="jsoprconditional.htm">��������� (?:)</A></P>
 <!--Copyright_START-->
 <DIV CLASS="footer">
-<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation 版权所有。保留所有权利。使用规定。</a><br>
+<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation ��Ȩ���С���������Ȩ����ʹ�ù涨��</a><br>
 </DIV> <!--Copyright_END-->
 
 </BODY>

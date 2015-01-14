@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=gb2312">
+<TITLE>创建高级对象</TITLE>
+<!--CSS_START-->
+<style>@import url(../html-vss/msdnie4a.css);</style>
+<link disabled rel="stylesheet" href="../html-vss/msdn_ie3.css">
+<!--CSS_END-->
+</HEAD>
+<BODY>
+
+
+<!--Start Head-->
+<TABLE class="banner" width="100%" CELLSPACING=0>
+<TR>
+<TD class="bannerleft" nowrap>JScript&nbsp;</TD>
+<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">语言参考</a></TD>
+</TR>
+</TABLE>
+<HR>
+<!--End Head-->
+
+<H1><A NAME="constructor"></A>创建高级对象</H1>
+
+<H2>使用构造函数来创建对象</H2>
+
+<P>构造函数是一个函数，调用它来例示并初始化特殊类型的<A HREF="objects.htm">对象</A>。可以使用 <B>new</B> 关键字来调用一个构造函数。下面给出了使用构造函数的新示例。</P>
+
+<PRE><CODE>var myObject = new Object();             // </CODE>创建没有属性的通用对象。
+<CODE>var myBirthday = new Date(1961, 5, 10);  // </CODE>创建一个<CODE> Date </CODE>对象。
+<CODE>var myCar = new Car();                   // </CODE>创建一个用户定义的对象，并初始化其属性。</PRE>
+
+<P>通过构造函数将一个参数作为特定的 <B>this</B> 关键字的值传递给新创建的空对象。然后构造函数负责为新对象执行适应的初始化（创建属性并给出其初始值）。完成后，构造函数返回它所构造的对象的一个参数。</P>
+
+<H2>编写构造函数</H2>
+
+<P>可以使用 <B>new</B> 运算符结合像 <B>Object()</B>、<B>Date()</B> 和 <B>Function()</B> 这样的预定义的构造函数来创建对象并对其初始化。面向对象的编程其强有力的特征是定义自定义构造函数以创建脚本中使用的自定义对象的能力。创建了自定义的构造函数，这样就可以创建具有已定义属性的对象。下面是自定义函数的示例（注意 <B>this </B>关键字的使用）。</P>
+
+<PRE><CODE>function Circle (xPoint, yPoint, radius) {
+    this.x = xPoint;  // </CODE>圆心的<CODE> x </CODE>坐标。
+<CODE>    this.y = yPoint;  // </CODE>圆心的<CODE> y </CODE>坐标。
+<CODE>    this.r = radius;  // </CODE>圆的半径。
+}</PRE>
+
+<P>调用 Circle 构造函数时，给出圆心点的值和圆的半径（所有这些元素是完全定义一个独特的圆对象所必需的）。结束时 Circle 对象包含三个属性。下面是如何例示 Circle 对象。</P>
+
+<PRE><CODE>var aCircle = new Circle(5, 11, 99);</CODE></PRE>
+
+<H2>使用原型来创建对象</H2>
+
+<P>在编写构造函数时，可以使用原型对象（它本身是所有构造函数的一个属性）的属性来创建继承属性和共享方法。原型属性和方法将按引用复制给类中的每个对象，因此它们都具有相同的值。可以在一个对象中更改原型属性的值，新的值将覆盖默认值，但仅在该实例中有效。属于这个类的其他对象不受此更改的影响。下面给出了使用自定义构造函数的示例，Circle（注意 <B>this</B> 关键字的使用）。</P>
+
+<PRE><CODE>Circle.prototype.pi = Math.PI;
+function ACirclesArea () {
+    return this.pi * this.r * this.r; // </CODE>计算圆面积的公式为<CODE> ?r<SUP>2</SUP></CODE>。
+}
+<CODE>Circle.prototype.area = ACirclesArea; // </CODE>计算圆面积的函数现在是<CODE> Circle Prototype </CODE>对象的一个方法。
+<CODE>var a = ACircle.area();               // </CODE>此为如何在<CODE> Circle </CODE>对象上调用面积函数。</PRE>
+
+<P>使用这个原则，可以给预定义的构造函数（都具有原型对象）定义附加属性。例如，如果想要能够删除字符串的前后空格（与 VBScript 的 <B>Trim</B> 函数类似），就可以给 <B>String</B> 原型对象创建自己的方法。</P>
+
+<PRE><CODE>// </CODE>增加一个名为<CODE> trim </CODE>的函数作为
+<CODE>// String </CODE>构造函数的原型对象的一个方法。
+<CODE>String.prototype.trim = function()</CODE>
+<CODE>{</CODE>
+<CODE>    // </CODE>用正则表达式将前后空格
+<CODE>    // </CODE>用空字符串替代。
+<CODE>    return this.replace(/(^\s*)|(\s*$)/g, "");</CODE>
+<CODE>}</CODE>
+
+<CODE>// </CODE>有空格的字符串
+<CODE>var s = "    leading and trailing spaces    ";</CODE>
+
+<CODE>// </CODE>显示<CODE> "    leading and trailing spaces     (35)"</CODE>
+<CODE>window.alert(s + " (" + s.length + ")");</CODE>
+
+<CODE>// </CODE>删除前后空格
+<CODE>s = s.trim();</CODE>
+<CODE>// </CODE>显示<CODE>"leading and trailing spaces (27)"</CODE>
+<CODE>window.alert(s + " (" + s.length + ")");</CODE></PRE>
+<!--Copyright_START-->
+<DIV CLASS="footer">
+<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation 版权所有。保留所有权利。使用规定。</a><br>
+</DIV> <!--Copyright_END-->
+
+</BODY>
+</HTML>

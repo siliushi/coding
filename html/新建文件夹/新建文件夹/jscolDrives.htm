@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=gb2312">
+<TITLE>Drives 集合</TITLE>
+<!--CSS_START-->
+<style>@import url(../html-vss/msdnie4a.css);</style>
+<link disabled rel="stylesheet" href="../html-vss/msdn_ie3.css">
+<!--CSS_END-->
+</HEAD>
+<BODY>
+
+
+<!--Start Head-->
+<TABLE class="banner" width="100%" CELLSPACING=0>
+<TR>
+<TD class="bannerleft" nowrap>JScript&nbsp;</TD>
+<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">语言参考</a></TD>
+</TR>
+</TABLE>
+<HR>
+<!--End Head-->
+
+<H1><A NAME="jscoldrives"></A>Drives 集合</H1>
+
+<P>所有可用驱动器的只读集合。</P>
+
+<H4>说明</H4>
+
+<P>可移动媒体的驱动器不需要插入媒体，就可以出现在 <B>Drives</B> 集合中。 </P>
+
+<P>下面这个例子说明了如何使用 <B>Drives</B> 属性来获取 <B>Drives</B> 集合以及如何使用 <B>Enumerator</B> 对象来遍历该集合： </P>
+
+<PRE><CODE>function ShowDriveList()
+{
+</CODE>&nbsp;&nbsp;&nbsp;<CODE>var fso, s, n, e, x;</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;fso = new ActiveXObject("Scripting.FileSystemObject");</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;e = new Enumerator(<span class=cfe><B>fso.Drives</B></span>);</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;s = "";</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;for (; !e.atEnd(); e.moveNext())</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;{</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x = e.item();</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s = s + x.DriveLetter;</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s += " - ";</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (x.DriveType == 3)</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n = x.ShareName;</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else if (x.IsReady)</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n = x.VolumeName;</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n = "[Drive not ready]";</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s +=&nbsp;&nbsp;&nbsp;n + "&lt;br&gt;";</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;}</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;return(s);</CODE>
+}</PRE>
+
+<H4>属性</H4>
+
+<P><A HREF="jsprocount.htm">Count 属性</A> | <A HREF="jsproitem.htm">Item 属性</A></P>
+
+<H4>请参阅</H4>
+
+<P><A HREF="jsobjdrive.htm">Drive 对象</A> | <A HREF="jsprodrives.htm">Drives 属性</A> | <A HREF="jsobjfile.htm">File 对象</A> | <A HREF="jscolfiles.htm">Files 集合</A> | <A HREF="jsobjfolder.htm">Folder 对象</A> | <A HREF="jscolfolders.htm">Folders 集合</A></P>
+<!--Copyright_START-->
+<DIV CLASS="footer">
+<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation 版权所有。保留所有权利。使用规定。</a><br>
+</DIV> <!--Copyright_END-->
+
+</BODY>
+</HTML>

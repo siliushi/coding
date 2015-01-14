@@ -2,7 +2,7 @@
 <HTML>
 <HEAD>
 <META HTTP-EQUIV="Content-Type" Content="text/html; charset=gb2312">
-<TITLE>GetDrive æ–¹æ³•</TITLE>
+<TITLE>GetDrive ·½·¨</TITLE>
 <!--CSS_START-->
 <style>@import url(../html-vss/msdnie4a.css);</style>
 <link disabled rel="stylesheet" href="../html-vss/msdn_ie3.css">
@@ -15,39 +15,39 @@
 <TABLE class="banner" width="100%" CELLSPACING=0>
 <TR>
 <TD class="bannerleft" nowrap>JScript&nbsp;</TD>
-<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">è¯­è¨€å‚è€ƒ</a></TD>
+<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">ÓïÑÔ²Î¿¼</a></TD>
 </TR>
 </TABLE>
 <HR>
 <!--End Head-->
 
-<H1><A NAME="jsmthgetdrive"></A>GetDrive æ–¹æ³•</H1>
+<H1><A NAME="jsmthgetdrive"></A>GetDrive ·½·¨</H1>
 
-<P>è¿”å›ç›¸åº”äºæŒ‡å®šè·¯å¾„ä¸­é©±åŠ¨å™¨çš„ <B>Drive</B> å¯¹è±¡ã€‚</P>
+<P>·µ»ØÏàÓ¦ÓÚÖ¸¶¨Â·¾¶ÖĞÇı¶¯Æ÷µÄ <B>Drive</B> ¶ÔÏó¡£</P>
 
 <P><CODE><I>object</I>.<B>GetDrive (</B> <I>drivespec</I> <B>)</B>; </CODE></P>
 
-<H4>å‚æ•°</H4>
+<H4>²ÎÊı</H4>
 
 <P class=dt>object</P>
 
-<P class=indent>å¿…é€‰é¡¹ã€‚ åº”ä¸º FileSystemObject çš„åç§°ã€‚</P>
+<P class=indent>±ØÑ¡Ïî¡£ Ó¦Îª FileSystemObject µÄÃû³Æ¡£</P>
 
 <P class=dt>drivespec</P>
 
-<P class=indent>å¿…é€‰é¡¹ã€‚ <I>drivespec</I> å‚æ•°å¯ä»¥æ˜¯é©±åŠ¨å™¨å· (c) ã€å¸¦å†’å·çš„é©±åŠ¨å™¨å· (c:) ã€å¸¦å†’å·å’Œè·¯å¾„åˆ†éš”ç¬¦çš„é©±åŠ¨å™¨å· (c:\) ï¼Œæˆ–è€…ä»»æ„ç½‘ç»œå…±äº«çš„è¯´æ˜ (\\computer2\share1) ã€‚</P>
+<P class=indent>±ØÑ¡Ïî¡£ <I>drivespec</I> ²ÎÊı¿ÉÒÔÊÇÇı¶¯Æ÷ºÅ (c) ¡¢´øÃ°ºÅµÄÇı¶¯Æ÷ºÅ (c:) ¡¢´øÃ°ºÅºÍÂ·¾¶·Ö¸ô·ûµÄÇı¶¯Æ÷ºÅ (c:\) £¬»òÕßÈÎÒâÍøÂç¹²ÏíµÄËµÃ÷ (\\computer2\share1) ¡£</P>
 
-<H4>è¯´æ˜</H4>
+<H4>ËµÃ÷</H4>
 
-<P>å¯¹äºç½‘ç»œå…±äº«ï¼Œéœ€è¦è¿›è¡Œæ£€æŸ¥ä»¥ç¡®ä¿å…±äº«å­˜åœ¨ã€‚</P>
+<P>¶ÔÓÚÍøÂç¹²Ïí£¬ĞèÒª½øĞĞ¼ì²éÒÔÈ·±£¹²Ïí´æÔÚ¡£</P>
 
-<P>å¦‚æœ <I>drivespec</I> å’Œå¯æ¥å—çš„å½¢å¼ä¸ä¸€è‡´æˆ–æ˜¯ä¸å­˜åœ¨ï¼Œé‚£ä¹ˆå°†äº§ç”Ÿé”™è¯¯ã€‚</P>
+<P>Èç¹û <I>drivespec</I> ºÍ¿É½ÓÊÜµÄĞÎÊ½²»Ò»ÖÂ»òÊÇ²»´æÔÚ£¬ÄÇÃ´½«²úÉú´íÎó¡£</P>
 
-<P>è¦åœ¨æ™®é€šçš„è·¯å¾„å­—ç¬¦ä¸²ä¸Šè°ƒç”¨ <B>GetDrive</B> æ–¹æ³•ï¼Œå¯ä»¥ä½¿ç”¨ä»¥ä¸‹åºåˆ—æ¥è·å–é€‚äºä½œä¸º <I>drivespec</I> çš„å­—ç¬¦ä¸²ã€‚ </P>
+<P>ÒªÔÚÆÕÍ¨µÄÂ·¾¶×Ö·û´®ÉÏµ÷ÓÃ <B>GetDrive</B> ·½·¨£¬¿ÉÒÔÊ¹ÓÃÒÔÏÂĞòÁĞÀ´»ñÈ¡ÊÊÓÚ×÷Îª <I>drivespec</I> µÄ×Ö·û´®¡£ </P>
 
 <PRE><CODE>DriveSpec = GetDriveName(GetAbsolutePathName(Path))</CODE></PRE>
 
-<P>ä¸‹é¢çš„ä¾‹å­è¯´æ˜äº† <B>GetDrive</B> æ–¹æ³•çš„ç”¨æ³•ã€‚ </P>
+<P>ÏÂÃæµÄÀı×ÓËµÃ÷ÁË <B>GetDrive</B> ·½·¨µÄÓÃ·¨¡£ </P>
 
 <PRE><CODE>function ShowFreeSpace(drvPath)
 {
@@ -60,12 +60,12 @@
 <CODE>&nbsp;&nbsp;&nbsp;return(s);</CODE>
 }</PRE>
 
-<H4>è¯·å‚é˜…</H4>
+<H4>Çë²ÎÔÄ</H4>
 
-<P><A HREF="jsmthgetabsolutepathname.htm">GetAbsolutePathName æ–¹æ³•</A> | <A HREF="jsmthgetbasename.htm">GetBaseName æ–¹æ³•</A> | <A HREF="jsmthgetdrivename.htm">GetDriveName æ–¹æ³•</A> | <A HREF="jsmthgetextensionname.htm">GetExtensionName æ–¹æ³•</A> | <A HREF="jsmthgetfile.htm">GetFile æ–¹æ³•</A> | <A HREF="jsmthgetfilename.htm">GetFileName æ–¹æ³•</A> | <A HREF="jsmthgetfileversion.htm">GetFileVersion æ–¹æ³•</A> | <A HREF="jsmthgetfolder.htm">GetFolder æ–¹æ³•</A> | <A HREF="jsmthgetparentfoldername.htm">GetParentFolderName æ–¹æ³•</A> | <A HREF="jsmthgetspecialfolder.htm">GetSpecialFolder æ–¹æ³•</A> | <A HREF="jsmthgettempname.htm">GetTempName æ–¹æ³•</A>åº”ç”¨äºï¼š <A HREF="jsobjfilesystem.htm">FileSystemObject å¯¹è±¡</A></P>
+<P><A HREF="jsmthgetabsolutepathname.htm">GetAbsolutePathName ·½·¨</A> | <A HREF="jsmthgetbasename.htm">GetBaseName ·½·¨</A> | <A HREF="jsmthgetdrivename.htm">GetDriveName ·½·¨</A> | <A HREF="jsmthgetextensionname.htm">GetExtensionName ·½·¨</A> | <A HREF="jsmthgetfile.htm">GetFile ·½·¨</A> | <A HREF="jsmthgetfilename.htm">GetFileName ·½·¨</A> | <A HREF="jsmthgetfileversion.htm">GetFileVersion ·½·¨</A> | <A HREF="jsmthgetfolder.htm">GetFolder ·½·¨</A> | <A HREF="jsmthgetparentfoldername.htm">GetParentFolderName ·½·¨</A> | <A HREF="jsmthgetspecialfolder.htm">GetSpecialFolder ·½·¨</A> | <A HREF="jsmthgettempname.htm">GetTempName ·½·¨</A>Ó¦ÓÃÓÚ£º <A HREF="jsobjfilesystem.htm">FileSystemObject ¶ÔÏó</A></P>
 <!--Copyright_START-->
 <DIV CLASS="footer">
-<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation ç‰ˆæƒæ‰€æœ‰ã€‚ä¿ç•™æ‰€æœ‰æƒåˆ©ã€‚ä½¿ç”¨è§„å®šã€‚</a><br>
+<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation °æÈ¨ËùÓĞ¡£±£ÁôËùÓĞÈ¨Àû¡£Ê¹ÓÃ¹æ¶¨¡£</a><br>
 </DIV> <!--Copyright_END-->
 
 </BODY>

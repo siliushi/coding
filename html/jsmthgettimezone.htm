@@ -2,7 +2,7 @@
 <HTML>
 <HEAD>
 <META HTTP-EQUIV="Content-Type" Content="text/html; charset=gb2312">
-<TITLE>getTimezoneOffset 方法</TITLE>
+<TITLE>getTimezoneOffset ����</TITLE>
 <!--CSS_START-->
 <style>@import url(../html-vss/msdnie4a.css);</style>
 <link disabled rel="stylesheet" href="../html-vss/msdn_ie3.css">
@@ -15,31 +15,31 @@
 <TABLE class="banner" width="100%" CELLSPACING=0>
 <TR>
 <TD class="bannerleft" nowrap>JScript&nbsp;</TD>
-<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">语言参考</a></TD>
+<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">���Բο�</a></TD>
 </TR>
 </TABLE>
 <HR>
 <!--End Head-->
 
-<H1><A NAME="jsmthgettimezone"></A>getTimezoneOffset 方法</H1>
+<H1><A NAME="jsmthgettimezone"></A>getTimezoneOffset ����</H1>
 
-<P>返回用分钟表示的主计算机上的时间和<A HREF="glossary.htm#defutctime">全球标准时间 (UTC)</A>之间的差别。</P>
+<P>�����÷��ӱ�ʾ����������ϵ�ʱ���<A HREF="glossary.htm#defutctime">ȫ���׼ʱ�� (UTC)</A>֮��Ĳ��</P>
 
 <P><CODE><I>dateObj</I>.<B>getTimezoneOffset()</B></CODE></P>
 
-<P>必选项 <I>dateObj</I> 参数为 <B>Date</B> 对象。</P>
+<P>��ѡ�� <I>dateObj</I> ����Ϊ <B>Date</B> ����</P>
 
-<H4>说明</H4>
+<H4>˵��</H4>
 
-<P><B>getTimezoneOffset</B> 方法返回一个整数值，这个整数代表了当前计算机上的时间和 UTC 之间相差的分钟数。这些值和执行脚本的计算机相关。如果这个方法被一个服务器脚本调用，那返回值和服务器相关。而如果这个方法被一个客户机脚本调用，那么返回值就根据客户机上的时间来确定。 </P>
+<P><B>getTimezoneOffset</B> ��������һ������ֵ��������������˵�ǰ������ϵ�ʱ��� UTC ֮�����ķ���������Щֵ��ִ�нű��ļ������ء�������������һ���������ű����ã��Ƿ���ֵ�ͷ�������ء���������������һ���ͻ����ű����ã���ô����ֵ�͸��ݿͻ����ϵ�ʱ����ȷ���� </P>
 
-<P>如果所在位置的时间落后于 UTC (比如， Pacific Daylight Time)，那么这个值就是正值，而如果所在位置的时间超前于 UTC (比如说， Japan)，那么这个值就是负值。 </P>
+<P>�������λ�õ�ʱ������� UTC (���磬 Pacific Daylight Time)����ô���ֵ������ֵ�����������λ�õ�ʱ�䳬ǰ�� UTC (����˵�� Japan)����ô���ֵ���Ǹ�ֵ�� </P>
 
-<P>例如，假设在 12 月 1 日，一台位于 Los Angeles 的客户机与一台位于 New York City 的服务器进行联络。如果在客户机上执行，<B>getTimezoneOffset</B> 方法将返回 480，而如果在服务器上执行此方法将返回 300。 </P>
+<P>���磬������ 12 �� 1 �գ�һ̨λ�� Los Angeles �Ŀͻ�����һ̨λ�� New York City �ķ������������硣����ڿͻ�����ִ�У�<B>getTimezoneOffset</B> ���������� 480��������ڷ�������ִ�д˷��������� 300�� </P>
 
-<H4>示例</H4>
+<H4>ʾ��</H4>
 
-<P>下面这个例子说明了 <B>getTimezoneOffset</B> 方法的用法。 </P>
+<P>�����������˵���� <B>getTimezoneOffset</B> �������÷��� </P>
 
 <PRE><CODE>function TZDemo(){
 &nbsp;&nbsp;&nbsp;var d, tz, s = " The current local time is ";
@@ -54,18 +54,18 @@
 &nbsp;&nbsp;&nbsp;return(s);
 }</CODE></PRE>
 
-<H4>要求</H4>
+<H4>Ҫ��</H4>
 
-<P><A HREF="jsoriversioninformation.htm">版本 1</A></P>
+<P><A HREF="jsoriversioninformation.htm">�汾 1</A></P>
 
-<H4>请参阅</H4>
+<H4>�����</H4>
 
-<P><A HREF="jsobjdate.htm#jsobjdatemeth">Date 对象的方法</A></P>
+<P><A HREF="jsobjdate.htm#jsobjdatemeth">Date ����ķ���</A></P>
 
-<P>应用于： <A HREF="jsobjdate.htm">Date 对象</A></P>
+<P>Ӧ���ڣ� <A HREF="jsobjdate.htm">Date ����</A></P>
 <!--Copyright_START-->
 <DIV CLASS="footer">
-<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation 版权所有。保留所有权利。使用规定。</a><br>
+<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation ��Ȩ���С���������Ȩ����ʹ�ù涨��</a><br>
 </DIV> <!--Copyright_END-->
 
 </BODY>

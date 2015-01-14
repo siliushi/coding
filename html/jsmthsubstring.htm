@@ -2,7 +2,7 @@
 <HTML>
 <HEAD>
 <META HTTP-EQUIV="Content-Type" Content="text/html; charset=gb2312">
-<TITLE>substring æ–¹æ³•</TITLE>
+<TITLE>substring ·½·¨</TITLE>
 <!--CSS_START-->
 <style>@import url(../html-vss/msdnie4a.css);</style>
 <link disabled rel="stylesheet" href="../html-vss/msdn_ie3.css">
@@ -15,62 +15,62 @@
 <TABLE class="banner" width="100%" CELLSPACING=0>
 <TR>
 <TD class="bannerleft" nowrap>JScript&nbsp;</TD>
-<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">è¯­è¨€å‚è€ƒ</a></TD>
+<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">ÓïÑÔ²Î¿¼</a></TD>
 </TR>
 </TABLE>
 <HR>
 <!--End Head-->
 
-<H1><A NAME="jsmthsubstring"></A>substring æ–¹æ³•</H1>
+<H1><A NAME="jsmthsubstring"></A>substring ·½·¨</H1>
 
-<P>è¿”å›ä½äº <B>String</B> å¯¹è±¡ä¸­æŒ‡å®šä½ç½®çš„å­å­—ç¬¦ä¸²ã€‚ </P>
+<P>·µ»ØÎ»ÓÚ <B>String</B> ¶ÔÏóÖĞÖ¸¶¨Î»ÖÃµÄ×Ó×Ö·û´®¡£ </P>
 
 <P><CODE><I>strVariable</I>.<B>substring(</B><I>start</I>, <I>end</I><B>)</B></CODE><BR>
 <CODE>"String Literal".<B>substring(</B><I>start</I>, <I>end</I><B>)</B></CODE></P>
 
-<H4>å‚æ•°</H4>
+<H4>²ÎÊı</H4>
 
 <P class=dt>start</P>
 
-<P class=indent>æŒ‡æ˜å­å­—ç¬¦ä¸²çš„èµ·å§‹ä½ç½®ï¼Œè¯¥ç´¢å¼•ä» 0 å¼€å§‹èµ·ç®—ã€‚</P>
+<P class=indent>Ö¸Ã÷×Ó×Ö·û´®µÄÆğÊ¼Î»ÖÃ£¬¸ÃË÷Òı´Ó 0 ¿ªÊ¼ÆğËã¡£</P>
 
 <P class=dt>end</P>
 
-<P class=indent>æŒ‡æ˜å­å­—ç¬¦ä¸²çš„ç»“æŸä½ç½®ï¼Œè¯¥ç´¢å¼•ä» 0 å¼€å§‹èµ·ç®—ã€‚</P>
+<P class=indent>Ö¸Ã÷×Ó×Ö·û´®µÄ½áÊøÎ»ÖÃ£¬¸ÃË÷Òı´Ó 0 ¿ªÊ¼ÆğËã¡£</P>
 
-<H4>è¯´æ˜</H4>
+<H4>ËµÃ÷</H4>
 
-<P><B>substring</B> æ–¹æ³•å°†è¿”å›ä¸€ä¸ªåŒ…å«ä» <I>start</I> åˆ°æœ€åï¼ˆä¸åŒ…å« <I>end</I> ï¼‰çš„å­å­—ç¬¦ä¸²çš„å­—ç¬¦ä¸²ã€‚</P>
+<P><B>substring</B> ·½·¨½«·µ»ØÒ»¸ö°üº¬´Ó <I>start</I> µ½×îºó£¨²»°üº¬ <I>end</I> £©µÄ×Ó×Ö·û´®µÄ×Ö·û´®¡£</P>
 
-<P><B>substring</B> æ–¹æ³•ä½¿ç”¨ <I>start</I> å’Œ <I>end</I> ä¸¤è€…ä¸­çš„è¾ƒå°å€¼ä½œä¸ºå­å­—ç¬¦ä¸²çš„èµ·å§‹ç‚¹ã€‚ä¾‹å¦‚ï¼Œ <I>strvar</I>.<B>substring(</B>0, 3<B>)</B> å’Œ <I>strvar</I>.<B>substring(</B>3, 0<B>)</B> å°†è¿”å›ç›¸åŒçš„å­å­—ç¬¦ä¸²ã€‚ </P>
+<P><B>substring</B> ·½·¨Ê¹ÓÃ <I>start</I> ºÍ <I>end</I> Á½ÕßÖĞµÄ½ÏĞ¡Öµ×÷Îª×Ó×Ö·û´®µÄÆğÊ¼µã¡£ÀıÈç£¬ <I>strvar</I>.<B>substring(</B>0, 3<B>)</B> ºÍ <I>strvar</I>.<B>substring(</B>3, 0<B>)</B> ½«·µ»ØÏàÍ¬µÄ×Ó×Ö·û´®¡£ </P>
 
-<P>å¦‚æœ <I>start</I> æˆ– <I>end</I> ä¸º <B>NaN</B> æˆ–è€…è´Ÿæ•°ï¼Œé‚£ä¹ˆå°†å…¶æ›¿æ¢ä¸º0ã€‚ </P>
+<P>Èç¹û <I>start</I> »ò <I>end</I> Îª <B>NaN</B> »òÕß¸ºÊı£¬ÄÇÃ´½«ÆäÌæ»»Îª0¡£ </P>
 
-<P>å­å­—ç¬¦ä¸²çš„é•¿åº¦ç­‰äº <I>start</I> å’Œ <I>end</I> ä¹‹å·®çš„ç»å¯¹å€¼ã€‚ä¾‹å¦‚ï¼Œåœ¨ <I>strvar</I>.<B>substring(</B>0, 3<B>)</B> å’Œ <I>strvar</I>.<B>substring(</B>3, 0<B>)</B> è¿”å›çš„å­å­—ç¬¦ä¸²çš„çš„é•¿åº¦æ˜¯ 3ã€‚ </P>
+<P>×Ó×Ö·û´®µÄ³¤¶ÈµÈÓÚ <I>start</I> ºÍ <I>end</I> Ö®²îµÄ¾ø¶ÔÖµ¡£ÀıÈç£¬ÔÚ <I>strvar</I>.<B>substring(</B>0, 3<B>)</B> ºÍ <I>strvar</I>.<B>substring(</B>3, 0<B>)</B> ·µ»ØµÄ×Ó×Ö·û´®µÄµÄ³¤¶ÈÊÇ 3¡£ </P>
 
-<H4>ç¤ºä¾‹</H4>
+<H4>Ê¾Àı</H4>
 
-<P>ä¸‹é¢çš„ç¤ºä¾‹æ¼”ç¤ºäº† <B>substring</B> æ–¹æ³•çš„ç”¨æ³•ã€‚</P>
+<P>ÏÂÃæµÄÊ¾ÀıÑİÊ¾ÁË <B>substring</B> ·½·¨µÄÓÃ·¨¡£</P>
 
 <PRE><CODE>function SubstringDemo(){
-</CODE>&nbsp;&nbsp;&nbsp;<CODE>var ss;                         // </CODE>å£°æ˜å˜é‡ã€‚
+</CODE>&nbsp;&nbsp;&nbsp;<CODE>var ss;                         // </CODE>ÉùÃ÷±äÁ¿¡£
 &nbsp;&nbsp;&nbsp;<CODE>var s = "The rain in Spain falls mainly in the plain..";</CODE>
-<CODE>&nbsp;&nbsp;&nbsp;ss = <span class=cfe><B>s.substring(</B></span>12<span class=cfe><B>,</B></span> 17<span class=cfe><B>)</B></span>;   // </CODE>å–å­å­—ç¬¦ä¸²ã€‚
-&nbsp;&nbsp;&nbsp;<CODE>return(ss);                     // </CODE>è¿”å›å­å­—ç¬¦ä¸²ã€‚
+<CODE>&nbsp;&nbsp;&nbsp;ss = <span class=cfe><B>s.substring(</B></span>12<span class=cfe><B>,</B></span> 17<span class=cfe><B>)</B></span>;   // </CODE>È¡×Ó×Ö·û´®¡£
+&nbsp;&nbsp;&nbsp;<CODE>return(ss);                     // </CODE>·µ»Ø×Ó×Ö·û´®¡£
 }</PRE>
 
-<H4>è¦æ±‚</H4>
+<H4>ÒªÇó</H4>
 
-<P><A HREF="jsoriversioninformation.htm">ç‰ˆæœ¬ 1</A></P>
+<P><A HREF="jsoriversioninformation.htm">°æ±¾ 1</A></P>
 
-<H4>è¯·å‚é˜…</H4>
+<H4>Çë²ÎÔÄ</H4>
 
-<P><A HREF="jsobjstring.htm#jsobjstringmeth">String å¯¹è±¡çš„æ–¹æ³•</A> | <A HREF="jsobjstring.htm#jsobjstringprop">String å¯¹è±¡çš„å±æ€§</A> | <A HREF="jsmthsubstr.htm">substr æ–¹æ³•</A></P>
+<P><A HREF="jsobjstring.htm#jsobjstringmeth">String ¶ÔÏóµÄ·½·¨</A> | <A HREF="jsobjstring.htm#jsobjstringprop">String ¶ÔÏóµÄÊôĞÔ</A> | <A HREF="jsmthsubstr.htm">substr ·½·¨</A></P>
 
-<P>åº”ç”¨äºï¼š <A HREF="jsobjstring.htm">String å¯¹è±¡</A></P>
+<P>Ó¦ÓÃÓÚ£º <A HREF="jsobjstring.htm">String ¶ÔÏó</A></P>
 <!--Copyright_START-->
 <DIV CLASS="footer">
-<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation ç‰ˆæƒæ‰€æœ‰ã€‚ä¿ç•™æ‰€æœ‰æƒåˆ©ã€‚ä½¿ç”¨è§„å®šã€‚</a><br>
+<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation °æÈ¨ËùÓĞ¡£±£ÁôËùÓĞÈ¨Àû¡£Ê¹ÓÃ¹æ¶¨¡£</a><br>
 </DIV> <!--Copyright_END-->
 
 </BODY>

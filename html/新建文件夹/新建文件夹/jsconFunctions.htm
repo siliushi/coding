@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=gb2312">
+<TITLE>JScript 函数</TITLE>
+<!--CSS_START-->
+<style>@import url(../html-vss/msdnie4a.css);</style>
+<link disabled rel="stylesheet" href="../html-vss/msdn_ie3.css">
+<!--CSS_END-->
+</HEAD>
+<BODY>
+
+
+<!--Start Head-->
+<TABLE class="banner" width="100%" CELLSPACING=0>
+<TR>
+<TD class="bannerleft" nowrap>JScript&nbsp;</TD>
+<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">语言参考</a></TD>
+</TR>
+</TABLE>
+<HR>
+<!--End Head-->
+
+<H1><A NAME="jsconfunctions"></A>JScript 函数</H1>
+
+<P>Microsoft Jscript 函数执行操作，也可以返回值。某些时候是计算或比较的结果。函数又被称为“全局方法”。</P>
+
+<P>一个函数中包含有几个操作。这样可使得代码更合理化。可以写一组语句并给其命名，然后通过调用它并传递其需要的信息来运行整组语句。</P>
+
+<P>给函数传递信息可以把信息放在函数名称后面的圆括号中。传递给函数的信息称作参数。某些函数根本不带任何参数，而其他函数带一个或者多个参数。在某些函数中，参数的个数取决于如何使用该函数。</P>
+
+<P>Jscript 支持两种函数：一类是语言内部的函数，另一类是自己创建的。</P>
+
+<H2>特殊的内部函数</H2>
+
+<P>Jscript 语言包含很多内部函数。某些函数可以操作表达式和特殊字符，而其他函数将字符串转换为数值。一个有用的内部函数是 <A HREF="jsmtheval.htm">eval()</A>。该函数可以对以字符串形式表示的任意有效的 Jscript代码求值。<B>eval()</B> 函数有一个参数，该参数就是想要求值的代码。下面给出一个使用本函数的示例。</P>
+
+<PRE><CODE>var anExpression = "6 * 9 % 7";
+var total = eval(anExpression); // </CODE>将变量<CODE> total </CODE>赋值为<CODE> 5</CODE>。
+<CODE>var yetAnotherExpression = "6 * (9 % 7)";</CODE>
+<CODE>total = eval(yetAnotherExpression) // </CODE>将变量<CODE> total </CODE>赋值为<CODE> 12</CODE>。
+<CODE>// </CODE>将一个字符串赋给<CODE> totality </CODE>（注意嵌套引用）
+<CODE>var totality = eval("’...surrounded by acres of clams.’");</CODE></PRE>
+
+<P>有关内部函数的详细信息请参考<A HREF="jslrfjscriptlanguagereference.htm">语言参考</A>。</P>
+
+<H2>创建自己的函数</H2>
+
+<P>在必要的时候，可以创建并使用自己的函数。一个函数的定义中包含了一个函数语句和一个 Jscript 语句块。</P>
+
+<P>下面示例中的 <B>Checktriplet</B> 函数以三角形的边长为参数。通过查看三条边的长度是否可以组成一个毕达哥拉斯三元组（直角三角形斜边长度的平方等于其他两条边长的平方和）来计算该三角形是否为直角三角形。实际测试时 checkTriplet 函数要调用另两个函数中的一个函数。</P>
+
+<P>注意在浮点数测试版本中极小数（“epsilon”）作为测试变量的使用。由于浮点运算的不确定性和舍入误差，除非问题中的三个值均已知为整数，直接测试这三个数是否组成毕达哥拉斯三元组是不可行的。因为直接的测试更为准确，本示例中的代码确定其是否可行，如果可行则使用它。</P>
+
+<PRE><CODE>var epsilon = 0.00000000001; // </CODE>一些需要测试的极小数字。
+
+<CODE>// </CODE>测试整数的函数。
+<CODE>function integerCheck(a, b, c) </CODE>
+<CODE>{</CODE>
+<CODE>   // </CODE>测试。
+<CODE>   if ( (a*a) == ((b*b) + (c*c)) )   </CODE>
+<CODE>      return true;</CODE>
+
+<CODE>   return false;</CODE>
+}<CODE> // </CODE>整数检查函数的结尾。
+
+<CODE>// </CODE>测试浮点数的函数。
+<CODE>function floatCheck(a, b, c)   </CODE>
+<CODE>{</CODE>
+<CODE>   // </CODE>得到测试数值。
+<CODE>   var delta = ((a*a) - ((b*b) + (c*c)))</CODE>
+
+<CODE>   // </CODE>测试需要绝对值
+<CODE>   delta = Math.abs(delta);</CODE>
+
+<CODE>   // </CODE>如果差小于<CODE> epsilon</CODE>，那么它相当接近。
+<CODE>   if (delta &lt; epsilon)   </CODE>
+<CODE>      return true;</CODE>
+
+<CODE>   return false;</CODE>
+}<CODE> // </CODE>浮点检查函数的末尾。
+
+
+<CODE>// </CODE>三元检查。
+<CODE>function checkTriplet(a, b, c)</CODE>
+<CODE>{ </CODE>
+<CODE>   // </CODE>创建临时变量，用于交换值
+<CODE>   var d = 0; </CODE>
+
+<CODE>   // </CODE>先将最长的移动到位置“<CODE>a</CODE>”。
+
+<CODE>   // </CODE>需要的话交换<CODE> a </CODE>和<CODE> b</CODE>
+<CODE>   if (b &gt; a)</CODE>
+<CODE>   {</CODE>
+<CODE>      d = a;</CODE>
+<CODE>      a = b;</CODE>
+<CODE>      b = d;</CODE>
+<CODE>   }</CODE>
+
+<CODE>   // </CODE>需要的话交换<CODE> a </CODE>和<CODE> c</CODE>
+<CODE>   if (c &gt; a)</CODE>
+<CODE>   {</CODE>
+<CODE>      d = a;</CODE>
+<CODE>      a = c;</CODE>
+<CODE>      c = d;</CODE>
+<CODE>   }</CODE>
+
+<CODE>   // </CODE>测试全部的<CODE> 3 </CODE>个值，看其是否为整数？
+<CODE>   if (((a % 1) == 0) &amp;&amp; ((b % 1) == 0) &amp;&amp; ((c % 1) == 0))</CODE>
+<CODE>   { </CODE>
+<CODE>      // </CODE>如果成立，使用精确检查。
+<CODE>      return integerCheck(a, b, c); </CODE>
+<CODE>   }</CODE>
+<CODE>   else</CODE>
+<CODE>   {</CODE>
+<CODE>      // </CODE>如果不成立，取尽可能相近的。
+<CODE>      return floatCheck(a, b, c); </CODE>
+<CODE>   }</CODE>
+}<CODE> // </CODE>三元检查函数的末尾。
+
+<CODE>// </CODE>下面的三个语句赋给范例值，用于测试。
+<CODE>var sideA = 5;</CODE>
+<CODE>var sideB = 5;</CODE>
+<CODE>var sideC = Math.sqrt(50.001);</CODE>
+
+<CODE>// </CODE>调用函数。调用后，<CODE>'result' </CODE>中包含了结果。
+<CODE>var result = checkTriplet(sideA, sideB, sideC);</CODE></PRE>
+<!--Copyright_START-->
+<DIV CLASS="footer">
+<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation 版权所有。保留所有权利。使用规定。</a><br>
+</DIV> <!--Copyright_END-->
+
+</BODY>
+</HTML>

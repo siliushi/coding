@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=gb2312">
+<TITLE>条件编译</TITLE>
+<!--CSS_START-->
+<style>@import url(../html-vss/msdnie4a.css);</style>
+<link disabled rel="stylesheet" href="../html-vss/msdn_ie3.css">
+<!--CSS_END-->
+</HEAD>
+<BODY>
+
+
+<!--Start Head-->
+<TABLE class="banner" width="100%" CELLSPACING=0>
+<TR>
+<TD class="bannerleft" nowrap>JScript&nbsp;</TD>
+<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">语言参考</a></TD>
+</TR>
+</TABLE>
+<HR>
+<!--End Head-->
+
+<H1><A NAME="jsconditionalcompilation"></A>条件编译</H1>
+
+<P>使用条件编译可以使用 Jscript 语言的新特性并且与不支持该特性的老版本兼容。</P>
+
+<P>用 <B>@cc_on</B> 语句、<B>@if</B> 或 <B>@set</B> 语句来激活条件编译。条件编译的某些典型用途包括使用 Jscript 中的新特性、在脚本中嵌入调试支持以及跟踪代码的运行。</P>
+
+<P>一般将条件编译代码放在注释中，所以不能理解条件编译的宿主（如 Netscape Navigator）就忽略了条件编译。下面是一个示例。</P>
+
+<PRE><CODE>/*@cc_on @*/
+/*@if (@_jscript_version &gt;= 4)
+   alert("JScript version 4 or better");
+   @else @*/
+   alert("You need a more recent script engine.");
+/*@end @*/</CODE></PRE>
+
+<P>本示例使用了特殊的注释分隔符，该分隔符只有在 <B>@cc_on</B> 语句激活条件编译时才使用。不支持条件编译的脚本引擎只能看到一个需要更新脚本引擎的信息。</P>
+<!--Copyright_START-->
+<DIV CLASS="footer">
+<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation 版权所有。保留所有权利。使用规定。</a><br>
+</DIV> <!--Copyright_END-->
+
+</BODY>
+</HTML>

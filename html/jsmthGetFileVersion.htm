@@ -2,7 +2,7 @@
 <HTML>
 <HEAD>
 <META HTTP-EQUIV="Content-Type" Content="text/html; charset=gb2312">
-<TITLE>getFileVersion æ–¹æ³•</TITLE>
+<TITLE>getFileVersion ·½·¨</TITLE>
 <!--CSS_START-->
 <style>@import url(../html-vss/msdnie4a.css);</style>
 <link disabled rel="stylesheet" href="../html-vss/msdn_ie3.css">
@@ -15,35 +15,35 @@
 <TABLE class="banner" width="100%" CELLSPACING=0>
 <TR>
 <TD class="bannerleft" nowrap>JScript&nbsp;</TD>
-<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">è¯­è¨€å‚è€ƒ</a></TD>
+<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">ÓïÑÔ²Î¿¼</a></TD>
 </TR>
 </TABLE>
 <HR>
 <!--End Head-->
 
-<H1><A NAME="jsmthgetfileversion"></A>getFileVersion æ–¹æ³•</H1>
+<H1><A NAME="jsmthgetfileversion"></A>getFileVersion ·½·¨</H1>
 
-<P>è¿”å›žæŒ‡å®šæ–‡ä»¶çš„ç‰ˆæœ¬å·ã€‚</P>
+<P>·µ»ØÖ¸¶¨ÎÄ¼þµÄ°æ±¾ºÅ¡£</P>
 
 <P><CODE><I>Object</I>.<B>GetFileVersion(</B><I>pathspec</I><B>)</B> </CODE></P>
 
-<H4>å‚æ•°</H4>
+<H4>²ÎÊý</H4>
 
 <P class=dt><I>object</I></P>
 
-<P class=indent>å¿…é€‰é¡¹ã€‚æ€»æ˜¯ä¸€ä¸ª <B>FileSystemObject</B> çš„åå­—ã€‚</P>
+<P class=indent>±ØÑ¡Ïî¡£×ÜÊÇÒ»¸ö <B>FileSystemObject</B> µÄÃû×Ö¡£</P>
 
 <P class=dt><I>pathspec</I></P>
 
-<P class=indent>å¿…é€‰é¡¹ã€‚æŒ‡å‘ç‰¹å®šæ–‡ä»¶çš„ï¼ˆç»å¯¹æˆ–ç›¸å¯¹ï¼‰è·¯å¾„ã€‚</P>
+<P class=indent>±ØÑ¡Ïî¡£Ö¸ÏòÌØ¶¨ÎÄ¼þµÄ£¨¾ø¶Ô»òÏà¶Ô£©Â·¾¶¡£</P>
 
-<H4>è¯´æ˜Ž</H4>
+<H4>ËµÃ÷</H4>
 
-<P>å¦‚æžœ <I>pathspec</I> å¹¶ä¸ä»¥æ‰€å‘½åçš„æ–‡ä»¶ç»“æŸï¼Œæˆ–è€…æ–‡ä»¶å¹¶ä¸åŒ…å«ç‰ˆæœ¬ä¿¡æ¯ï¼Œ<B>GetFileVersion</B> æ–¹æ³•å°†è¿”å›žé•¿åº¦ä¸º0çš„å­—ç¬¦ä¸²("")ã€‚ </P>
+<P>Èç¹û <I>pathspec</I> ²¢²»ÒÔËùÃüÃûµÄÎÄ¼þ½áÊø£¬»òÕßÎÄ¼þ²¢²»°üº¬°æ±¾ÐÅÏ¢£¬<B>GetFileVersion</B> ·½·¨½«·µ»Ø³¤¶ÈÎª0µÄ×Ö·û´®("")¡£ </P>
 
-<P class=indent><B>æ³¨æ„&nbsp;&nbsp;GetFileVersion</B> æ–¹æ³•åªå¤„ç†æ‰€æä¾›çš„è·¯å¾„å­—ç¬¦ä¸²ã€‚å®ƒå¹¶ä¸ä¼šå°è¯•å¯¹è·¯å¾„è¿›è¡Œè§£æžï¼Œä¹Ÿä¸ä¼šæ£€æŸ¥æŒ‡å®šçš„è·¯å¾„æ˜¯å¦å­˜åœ¨ã€‚</P>
+<P class=indent><B>×¢Òâ&nbsp;&nbsp;GetFileVersion</B> ·½·¨Ö»´¦ÀíËùÌá¹©µÄÂ·¾¶×Ö·û´®¡£Ëü²¢²»»á³¢ÊÔ¶ÔÂ·¾¶½øÐÐ½âÎö£¬Ò²²»»á¼ì²éÖ¸¶¨µÄÂ·¾¶ÊÇ·ñ´æÔÚ¡£</P>
 
-<P>ä¸‹é¢çš„ä¾‹å­è¯´æ˜Žäº† <B>GetFileVersion</B> æ–¹æ³•çš„ç”¨æ³•ã€‚ </P>
+<P>ÏÂÃæµÄÀý×ÓËµÃ÷ÁË <B>GetFileVersion</B> ·½·¨µÄÓÃ·¨¡£ </P>
 
 <PRE><CODE>function ShowFileVersion(pathspec)
 {
@@ -51,16 +51,16 @@
   fso = new ActiveXObject("Scripting.FileSystemObject");
   s += fso.GetFileVersion(pathspec);
   if (s == "")
-    s = "</CODE>æ— å¯ç”¨çš„ç‰ˆæœ¬ä¿¡æ¯ã€‚<CODE>";</CODE>
+    s = "</CODE>ÎÞ¿ÉÓÃµÄ°æ±¾ÐÅÏ¢¡£<CODE>";</CODE>
 <CODE>  return(s);</CODE>
 <CODE>}</CODE></PRE>
 
-<H4>è¦æ±‚</H4>
+<H4>ÒªÇó</H4>
 
-<P><A HREF="jsoriversioninformation.htm">ç‰ˆæœ¬ 1</A></P>
+<P><A HREF="jsoriversioninformation.htm">°æ±¾ 1</A></P>
 <!--Copyright_START-->
 <DIV CLASS="footer">
-<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation ç‰ˆæƒæ‰€æœ‰ã€‚ä¿ç•™æ‰€æœ‰æƒåˆ©ã€‚ä½¿ç”¨è§„å®šã€‚</a><br>
+<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation °æÈ¨ËùÓÐ¡£±£ÁôËùÓÐÈ¨Àû¡£Ê¹ÓÃ¹æ¶¨¡£</a><br>
 </DIV> <!--Copyright_END-->
 
 </BODY>

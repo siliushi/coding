@@ -2,7 +2,7 @@
 <HTML>
 <HEAD>
 <META HTTP-EQUIV="Content-Type" Content="text/html; charset=gb2312">
-<TITLE>å¤„ç†æ–‡ä»¶</TITLE>
+<TITLE>´¦ÀíÎÄ¼ş</TITLE>
 <!--CSS_START-->
 <style>@import url(../html-vss/msdnie4a.css);</style>
 <link disabled rel="stylesheet" href="../html-vss/msdn_ie3.css">
@@ -15,53 +15,53 @@
 <TABLE class="banner" width="100%" CELLSPACING=0>
 <TR>
 <TD class="bannerleft" nowrap>JScript&nbsp;</TD>
-<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">è¯­è¨€å‚è€ƒ</a></TD>
+<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">ÓïÑÔ²Î¿¼</a></TD>
 </TR>
 </TABLE>
 <HR>
 <!--End Head-->
 
-<H1><A NAME="sgworkingwithfiles"></A>å¤„ç†æ–‡ä»¶</H1>
+<H1><A NAME="sgworkingwithfiles"></A>´¦ÀíÎÄ¼ş</H1>
 
-<P>æœ‰ä¸¤ç§ä¸»è¦çš„æ–‡ä»¶å¤„ç†ç±»å‹ï¼š
+<P>ÓĞÁ½ÖÖÖ÷ÒªµÄÎÄ¼ş´¦ÀíÀàĞÍ£º
 
 <UL type=disc>
-	<LI>åˆ›å»ºã€æ·»åŠ æˆ–åˆ é™¤æ•°æ®ï¼Œä»¥åŠè¯»å–æ–‡ä»¶ </li>
+	<LI>´´½¨¡¢Ìí¼Ó»òÉ¾³ıÊı¾İ£¬ÒÔ¼°¶ÁÈ¡ÎÄ¼ş </li>
 
-	<LI>ç§»åŠ¨ã€å¤åˆ¶å’Œåˆ é™¤æ–‡ä»¶ </li>
+	<LI>ÒÆ¶¯¡¢¸´ÖÆºÍÉ¾³ıÎÄ¼ş </li>
 </UL>
 
-<H2>åˆ›å»ºæ–‡ä»¶</H2>
+<H2>´´½¨ÎÄ¼ş</H2>
 
-<P>åˆ›å»ºç©ºæ–‡æœ¬æ–‡ä»¶ï¼ˆæœ‰æ—¶è¢«å«åšâ€œæ–‡æœ¬æµâ€ï¼‰æœ‰ä¸‰ç§æ–¹æ³•ã€‚</P>
+<P>´´½¨¿ÕÎÄ±¾ÎÄ¼ş£¨ÓĞÊ±±»½Ğ×ö¡°ÎÄ±¾Á÷¡±£©ÓĞÈıÖÖ·½·¨¡£</P>
 
-<P>ç¬¬ä¸€ç§æ–¹æ³•æ˜¯ç”¨ <B>CreateTextFile</B> æ–¹æ³•ã€‚ ä¸‹é¢çš„ç¤ºä¾‹ç¤ºèŒƒäº†åœ¨ VBScript ä¸­å¦‚ä½•ç”¨è¿™ç§æ–¹æ³•æ¥åˆ›å»ºæ–‡æœ¬æ–‡ä»¶ï¼š</P>
+<P>µÚÒ»ÖÖ·½·¨ÊÇÓÃ <B>CreateTextFile</B> ·½·¨¡£ ÏÂÃæµÄÊ¾ÀıÊ¾·¶ÁËÔÚ VBScript ÖĞÈçºÎÓÃÕâÖÖ·½·¨À´´´½¨ÎÄ±¾ÎÄ¼ş£º</P>
 
 <PRE><CODE>Dim fso, f1
 Set fso = CreateObject("Scripting.FileSystemObject")
 Set f1 = fso.CreateTextFile("c:\testfile.txt", True)</CODE></PRE>
 
-<P>è¦åœ¨ JScript ä¸­ç”¨è¿™ç§æ–¹æ³•ï¼Œåˆ™ä½¿ç”¨ä¸‹é¢çš„ä»£ç ï¼š</P>
+<P>ÒªÔÚ JScript ÖĞÓÃÕâÖÖ·½·¨£¬ÔòÊ¹ÓÃÏÂÃæµÄ´úÂë£º</P>
 
 <PRE><CODE>var fso, f1;
 fso = new ActiveXObject("Scripting.FileSystemObject");
 f1 = fso.CreateTextFile("c:\\testfile.txt", true);</CODE></PRE>
 
-<P>åˆ›å»ºæ–‡æœ¬æ–‡ä»¶çš„ç¬¬äºŒç§æ–¹æ³•æ˜¯ï¼Œä½¿ç”¨ <B>FileSystemObject</B> å¯¹è±¡çš„ <B>OpenTextFile</B> æ–¹æ³•ï¼Œå¹¶è®¾ç½® <B>ForWriting</B> æ ‡å¿—ã€‚åœ¨ VBScript ä¸­ï¼Œä»£ç å°±åƒä¸‹é¢çš„ç¤ºä¾‹ä¸€æ ·ï¼š </P>
+<P>´´½¨ÎÄ±¾ÎÄ¼şµÄµÚ¶şÖÖ·½·¨ÊÇ£¬Ê¹ÓÃ <B>FileSystemObject</B> ¶ÔÏóµÄ <B>OpenTextFile</B> ·½·¨£¬²¢ÉèÖÃ <B>ForWriting</B> ±êÖ¾¡£ÔÚ VBScript ÖĞ£¬´úÂë¾ÍÏñÏÂÃæµÄÊ¾ÀıÒ»Ñù£º </P>
 
 <PRE><CODE>Dim fso, ts
 Const ForWriting = 2
 Set fso = CreateObject("Scripting. FileSystemObject")
 Set ts = fso.OpenTextFile("c:\test.txt", ForWriting, True)</CODE></PRE>
 
-<P>è¦åœ¨ JScript ä¸­ä½¿ç”¨è¿™ç§æ–¹æ³•æ¥åˆ›å»ºæ–‡æœ¬æ–‡ä»¶ï¼Œåˆ™ä½¿ç”¨ä¸‹é¢çš„ä»£ç ï¼š</P>
+<P>ÒªÔÚ JScript ÖĞÊ¹ÓÃÕâÖÖ·½·¨À´´´½¨ÎÄ±¾ÎÄ¼ş£¬ÔòÊ¹ÓÃÏÂÃæµÄ´úÂë£º</P>
 
 <PRE><CODE>var fso, ts;
 var ForWriting= 2;
 fso = new ActiveXObject("Scripting.FileSystemObject");
 ts = fso.OpenTextFile("c:\\test.txt", ForWriting, true);</CODE></PRE>
 
-<P>åˆ›å»ºæ–‡æœ¬æ–‡ä»¶çš„ç¬¬ä¸‰ç§æ–¹æ³•æ˜¯ï¼Œä½¿ç”¨ <B>OpenAsTextStream</B> æ–¹æ³•ï¼Œå¹¶è®¾ç½® <B>ForWriting</B> æ ‡å¿—ã€‚è¦ä½¿ç”¨è¿™ç§æ–¹æ³•ï¼Œåœ¨ VBScript ä¸­ä½¿ç”¨ä¸‹é¢çš„ä»£ç ï¼š</P>
+<P>´´½¨ÎÄ±¾ÎÄ¼şµÄµÚÈıÖÖ·½·¨ÊÇ£¬Ê¹ÓÃ <B>OpenAsTextStream</B> ·½·¨£¬²¢ÉèÖÃ <B>ForWriting</B> ±êÖ¾¡£ÒªÊ¹ÓÃÕâÖÖ·½·¨£¬ÔÚ VBScript ÖĞÊ¹ÓÃÏÂÃæµÄ´úÂë£º</P>
 
 <PRE><CODE>Dim fso, f1, ts
 Const ForWriting = 2
@@ -70,7 +70,7 @@ fso.CreateTextFile ("c:\test1.txt")
 Set f1 = fso.GetFile("c:\test1.txt")
 Set ts = f1.OpenAsTextStream(ForWriting, True)</CODE></PRE>
 
-<P>åœ¨ JScript ä¸­ï¼Œåˆ™ä½¿ç”¨ä¸‹é¢ç¤ºä¾‹ä¸­çš„ä»£ç ï¼š</P>
+<P>ÔÚ JScript ÖĞ£¬ÔòÊ¹ÓÃÏÂÃæÊ¾ÀıÖĞµÄ´úÂë£º</P>
 
 <PRE><CODE>var fso, f1, ts;
 var ForWriting = 2;
@@ -79,120 +79,120 @@ fso.CreateTextFile ("c:\\test1.txt");
 f1 = fso.GetFile("c:\\test1.txt");
 ts = f1.OpenAsTextStream(ForWriting, true);</CODE></PRE>
 
-<H2>æ·»åŠ æ•°æ®åˆ°æ–‡ä»¶ä¸­</H2>
+<H2>Ìí¼ÓÊı¾İµ½ÎÄ¼şÖĞ</H2>
 
-<P>ä¸€æ—¦åˆ›å»ºäº†æ–‡æœ¬æ–‡ä»¶ï¼Œä½¿ç”¨ä¸‹é¢çš„ä¸‰ä¸ªæ­¥éª¤å‘æ–‡ä»¶æ·»åŠ æ•°æ®ï¼š</P>
+<P>Ò»µ©´´½¨ÁËÎÄ±¾ÎÄ¼ş£¬Ê¹ÓÃÏÂÃæµÄÈı¸ö²½ÖèÏòÎÄ¼şÌí¼ÓÊı¾İ£º</P>
 
-<P>æ‰“å¼€æ–‡æœ¬æ–‡ä»¶ã€‚ </P>
+<P>´ò¿ªÎÄ±¾ÎÄ¼ş¡£ </P>
 
-<P>å†™å…¥æ•°æ®ã€‚ </P>
+<P>Ğ´ÈëÊı¾İ¡£ </P>
 
-<P>å…³é—­æ–‡ä»¶ã€‚ </P>
+<P>¹Ø±ÕÎÄ¼ş¡£ </P>
 
-<P>è¦æ‰“å¼€ç°æœ‰çš„æ–‡ä»¶ï¼Œåˆ™ä½¿ç”¨ FileSystemObject å¯¹è±¡çš„ OpenTextFile æ–¹æ³•æˆ– File å¯¹è±¡çš„ OpenAsTextStream æ–¹æ³•ã€‚</P>
+<P>Òª´ò¿ªÏÖÓĞµÄÎÄ¼ş£¬ÔòÊ¹ÓÃ FileSystemObject ¶ÔÏóµÄ OpenTextFile ·½·¨»ò File ¶ÔÏóµÄ OpenAsTextStream ·½·¨¡£</P>
 
-<P>è¦å†™æ•°æ®åˆ°æ‰“å¼€çš„æ–‡æœ¬æ–‡ä»¶ï¼Œåˆ™æ ¹æ®ä¸‹è¡¨æ‰€è¿°ä»»åŠ¡ä½¿ç”¨ TextStream å¯¹è±¡çš„ Writeã€WriteLine æˆ– WriteBlankLines æ–¹æ³•ã€‚</P>
+<P>ÒªĞ´Êı¾İµ½´ò¿ªµÄÎÄ±¾ÎÄ¼ş£¬Ôò¸ù¾İÏÂ±íËùÊöÈÎÎñÊ¹ÓÃ TextStream ¶ÔÏóµÄ Write¡¢WriteLine »ò WriteBlankLines ·½·¨¡£</P>
 
 <TABLE border=1 cellspacing=0 cols=2 frame=box rules=all>
 
 <TR VALIGN="top">
-<TH width=72%>ä»»åŠ¡</TH>
-<TH width=28%>æ–¹æ³•</TH>
+<TH width=72%>ÈÎÎñ</TH>
+<TH width=28%>·½·¨</TH>
 </TR>
 
 <TR VALIGN="top">
-<TD width=72%>å‘æ‰“å¼€çš„æ–‡æœ¬æ–‡ä»¶å†™æ•°æ®ï¼Œä¸ç”¨åç»­ä¸€ä¸ªæ–°è¡Œå­—ç¬¦ã€‚</TD>
+<TD width=72%>Ïò´ò¿ªµÄÎÄ±¾ÎÄ¼şĞ´Êı¾İ£¬²»ÓÃºóĞøÒ»¸öĞÂĞĞ×Ö·û¡£</TD>
 <TD width=28%>Write</TD>
 </TR>
 
 <TR VALIGN="top">
-<TD width=72%>å‘æ‰“å¼€çš„æ–‡æœ¬æ–‡ä»¶å†™æ•°æ®ï¼Œåç»­ä¸€ä¸ªæ–°è¡Œå­—ç¬¦ã€‚</TD>
+<TD width=72%>Ïò´ò¿ªµÄÎÄ±¾ÎÄ¼şĞ´Êı¾İ£¬ºóĞøÒ»¸öĞÂĞĞ×Ö·û¡£</TD>
 <TD width=28%>WriteLine</TD>
 </TR>
 
 <TR VALIGN="top">
-<TD width=72%>å‘æ‰“å¼€çš„æ–‡æœ¬æ–‡ä»¶å†™ä¸€ä¸ªæˆ–å¤šä¸ªç©ºç™½è¡Œã€‚</TD>
+<TD width=72%>Ïò´ò¿ªµÄÎÄ±¾ÎÄ¼şĞ´Ò»¸ö»ò¶à¸ö¿Õ°×ĞĞ¡£</TD>
 <TD width=28%>WriteBlankLines</TD>
 </TR>
 </TABLE><BR>
 
-<P>è¦å…³é—­ä¸€ä¸ªæ‰“å¼€çš„æ–‡ä»¶ï¼Œåˆ™ä½¿ç”¨ <B>TextStream</B> å¯¹è±¡çš„ <B>Close</B> æ–¹æ³•ã€‚</P>
+<P>Òª¹Ø±ÕÒ»¸ö´ò¿ªµÄÎÄ¼ş£¬ÔòÊ¹ÓÃ <B>TextStream</B> ¶ÔÏóµÄ <B>Close</B> ·½·¨¡£</P>
 
-<P><B>æ³¨æ„&nbsp;&nbsp;</B>æ–°è¡Œå­—ç¬¦åŒ…å«ä¸€ä¸ªæˆ–å‡ ä¸ªå­—ç¬¦ï¼ˆå–å†³äºæ“ä½œç³»ç»Ÿï¼‰ï¼Œä»¥æŠŠå…‰æ ‡ç§»åŠ¨åˆ°ä¸‹ä¸€è¡Œçš„å¼€å§‹ä½ç½®ï¼ˆå›è½¦/æ¢è¡Œï¼‰ã€‚æ³¨æ„æŸäº›å­—ç¬¦ä¸²æœ«å°¾å¯èƒ½å·²ç»æœ‰è¿™ä¸ªéæ‰“å°å­—ç¬¦äº†ã€‚</P>
+<P><B>×¢Òâ&nbsp;&nbsp;</B>ĞÂĞĞ×Ö·û°üº¬Ò»¸ö»ò¼¸¸ö×Ö·û£¨È¡¾öÓÚ²Ù×÷ÏµÍ³£©£¬ÒÔ°Ñ¹â±êÒÆ¶¯µ½ÏÂÒ»ĞĞµÄ¿ªÊ¼Î»ÖÃ£¨»Ø³µ/»»ĞĞ£©¡£×¢ÒâÄ³Ğ©×Ö·û´®Ä©Î²¿ÉÄÜÒÑ¾­ÓĞÕâ¸ö·Ç´òÓ¡×Ö·ûÁË¡£</P>
 
-<P>ä¸‹é¢çš„ VBScript ä¾‹å­ç¤ºèŒƒäº†å¦‚ä½•æ‰“å¼€æ–‡ä»¶ï¼Œå’ŒåŒæ—¶ä½¿ç”¨ä¸‰ç§å†™æ–¹æ³•æ¥å‘æ–‡ä»¶æ·»åŠ æ•°æ®ï¼Œç„¶åå…³é—­æ–‡ä»¶ï¼š</P>
+<P>ÏÂÃæµÄ VBScript Àı×ÓÊ¾·¶ÁËÈçºÎ´ò¿ªÎÄ¼ş£¬ºÍÍ¬Ê±Ê¹ÓÃÈıÖÖĞ´·½·¨À´ÏòÎÄ¼şÌí¼ÓÊı¾İ£¬È»ºó¹Ø±ÕÎÄ¼ş£º</P>
 
 <PRE><CODE>Sub CreateFile()
 </CODE>&nbsp;&nbsp;&nbsp;<CODE>Dim fso, tf</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;Set fso = CreateObject("Scripting.FileSystemObject")</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;Set tf = fso.CreateTextFile("c:\testfile.txt", True)</CODE>
-&nbsp;&nbsp;&nbsp;<CODE>' </CODE>å†™ä¸€è¡Œï¼Œå¹¶ä¸”å¸¦æœ‰æ–°è¡Œå­—ç¬¦ã€‚
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>Ğ´Ò»ĞĞ£¬²¢ÇÒ´øÓĞĞÂĞĞ×Ö·û¡£
 &nbsp;&nbsp;&nbsp;<CODE>tf.WriteLine("Testing 1, 2, 3.") </CODE>
-&nbsp;&nbsp;&nbsp;<CODE>'</CODE>å‘æ–‡ä»¶å†™ä¸‰ä¸ªæ–°è¡Œå­—ç¬¦ã€‚&nbsp;&nbsp;&nbsp;<CODE> &nbsp;&nbsp;&nbsp; </CODE>
+&nbsp;&nbsp;&nbsp;<CODE>'</CODE>ÏòÎÄ¼şĞ´Èı¸öĞÂĞĞ×Ö·û¡£&nbsp;&nbsp;&nbsp;<CODE> &nbsp;&nbsp;&nbsp; </CODE>
 <CODE>&nbsp;&nbsp;&nbsp;tf.WriteBlankLines(3) </CODE>
-<CODE>&nbsp;&nbsp;&nbsp;'</CODE>å†™ä¸€è¡Œã€‚
+<CODE>&nbsp;&nbsp;&nbsp;'</CODE>Ğ´Ò»ĞĞ¡£
 &nbsp;&nbsp;&nbsp;<CODE>tf.Write ("This is a test.") </CODE>
 <CODE>&nbsp;&nbsp;&nbsp;tf.Close</CODE>
 <CODE>End Sub</CODE></PRE>
 
-<P>è¿™ä¸ªç¤ºä¾‹ç¤ºèŒƒäº†åœ¨ JScript ä¸­å¦‚ä½•ä½¿ç”¨è¿™ä¸‰ä¸ªæ–¹æ³•ï¼š</P>
+<P>Õâ¸öÊ¾ÀıÊ¾·¶ÁËÔÚ JScript ÖĞÈçºÎÊ¹ÓÃÕâÈı¸ö·½·¨£º</P>
 
 <PRE><CODE>function CreateFile()
 {
 </CODE>&nbsp;&nbsp;&nbsp;<CODE>var fso, tf;</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>fso = new ActiveXObject("Scripting.FileSystemObject");</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>tf = fso.CreateTextFile("c:\\testfile.txt", true);</CODE>
-&nbsp;&nbsp;&nbsp;<CODE>// </CODE>å†™ä¸€è¡Œï¼Œå¹¶ä¸”å¸¦æœ‰æ–°è¡Œå­—ç¬¦ã€‚
+&nbsp;&nbsp;&nbsp;<CODE>// </CODE>Ğ´Ò»ĞĞ£¬²¢ÇÒ´øÓĞĞÂĞĞ×Ö·û¡£
 &nbsp;&nbsp;&nbsp;<CODE>tf.WriteLine("Testing 1, 2, 3.") ;</CODE>
-&nbsp;&nbsp;&nbsp;<CODE>// </CODE>å‘æ–‡ä»¶å†™ä¸‰ä¸ªæ–°è¡Œå­—ç¬¦ã€‚<CODE>  </CODE>
+&nbsp;&nbsp;&nbsp;<CODE>// </CODE>ÏòÎÄ¼şĞ´Èı¸öĞÂĞĞ×Ö·û¡£<CODE>  </CODE>
 &nbsp;&nbsp;&nbsp;<CODE>tf.WriteBlankLines(3) ;</CODE>
-&nbsp;&nbsp;&nbsp;<CODE>// </CODE>å†™ä¸€è¡Œã€‚
+&nbsp;&nbsp;&nbsp;<CODE>// </CODE>Ğ´Ò»ĞĞ¡£
 &nbsp;&nbsp;&nbsp;<CODE>tf.Write ("This is a test.");</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>tf.Close();</CODE>
 <CODE>}</CODE></PRE>
 
-<H2>è¯»å–æ–‡ä»¶</H2>
+<H2>¶ÁÈ¡ÎÄ¼ş</H2>
 
-<P>è¦ä»æ–‡æœ¬æ–‡ä»¶è¯»å–æ•°æ®ï¼Œåˆ™ä½¿ç”¨ <B>TextStream</B> å¯¹è±¡çš„ <B>Read</B>ã€<B>ReadLine</B> æˆ– <B>ReadAll</B> æ–¹æ³•ã€‚ä¸‹è¡¨æè¿°äº†ä¸åŒçš„ä»»åŠ¡åº”ä½¿ç”¨å“ªç§æ–¹æ³•ã€‚</P>
+<P>Òª´ÓÎÄ±¾ÎÄ¼ş¶ÁÈ¡Êı¾İ£¬ÔòÊ¹ÓÃ <B>TextStream</B> ¶ÔÏóµÄ <B>Read</B>¡¢<B>ReadLine</B> »ò <B>ReadAll</B> ·½·¨¡£ÏÂ±íÃèÊöÁË²»Í¬µÄÈÎÎñÓ¦Ê¹ÓÃÄÄÖÖ·½·¨¡£</P>
 
 <TABLE border=1 cellspacing=0 cols=2 frame=box rules=all>
 
 <TR VALIGN="top">
-<TH width=78%>ä»»åŠ¡</TH>
-<TH width=22%>æ–¹æ³•</TH>
+<TH width=78%>ÈÎÎñ</TH>
+<TH width=22%>·½·¨</TH>
 </TR>
 
 <TR VALIGN="top">
-<TD width=78%>ä»æ–‡ä»¶è¯»å–æŒ‡å®šæ•°é‡çš„å­—ç¬¦ã€‚</TD>
+<TD width=78%>´ÓÎÄ¼ş¶ÁÈ¡Ö¸¶¨ÊıÁ¿µÄ×Ö·û¡£</TD>
 <TD width=22%>Read</TD>
 </TR>
 
 <TR VALIGN="top">
-<TD width=78%>è¯»å–ä¸€æ•´è¡Œï¼ˆä¸€ç›´åˆ°ä½†ä¸åŒ…æ‹¬æ–°è¡Œå­—ç¬¦ï¼‰ã€‚</TD>
+<TD width=78%>¶ÁÈ¡Ò»ÕûĞĞ£¨Ò»Ö±µ½µ«²»°üÀ¨ĞÂĞĞ×Ö·û£©¡£</TD>
 <TD width=22%>ReadLine</TD>
 </TR>
 
 <TR VALIGN="top">
-<TD width=78%>è¯»å–æ–‡æœ¬æ–‡ä»¶çš„æ•´ä¸ªå†…å®¹ã€‚</TD>
+<TD width=78%>¶ÁÈ¡ÎÄ±¾ÎÄ¼şµÄÕû¸öÄÚÈİ¡£</TD>
 <TD width=22%>ReadAll</TD>
 </TR>
 </TABLE><BR>
 
-<P>å¦‚æœä½¿ç”¨ <B>Read</B> æˆ– <B>ReadLine</B> æ–¹æ³•ï¼Œå¹¶ä¸”æƒ³è·³è¿‡æ•°æ®çš„ç‰¹æ®Šéƒ¨åˆ†ï¼Œåˆ™ä½¿ç”¨ <B>Skip</B> æˆ– <B>SkipLine</B> æ–¹æ³•ã€‚read æ–¹æ³•çš„ç»“æœæ–‡æœ¬å­˜åœ¨ä¸€ä¸ªå­—ç¬¦ä¸²ä¸­ï¼Œè¯¥å­—ç¬¦ä¸²å¯ä»¥æ˜¾ç¤ºåœ¨ä¸€ä¸ªæ§ä»¶ä¸­ï¼Œä¹Ÿå¯ä»¥ç”¨å­—ç¬¦ä¸²å‡½æ•°ï¼ˆå¦‚ <B>Left</B>ã€<B>Right</B> å’Œ <B>Mid</B>ï¼‰æ¥åˆ†æï¼Œè¿æ¥ç­‰ç­‰ã€‚</P>
+<P>Èç¹ûÊ¹ÓÃ <B>Read</B> »ò <B>ReadLine</B> ·½·¨£¬²¢ÇÒÏëÌø¹ıÊı¾İµÄÌØÊâ²¿·Ö£¬ÔòÊ¹ÓÃ <B>Skip</B> »ò <B>SkipLine</B> ·½·¨¡£read ·½·¨µÄ½á¹ûÎÄ±¾´æÔÚÒ»¸ö×Ö·û´®ÖĞ£¬¸Ã×Ö·û´®¿ÉÒÔÏÔÊ¾ÔÚÒ»¸ö¿Ø¼şÖĞ£¬Ò²¿ÉÒÔÓÃ×Ö·û´®º¯Êı£¨Èç <B>Left</B>¡¢<B>Right</B> ºÍ <B>Mid</B>£©À´·ÖÎö£¬Á¬½ÓµÈµÈ¡£</P>
 
-<P>ä¸‹é¢çš„ VBScript ç¤ºä¾‹ç¤ºèŒƒäº†å¦‚ä½•æ‰“å¼€æ–‡ä»¶ï¼Œå’Œå¦‚ä½•å†™æ•°æ®åˆ°æ–‡ä»¶ä¸­å¹¶ä»æ–‡ä»¶è¯»å–æ•°æ®ï¼š</P>
+<P>ÏÂÃæµÄ VBScript Ê¾ÀıÊ¾·¶ÁËÈçºÎ´ò¿ªÎÄ¼ş£¬ºÍÈçºÎĞ´Êı¾İµ½ÎÄ¼şÖĞ²¢´ÓÎÄ¼ş¶ÁÈ¡Êı¾İ£º</P>
 
 <PRE><CODE>Sub ReadFiles
 </CODE>&nbsp;&nbsp;&nbsp;<CODE>Dim fso, f1, ts, s</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>Const ForReading = 1</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>Set fso = CreateObject("Scripting.FileSystemObject")</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>Set f1 = fso.CreateTextFile("c:\testfile.txt", True)</CODE>
-&nbsp;&nbsp;&nbsp;<CODE>' </CODE>å†™ä¸€è¡Œã€‚
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>Ğ´Ò»ĞĞ¡£
 &nbsp;&nbsp;&nbsp;<CODE>Response.Write "Writing file &lt;br&gt;"</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>f1.WriteLine "Hello World"</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>f1.WriteBlankLines(1)</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>f1.Close</CODE>
-&nbsp;&nbsp;&nbsp;<CODE>' </CODE>è¯»å–æ–‡ä»¶çš„å†…å®¹ã€‚
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>¶ÁÈ¡ÎÄ¼şµÄÄÚÈİ¡£
 &nbsp;&nbsp;&nbsp;<CODE>Response.Write "Reading file &lt;br&gt;"</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>Set ts = fso.OpenTextFile("c:\testfile.txt", ForReading)</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>s = ts.ReadLine</CODE>
@@ -200,7 +200,7 @@ ts = f1.OpenAsTextStream(ForWriting, true);</CODE></PRE>
 &nbsp;&nbsp;&nbsp;<CODE>ts.Close</CODE>
 <CODE>End Sub</CODE></PRE>
 
-<P>ä¸‹é¢çš„ä»£ç ç¤ºèŒƒäº†åœ¨ JScript ä¸­åšåŒæ ·çš„äº‹ï¼š</P>
+<P>ÏÂÃæµÄ´úÂëÊ¾·¶ÁËÔÚ JScript ÖĞ×öÍ¬ÑùµÄÊÂ£º</P>
 
 <PRE><CODE>function ReadFiles()
 {
@@ -208,12 +208,12 @@ ts = f1.OpenAsTextStream(ForWriting, true);</CODE></PRE>
 &nbsp;&nbsp;&nbsp;<CODE>var ForReading = 1;</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>fso = new ActiveXObject("Scripting.FileSystemObject");</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>f1 = fso.CreateTextFile("c:\\testfile.txt", true);</CODE>
-&nbsp;&nbsp;&nbsp;<CODE>// </CODE>å†™ä¸€è¡Œã€‚
+&nbsp;&nbsp;&nbsp;<CODE>// </CODE>Ğ´Ò»ĞĞ¡£
 &nbsp;&nbsp;&nbsp;<CODE>Response.Write("Writing file &lt;br&gt;");</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>f1.WriteLine("Hello World");</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>f1.WriteBlankLines(1);</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>f1.Close();</CODE>
-&nbsp;&nbsp;&nbsp;<CODE>// </CODE>è¯»å–æ–‡ä»¶çš„å†…å®¹ã€‚
+&nbsp;&nbsp;&nbsp;<CODE>// </CODE>¶ÁÈ¡ÎÄ¼şµÄÄÚÈİ¡£
 &nbsp;&nbsp;&nbsp;<CODE>Response.Write("Reading file &lt;br&gt;");</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>ts = fso.OpenTextFile("c:\\testfile.txt", ForReading);</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>s = ts.ReadLine();</CODE>
@@ -221,65 +221,65 @@ ts = f1.OpenAsTextStream(ForWriting, true);</CODE></PRE>
 &nbsp;&nbsp;&nbsp;<CODE>ts.Close();</CODE>
 <CODE>}</CODE></PRE>
 
-<H2>ç§»åŠ¨ã€å¤åˆ¶å’Œåˆ é™¤æ–‡ä»¶</H2>
+<H2>ÒÆ¶¯¡¢¸´ÖÆºÍÉ¾³ıÎÄ¼ş</H2>
 
-<P>FSO å¯¹è±¡æ¨¡å¼å„æœ‰ä¸¤ç§æ–¹æ³•ç§»åŠ¨ã€å¤åˆ¶å’Œåˆ é™¤æ–‡ä»¶ï¼Œå¦‚ä¸‹è¡¨æ‰€è¿°ã€‚</P>
+<P>FSO ¶ÔÏóÄ£Ê½¸÷ÓĞÁ½ÖÖ·½·¨ÒÆ¶¯¡¢¸´ÖÆºÍÉ¾³ıÎÄ¼ş£¬ÈçÏÂ±íËùÊö¡£</P>
 
 <TABLE border=1 cellspacing=0 cols=2 frame=box rules=all>
 
 <TR VALIGN="top">
-<TH width=18%>ä»»åŠ¡</TH>
-<TH width=82%>æ–¹æ³•</TH>
+<TH width=18%>ÈÎÎñ</TH>
+<TH width=82%>·½·¨</TH>
 </TR>
 
 <TR VALIGN="top">
-<TD width=18%>ç§»åŠ¨æ–‡ä»¶</TD>
-<TD width=82%>File.Move æˆ– FileSystemObject.MoveFile</TD>
+<TD width=18%>ÒÆ¶¯ÎÄ¼ş</TD>
+<TD width=82%>File.Move »ò FileSystemObject.MoveFile</TD>
 </TR>
 
 <TR VALIGN="top">
-<TD width=18%>å¤åˆ¶æ–‡ä»¶</TD>
-<TD width=82%>File.Copy æˆ– FileSystemObject.CopyFile</TD>
+<TD width=18%>¸´ÖÆÎÄ¼ş</TD>
+<TD width=82%>File.Copy »ò FileSystemObject.CopyFile</TD>
 </TR>
 
 <TR VALIGN="top">
-<TD width=18%>åˆ é™¤æ–‡ä»¶</TD>
-<TD width=82%>File.Delete æˆ– FileSystemObject.DeleteFile</TD>
+<TD width=18%>É¾³ıÎÄ¼ş</TD>
+<TD width=82%>File.Delete »ò FileSystemObject.DeleteFile</TD>
 </TR>
 </TABLE><BR>
 
-<P>ä¸‹é¢çš„ VBScript ç¤ºä¾‹ï¼Œåœ¨é©±åŠ¨å™¨ C çš„æ ¹ç›®å½•ä¸­åˆ›å»ºä¸€ä¸ªæ–‡æœ¬æ–‡ä»¶ï¼Œå‘å…¶ä¸­å†™ä¸€äº›ä¿¡æ¯ï¼Œç„¶åæŠŠå®ƒç§»åŠ¨åˆ° \tmp ç›®å½•ä¸­ï¼Œå¹¶åœ¨ \temp ä¸­åšä¸€ä¸ªå¤‡ä»½ï¼Œæœ€åæŠŠå®ƒä»¬ä»ä¸¤ä¸ªç›®å½•ä¸­åˆ æ‰ã€‚</P>
+<P>ÏÂÃæµÄ VBScript Ê¾Àı£¬ÔÚÇı¶¯Æ÷ C µÄ¸ùÄ¿Â¼ÖĞ´´½¨Ò»¸öÎÄ±¾ÎÄ¼ş£¬ÏòÆäÖĞĞ´Ò»Ğ©ĞÅÏ¢£¬È»ºó°ÑËüÒÆ¶¯µ½ \tmp Ä¿Â¼ÖĞ£¬²¢ÔÚ \temp ÖĞ×öÒ»¸ö±¸·İ£¬×îºó°ÑËüÃÇ´ÓÁ½¸öÄ¿Â¼ÖĞÉ¾µô¡£</P>
 
-<P>è¦è¿è¡Œä¸‹é¢çš„ç¤ºä¾‹ï¼Œéœ€è¦å…ˆåœ¨é©±åŠ¨å™¨ C çš„æ ¹ç›®å½•ä¸­åˆ›å»º \tmp å’Œ \temp ç›®å½•ï¼š</P>
+<P>ÒªÔËĞĞÏÂÃæµÄÊ¾Àı£¬ĞèÒªÏÈÔÚÇı¶¯Æ÷ C µÄ¸ùÄ¿Â¼ÖĞ´´½¨ \tmp ºÍ \temp Ä¿Â¼£º</P>
 
 <PRE><CODE>Sub ManipFiles
 </CODE>&nbsp;&nbsp;&nbsp;<CODE>Dim fso, f1, f2, s</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;Set fso = CreateObject("Scripting.FileSystemObject")</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;Set f1 = fso.CreateTextFile("c:\testfile.txt", True)</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;Response.Write "Writing file &lt;br&gt;"</CODE>
-<CODE>&nbsp;&nbsp;&nbsp;'</CODE>å†™ä¸€è¡Œã€‚
+<CODE>&nbsp;&nbsp;&nbsp;'</CODE>Ğ´Ò»ĞĞ¡£
 &nbsp;&nbsp;&nbsp;<CODE>f1.Write ("This is a test.")</CODE>
-&nbsp;&nbsp;&nbsp;<CODE>'</CODE>å…³é—­æ–‡ä»¶ã€‚
+&nbsp;&nbsp;&nbsp;<CODE>'</CODE>¹Ø±ÕÎÄ¼ş¡£
 &nbsp;&nbsp;&nbsp;<CODE>f1.Close</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;Response.Write "Moving file to c:\tmp &lt;br&gt;"</CODE>
-&nbsp;&nbsp;&nbsp;<CODE>'</CODE>è·å–<CODE> C </CODE>çš„æ ¹ç›®å½•<CODE>(C:\)</CODE>ä¸­çš„æ–‡ä»¶çš„å¥æŸ„ã€‚
+&nbsp;&nbsp;&nbsp;<CODE>'</CODE>»ñÈ¡<CODE> C </CODE>µÄ¸ùÄ¿Â¼<CODE>(C:\)</CODE>ÖĞµÄÎÄ¼şµÄ¾ä±ú¡£
 &nbsp;&nbsp;&nbsp;<CODE>Set f2 = fso.GetFile("c:\testfile.txt")</CODE>
-&nbsp;&nbsp;&nbsp;<CODE>'</CODE>æŠŠæ–‡ä»¶ç§»åŠ¨åˆ°<CODE> \tmp </CODE>ç›®å½•ã€‚
+&nbsp;&nbsp;&nbsp;<CODE>'</CODE>°ÑÎÄ¼şÒÆ¶¯µ½<CODE> \tmp </CODE>Ä¿Â¼¡£
 &nbsp;&nbsp;&nbsp;<CODE>f2.Move ("c:\tmp\testfile.txt")</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;Response.Write "Copying file to c:\temp &lt;br&gt;"</CODE>
-<CODE>&nbsp;&nbsp;&nbsp;'</CODE>æŠŠæ–‡ä»¶å¤åˆ¶åˆ°<CODE> \temp </CODE>ç›®å½•ã€‚
+<CODE>&nbsp;&nbsp;&nbsp;'</CODE>°ÑÎÄ¼ş¸´ÖÆµ½<CODE> \temp </CODE>Ä¿Â¼¡£
 &nbsp;&nbsp;&nbsp;<CODE>f2.Copy ("c:\temp\testfile.txt")</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;Response.Write "Deleting files &lt;br&gt;"</CODE>
-&nbsp;&nbsp;&nbsp;<CODE>'</CODE>è·å¾—æ–‡ä»¶å½“å‰ä½ç½®çš„å¥æŸ„ã€‚
+&nbsp;&nbsp;&nbsp;<CODE>'</CODE>»ñµÃÎÄ¼şµ±Ç°Î»ÖÃµÄ¾ä±ú¡£
 &nbsp;&nbsp;&nbsp;<CODE>Set f2 = fso.GetFile("c:\tmp\testfile.txt")</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;Set f3 = fso.GetFile("c:\temp\testfile.txt")</CODE>
-&nbsp;&nbsp;&nbsp;<CODE>'</CODE>åˆ é™¤æ–‡ä»¶ã€‚
+&nbsp;&nbsp;&nbsp;<CODE>'</CODE>É¾³ıÎÄ¼ş¡£
 &nbsp;&nbsp;&nbsp;<CODE>f2.Delete</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;f3.Delete</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;Response.Write "All done!"</CODE>
 <CODE>End Sub</CODE></PRE>
 
-<P>ä¸‹é¢çš„ä»£ç ç¤ºèŒƒäº†åœ¨ JScript ä¸­åšåŒæ ·çš„äº‹ï¼š</P>
+<P>ÏÂÃæµÄ´úÂëÊ¾·¶ÁËÔÚ JScript ÖĞ×öÍ¬ÑùµÄÊÂ£º</P>
 
 <PRE><CODE>function ManipFiles()
 {
@@ -287,30 +287,30 @@ ts = f1.OpenAsTextStream(ForWriting, true);</CODE></PRE>
 <CODE>&nbsp;&nbsp;&nbsp;fso = new ActiveXObject("Scripting.FileSystemObject");</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;f1 = fso.CreateTextFile("c:\\testfile.txt", true);</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;Response.Write("Writing file &lt;br&gt;");</CODE>
-<CODE>&nbsp;&nbsp;&nbsp;// </CODE>å†™ä¸€è¡Œã€‚
+<CODE>&nbsp;&nbsp;&nbsp;// </CODE>Ğ´Ò»ĞĞ¡£
 &nbsp;&nbsp;&nbsp;<CODE>f1.Write("This is a test.");</CODE>
-&nbsp;&nbsp;&nbsp;<CODE>// </CODE>å…³é—­æ–‡ä»¶ã€‚
+&nbsp;&nbsp;&nbsp;<CODE>// </CODE>¹Ø±ÕÎÄ¼ş¡£
 &nbsp;&nbsp;&nbsp;<CODE>f1.Close();</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;Response.Write("Moving file to c:\\tmp &lt;br&gt;");</CODE>
-&nbsp;&nbsp;&nbsp;<CODE>// </CODE>è·å–<CODE> C </CODE>çš„æ ¹ç›®å½•<CODE>(C:\)</CODE>ä¸­çš„æ–‡ä»¶çš„å¥æŸ„ã€‚
+&nbsp;&nbsp;&nbsp;<CODE>// </CODE>»ñÈ¡<CODE> C </CODE>µÄ¸ùÄ¿Â¼<CODE>(C:\)</CODE>ÖĞµÄÎÄ¼şµÄ¾ä±ú¡£
 &nbsp;&nbsp;&nbsp;<CODE>f2 = fso.GetFile("c:\\testfile.txt");</CODE>
-&nbsp;&nbsp;&nbsp;<CODE>// </CODE>æŠŠæ–‡ä»¶ç§»åŠ¨åˆ°<CODE> \tmp </CODE>ç›®å½•ã€‚
+&nbsp;&nbsp;&nbsp;<CODE>// </CODE>°ÑÎÄ¼şÒÆ¶¯µ½<CODE> \tmp </CODE>Ä¿Â¼¡£
 &nbsp;&nbsp;&nbsp;<CODE>f2.Move ("c:\\tmp\\testfile.txt");</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;Response.Write("Copying file to c:\\temp &lt;br&gt;");</CODE>
-<CODE>&nbsp;&nbsp;&nbsp;// </CODE>æŠŠæ–‡ä»¶å¤åˆ¶åˆ°<CODE> \temp </CODE>ç›®å½•ã€‚
+<CODE>&nbsp;&nbsp;&nbsp;// </CODE>°ÑÎÄ¼ş¸´ÖÆµ½<CODE> \temp </CODE>Ä¿Â¼¡£
 &nbsp;&nbsp;&nbsp;<CODE>f2.Copy ("c:\\temp\\testfile.txt");</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;Response.Write("Deleting files &lt;br&gt;");</CODE>
-&nbsp;&nbsp;&nbsp;<CODE>// </CODE>è·å¾—æ–‡ä»¶å½“å‰ä½ç½®çš„å¥æŸ„ã€‚
+&nbsp;&nbsp;&nbsp;<CODE>// </CODE>»ñµÃÎÄ¼şµ±Ç°Î»ÖÃµÄ¾ä±ú¡£
 &nbsp;&nbsp;&nbsp;<CODE>f2 = fso.GetFile("c:\\tmp\\testfile.txt");</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;f3 = fso.GetFile("c:\\temp\\testfile.txt");</CODE>
-&nbsp;&nbsp;&nbsp;<CODE>// </CODE>åˆ é™¤æ–‡ä»¶ã€‚
+&nbsp;&nbsp;&nbsp;<CODE>// </CODE>É¾³ıÎÄ¼ş¡£
 &nbsp;&nbsp;&nbsp;<CODE>f2.Delete();</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;f3.Delete();</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;Response.Write("All done!");</CODE>
 }</PRE>
 <!--Copyright_START-->
 <DIV CLASS="footer">
-<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation ç‰ˆæƒæ‰€æœ‰ã€‚ä¿ç•™æ‰€æœ‰æƒåˆ©ã€‚ä½¿ç”¨è§„å®šã€‚</a><br>
+<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation °æÈ¨ËùÓĞ¡£±£ÁôËùÓĞÈ¨Àû¡£Ê¹ÓÃ¹æ¶¨¡£</a><br>
 </DIV> <!--Copyright_END-->
 
 </BODY>

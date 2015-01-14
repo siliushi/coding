@@ -2,7 +2,7 @@
 <HTML>
 <HEAD>
 <META HTTP-EQUIV="Content-Type" Content="text/html; charset=gb2312">
-<TITLE>Items æ–¹æ³•</TITLE>
+<TITLE>Items ·½·¨</TITLE>
 <!--CSS_START-->
 <style>@import url(../html-vss/msdnie4a.css);</style>
 <link disabled rel="stylesheet" href="../html-vss/msdn_ie3.css">
@@ -15,46 +15,46 @@
 <TABLE class="banner" width="100%" CELLSPACING=0>
 <TR>
 <TD class="bannerleft" nowrap>JScript&nbsp;</TD>
-<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">è¯­è¨€å‚è€ƒ</a></TD>
+<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">ÓïÑÔ²Î¿¼</a></TD>
 </TR>
 </TABLE>
 <HR>
 <!--End Head-->
 
-<H1><A NAME="jsmthitems"></A>Items æ–¹æ³•</H1>
+<H1><A NAME="jsmthitems"></A>Items ·½·¨</H1>
 
-<P>è¿”å›ä¸€ä¸ªæ•°ç»„ï¼Œå…¶ä¸­åŒ…å«äº†ä¸€ä¸ª <B>Dictionary</B> å¯¹è±¡ä¸­çš„æ‰€æœ‰æ¡ç›®ã€‚</P>
+<P>·µ»ØÒ»¸öÊı×é£¬ÆäÖĞ°üº¬ÁËÒ»¸ö <B>Dictionary</B> ¶ÔÏóÖĞµÄËùÓĞÌõÄ¿¡£</P>
 
 <P><CODE><I>object</I>.Items( ) </CODE></P>
 
-<P>å…¶ä¸­ <I>object</I> æ€»æ˜¯ä¸€ä¸ª <B>Dictionary</B> å¯¹è±¡çš„åç§°ã€‚</P>
+<P>ÆäÖĞ <I>object</I> ×ÜÊÇÒ»¸ö <B>Dictionary</B> ¶ÔÏóµÄÃû³Æ¡£</P>
 
-<H4>è¯´æ˜</H4>
+<H4>ËµÃ÷</H4>
 
-<P>ä¸‹é¢è¿™æ®µä»£ç è¯´æ˜äº† <B>Items</B> æ–¹æ³•çš„ç”¨æ³•ï¼š </P>
+<P>ÏÂÃæÕâ¶Î´úÂëËµÃ÷ÁË <B>Items</B> ·½·¨µÄÓÃ·¨£º </P>
 
 <PRE><CODE>function ItemsDemo()
 {
-</CODE>&nbsp;&nbsp;&nbsp;<CODE>var a, d, i, s;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//</CODE>åˆ›å»ºä¸€äº›å˜é‡ã€‚
+</CODE>&nbsp;&nbsp;&nbsp;<CODE>var a, d, i, s;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//</CODE>´´½¨Ò»Ğ©±äÁ¿¡£
 &nbsp;&nbsp;&nbsp;<CODE>d = new ActiveXObject("Scripting.Dictionary");  </CODE>
-<CODE>&nbsp;&nbsp;&nbsp;d.Add ("a", "Athens");&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//</CODE>æ·»åŠ ä¸€äº›ä¸»é”®å’Œæ¡ç›®ã€‚
+<CODE>&nbsp;&nbsp;&nbsp;d.Add ("a", "Athens");&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//</CODE>Ìí¼ÓÒ»Ğ©Ö÷¼üºÍÌõÄ¿¡£
 &nbsp;&nbsp;&nbsp;<CODE>d.Add ("b", "Belgrade");</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;d.Add ("c", "Cairo");</CODE>
-<CODE>&nbsp;&nbsp;&nbsp;a = (new VBArray(<span class=cfe><B>d.Items()</B></span>)).toArray();&nbsp;&nbsp;&nbsp;//</CODE>è·å–æ¡ç›®ã€‚
+<CODE>&nbsp;&nbsp;&nbsp;a = (new VBArray(<span class=cfe><B>d.Items()</B></span>)).toArray();&nbsp;&nbsp;&nbsp;//</CODE>»ñÈ¡ÌõÄ¿¡£
 &nbsp;&nbsp;&nbsp;<CODE>s = "";</CODE>
-<CODE>&nbsp;&nbsp;&nbsp;for (i in a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//</CODE>éå†è¯¥<CODE> dictionary</CODE>ã€‚
+<CODE>&nbsp;&nbsp;&nbsp;for (i in a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//</CODE>±éÀú¸Ã<CODE> dictionary</CODE>¡£
 &nbsp;&nbsp;&nbsp;{
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>s += a[i] + "&lt;br&gt;";</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;}</CODE>
-<CODE>&nbsp;&nbsp;&nbsp;return(s);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// </CODE>è¿”å›ç»“æœã€‚
+<CODE>&nbsp;&nbsp;&nbsp;return(s);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// </CODE>·µ»Ø½á¹û¡£
 }</PRE>
 
-<H4>è¯·å‚é˜…</H4>
+<H4>Çë²ÎÔÄ</H4>
 
-<P><A HREF="jsmthadddictionary.htm">Add æ–¹æ³• (Dictionary)</A> | <A HREF="jsmthexists.htm">Exists æ–¹æ³•</A> | <A HREF="jsmthkeys.htm">Keys æ–¹æ³•</A> | <A HREF="jsmthremove.htm">Remove æ–¹æ³•</A> | <A HREF="jsmthremoveall.htm">RemoveAll æ–¹æ³•</A>åº”ç”¨äºï¼š <A HREF="jsobjdictionary.htm">Dictionary å¯¹è±¡</A></P>
+<P><A HREF="jsmthadddictionary.htm">Add ·½·¨ (Dictionary)</A> | <A HREF="jsmthexists.htm">Exists ·½·¨</A> | <A HREF="jsmthkeys.htm">Keys ·½·¨</A> | <A HREF="jsmthremove.htm">Remove ·½·¨</A> | <A HREF="jsmthremoveall.htm">RemoveAll ·½·¨</A>Ó¦ÓÃÓÚ£º <A HREF="jsobjdictionary.htm">Dictionary ¶ÔÏó</A></P>
 <!--Copyright_START-->
 <DIV CLASS="footer">
-<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation ç‰ˆæƒæ‰€æœ‰ã€‚ä¿ç•™æ‰€æœ‰æƒåˆ©ã€‚ä½¿ç”¨è§„å®šã€‚</a><br>
+<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation °æÈ¨ËùÓĞ¡£±£ÁôËùÓĞÈ¨Àû¡£Ê¹ÓÃ¹æ¶¨¡£</a><br>
 </DIV> <!--Copyright_END-->
 
 </BODY>

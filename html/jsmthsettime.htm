@@ -2,7 +2,7 @@
 <HTML>
 <HEAD>
 <META HTTP-EQUIV="Content-Type" Content="text/html; charset=gb2312">
-<TITLE>setTime æ–¹æ³•</TITLE>
+<TITLE>setTime ·½·¨</TITLE>
 <!--CSS_START-->
 <style>@import url(../html-vss/msdnie4a.css);</style>
 <link disabled rel="stylesheet" href="../html-vss/msdn_ie3.css">
@@ -15,59 +15,59 @@
 <TABLE class="banner" width="100%" CELLSPACING=0>
 <TR>
 <TD class="bannerleft" nowrap>JScript&nbsp;</TD>
-<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">è¯­è¨€å‚è€ƒ</a></TD>
+<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">ÓïÑÔ²Î¿¼</a></TD>
 </TR>
 </TABLE>
 <HR>
 <!--End Head-->
 
-<H1><A NAME="jsmthsettime"></A>setTime æ–¹æ³•</H1>
+<H1><A NAME="jsmthsettime"></A>setTime ·½·¨</H1>
 
-<P>è®¾ç½® <B>Date</B> å¯¹è±¡çš„æ—¥æœŸå’Œæ—¶é—´å€¼ã€‚</P>
+<P>ÉèÖÃ <B>Date</B> ¶ÔÏóµÄÈÕÆÚºÍÊ±¼äÖµ¡£</P>
 
 <P><CODE><I>dateObj</I>.<B>setTime(</B><I>milliseconds</I><B>)</B></CODE></P>
 
-<H4>å‚æ•°</H4>
+<H4>²ÎÊı</H4>
 
 <P class=dt><I>dateObj</I></P>
 
-<P class=indent>å¿…é€‰é¡¹ã€‚ä»»æ„ <B>Date</B> å¯¹è±¡ã€‚</P>
+<P class=indent>±ØÑ¡Ïî¡£ÈÎÒâ <B>Date</B> ¶ÔÏó¡£</P>
 
 <P class=dt><I>milliseconds</I></P>
 
-<P class=indent>å¿…é€‰é¡¹ã€‚æ˜¯ä¸€ä¸ªæ•´æ•°å€¼ï¼Œå®ƒä»£è¡¨ä»æ ¼æ—å¨æ²»æ ‡å‡†æ—¶é—´ï¼ˆGMTï¼‰çš„ 1970 å¹´ 1 æœˆ 1 æ—¥åˆå¤œå¼€å§‹æ‰€ç»è¿‡çš„æ¯«ç§’æ•°ã€‚ </P>
+<P class=indent>±ØÑ¡Ïî¡£ÊÇÒ»¸öÕûÊıÖµ£¬Ëü´ú±í´Ó¸ñÁÖÍşÖÎ±ê×¼Ê±¼ä£¨GMT£©µÄ 1970 Äê 1 ÔÂ 1 ÈÕÎçÒ¹¿ªÊ¼Ëù¾­¹ıµÄºÁÃëÊı¡£ </P>
 
-<H4>è¯´æ˜</H4>
+<H4>ËµÃ÷</H4>
 
-<P>å¦‚æœ <I>milliseconds</I> æ˜¯ä¸€ä¸ªè´Ÿå€¼ï¼Œé‚£å®ƒå°±è¡¨ç¤º 1970 å¹´ä¹‹å‰çš„æ—¥æœŸã€‚å¯ç”¨çš„æ—¥æœŸèŒƒå›´å¤§çº¦æ˜¯ 1970 å¹´ 1 æœˆ 1 æ—¥åˆå¤œçš„å‰åå„ 285,616 å¹´ã€‚ </P>
+<P>Èç¹û <I>milliseconds</I> ÊÇÒ»¸ö¸ºÖµ£¬ÄÇËü¾Í±íÊ¾ 1970 ÄêÖ®Ç°µÄÈÕÆÚ¡£¿ÉÓÃµÄÈÕÆÚ·¶Î§´óÔ¼ÊÇ 1970 Äê 1 ÔÂ 1 ÈÕÎçÒ¹µÄÇ°ºó¸÷ 285,616 Äê¡£ </P>
 
-<P>ä½¿ç”¨ <B>setTime</B> æ–¹æ³•æ¥è®¾ç½®æ—¥æœŸå’Œæ—¶é—´ä¸æ—¶åŒºæ— å…³ã€‚</P>
+<P>Ê¹ÓÃ <B>setTime</B> ·½·¨À´ÉèÖÃÈÕÆÚºÍÊ±¼äÓëÊ±ÇøÎŞ¹Ø¡£</P>
 
-<H4>ç¤ºä¾‹</H4>
+<H4>Ê¾Àı</H4>
 
-<P>ä¸‹é¢è¿™ä¸ªä¾‹å­è¯´æ˜äº† <B>setTime</B> æ–¹æ³•çš„ç”¨æ³•ã€‚ </P>
+<P>ÏÂÃæÕâ¸öÀı×ÓËµÃ÷ÁË <B>setTime</B> ·½·¨µÄÓÃ·¨¡£ </P>
 
 <PRE><CODE>function SetTimeTest(newtime){
-&nbsp;&nbsp;&nbsp;var d, s;                  // </CODE>å£°æ˜å˜é‡ã€‚
-&nbsp;&nbsp;&nbsp;<CODE>d = new Date();            // </CODE>åˆ›å»º<CODE> Date </CODE>å¯¹è±¡ã€‚
-&nbsp;&nbsp;&nbsp;<CODE><span class=cfe><B>d.setTime(</B></span>newtime<span class=cfe><B>)</B></span>;        // </CODE>è®¾ç½®æ—¶é—´ã€‚
+&nbsp;&nbsp;&nbsp;var d, s;                  // </CODE>ÉùÃ÷±äÁ¿¡£
+&nbsp;&nbsp;&nbsp;<CODE>d = new Date();            // </CODE>´´½¨<CODE> Date </CODE>¶ÔÏó¡£
+&nbsp;&nbsp;&nbsp;<CODE><span class=cfe><B>d.setTime(</B></span>newtime<span class=cfe><B>)</B></span>;        // </CODE>ÉèÖÃÊ±¼ä¡£
 &nbsp;&nbsp;&nbsp;<CODE>s = "Current setting is ";</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;s += d.toUTCString();</CODE>
-&nbsp;&nbsp;&nbsp;<CODE>return(s);                 // </CODE>è¿”å›æ–°çš„è®¾ç½®ã€‚
+&nbsp;&nbsp;&nbsp;<CODE>return(s);                 // </CODE>·µ»ØĞÂµÄÉèÖÃ¡£
 }</PRE>
 
-<H4>è¦æ±‚</H4>
+<H4>ÒªÇó</H4>
 
-<P><A HREF="jsoriversioninformation.htm">ç‰ˆæœ¬ 1</A></P>
+<P><A HREF="jsoriversioninformation.htm">°æ±¾ 1</A></P>
 
-<H4>è¯·å‚é˜…</H4>
+<H4>Çë²ÎÔÄ</H4>
 
-<P><A HREF="jsobjdate.htm#jsobjdatemeth">Date å¯¹è±¡çš„æ–¹æ³•</A> | <A HREF="jsmthgettime.htm">getTime æ–¹æ³•</A></P>
+<P><A HREF="jsobjdate.htm#jsobjdatemeth">Date ¶ÔÏóµÄ·½·¨</A> | <A HREF="jsmthgettime.htm">getTime ·½·¨</A></P>
 
-<P>åº”ç”¨äºï¼š <A HREF="jsobjdate.htm">Date å¯¹è±¡</A></P>
+<P>Ó¦ÓÃÓÚ£º <A HREF="jsobjdate.htm">Date ¶ÔÏó</A></P>
 <!--Copyright_START-->
 <DIV CLASS="footer">
-<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation ç‰ˆæƒæ‰€æœ‰ã€‚ä¿ç•™æ‰€æœ‰æƒåˆ©ã€‚ä½¿ç”¨è§„å®šã€‚</a><br>
+<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation °æÈ¨ËùÓĞ¡£±£ÁôËùÓĞÈ¨Àû¡£Ê¹ÓÃ¹æ¶¨¡£</a><br>
 </DIV> <!--Copyright_END-->
 
 </BODY>

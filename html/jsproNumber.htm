@@ -2,7 +2,7 @@
 <HTML>
 <HEAD>
 <META HTTP-EQUIV="Content-Type" Content="text/html; charset=gb2312">
-<TITLE>number å±æ€§</TITLE>
+<TITLE>number ÊôĞÔ</TITLE>
 <!--CSS_START-->
 <style>@import url(../html-vss/msdnie4a.css);</style>
 <link disabled rel="stylesheet" href="../html-vss/msdn_ie3.css">
@@ -15,55 +15,55 @@
 <TABLE class="banner" width="100%" CELLSPACING=0>
 <TR>
 <TD class="bannerleft" nowrap>JScript&nbsp;</TD>
-<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">è¯­è¨€å‚è€ƒ</a></TD>
+<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">ÓïÑÔ²Î¿¼</a></TD>
 </TR>
 </TABLE>
 <HR>
 <!--End Head-->
 
-<H1><A NAME="jspronumber"></A>number å±æ€§</H1>
+<H1><A NAME="jspronumber"></A>number ÊôĞÔ</H1>
 
-<P>è¿”å›æˆ–è®¾ç½®ä¸ç‰¹å®šé”™è¯¯ç›¸è”ç³»çš„æ•°å­—å€¼ã€‚<B>Error</B> å¯¹è±¡çš„é»˜è®¤æ˜¯ <B>number</B>ã€‚</P>
+<P>·µ»Ø»òÉèÖÃÓëÌØ¶¨´íÎóÏàÁªÏµµÄÊı×ÖÖµ¡£<B>Error</B> ¶ÔÏóµÄÄ¬ÈÏÊÇ <B>number</B>¡£</P>
 
 <P><CODE><I>object</I><B>.number</B> [<B>= </B><I>errorNumber</I>]</CODE></P>
 
-<H4>å‚æ•°</H4>
+<H4>²ÎÊı</H4>
 
 <P class=dt>object</P>
 
-<P class=indent>ä»»æ„ <B>Error</B> å¯¹è±¡çš„å®ä¾‹ã€‚</P>
+<P class=indent>ÈÎÒâ <B>Error</B> ¶ÔÏóµÄÊµÀı¡£</P>
 
 <P class=dt>errorNumber</P>
 
-<P class=indent>è¡¨ç¤ºä¸€ä¸ªé”™è¯¯çš„æ•´æ•°ã€‚</P>
+<P class=indent>±íÊ¾Ò»¸ö´íÎóµÄÕûÊı¡£</P>
 
-<H4>è¯´æ˜</H4>
+<H4>ËµÃ÷</H4>
 
-<P>é”™è¯¯å·æ˜¯ä¸€ä¸ª 32 ä½çš„å€¼ã€‚é«˜ 16 ä½å­—æ˜¯è®¾æ–½ä»£ç ï¼Œè€Œä½å­—æ‰æ˜¯çœŸæ­£çš„é”™è¯¯ä»£ç ã€‚</P>
+<P>´íÎóºÅÊÇÒ»¸ö 32 Î»µÄÖµ¡£¸ß 16 Î»×ÖÊÇÉèÊ©´úÂë£¬¶øµÍ×Ö²ÅÊÇÕæÕıµÄ´íÎó´úÂë¡£</P>
 
-<P>ä¸‹é¢çš„ä¾‹å­ä¸¾ä¾‹è¯´æ˜äº† <B>number</B> å±æ€§çš„ç”¨æ³•ï¼š</P>
+<P>ÏÂÃæµÄÀı×Ó¾ÙÀıËµÃ÷ÁË <B>number</B> ÊôĞÔµÄÓÃ·¨£º</P>
 
 <PRE><CODE>try
-&nbsp;&nbsp;&nbsp;x = y&nbsp;&nbsp;&nbsp;// </CODE>äº§ç”Ÿé”™è¯¯ã€‚
-<CODE>catch(var e){&nbsp;&nbsp;&nbsp;// </CODE>åˆ›å»ºå…¨å±€å˜é‡<CODE> e</CODE>ã€‚
-&nbsp;&nbsp;&nbsp;<CODE>document.write(e)&nbsp;&nbsp;&nbsp;// </CODE>æ‰“å°<CODE> "[object Error]".</CODE>
-<CODE>&nbsp;&nbsp;&nbsp;document.write(<span class=cfe><B>e.number&gt;&gt;16 &amp; 0x1FFF</B></span>)&nbsp;&nbsp;&nbsp;// </CODE>æ‰“å°è®¾æ–½ä»£ç <CODE> 10</CODE>ã€‚
-&nbsp;&nbsp;&nbsp;<CODE>document.write(<span class=cfe><B>e.number &amp; 0xFFFF</B></span>)&nbsp;&nbsp;&nbsp;// </CODE>æ‰“å°é”™è¯¯ä»£ç <CODE> 5009</CODE>ã€‚
-&nbsp;&nbsp;&nbsp;<CODE>document.write(e.description)&nbsp;&nbsp;&nbsp;// </CODE>æ‰“å°<CODE> "'y' is undefined".</CODE>
+&nbsp;&nbsp;&nbsp;x = y&nbsp;&nbsp;&nbsp;// </CODE>²úÉú´íÎó¡£
+<CODE>catch(var e){&nbsp;&nbsp;&nbsp;// </CODE>´´½¨È«¾Ö±äÁ¿<CODE> e</CODE>¡£
+&nbsp;&nbsp;&nbsp;<CODE>document.write(e)&nbsp;&nbsp;&nbsp;// </CODE>´òÓ¡<CODE> "[object Error]".</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;document.write(<span class=cfe><B>e.number&gt;&gt;16 &amp; 0x1FFF</B></span>)&nbsp;&nbsp;&nbsp;// </CODE>´òÓ¡ÉèÊ©´úÂë<CODE> 10</CODE>¡£
+&nbsp;&nbsp;&nbsp;<CODE>document.write(<span class=cfe><B>e.number &amp; 0xFFFF</B></span>)&nbsp;&nbsp;&nbsp;// </CODE>´òÓ¡´íÎó´úÂë<CODE> 5009</CODE>¡£
+&nbsp;&nbsp;&nbsp;<CODE>document.write(e.description)&nbsp;&nbsp;&nbsp;// </CODE>´òÓ¡<CODE> "'y' is undefined".</CODE>
 <CODE>}</CODE></PRE>
 
-<H4>è¦æ±‚</H4>
+<H4>ÒªÇó</H4>
 
-<P><A HREF="jsoriversioninformation.htm">ç‰ˆæœ¬ 5</A></P>
+<P><A HREF="jsoriversioninformation.htm">°æ±¾ 5</A></P>
 
-<H4>è¯·å‚é˜…</H4>
+<H4>Çë²ÎÔÄ</H4>
 
-<P><A HREF="jsprodescription.htm">description å±æ€§</A> | <A HREF="jspromessage.htm">message å±æ€§</A> | <A HREF="jsproname.htm">name å±æ€§</A></P>
+<P><A HREF="jsprodescription.htm">description ÊôĞÔ</A> | <A HREF="jspromessage.htm">message ÊôĞÔ</A> | <A HREF="jsproname.htm">name ÊôĞÔ</A></P>
 
-<P>åº”ç”¨äºï¼š <A HREF="jsobjerror.htm">Error å¯¹è±¡</A></P>
+<P>Ó¦ÓÃÓÚ£º <A HREF="jsobjerror.htm">Error ¶ÔÏó</A></P>
 <!--Copyright_START-->
 <DIV CLASS="footer">
-<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation ç‰ˆæƒæ‰€æœ‰ã€‚ä¿ç•™æ‰€æœ‰æƒåˆ©ã€‚ä½¿ç”¨è§„å®šã€‚</a><br>
+<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation °æÈ¨ËùÓĞ¡£±£ÁôËùÓĞÈ¨Àû¡£Ê¹ÓÃ¹æ¶¨¡£</a><br>
 </DIV> <!--Copyright_END-->
 
 </BODY>

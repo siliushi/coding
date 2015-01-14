@@ -2,7 +2,7 @@
 <HTML>
 <HEAD>
 <META HTTP-EQUIV="Content-Type" Content="text/html; charset=gb2312">
-<TITLE>Enumerator å¯¹è±¡</TITLE>
+<TITLE>Enumerator ¶ÔÏó</TITLE>
 <!--CSS_START-->
 <style>@import url(../html-vss/msdnie4a.css);</style>
 <link disabled rel="stylesheet" href="../html-vss/msdn_ie3.css">
@@ -15,77 +15,77 @@
 <TABLE class="banner" width="100%" CELLSPACING=0>
 <TR>
 <TD class="bannerleft" nowrap>JScript&nbsp;</TD>
-<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">è¯­è¨€å‚è€ƒ</a></TD>
+<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">ÓïÑÔ²Î¿¼</a></TD>
 </TR>
 </TABLE>
 <HR>
 <!--End Head-->
 
-<H1><A NAME="jsobjenumerator"></A>Enumerator å¯¹è±¡</H1>
+<H1><A NAME="jsobjenumerator"></A>Enumerator ¶ÔÏó</H1>
 
-<P>å¯ç”¨æšä¸¾é›†åˆä¸­çš„é¡¹ç›®ã€‚</P>
+<P>ÆôÓÃÃ¶¾Ù¼¯ºÏÖĞµÄÏîÄ¿¡£</P>
 
 <P><CODE><I>enumObj</I><B> = new</B> <B>Enumerator(</B>[<I>collection</I>]<B>)</B> </CODE></P>
 
-<H4>å‚æ•°</H4>
+<H4>²ÎÊı</H4>
 
 <P class=dt><I>enumObj</I></P>
 
-<P class=indent>å¿…é€‰é¡¹ã€‚è¦èµ‹å€¼ä¸º <B>Enumerator</B> å¯¹è±¡çš„å˜é‡åã€‚</P>
+<P class=indent>±ØÑ¡Ïî¡£Òª¸³ÖµÎª <B>Enumerator</B> ¶ÔÏóµÄ±äÁ¿Ãû¡£</P>
 
 <P class=dt><I>collection</I></P>
 
-<P class=indent>å¯é€‰é¡¹ã€‚ä»»æ„ <B>Collection</B> å¯¹è±¡ã€‚</P>
+<P class=indent>¿ÉÑ¡Ïî¡£ÈÎÒâ <B>Collection</B> ¶ÔÏó¡£</P>
 
-<H4>è¯´æ˜</H4>
+<H4>ËµÃ÷</H4>
 
-<P>é›†åˆä¸æ•°ç»„çš„ä¸åŒç‚¹åœ¨äºé›†åˆçš„æˆå‘˜ä¸èƒ½ç›´æ¥è®¿é—®ã€‚ä¸è±¡å¤„ç†æ•°ç»„æ—¶ä½¿ç”¨ä¸‹æ ‡ï¼Œè¿™æ—¶åªèƒ½å°†å½“å‰é¡¹ç›®æŒ‡é’ˆç§»åŠ¨åˆ°é›†åˆçš„ä¸‹ä¸€æˆ–å‰ä¸€å…ƒç´ ã€‚ </P>
+<P>¼¯ºÏÓëÊı×éµÄ²»Í¬µãÔÚÓÚ¼¯ºÏµÄ³ÉÔ±²»ÄÜÖ±½Ó·ÃÎÊ¡£²»Ïó´¦ÀíÊı×éÊ±Ê¹ÓÃÏÂ±ê£¬ÕâÊ±Ö»ÄÜ½«µ±Ç°ÏîÄ¿Ö¸ÕëÒÆ¶¯µ½¼¯ºÏµÄÏÂÒ»»òÇ°Ò»ÔªËØ¡£ </P>
 
-<P><B>Enumerator</B> å¯¹è±¡æä¾›äº†è®¿é—®é›†åˆçš„ä»»ä½•æˆå‘˜çš„æ–¹æ³•ï¼Œå…¶æ“ä½œä¸ VBScript ä¸­çš„ <B>For...Each</B> è¯­å¥ç›¸ä¼¼ã€‚</P>
+<P><B>Enumerator</B> ¶ÔÏóÌá¹©ÁË·ÃÎÊ¼¯ºÏµÄÈÎºÎ³ÉÔ±µÄ·½·¨£¬Æä²Ù×÷Óë VBScript ÖĞµÄ <B>For...Each</B> Óï¾äÏàËÆ¡£</P>
 
-<H4>ç¤ºä¾‹</H4>
+<H4>Ê¾Àı</H4>
 
-<P>ä¸‹é¢çš„ä»£ç æ˜¾ç¤ºäº† <B>Enumerator</B> å¯¹è±¡çš„ç”¨æ³•: </P>
+<P>ÏÂÃæµÄ´úÂëÏÔÊ¾ÁË <B>Enumerator</B> ¶ÔÏóµÄÓÃ·¨: </P>
 
 <PRE><CODE>function ShowDriveList(){
-&nbsp;&nbsp;&nbsp;var fso, s, n, e, x;                     // </CODE>å£°æ˜å˜é‡ã€‚
+&nbsp;&nbsp;&nbsp;var fso, s, n, e, x;                     // </CODE>ÉùÃ÷±äÁ¿¡£
 &nbsp;&nbsp;&nbsp;<CODE>fso = new ActiveXObject("Scripting.FileSystemObject");</CODE>
-<CODE>&nbsp;&nbsp;&nbsp;e = new <span class=cfe><B>Enumerator(</B></span>fso.Drives<span class=cfe><B>)</B></span>;          // </CODE>åœ¨é©±åŠ¨å™¨ä¸Šåˆ›å»º<CODE> Enumerator</CODE>ã€‚
+<CODE>&nbsp;&nbsp;&nbsp;e = new <span class=cfe><B>Enumerator(</B></span>fso.Drives<span class=cfe><B>)</B></span>;          // </CODE>ÔÚÇı¶¯Æ÷ÉÏ´´½¨<CODE> Enumerator</CODE>¡£
 &nbsp;&nbsp;&nbsp;<CODE>s = "";</CODE>
-<CODE>&nbsp;&nbsp;&nbsp;for (;!e.atEnd();e.moveNext())           // </CODE>æšä¸¾é©±åŠ¨å™¨é›†åˆã€‚
+<CODE>&nbsp;&nbsp;&nbsp;for (;!e.atEnd();e.moveNext())           // </CODE>Ã¶¾ÙÇı¶¯Æ÷¼¯ºÏ¡£
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>x = e.item();</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s = s + x.DriveLetter;</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s += " - ";</CODE>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>if (x.DriveType == 3)              // </CODE>æŸ¥çœ‹æ˜¯å¦ç½‘ç»œé©±åŠ¨ã€‚
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>n = x.ShareName;                // </CODE>è·å–å…±äº«åã€‚
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>else if (x.IsReady)                // </CODE>æŸ¥çœ‹é©±åŠ¨å™¨æ˜¯å¦å·²å°±ç»ªã€‚
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>n = x.VolumeName;               // </CODE>è·å–å·åã€‚
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>if (x.DriveType == 3)              // </CODE>²é¿´ÊÇ·ñÍøÂçÇı¶¯¡£
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>n = x.ShareName;                // </CODE>»ñÈ¡¹²ÏíÃû¡£
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>else if (x.IsReady)                // </CODE>²é¿´Çı¶¯Æ÷ÊÇ·ñÒÑ¾ÍĞ÷¡£
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>n = x.VolumeName;               // </CODE>»ñÈ¡¾íÃû¡£
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>else</CODE>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>n = "[</CODE>é©±åŠ¨å™¨æœªå°±ç»ª<CODE>]";</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>n = "[</CODE>Çı¶¯Æ÷Î´¾ÍĞ÷<CODE>]";</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s +=  n + "&lt;br&gt;";</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</CODE>
-&nbsp;&nbsp;&nbsp;<CODE>return(s);                               // </CODE>è¿”å›æ´»åŠ¨é©±åŠ¨å™¨åˆ—è¡¨ã€‚
+&nbsp;&nbsp;&nbsp;<CODE>return(s);                               // </CODE>·µ»Ø»î¶¯Çı¶¯Æ÷ÁĞ±í¡£
 }</PRE>
 
-<H4>å±æ€§</H4>
+<H4>ÊôĞÔ</H4>
 
-<P><B>Enumerator</B> å¯¹è±¡æ²¡æœ‰å±æ€§ã€‚</P>
+<P><B>Enumerator</B> ¶ÔÏóÃ»ÓĞÊôĞÔ¡£</P>
 
-<H4>æ–¹æ³•</H4>
+<H4>·½·¨</H4>
 
-<P><A HREF="jsmthatend.htm">atEnd æ–¹æ³•</A> | <A HREF="jsmthitem.htm">item æ–¹æ³•</A> | <A HREF="jsmthmovefirst.htm">moveFirst æ–¹æ³•</A> | <A HREF="jsmthmovenext.htm">moveNext æ–¹æ³•</A></P>
+<P><A HREF="jsmthatend.htm">atEnd ·½·¨</A> | <A HREF="jsmthitem.htm">item ·½·¨</A> | <A HREF="jsmthmovefirst.htm">moveFirst ·½·¨</A> | <A HREF="jsmthmovenext.htm">moveNext ·½·¨</A></P>
 
-<H4>è¦æ±‚</H4>
+<H4>ÒªÇó</H4>
 
-<P><A HREF="jsoriversioninformation.htm">ç‰ˆæœ¬ 3</A></P>
+<P><A HREF="jsoriversioninformation.htm">°æ±¾ 3</A></P>
 
-<H4>è¯·å‚é˜…</H4>
+<H4>Çë²ÎÔÄ</H4>
 
-<P><A HREF="jscoldrives.htm">Drives é›†åˆ</A> | <A HREF="jscolfiles.htm">Files é›†åˆ</A> | <A HREF="jscolfolders.htm">Folders é›†åˆ</A></P>
+<P><A HREF="jscoldrives.htm">Drives ¼¯ºÏ</A> | <A HREF="jscolfiles.htm">Files ¼¯ºÏ</A> | <A HREF="jscolfolders.htm">Folders ¼¯ºÏ</A></P>
 <!--Copyright_START-->
 <DIV CLASS="footer">
-<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation ç‰ˆæƒæ‰€æœ‰ã€‚ä¿ç•™æ‰€æœ‰æƒåˆ©ã€‚ä½¿ç”¨è§„å®šã€‚</a><br>
+<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation °æÈ¨ËùÓĞ¡£±£ÁôËùÓĞÈ¨Àû¡£Ê¹ÓÃ¹æ¶¨¡£</a><br>
 </DIV> <!--Copyright_END-->
 
 </BODY>

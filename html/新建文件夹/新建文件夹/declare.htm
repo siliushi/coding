@@ -1,0 +1,144 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=gb2312">
+<TITLE>JScript 的变量</TITLE>
+<!--CSS_START-->
+<style>@import url(../html-vss/msdnie4a.css);</style>
+<link disabled rel="stylesheet" href="../html-vss/msdn_ie3.css">
+<!--CSS_END-->
+</HEAD>
+<BODY>
+
+
+<!--Start Head-->
+<TABLE class="banner" width="100%" CELLSPACING=0>
+<TR>
+<TD class="bannerleft" nowrap>JScript&nbsp;</TD>
+<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">语言参考</a></TD>
+</TR>
+</TABLE>
+<HR>
+<!--End Head-->
+
+<H1><A NAME="declare"></A>JScript 的变量</H1>
+
+<P>任何编程语言中，用一块数据量化一个概念。</P>
+
+<PRE><CODE>How old am I?</CODE></PRE>
+
+<P>在 Jscript 中，变量是给概念的名称；它代表了给出瞬间的值。当使用该变量时，实际是用的它所代表的数据。给出示例：</P>
+
+<PRE><CODE>NumberOfDaysLeft = EndDate – TodaysDate;</CODE></PRE>
+
+<P>机械的理解是使用变量来存储、得到并操作脚本中出现的所有的不同值。创建有意义的变量名称；便于别人理解脚本。</P>
+
+<H2>变量声明</H2>
+
+<P>变量在脚本中的第一次出现是在声明中。变量在第一次用到时就设置于内存中，便于后来在脚本中引用。使用变量之前先进行声明。可以使用 <B>var</B> 关键字来进行变量声明。</P>
+
+<PRE><CODE>var count;  // </CODE>单个声明。
+<CODE>var count, amount, level;  // </CODE>用单个<CODE> var </CODE>关键字声明的多个声明。
+<CODE>var count = 0, amount = 100;  // </CODE>一条语句中的变量声明和初始化。</PRE>
+
+<P>如果在 <B>var </B>语句中没有初始化变量，变量自动取 JScript 值 <B>undefined</B>。尽管并不安全，但声明语句中忽略 <B>var</B> 关键字是合法的 JScript 语法。这时，JScript 解释器给予变量全局范围的可见度。当在过程级中声明一个变量时，它不能用于全局范围；这种情况下，变量声明<U>必须</U>用 <B>var</B> 关键字。</P>
+
+<H2>变量命名</H2>
+
+<P>变量名称是一个标识符。Jscript 中，用标识符来：
+
+<UL type=disc>
+	<LI>命名变量，</li>
+
+	<LI>命名函数，</li>
+
+	<LI>给出循环的标签。</li>
+</UL>
+
+<P>JScript 是一种区分大小写的语言。因此变量名称 <I>myCounter </I>和变量名称 <I>mYCounter</I> 是不一样的。变量的名称可以是任意长度。创建合法的变量名称应遵循如下规则：
+
+<UL type=disc>
+	<LI>第一个字符必须是一个 ASCII 字母（大小写均可），或一个下划线(_)。注意第一个字符不能是数字。</li>
+
+	<LI>后续的字符必须是字母、数字或下划线。</li>
+
+	<LI>变量名称一定不能是 <A HREF="jsreserved.htm">保留字</A>。 </li>
+</UL>
+
+<P>下面给出合法变量名称的一些示例： </P>
+
+<PRE><CODE>_pagecount 
+Part9 
+Number_Items </CODE></PRE>
+
+<P>下面给出无效变量名称的一些示例： </P>
+
+<PRE><CODE>99Balloons // </CODE>不能以数字开头。
+<CODE>Smith&amp;Wesson // </CODE>“与”符号（<CODE>&amp;</CODE>）字符用于变量名称是无效的。</PRE>
+
+<P>当要声明一个变量并进行初始化，但又不想指定任何特殊值，可以赋值为 JScript 值 <A HREF="glossary.htm#defnulljs">null</A>。下面给出示例。</P>
+
+<PRE><CODE>var bestAge = null;
+var muchTooOld = 3 * bestAge; // muchTooOld </CODE>的值为<CODE> 0</CODE>。</PRE>
+
+<P>如果声明了一个变量但没有对其赋值，该变量存在，其值为Jscript 值 <A HREF="glossary.htm#defundefined">undefined</A>。下面给出示例。</P>
+
+<PRE><CODE>var currentCount;
+var finalCount = 1 * currentCount; // finalCount </CODE>的值为<CODE> NaN</CODE>，因为<CODE> currentCount </CODE>为<CODE> undefined</CODE>。</PRE>
+
+<P>注意在 JScript 中 <B>null</B> 和 <B>undefined</B> 的主要区别是 <B>null</B> 的操作象数字 0，而 <B>undefined</B> 的操作象特殊值<B>NaN</B> （不是一个数字）。对 <B>null</B> 值和 <B>undefined</B> 值作比较总是相等的。</P>
+
+<P>可以不用 <B>var </B>关键字声明变量，并赋值。这就是隐式声明。</P>
+
+<PRE><CODE>noStringAtAll = ""; // </CODE>隐式声明变量<CODE> noStringAtAll</CODE>。</PRE>
+
+<P>不能使用未经过声明的变量。</P>
+
+<PRE><CODE>var volume = length * width; // </CODE>错误<CODE> </CODE>—<CODE> length </CODE>和<CODE> width </CODE>并不存在。</PRE>
+
+<H2>强制转换</H2>
+
+<P>表达式中操作项的数据类型相同时 JScript 解释器才能对其求值。如果表达式不经过强制转换就试图对两个不同的数据类型（如一个为数字，另一个为字符串）执行运算，将产生错误结果。但在 Jscript 中情况就不同了。</P>
+
+<P>JScript 是一种自由类型的语言。它的变量没有预定类型（相对于强类型语言，如 C++）。相反，JScript 变量的类型相应于他们包含的值的类型。这种操作的好处是能将值作为另一类型处理。</P>
+
+<P>在 Jscript 中，可以对不同类型的值执行运算，不必担心 JScript 解释器产生异常。相反，JScript 解释器自动将数据类型之一改变（强制转换）为另一种数据类型，然后执行运算。例如：</P>
+
+<TABLE border=1 cellspacing=0 cols=2 frame=box rules=all>
+
+<TR VALIGN="top">
+<TH width=43%>运算</TH>
+<TH width=57%>结果</TH>
+</TR>
+
+<TR VALIGN="top">
+<TD width=43%>数值与字符串相加</TD>
+<TD width=57%>将数值强制转换为字符串。</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=43%>布尔值与字符串相加</TD>
+<TD width=57%>将布尔值强制转换为字符串。</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=43%>数值与布尔值相加</TD>
+<TD width=57%>将布尔值强制转换为数值。</TD>
+</TR>
+</TABLE><BR>
+
+<P>考虑下面的示例。</P>
+
+<PRE><CODE>var x = 2000;      // </CODE>一个数字。
+<CODE>var y = "Hello";   // </CODE>一个字符串。
+<CODE>x = x + y;         // </CODE>将数字强制转换为字符串。
+<CODE>document.write(x); // </CODE>输出<CODE> 2000Hello</CODE>。</PRE>
+
+<P>要想显式地将字符串转换为整数，使用 <A HREF="jsmthparseint.htm">parseInt 方法</A>。要想显式地将字符串转换为数字，使用 <A HREF="jsmthparsefloat.htm">parseFloat 方法</A>。请注意，比较大小时字符串自动转换为相等的数字，但加法（连接）运算时保留为字符串。</P>
+<!--Copyright_START-->
+<DIV CLASS="footer">
+<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation 版权所有。保留所有权利。使用规定。</a><br>
+</DIV> <!--Copyright_END-->
+
+</BODY>
+</HTML>

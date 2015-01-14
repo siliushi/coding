@@ -2,7 +2,7 @@
 <HTML>
 <HEAD>
 <META HTTP-EQUIV="Content-Type" Content="text/html; charset=gb2312">
-<TITLE>throw è¯­å¥</TITLE>
+<TITLE>throw Óï¾ä</TITLE>
 <!--CSS_START-->
 <style>@import url(../html-vss/msdnie4a.css);</style>
 <link disabled rel="stylesheet" href="../html-vss/msdn_ie3.css">
@@ -15,56 +15,56 @@
 <TABLE class="banner" width="100%" CELLSPACING=0>
 <TR>
 <TD class="bannerleft" nowrap>JScript&nbsp;</TD>
-<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">è¯­è¨€å‚è€ƒ</a></TD>
+<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">ÓïÑÔ²Î¿¼</a></TD>
 </TR>
 </TABLE>
 <HR>
 <!--End Head-->
 
-<H1><A NAME="jsstmthrow"></A>throw è¯­å¥</H1>
+<H1><A NAME="jsstmthrow"></A>throw Óï¾ä</H1>
 
-<P>äº§ç”Ÿä¸€ä¸ªèƒ½è¢« <B>try...catch...finally</B> è¯­å¥å¤„ç†çš„é”™è¯¯æƒ…å½¢ã€‚ </P>
+<P>²úÉúÒ»¸öÄÜ±» <B>try...catch...finally</B> Óï¾ä´¦ÀíµÄ´íÎóÇéĞÎ¡£ </P>
 
 <P><CODE><B>throw</B> exception </CODE></P>
 
-<P>å¿…é€‰çš„<I> exception</I> å‚æ•°å¯ä»¥æ˜¯ä»»ä½•<A HREF="glossary.htm#defexpressionjs">è¡¨è¾¾å¼</A>ã€‚ </P>
+<P>±ØÑ¡µÄ<I> exception</I> ²ÎÊı¿ÉÒÔÊÇÈÎºÎ<A HREF="glossary.htm#defexpressionjs">±í´ïÊ½</A>¡£ </P>
 
-<H4>è¯´æ˜</H4>
+<H4>ËµÃ÷</H4>
 
-<P>ä¸‹é¢çš„ä¾‹å­æ ¹æ®ä¼ é€’è¿›æ¥çš„å€¼æ‰”å‡ºä¸€ä¸ªé”™è¯¯ï¼Œç„¶åä¸¾ä¾‹è¯´æ˜é‚£ä¸ªé”™è¯¯æ˜¯å¦‚ä½•åœ¨ <B>try</B>...<B>catch...finally</B>è¯­å¥çš„å±‚æ¬¡ä¸­è¢«å¤„ç†çš„ï¼š </P>
+<P>ÏÂÃæµÄÀı×Ó¸ù¾İ´«µİ½øÀ´µÄÖµÈÓ³öÒ»¸ö´íÎó£¬È»ºó¾ÙÀıËµÃ÷ÄÇ¸ö´íÎóÊÇÈçºÎÔÚ <B>try</B>...<B>catch...finally</B>Óï¾äµÄ²ã´ÎÖĞ±»´¦ÀíµÄ£º </P>
 
 <PRE><CODE>function TryCatchDemo(x){
 &nbsp;&nbsp;&nbsp;try {
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;try {
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (x == 0)&nbsp;&nbsp;&nbsp;// </CODE>ä¼°å‚æ•°çš„å€¼ã€‚
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE><span class=cfe><B>throw</B></span> "x equals zero";&nbsp;&nbsp;&nbsp;// </CODE>æ‰”å‡ºä¸€ä¸ªé”™è¯¯ã€‚
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (x == 0)&nbsp;&nbsp;&nbsp;// </CODE>¹À²ÎÊıµÄÖµ¡£
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE><span class=cfe><B>throw</B></span> "x equals zero";&nbsp;&nbsp;&nbsp;// </CODE>ÈÓ³öÒ»¸ö´íÎó¡£
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>else</CODE>
-<CODE>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class=cfe><B>throw</B></span> "x does not equal zero";&nbsp;&nbsp;&nbsp;// </CODE>æ‰”å‡ºä¸€ä¸ªä¸åŒçš„é”™è¯¯ã€‚
+<CODE>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class=cfe><B>throw</B></span> "x does not equal zero";&nbsp;&nbsp;&nbsp;// </CODE>ÈÓ³öÒ»¸ö²»Í¬µÄ´íÎó¡£
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>catch(e) {&nbsp;&nbsp;&nbsp;// </CODE>åœ¨è¿™å„¿å¤„ç†<CODE> "x = 0" </CODE>çš„é”™è¯¯ã€‚
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>if (e == "x equals zero")&nbsp;&nbsp;&nbsp;// </CODE>æ£€æŸ¥é”™è¯¯èƒ½å¦åœ¨è¿™å„¿è¢«å¤„ç†ã€‚
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>return(e + " handled locally.");&nbsp;&nbsp;&nbsp;// </CODE>è¿”å›å¯¹è±¡é”™è¯¯æ¶ˆæ¯ã€‚
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>else&nbsp;&nbsp;&nbsp;// </CODE>ä¸èƒ½åœ¨è¿™å„¿å¤„ç†è¿™ä¸ªé”™è¯¯ã€‚
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE><span class=cfe><B>throw</B></span> e;&nbsp;&nbsp;&nbsp;// </CODE>é‡æ–°æ‰”å‡ºè¯¥é”™è¯¯ç»™ä¸‹ä¸€ä¸ª
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;<CODE>// </CODE>é”™è¯¯å¤„ç†ç¨‹åºã€‚
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>catch(e) {&nbsp;&nbsp;&nbsp;// </CODE>ÔÚÕâ¶ù´¦Àí<CODE> "x = 0" </CODE>µÄ´íÎó¡£
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>if (e == "x equals zero")&nbsp;&nbsp;&nbsp;// </CODE>¼ì²é´íÎóÄÜ·ñÔÚÕâ¶ù±»´¦Àí¡£
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>return(e + " handled locally.");&nbsp;&nbsp;&nbsp;// </CODE>·µ»Ø¶ÔÏó´íÎóÏûÏ¢¡£
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>else&nbsp;&nbsp;&nbsp;// </CODE>²»ÄÜÔÚÕâ¶ù´¦ÀíÕâ¸ö´íÎó¡£
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE><span class=cfe><B>throw</B></span> e;&nbsp;&nbsp;&nbsp;// </CODE>ÖØĞÂÈÓ³ö¸Ã´íÎó¸øÏÂÒ»¸ö
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;<CODE>// </CODE>´íÎó´¦Àí³ÌĞò¡£
 &nbsp;&nbsp;&nbsp;}
-&nbsp;&nbsp;&nbsp;<CODE>catch(e) {&nbsp;&nbsp;&nbsp;// </CODE>åœ¨æ­¤å¤„ç†å…¶ä»–é”™è¯¯ã€‚
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>return(e + " handled higher up.");&nbsp;&nbsp;&nbsp;// </CODE>è¿”å›é”™è¯¯æ¶ˆæ¯ã€‚
+&nbsp;&nbsp;&nbsp;<CODE>catch(e) {&nbsp;&nbsp;&nbsp;// </CODE>ÔÚ´Ë´¦ÀíÆäËû´íÎó¡£
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>return(e + " handled higher up.");&nbsp;&nbsp;&nbsp;// </CODE>·µ»Ø´íÎóÏûÏ¢¡£
 &nbsp;&nbsp;&nbsp;}
 }
 <CODE>document.write(TryCatchDemo(0));</CODE>
 <CODE>document.write(TryCatchDemo(1));</CODE></PRE>
 
-<H4>è¦æ±‚</H4>
+<H4>ÒªÇó</H4>
 
-<P><A HREF="jsoriversioninformation.htm">ç‰ˆæœ¬ 5</A></P>
+<P><A HREF="jsoriversioninformation.htm">°æ±¾ 5</A></P>
 
-<H4>è¯·å‚é˜…</H4>
+<H4>Çë²ÎÔÄ</H4>
 
-<P><A HREF="jsstmtrycatch.htm">try...catch è¯­å¥</A></P>
+<P><A HREF="jsstmtrycatch.htm">try...catch Óï¾ä</A></P>
 <!--Copyright_START-->
 <DIV CLASS="footer">
-<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation ç‰ˆæƒæ‰€æœ‰ã€‚ä¿ç•™æ‰€æœ‰æƒåˆ©ã€‚ä½¿ç”¨è§„å®šã€‚</a><br>
+<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation °æÈ¨ËùÓĞ¡£±£ÁôËùÓĞÈ¨Àû¡£Ê¹ÓÃ¹æ¶¨¡£</a><br>
 </DIV> <!--Copyright_END-->
 
 </BODY>

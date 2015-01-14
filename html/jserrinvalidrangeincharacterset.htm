@@ -2,7 +2,7 @@
 <HTML>
 <HEAD>
 <META HTTP-EQUIV="Content-Type" Content="text/html; charset=gb2312">
-<TITLE>字符集范围非法</TITLE>
+<TITLE>�ַ�����Χ�Ƿ�</TITLE>
 <!--CSS_START-->
 <style>@import url(../html-vss/msdnie4a.css);</style>
 <link disabled rel="stylesheet" href="../html-vss/msdn_ie3.css">
@@ -15,31 +15,31 @@
 <TABLE class="banner" width="100%" CELLSPACING=0>
 <TR>
 <TD class="bannerleft" nowrap>JScript&nbsp;</TD>
-<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">语言参考</a></TD>
+<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">���Բο�</a></TD>
 </TR>
 </TABLE>
 <HR>
 <!--End Head-->
 
-<H1><A NAME="jserrinvalidrangeincharacterset"></A>字符集范围无效</H1>
+<H1><A NAME="jserrinvalidrangeincharacterset"></A>�ַ�����Χ��Ч</H1>
 
-<P>试图创建的正则表达式含有无效的字符集范围。字符集的范围必须只能是单个字符的变化，诸如a-z 或 0-9；不能在字符集中包括诸如 \w 的字符类。字符集范围的第一个字符也必须位于范围中第二个字符的前面。例如：</P>
+<P>��ͼ�������������ʽ������Ч���ַ�����Χ���ַ����ķ�Χ����ֻ���ǵ����ַ��ı仯������a-z �� 0-9���������ַ����а������� \w ���ַ��ࡣ�ַ�����Χ�ĵ�һ���ַ�Ҳ����λ�ڷ�Χ�еڶ����ַ���ǰ�档���磺</P>
 
-<PRE><CODE>var good = /[a-z]/;  // </CODE>有效的字符范围<CODE> - a </CODE>在<CODE> z </CODE>之前。
-<CODE>var notGood = /[z-a]/;  // </CODE>无效的字符范围<CODE> - z </CODE>不在<CODE> a </CODE>之前。</PRE>
+<PRE><CODE>var good = /[a-z]/;  // </CODE>��Ч���ַ���Χ<CODE> - a </CODE>��<CODE> z </CODE>֮ǰ��
+<CODE>var notGood = /[z-a]/;  // </CODE>��Ч���ַ���Χ<CODE> - z </CODE>����<CODE> a </CODE>֮ǰ��</PRE>
 
-<P class=label><B>要改正此错误</B>
+<P class=label><B>Ҫ�����˴���</B>
 
 <UL type=disc>
-	<LI>只使用单字符来组合正则表达式字符集，并确保他们具有正确的顺序。</li>
+	<LI>ֻʹ�õ��ַ�������������ʽ�ַ�������ȷ�����Ǿ�����ȷ��˳��</li>
 </UL>
 
-<H4>请参阅</H4>
+<H4>�����</H4>
 
-<P><A HREF="jsobjregexpression.htm">Regular Expression 对象</A> | <A HREF="jsgrpregexpsyntax.htm">Regular Expression 语法</A></P>
+<P><A HREF="jsobjregexpression.htm">Regular Expression ����</A> | <A HREF="jsgrpregexpsyntax.htm">Regular Expression �﷨</A></P>
 <!--Copyright_START-->
 <DIV CLASS="footer">
-<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation 版权所有。保留所有权利。使用规定。</a><br>
+<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation ��Ȩ���С���������Ȩ����ʹ�ù涨��</a><br>
 </DIV> <!--Copyright_END-->
 
 </BODY>

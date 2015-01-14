@@ -2,7 +2,7 @@
 <HTML>
 <HEAD>
 <META HTTP-EQUIV="Content-Type" Content="text/html; charset=gb2312">
-<TITLE>instanceof è¿ç®—ç¬¦</TITLE>
+<TITLE>instanceof ÔËËã·û</TITLE>
 <!--CSS_START-->
 <style>@import url(../html-vss/msdnie4a.css);</style>
 <link disabled rel="stylesheet" href="../html-vss/msdn_ie3.css">
@@ -15,49 +15,49 @@
 <TABLE class="banner" width="100%" CELLSPACING=0>
 <TR>
 <TD class="bannerleft" nowrap>JScript&nbsp;</TD>
-<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">è¯­è¨€å‚è€ƒ</a></TD>
+<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">ÓïÑÔ²Î¿¼</a></TD>
 </TR>
 </TABLE>
 <HR>
 <!--End Head-->
 
-<H1><A NAME="jsoprinstanceof"></A>instanceof è¿ç®—ç¬¦</H1>
+<H1><A NAME="jsoprinstanceof"></A>instanceof ÔËËã·û</H1>
 
-<P>è¿”å›ä¸€ä¸ª Boolean å€¼ï¼ŒæŒ‡å‡ºå¯¹è±¡æ˜¯å¦æ˜¯ç‰¹å®š<A HREF="glossary.htm#defclassjs">ç±»</A>çš„ä¸€ä¸ªå®ä¾‹ã€‚</P>
+<P>·µ»ØÒ»¸ö Boolean Öµ£¬Ö¸³ö¶ÔÏóÊÇ·ñÊÇÌØ¶¨<A HREF="glossary.htm#defclassjs">Àà</A>µÄÒ»¸öÊµÀı¡£</P>
 
 <P><CODE>result = object <B>instanceof</B> class</CODE></P>
 
-<H4>å‚æ•°</H4>
+<H4>²ÎÊı</H4>
 
 <P class=dt>result</P>
 
-<P class=indent>å¿…é€‰é¡¹ã€‚ä»»æ„<A HREF="glossary.htm#defvariablejs">å˜é‡</A>ã€‚</P>
+<P class=indent>±ØÑ¡Ïî¡£ÈÎÒâ<A HREF="glossary.htm#defvariablejs">±äÁ¿</A>¡£</P>
 
 <P class=dt>object</P>
 
-<P class=indent>å¿…é€‰é¡¹ã€‚ä»»æ„å¯¹è±¡<A HREF="glossary.htm#defexpressionjs">è¡¨è¾¾å¼</A>ã€‚</P>
+<P class=indent>±ØÑ¡Ïî¡£ÈÎÒâ¶ÔÏó<A HREF="glossary.htm#defexpressionjs">±í´ïÊ½</A>¡£</P>
 
 <P class=dt>class</P>
 
-<P class=indent>å¿…é€‰é¡¹ã€‚ä»»æ„å·²å®šä¹‰çš„å¯¹è±¡ç±»ã€‚</P>
+<P class=indent>±ØÑ¡Ïî¡£ÈÎÒâÒÑ¶¨ÒåµÄ¶ÔÏóÀà¡£</P>
 
-<H4>è¯´æ˜</H4>
+<H4>ËµÃ÷</H4>
 
-<P>å¦‚æœ <I>object</I> æ˜¯ <I>class</I> çš„ä¸€ä¸ªå®ä¾‹ï¼Œåˆ™ <B>instanceof</B> è¿ç®—ç¬¦è¿”å› <B>true</B>ã€‚å¦‚æœ <I>object</I> ä¸æ˜¯æŒ‡å®šç±»çš„ä¸€ä¸ªå®ä¾‹ï¼Œæˆ–è€… <I>object</I> æ˜¯ <B>null</B>ï¼Œåˆ™è¿”å› <B>false</B>ã€‚</P>
+<P>Èç¹û <I>object</I> ÊÇ <I>class</I> µÄÒ»¸öÊµÀı£¬Ôò <B>instanceof</B> ÔËËã·û·µ»Ø <B>true</B>¡£Èç¹û <I>object</I> ²»ÊÇÖ¸¶¨ÀàµÄÒ»¸öÊµÀı£¬»òÕß <I>object</I> ÊÇ <B>null</B>£¬Ôò·µ»Ø <B>false</B>¡£</P>
 
-<H4>ç¤ºä¾‹</H4>
+<H4>Ê¾Àı</H4>
 
-<P>ä¸‹é¢çš„ä¾‹å­ä¸¾ä¾‹è¯´æ˜äº† <B>instanceof</B> è¿ç®—ç¬¦çš„ç”¨æ³•ã€‚</P>
+<P>ÏÂÃæµÄÀı×Ó¾ÙÀıËµÃ÷ÁË <B>instanceof</B> ÔËËã·ûµÄÓÃ·¨¡£</P>
 
 <PRE><CODE>function objTest(obj){
-&nbsp;&nbsp;&nbsp;var i, t, s = "";&nbsp;&nbsp;&nbsp;// </CODE>åˆ›å»ºå˜é‡ã€‚
-&nbsp;&nbsp;&nbsp;<CODE>t = new Array();&nbsp;&nbsp;&nbsp;// </CODE>åˆ›å»ºä¸€ä¸ªæ•°ç»„ã€‚
-&nbsp;&nbsp;&nbsp;<CODE>t["Date"] = Date;&nbsp;&nbsp;&nbsp;// </CODE>å¡«å……æ•°ç»„ã€‚
+&nbsp;&nbsp;&nbsp;var i, t, s = "";&nbsp;&nbsp;&nbsp;// </CODE>´´½¨±äÁ¿¡£
+&nbsp;&nbsp;&nbsp;<CODE>t = new Array();&nbsp;&nbsp;&nbsp;// </CODE>´´½¨Ò»¸öÊı×é¡£
+&nbsp;&nbsp;&nbsp;<CODE>t["Date"] = Date;&nbsp;&nbsp;&nbsp;// </CODE>Ìî³äÊı×é¡£
 &nbsp;&nbsp;&nbsp;<CODE>t["Object"] = Object;</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;t["Array"] = Array;</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (i in t)</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</CODE>
-<CODE>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (obj <span class=cfe><B>instanceof</B></span> t[i])&nbsp;&nbsp;&nbsp;// </CODE>æ£€æŸ¥<CODE> obj </CODE>çš„ç±»ã€‚
+<CODE>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (obj <span class=cfe><B>instanceof</B></span> t[i])&nbsp;&nbsp;&nbsp;// </CODE>¼ì²é<CODE> obj </CODE>µÄÀà¡£
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>s += "obj is an instance of " + i + "\n";</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</CODE>
@@ -66,22 +66,22 @@
 <CODE>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s += "obj is not an instance of " + i + "\n";</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;}</CODE>
-<CODE>&nbsp;&nbsp;&nbsp;return(s);&nbsp;&nbsp;&nbsp;// </CODE>è¿”å›å­—ç¬¦ä¸²ã€‚
+<CODE>&nbsp;&nbsp;&nbsp;return(s);&nbsp;&nbsp;&nbsp;// </CODE>·µ»Ø×Ö·û´®¡£
 }
 
 <CODE>var obj = new Date();</CODE>
 <CODE>response.write(objTest(obj));</CODE></PRE>
 
-<H4>è¦æ±‚</H4>
+<H4>ÒªÇó</H4>
 
-<P><A HREF="jsoriversioninformation.htm">ç‰ˆæœ¬ 5</A></P>
+<P><A HREF="jsoriversioninformation.htm">°æ±¾ 5</A></P>
 
-<H4>è¯·å‚é˜…</H4>
+<H4>Çë²ÎÔÄ</H4>
 
-<P><A HREF="jsoperatorprecedence.htm">è¿ç®—ç¬¦ä¼˜å…ˆçº§</A> | <A HREF="jsmsclist.htm">è¿ç®—ç¬¦æ€»ç»“</A></P>
+<P><A HREF="jsoperatorprecedence.htm">ÔËËã·ûÓÅÏÈ¼¶</A> | <A HREF="jsmsclist.htm">ÔËËã·û×Ü½á</A></P>
 <!--Copyright_START-->
 <DIV CLASS="footer">
-<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation ç‰ˆæƒæ‰€æœ‰ã€‚ä¿ç•™æ‰€æœ‰æƒåˆ©ã€‚ä½¿ç”¨è§„å®šã€‚</a><br>
+<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation °æÈ¨ËùÓĞ¡£±£ÁôËùÓĞÈ¨Àû¡£Ê¹ÓÃ¹æ¶¨¡£</a><br>
 </DIV> <!--Copyright_END-->
 
 </BODY>

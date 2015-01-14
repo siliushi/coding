@@ -2,7 +2,7 @@
 <HTML>
 <HEAD>
 <META HTTP-EQUIV="Content-Type" Content="text/html; charset=gb2312">
-<TITLE>moveFirst æ–¹æ³•</TITLE>
+<TITLE>moveFirst ·½·¨</TITLE>
 <!--CSS_START-->
 <style>@import url(../html-vss/msdnie4a.css);</style>
 <link disabled rel="stylesheet" href="../html-vss/msdn_ie3.css">
@@ -15,66 +15,66 @@
 <TABLE class="banner" width="100%" CELLSPACING=0>
 <TR>
 <TD class="bannerleft" nowrap>JScript&nbsp;</TD>
-<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">è¯­è¨€å‚è€ƒ</a></TD>
+<TD class="bannerright" nowrap><a href="../html-vss/jsTOC.htm">ÓïÑÔ²Î¿¼</a></TD>
 </TR>
 </TABLE>
 <HR>
 <!--End Head-->
 
-<H1><A NAME="jsmthmovefirst"></A>moveFirst æ–¹æ³•</H1>
+<H1><A NAME="jsmthmovefirst"></A>moveFirst ·½·¨</H1>
 
-<P>é‡æ–°å°†é›†åˆä¸­çš„å½“å‰é¡¹è®¾ç½®ä¸ºç¬¬ä¸€é¡¹ã€‚</P>
+<P>ÖØĞÂ½«¼¯ºÏÖĞµÄµ±Ç°ÏîÉèÖÃÎªµÚÒ»Ïî¡£</P>
 
 <P><CODE><I>enumObj</I>.<B>moveFirst(&nbsp;)</B></CODE></P>
 
-<P>å¿…é€‰é¡¹ <I>enumObj</I> å‚æ•°ä¸ºä»»æ„çš„ <B>Enumerator</B> å¯¹è±¡ã€‚</P>
+<P>±ØÑ¡Ïî <I>enumObj</I> ²ÎÊıÎªÈÎÒâµÄ <B>Enumerator</B> ¶ÔÏó¡£</P>
 
-<H4>è¯´æ˜</H4>
+<H4>ËµÃ÷</H4>
 
-<P>å¦‚æœé›†åˆä¸­æ²¡æœ‰é¡¹ï¼Œé‚£ä¹ˆå½“å‰é¡¹å°†è¢«è®¾ç½®ä¸º <A HREF="glossary.htm#defundefined">undefined</A> ã€‚ </P>
+<P>Èç¹û¼¯ºÏÖĞÃ»ÓĞÏî£¬ÄÇÃ´µ±Ç°Ïî½«±»ÉèÖÃÎª <A HREF="glossary.htm#defundefined">undefined</A> ¡£ </P>
 
-<H4>ç¤ºä¾‹</H4>
+<H4>Ê¾Àı</H4>
 
-<P>åœ¨ä¸‹é¢çš„ä¾‹å­ä¸­ï¼Œä½¿ç”¨äº† <B>moveFirst</B> æ–¹æ³•ä»åˆ—è¡¨çš„å¼€å§‹å¤„å¯¹ <B>Drives</B> é›†åˆçš„æˆå‘˜è¿›è¡Œè®¡ç®—ï¼š </P>
+<P>ÔÚÏÂÃæµÄÀı×ÓÖĞ£¬Ê¹ÓÃÁË <B>moveFirst</B> ·½·¨´ÓÁĞ±íµÄ¿ªÊ¼´¦¶Ô <B>Drives</B> ¼¯ºÏµÄ³ÉÔ±½øĞĞ¼ÆËã£º </P>
 
 <PRE><CODE>function ShowFirstAvailableDrive(){
-&nbsp;&nbsp;&nbsp;var fso, s, e, x;                // </CODE>å£°æ˜å˜é‡ã€‚
+&nbsp;&nbsp;&nbsp;var fso, s, e, x;                // </CODE>ÉùÃ÷±äÁ¿¡£
 &nbsp;&nbsp;&nbsp;<CODE>fso = new ActiveXObject("Scripting.FileSystemObject");</CODE>
-<CODE>&nbsp;&nbsp;&nbsp;e = new Enumerator(fso.Drives);  // </CODE>åˆ›å»º<CODE> Enumerator </CODE>å¯¹è±¡ã€‚
-&nbsp;&nbsp;&nbsp;<CODE>e.<B>moveFirst</B>();                   // </CODE>ç§»åˆ°ç¬¬ä¸€ä¸ªé©±åŠ¨å™¨ã€‚
-&nbsp;&nbsp;&nbsp;<CODE>s = "";                          // </CODE>åˆå§‹åŒ–<CODE> s</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;e = new Enumerator(fso.Drives);  // </CODE>´´½¨<CODE> Enumerator </CODE>¶ÔÏó¡£
+&nbsp;&nbsp;&nbsp;<CODE>e.<B>moveFirst</B>();                   // </CODE>ÒÆµ½µÚÒ»¸öÇı¶¯Æ÷¡£
+&nbsp;&nbsp;&nbsp;<CODE>s = "";                          // </CODE>³õÊ¼»¯<CODE> s</CODE>
 &nbsp;&nbsp;&nbsp;<CODE>do </CODE>
 <CODE>&nbsp;&nbsp;&nbsp;{</CODE>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>x = e.item();                 // </CODE>æµ‹è¯•é©±åŠ¨å™¨çš„å­˜åœ¨ä¸å¦ã€‚
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>if (x.IsReady)                // </CODE>æ˜¯å¦å·²å‡†å¤‡å¥½ã€‚
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>x = e.item();                 // </CODE>²âÊÔÇı¶¯Æ÷µÄ´æÔÚÓë·ñ¡£
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>if (x.IsReady)                // </CODE>ÊÇ·ñÒÑ×¼±¸ºÃ¡£
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>s = x.DriveLetter + ":";   // </CODE>ç»™ç¬¬ä¸€ä¸ªé©±åŠ¨å™¨å·èµ‹å€¼ç»™<CODE> s</CODE>ã€‚
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>s = x.DriveLetter + ":";   // </CODE>¸øµÚÒ»¸öÇı¶¯Æ÷ºÅ¸³Öµ¸ø<CODE> s</CODE>¡£
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>break;</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else</CODE>
-<CODE>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (e.atEnd())             // </CODE>æ˜¯å¦åœ¨é›†åˆçš„ç»“å°¾ã€‚
+<CODE>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (e.atEnd())             // </CODE>ÊÇ·ñÔÚ¼¯ºÏµÄ½áÎ²¡£
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>s = "</CODE>æ²¡æœ‰å¯ç”¨çš„é©±åŠ¨å™¨<CODE>";</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>s = "</CODE>Ã»ÓĞ¿ÉÓÃµÄÇı¶¯Æ÷<CODE>";</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;</CODE>
 <CODE>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</CODE>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>e.moveNext();                 // </CODE>ç§»åˆ°ä¸‹ä¸€ä¸ªé©±åŠ¨å™¨ã€‚
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE>e.moveNext();                 // </CODE>ÒÆµ½ÏÂÒ»¸öÇı¶¯Æ÷¡£
 &nbsp;&nbsp;&nbsp;}
-&nbsp;&nbsp;&nbsp;<CODE>while (!e.atEnd());              // </CODE>æ‰§è¡Œå¾ªç¯ï¼Œç›´åˆ°é›†åˆçš„ç»“å°¾ã€‚
-&nbsp;&nbsp;&nbsp;<CODE>return(s);                       // </CODE>è¿”å›å¯ç”¨é©±åŠ¨å™¨çš„åˆ—è¡¨ã€‚
+&nbsp;&nbsp;&nbsp;<CODE>while (!e.atEnd());              // </CODE>Ö´ĞĞÑ­»·£¬Ö±µ½¼¯ºÏµÄ½áÎ²¡£
+&nbsp;&nbsp;&nbsp;<CODE>return(s);                       // </CODE>·µ»Ø¿ÉÓÃÇı¶¯Æ÷µÄÁĞ±í¡£
 }</PRE>
 
-<H4>è¦æ±‚</H4>
+<H4>ÒªÇó</H4>
 
-<P><A HREF="jsoriversioninformation.htm">ç‰ˆæœ¬ 3</A></P>
+<P><A HREF="jsoriversioninformation.htm">°æ±¾ 3</A></P>
 
-<H4>è¯·å‚é˜…</H4>
+<H4>Çë²ÎÔÄ</H4>
 
-<P><A HREF="jsmthatend.htm">atEnd æ–¹æ³•</A> | <A HREF="jsmthitem.htm">item æ–¹æ³•</A> | <A HREF="jsmthmovenext.htm">moveNext æ–¹æ³•</A></P>
+<P><A HREF="jsmthatend.htm">atEnd ·½·¨</A> | <A HREF="jsmthitem.htm">item ·½·¨</A> | <A HREF="jsmthmovenext.htm">moveNext ·½·¨</A></P>
 
-<P>åº”ç”¨äºï¼š <A HREF="jsobjenumerator.htm">Enumerator å¯¹è±¡</A></P>
+<P>Ó¦ÓÃÓÚ£º <A HREF="jsobjenumerator.htm">Enumerator ¶ÔÏó</A></P>
 <!--Copyright_START-->
 <DIV CLASS="footer">
-<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation ç‰ˆæƒæ‰€æœ‰ã€‚ä¿ç•™æ‰€æœ‰æƒåˆ©ã€‚ä½¿ç”¨è§„å®šã€‚</a><br>
+<HR><a href="jscopy.htm">&copy; 2000 Microsoft Corporation °æÈ¨ËùÓĞ¡£±£ÁôËùÓĞÈ¨Àû¡£Ê¹ÓÃ¹æ¶¨¡£</a><br>
 </DIV> <!--Copyright_END-->
 
 </BODY>
