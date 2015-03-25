@@ -13,7 +13,7 @@ var fs = require('fs'),
 
 // 全局变量
 var root_path = './html',
-    file_type = ['html', 'htm'],
+    file_type = ['js', 'html'],
     from_code = 'GBK',
     to_code   = 'UTF8';
 
